@@ -22,15 +22,14 @@ Método de extracción de relaciones semánticas para la Web (OIE) en español
     1. If you are in a Linux environment, you can execute the file “runTP-OIE-ES.sh”, the available options are:
 
 	 -f : mandatory parameter, indicates the input text file
-	 -o : indicates the output file. If not present, the result will be printed in console
-	 -reverb : Use reverb for sentences without extractions 
+	 -o : indicates the output file. If not present, the result will be printed in console	 
 	 -score : also prints the score of the extraction
 	 -full : prints score, id, and if the relation is non factual its dependency
 	 -help : prints a help menu
 
 	for example, you can execute:
 
-	./runTP-OIE-ES.sh -f testFile.txt -full -reverb
+	./runTP-OIE-ES.sh -f testFile.txt -full -o out.txt
 
 
     2. If you are under Windows environment or another SO, you must run the application with the following command:
