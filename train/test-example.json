@@ -1,0 +1,9 @@
+{lang: "en",
+examples:[
+	{sentence: "Albert Einstein was awarded the Nobel Prize in Sweden in 1921.",
+	 relations: [
+	 		{entity1:"Albert Einstein", relation:"was awarded", entity2:"the Nobel Prize"},
+			{entity1:"Albert Einstein", relation:"was awarded", entity2:"in Sweden"},
+			{entity1:"Albert Einstein", relation:"was awarded", entity2:"in 1921"} ]
+	}]
+}

@@ -1,0 +1,58 @@
+{lang: "en",
+examples:[
+	{sentence: "Albert Einstein was awarded the Nobel Prize in Sweden in 1921.",
+	 relations: [
+	 		{entity1:"Albert Einstein", relation:"was awarded", entity2:"the Nobel Prize"},
+			{entity1:"Albert Einstein", relation:"was awarded", entity2:"in Sweden"},
+			{entity1:"Albert Einstein", relation:"was awarded", entity2:"in 1921"} ]
+	},
+	{sentence: "Peter plays with the ball.",
+	 relations: [
+	 		{entity1:"Peter", relation:"plays", entity2:"with the ball"} ]
+	},
+	{sentence: "Rubik's Cube is a 3-D combination puzzle invented in 1974 by Hungarian sculptor and professor of architecture Erno Rubik.",
+	 relations: [
+	 		{entity1:"Rubik's Cube", relation:"is", entity2:"a 3-D combination puzzle"},
+			{entity1:"Rubik's Cube", relation:"invented", entity2:"by Hungarian sculptor and professor of architecture Erno Rubik"},
+			{entity1:"Rubik's Cube", relation:"invented", entity2:"in 1974"}
+			 ]
+	},
+	{ sentence: "Gandhi was vegetarian",
+	  relations: [ {entity1:"Gandhi", relation:"was", entity2:"vegetarian"} ]
+	},
+	{ sentence: "Albert Einstein died in Princeton.",
+	  relations: [ {entity1:"Albert Einstein", relation:"died", entity2:"in Princeton"} ]
+	},
+	{ sentence: "Albert Einstein remained in Princeton.",
+	  relations: [ {entity1:"Albert Einstein", relation:"remained", entity2:"in Princeton"} ]
+	},
+	{ sentence: "Albert Einstein has won the Nobel Prize.",
+	  relations: [ {entity1:"Albert Einstein", relation:"has won", entity2:"the Nobel Prize"} ]
+	},
+	{ sentence: "RSAS gave Albert Einstein the Nobel Prize.",
+	  relations: [ {entity1:"RSAS", relation:"gave", entity2:"Albert Einstein the Nobel Prize"} ]
+	},
+	{ sentence: "The doorman showed Albert Einstein to his office.",
+	  relations: [ {entity1:"The doorman", relation:"showed", entity2:"Albert Einstein to his office"} ]
+	},
+	{ sentence: "Albert Einstein declared the meeting open.",
+	  relations: [ {entity1:"Albert Einstein", relation:"declared", entity2:"the meeting open"} ]
+	},
+	{
+		sentence: "In 1872, the conflict climaxed with a final split between the two groups at the Hague Congress, where Bakunin and James Guillaume were expelled from the International and its headquarters were transferred to New York.",
+		relations: [
+ 			{entity1:"the conflict", relation:"climaxed", entity2:"with a final split between the two groups"},
+ 			{entity1:"the conflict", relation:"climaxed", entity2:"the Hague Congress"}, 			
+ 			{entity1:"the conflict", relation:"climaxed", entity2:"In 1872"},
+ 			{entity1:"Bakunin", relation:"were expelled", entity2:"from the International"},
+ 			{entity1:"James Guillaume", relation:"were expelled", entity2:"from the International"},
+ 			{entity1:"its headquarters", relation:"were transferred", entity2:"to New York"}
+		]		
+	},
+	{
+		sentence: "He said something.",
+		relations: [{entity1:"He", relation:"said", entity2:"something"}]		
+	}]
+}
+
+

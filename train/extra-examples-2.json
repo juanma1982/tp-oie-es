@@ -1,0 +1,4383 @@
+{lang: "en",
+examples:[
+    {
+        "sentence": "Mrs. Yogeswaran was shot five times with a pistol near her Jaffna home on May 17, 1998.",
+        "relations": [
+            {
+                "entity1": "Mrs. Yogeswaran",
+                "relation": "was shot",
+                "entity2": "five times with a pistol near her Jaffna home on May 17 1998"
+            },
+            {
+                "entity1": "Mrs. Yogeswaran",
+                "relation": "was shot",
+                "entity2": "five times with a pistol near her Jaffna home"
+            },
+            {
+                "entity1": "her",
+                "relation": "has",
+                "entity2": "Jaffna home"
+            }
+        ]
+    },
+    {
+        "sentence": "Terrorist attacks by E.T.A. have declined in recent years and the number of its hardcore militants is thought to have fallen from the hundreds of 15 years ago to several score.",
+        "relations": [
+            {
+                "entity1": "Terrorist attacks by E.T.A.",
+                "relation": "have declined",
+                "entity2": "in recent years"
+            },
+            {
+                "entity1": "the number of its hardcore militants",
+                "relation": "is thought",
+                "entity2": "to have fallen from the hundreds of 15 years ago to several score"
+            }
+        ]
+    },
+    {
+        "sentence": "Mr. Mahdi and Mr. Chalabi say they aim to form a \"national unity\" government with Iraq's main political leaders, presumably including Mr. Allawi.",
+        "relations": [
+            {
+                "entity1": "Iraq",
+                "relation": "has",
+                "entity2": "main political leaders"
+            },
+            {
+                "entity1": "Mr. Mahdi and Mr. Chalabi",
+                "relation": "say",
+                "entity2": "they aim to form a national unity government with Iraq 's main political leaders"
+            },
+            {
+                "entity1": "they",
+                "relation": "aim",
+                "entity2": "to form a national unity government with Iraq 's main political leaders"
+            }
+        ]
+    },
+    {
+        "sentence": "A Spanish official , who had just finished a siesta and seemed not the least bit tense , offered what he believed to be a perfectly reasonable explanation for why the portable facilities were n't in service .",
+        "relations": [
+            {
+                "entity1": "A Spanish official",
+                "relation": "had finished",
+                "entity2": "a siesta just"
+            },
+            {
+                "entity1": "A Spanish official",
+                "relation": "had finished",
+                "entity2": "a siesta"
+            },
+            {
+                "entity1": "A Spanish official",
+                "relation": "offered",
+                "entity2": "what he believed to be a perfectly reasonable explanation for why the portable facilities were n't in service"
+            },
+            {
+                "entity1": "A Spanish official",
+                "relation": "seemed not",
+                "entity2": "the least bit tense"
+            },
+            {
+                "entity1": "the portable facilities",
+                "relation": "were n't",
+                "entity2": "in service"
+            }
+        ]
+    },
+    {
+        "sentence": "The current El Nino , a complicated and vaguely understood series of phenomena that affect weather around the globe , is either the weather event of the century or an event whose bluster ca n't come close to living up to the super-hype preceding it .",
+        "relations": [
+            {
+                "entity1": "The current El Nino",
+                "relation": "is",
+                "entity2": "a complicated and vaguely understood series of phenomena"
+            },
+            {
+                "entity1": "The current El Nino",
+                "relation": "is",
+                "entity2": "the weather event whose bluster ca n't come close to living up to the super-hype preceding it"
+            },
+            {
+                "entity1": "phenomena",
+                "relation": "affect",
+                "entity2": "weather around the globe"
+            },
+            {
+                "entity1": "phenomena",
+                "relation": "affect",
+                "entity2": "weather"
+            }
+        ]
+    },
+    {
+        "sentence": "Eight percent went to Europe , while 1 percent went to other regions in the world .",
+        "relations": [
+            {
+                "entity1": "1 percent",
+                "relation": "went",
+                "entity2": "to other regions in the world"
+            },
+            {
+                "entity1": "Eight percent",
+                "relation": "went",
+                "entity2": "to Europe while 1 percent went to other regions in the world"
+            },
+            {
+                "entity1": "Eight percent",
+                "relation": "went",
+                "entity2": "to Europe"
+            }
+        ]
+    },
+    {
+        "sentence": "The film debuted on October 30, 1968 (December 29, 1968 London premiere.",
+        "relations": [
+            {
+                "entity1": "The film",
+                "relation": "debuted",
+                "entity2": "on October 30 1968 December 29 1968 London premiere"
+            }
+        ]
+    },
+    {
+        "sentence": "Meanwhile, the truth - that in most families where child abuse (sexual or otherwise) takes place, women are also victimized, either through dominance and control or actual violence - that reality is smokescreened, and the problem of the powerful abusing t",
+        "relations": [
+            {
+                "entity1": "the powerful",
+                "relation": "be abusing",
+                "entity2": "their power"
+            }
+        ]
+    },
+    {
+        "sentence": "Dr.Gayatri (Bipasha Basu) is researching the esoteric practices like voodoo, spirit possession, magic and healing powers.",
+        "relations": [
+            {
+                "entity1": "Dr. Gayatri",
+                "relation": "is researching",
+                "entity2": "the esoteric practices like voodoo spirit possession magic and healing powers"
+            },
+            {
+                "entity1": "Dr. Gayatri",
+                "relation": "is",
+                "entity2": "Bipasha Basu"
+            }
+        ]
+    },
+    {
+        "sentence": "Few have tried, and far fewer have succeeded.",
+        "relations": []
+    },
+    {
+        "sentence": "Simultaneously won the \"Hope of the World Ballet\" Prize.",
+        "relations": []
+    },
+    {
+        "sentence": "Dell Computer Corp. 's quarter also looks good .",
+        "relations": [
+            {
+                "entity1": "Dell Computer Corp. 's quarter",
+                "relation": "looks",
+                "entity2": "good also"
+            },
+            {
+                "entity1": "Dell Computer Corp. 's quarter",
+                "relation": "looks",
+                "entity2": "good"
+            }
+        ]
+    },
+    {
+        "sentence": "The case is being appealed.",
+        "relations": []
+    },
+    {
+        "sentence": "By agreement among the Allied nations, in March 1942 the acific theatre was divided into the South West Pacific Area, under General Douglas MacArthur, and the Pacific Ocean Areas, under Admiral Chester W. Nimitz.",
+        "relations": [
+            {
+                "entity1": "the acific theater",
+                "relation": "was divided",
+                "entity2": "into the South West Pacific Area under General Douglas MacArthur and the Pacific Ocean Areas under Admiral Chester W. Nimitz"
+            }
+        ]
+    },
+    {
+        "sentence": "Doctors in Pennsylvania and West Virginia are expected to notify S.M.I. bioterror experts of any \"suspicious event,\" from an unusual rash to a finger lost in an explosion, identifying but not informing the patient.",
+        "relations": [
+            {
+                "entity1": "Doctors in Pennsylvania and West Virginia",
+                "relation": "are expected",
+                "entity2": "to notify S.M.I. bioterror experts of any suspicious event from an unusual rash to a finger lost in an explosion identifying but not informing the patient"
+            },
+            {
+                "entity1": "a finger",
+                "relation": "be lost",
+                "entity2": "in an explosion"
+            }
+        ]
+    },
+    {
+        "sentence": "Nothing else is untouched, regardless of its provenance.",
+        "relations": [
+            {
+                "entity1": "Nothing else",
+                "relation": "is untouched",
+                "entity2": "regardless of its provenance"
+            }
+        ]
+    },
+    {
+        "sentence": "Esaka and six other top executives will quit to take responsibility for 67.28 million yen in payoffs to corporate racketeer Ryuichi Koike , 54 .",
+        "relations": [
+            {
+                "entity1": "Esaka and six other top executives",
+                "relation": "will quit",
+                "entity2": "to take responsibility for 67.28 million yen in payoffs to corporate racketeer Ryuichi Koike"
+            },
+            {
+                "entity1": "Esaka and six other top executives",
+                "relation": "will quit",
+                "entity2": "to take responsibility for 67.28 million yen in payoffs"
+            },
+            {
+                "entity1": "corporate racketeer Ryuichi Koike",
+                "relation": "is",
+                "entity2": "54"
+            }
+        ]
+    },
+    {
+        "sentence": "The region is still far from rebuilt, despite Government promises to have the work completed within two years, and there have been accusations of corruption and misuse of relief funds.",
+        "relations": [
+            {
+                "entity1": "the work",
+                "relation": "be completed",
+                "entity2": "within two years"
+            }
+        ]
+    },
+    {
+        "sentence": "Frank Lanning as Francisco Cortez, escaped convict falsely accused of murder ing Jim Lester's father.",
+        "relations": [
+            {
+                "entity1": "Jim Lester",
+                "relation": "has",
+                "entity2": "father"
+            }
+        ]
+    },
+    {
+        "sentence": "But she would concern herself less with the motives of those willing to help than with their pitching in .",
+        "relations": [
+            {
+                "entity1": "she",
+                "relation": "would concern",
+                "entity2": "herself less with the motives of those willing to help than with their pitching in"
+            }
+        ]
+    },
+    {
+        "sentence": "Meanwhile, Ms. Coughlin is pursuing her case in a Federal court in Nevada against the last remaining defendant, the Las Vegas Hilton, which has denied it negligently failed to provide adequate security.",
+        "relations": [
+            {
+                "entity1": "Ms. Coughlin",
+                "relation": "is pursuing",
+                "entity2": "her case in a Federal court in Nevada against the last remaining defendant"
+            },
+            {
+                "entity1": "Ms. Coughlin",
+                "relation": "is pursuing",
+                "entity2": "her case in a Federal court"
+            },
+            {
+                "entity1": "the Las Vegas Hilton",
+                "relation": "failed",
+                "entity2": "to provide adequate security"
+            }
+        ]
+    },
+    {
+        "sentence": "Congress holds hearings to consider anti-road-rage legislation .",
+        "relations": [
+            {
+                "entity1": "Congress",
+                "relation": "holds",
+                "entity2": "hearings to consider anti-road-rage legislation"
+            }
+        ]
+    },
+    {
+        "sentence": "But some conglomerates , like Viacom and the News Corp. , have already bumped up against the limits of the rules .",
+        "relations": [
+            {
+                "entity1": "some conglomerates",
+                "relation": "have bumped up",
+                "entity2": "against the limits of the rules already"
+            },
+            {
+                "entity1": "some conglomerates",
+                "relation": "have bumped up",
+                "entity2": "against the limits of the rules"
+            }
+        ]
+    },
+    {
+        "sentence": "The benchmark 30-year bond rose 3\/8 , or $ 3.75 per $ 1,000 bond , to 96 30\/32 , pushing its yield down 3 basis points to 6.61 percent .",
+        "relations": [
+            {
+                "entity1": "The benchmark 30-year bond",
+                "relation": "be pushing",
+                "entity2": "its yield down 3 basis points to 6.61 percent"
+            },
+            {
+                "entity1": "The benchmark 30-year bond",
+                "relation": "rose",
+                "entity2": "3\\\/8 or $ 3.75 per $ 1,000 bond pushing its yield down 3 basis points to 6.61 percent"
+            },
+            {
+                "entity1": "The benchmark 30-year bond",
+                "relation": "rose",
+                "entity2": "3\\\/8 or $ 3.75 per $ 1,000 bond to 96\u00a030\\\/32"
+            },
+            {
+                "entity1": "The benchmark 30-year bond",
+                "relation": "rose",
+                "entity2": "3\\\/8 or $ 3.75 per $ 1,000 bond"
+            },
+            {
+                "entity1": "its",
+                "relation": "has",
+                "entity2": "yield"
+            }
+        ]
+    },
+    {
+        "sentence": "The Islamic Jihad Union (IJU), also known as Islamic Jihad Group (IJG), is a terrorist organization which splintered from the Islamic Movement of Uzbekistan (IMU), and has conducted attacks in Uzbekistan and attempted attacks in Germany.",
+        "relations": [
+            {
+                "entity1": "The Islamic Jihad Union IJU also known as Islamic Jihad Group IJG",
+                "relation": "is",
+                "entity2": "a terrorist organization"
+            },
+            {
+                "entity1": "The Islamic Jihad Union IJU",
+                "relation": "be known",
+                "entity2": "also as Islamic Jihad Group IJG"
+            },
+            {
+                "entity1": "a terrorist organization",
+                "relation": "has conducted",
+                "entity2": "attacks in Uzbekistan and attempted attacks in Germany"
+            },
+            {
+                "entity1": "a terrorist organization",
+                "relation": "splintered",
+                "entity2": "from the Islamic Movement of Uzbekistan IMU"
+            }
+        ]
+    },
+    {
+        "sentence": "Cadabra has also played for FC Cessange Bracarenses Grund 2001 (twice) and FC Etzella Ettelbruck in Luxembourg.",
+        "relations": [
+            {
+                "entity1": "Cadabra",
+                "relation": "has played",
+                "entity2": "for FC Cessange Bracarenses Grund 2001 twice and FC Etzella Ettelbruck in Luxembourg also"
+            },
+            {
+                "entity1": "Cadabra",
+                "relation": "has played",
+                "entity2": "for FC Cessange Bracarenses Grund 2001 twice and FC Etzella Ettelbruck in Luxembourg"
+            }
+        ]
+    },
+    {
+        "sentence": "John Lamar Odom, pastor of the First Presbyterian Church in Oceanside, L.I., were married yesterday.",
+        "relations": [
+            {
+                "entity1": "John Lamar Odom",
+                "relation": "is",
+                "entity2": "pastor of the First Presbyterian Church in Oceanside L.I."
+            },
+            {
+                "entity1": "John Lamar Odom",
+                "relation": "were married",
+                "entity2": "yesterday"
+            }
+        ]
+    },
+    {
+        "sentence": "Kent was not told of the situation until the game was over.",
+        "relations": [
+            {
+                "entity1": "Kent",
+                "relation": "was not told",
+                "entity2": "of the situation until the game was over"
+            },
+            {
+                "entity1": "the game",
+                "relation": "was",
+                "entity2": "over"
+            }
+        ]
+    },
+    {
+        "sentence": "Koplowitz 's next concert will be a more modest affair and presented indoors at Dance Theater Workshop in May .",
+        "relations": [
+            {
+                "entity1": "Koplowitz 's next concert",
+                "relation": "will be",
+                "entity2": "a more modest affair"
+            },
+            {
+                "entity1": "Koplowitz",
+                "relation": "has",
+                "entity2": "next concert"
+            }
+        ]
+    },
+    {
+        "sentence": "Only about one in five private-sector employees still receives that kind of deal , experts say .",
+        "relations": [
+            {
+                "entity1": "Only about one in five private-sector employees",
+                "relation": "receives",
+                "entity2": "that kind of deal still"
+            },
+            {
+                "entity1": "Only about one in five private-sector employees",
+                "relation": "receives",
+                "entity2": "that kind of deal"
+            },
+            {
+                "entity1": "experts",
+                "relation": "say",
+                "entity2": "Only about one in five private-sector employees still receives that kind of deal"
+            }
+        ]
+    },
+    {
+        "sentence": "It did n't specify which goods in either case .",
+        "relations": [
+            {
+                "entity1": "It",
+                "relation": "did n't specify",
+                "entity2": "which goods in either case"
+            }
+        ]
+    },
+    {
+        "sentence": "Kuroki is the only Japanese American known to have participated in air combat missions in the Pacific theater of operations during the war.",
+        "relations": [
+            {
+                "entity1": "Kuroki",
+                "relation": "is",
+                "entity2": "the Japanese American known to have participated in air combat missions in the Pacific theater of operations during the war"
+            },
+            {
+                "entity1": "Kuroki",
+                "relation": "is",
+                "entity2": "the Japanese American"
+            }
+        ]
+    },
+    {
+        "sentence": "Nordstrom Inc., the retail chain based on the West Coast, said today that it had created an office of the president to strengthen its executive management team.",
+        "relations": [
+            {
+                "entity1": "Nordstrom Inc.",
+                "relation": "is",
+                "entity2": "the retail chain based on the West Coast"
+            },
+            {
+                "entity1": "Nordstrom Inc.",
+                "relation": "said",
+                "entity2": "that it had created an office of the president to strengthen its executive management team"
+            },
+            {
+                "entity1": "Nordstrom Inc.",
+                "relation": "said",
+                "entity2": "today that it had created an office of the president to strengthen its executive management team"
+            },
+            {
+                "entity1": "it",
+                "relation": "had created",
+                "entity2": "an office of the president to strengthen its executive management team"
+            },
+            {
+                "entity1": "the retail chain",
+                "relation": "be based",
+                "entity2": "on the West Coast"
+            }
+        ]
+    },
+    {
+        "sentence": "The scandal has now forced resignations at Japan 's fourth-largest bank and three of Japan 's Big Four brokerages .",
+        "relations": [
+            {
+                "entity1": "Japan",
+                "relation": "has",
+                "entity2": "Big Four brokerages"
+            },
+            {
+                "entity1": "The scandal",
+                "relation": "has forced",
+                "entity2": "resignations at Japan 's fourth-largest bank and three of Japan 's Big Four brokerages"
+            },
+            {
+                "entity1": "The scandal",
+                "relation": "has forced",
+                "entity2": "resignations now"
+            },
+            {
+                "entity1": "The scandal",
+                "relation": "has forced",
+                "entity2": "resignations"
+            }
+        ]
+    },
+    {
+        "sentence": "\"The Candy Trail\" is a 1916 silent comedy film featuring Oliver Hardy.",
+        "relations": [
+            {
+                "entity1": "The Candy Trail",
+                "relation": "is",
+                "entity2": "a 1916 silent comedy film featuring Oliver Hardy"
+            },
+            {
+                "entity1": "The Candy Trail",
+                "relation": "is",
+                "entity2": "a 1916 silent comedy film"
+            },
+            {
+                "entity1": "a 1916 silent comedy film",
+                "relation": "be featuring",
+                "entity2": "Oliver Hardy"
+            }
+        ]
+    },
+    {
+        "sentence": "All of these portraits, incidentally, are based on fact.",
+        "relations": [
+            {
+                "entity1": "All of these portraits",
+                "relation": "are based",
+                "entity2": "on fact incidentally"
+            },
+            {
+                "entity1": "All of these portraits",
+                "relation": "are based",
+                "entity2": "on fact"
+            }
+        ]
+    },
+    {
+        "sentence": "It said it wanted the court to establish whether the government had failed to `` apply the same rules '' to all the bidders .",
+        "relations": [
+            {
+                "entity1": "It",
+                "relation": "said",
+                "entity2": "it wanted the court to establish whether the government had failed to apply the same rules to all the bidders"
+            },
+            {
+                "entity1": "it",
+                "relation": "wanted",
+                "entity2": "the court to establish whether the government had failed to apply the same rules to all the bidders"
+            },
+            {
+                "entity1": "the government",
+                "relation": "had failed",
+                "entity2": "to apply the same rules to all the bidders"
+            },
+            {
+                "entity1": "the government",
+                "relation": "had failed",
+                "entity2": "to apply the same rules"
+            }
+        ]
+    },
+    {
+        "sentence": "Dr. Weiss graduated summa cum laude from Brandeis University and received his medical degree from Yale University.",
+        "relations": [
+            {
+                "entity1": "Dr. Weiss",
+                "relation": "graduated",
+                "entity2": "summa cum laude from Brandeis University"
+            },
+            {
+                "entity1": "Dr. Weiss",
+                "relation": "graduated",
+                "entity2": "summa cum laude"
+            },
+            {
+                "entity1": "Dr. Weiss",
+                "relation": "received",
+                "entity2": "his medical degree from Yale University"
+            },
+            {
+                "entity1": "Dr. Weiss",
+                "relation": "received",
+                "entity2": "his medical degree"
+            }
+        ]
+    },
+    {
+        "sentence": "The announced crowd was 15,568.",
+        "relations": [
+            {
+                "entity1": "The announced crowd",
+                "relation": "was",
+                "entity2": "15,568"
+            }
+        ]
+    },
+    {
+        "sentence": "In times past, getting a taxi at a New York City airport was often a Darwinian affair, a frenzied, survival-of-the-fittest scene of piled-up luggage, darting taxis and shouting cabbies looking for an edge.",
+        "relations": [
+            {
+                "entity1": "cabbies",
+                "relation": "be looking",
+                "entity2": "for an edge"
+            }
+        ]
+    },
+    {
+        "sentence": "The Hearst News Service has filed or will file the following for Wednesday .",
+        "relations": []
+    },
+    {
+        "sentence": "Inspired by the Cadillac Vison concept SUV shown at last year 's auto shows , the new Cadillac SRX will become one of the newest entrants into the fast-growing medium luxury utility segment , in which rival Lincoln is about to add its own Aviator , based ",
+        "relations": [
+            {
+                "entity1": "its",
+                "relation": "has",
+                "entity2": "own Aviator"
+            },
+            {
+                "entity1": "last year",
+                "relation": "has",
+                "entity2": "auto shows"
+            },
+            {
+                "entity1": "rival Lincoln",
+                "relation": "is about",
+                "entity2": "to add its own Aviator in the fast-growing medium luxury utility segment"
+            },
+            {
+                "entity1": "rival Lincoln",
+                "relation": "is about",
+                "entity2": "to add its own Aviator"
+            },
+            {
+                "entity1": "the Cadillac Vison concept SUV",
+                "relation": "be shown",
+                "entity2": "at last year 's auto shows"
+            },
+            {
+                "entity1": "the new Cadillac SRX",
+                "relation": "will become",
+                "entity2": "one of the newest entrants"
+            }
+        ]
+    },
+    {
+        "sentence": "Like all good pamphlets, \"The Missionary Position,\" by Christopher Hitchens, is very short, zealously overwritten, and rails wildly in defense of an almost nonsensical proposition: that Mother Teresa of Calcutta is actually not a saint but an evil and sel",
+        "relations": [
+            {
+                "entity1": "Mother Teresa of Calcutta",
+                "relation": "is not",
+                "entity2": "a saint actually"
+            },
+            {
+                "entity1": "Mother Teresa of Calcutta",
+                "relation": "is not",
+                "entity2": "a saint but an evil and selfish old woman"
+            },
+            {
+                "entity1": "Mother Teresa of Calcutta",
+                "relation": "is not",
+                "entity2": "a saint"
+            },
+            {
+                "entity1": "The Missionary Position by Christopher Hitchens",
+                "relation": "is",
+                "entity2": "short zealously overwritten and rails wildly in defense of an almost nonsensical proposition that Mother Teresa of Calcutta is actually not a saint but an evil and selfish old woman Like all good pamphlets"
+            },
+            {
+                "entity1": "The Missionary Position by Christopher Hitchens",
+                "relation": "is",
+                "entity2": "short zealously overwritten and rails wildly in defense of an almost nonsensical proposition that Mother Teresa of Calcutta is actually not a saint but an evil and selfish old woman"
+            }
+        ]
+    },
+    {
+        "sentence": "Devoted mother of Lyn Boland Dosik and the late Howard Batzar.",
+        "relations": []
+    },
+    {
+        "sentence": "\"It's only going to get worse before it gets better.\"",
+        "relations": []
+    },
+    {
+        "sentence": "Princeton's women's track & field team has also enjoyed great success under Head Coach Peter Farrell.",
+        "relations": []
+    },
+    {
+        "sentence": "Extendicare Inc. agreed to buy Arbor Health Care Co. for about US$ 432 million in cash and assumed debt , nearly doubling its Florida and Ohio businesses and making it one of North America 's largest long-term health care providers .",
+        "relations": [
+            {
+                "entity1": "Extendicare Inc.",
+                "relation": "agreed",
+                "entity2": "to buy Arbor Health Care Co. for about US$ 432 million in cash and assumed debt nearly doubling its Florida and Ohio businesses and making it one of North America 's largest long-term health care providers"
+            },
+            {
+                "entity1": "Extendicare Inc.",
+                "relation": "agreed",
+                "entity2": "to buy Arbor Health Care Co. for about US$ 432 million nearly doubling its Florida and Ohio businesses and making it one of North America 's largest long-term health care providers"
+            },
+            {
+                "entity1": "its",
+                "relation": "has",
+                "entity2": "Florida and Ohio businesses"
+            }
+        ]
+    },
+    {
+        "sentence": "Luckily for them , nobody was watching .",
+        "relations": [
+            {
+                "entity1": "nobody",
+                "relation": "was watching",
+                "entity2": "Luckily for them"
+            }
+        ]
+    },
+    {
+        "sentence": "The foundations of the University of the Aegean date back to October 1918 when Greece had expanded its geographic borders to the wider Smyrna area after the World War I. ",
+        "relations": [
+            {
+                "entity1": "Greece",
+                "relation": "had expanded",
+                "entity2": "its geographic borders after the World War I."
+            },
+            {
+                "entity1": "Greece",
+                "relation": "had expanded",
+                "entity2": "its geographic borders to the wider Smyrna area"
+            },
+            {
+                "entity1": "Greece",
+                "relation": "had expanded",
+                "entity2": "its geographic borders"
+            },
+            {
+                "entity1": "its",
+                "relation": "has",
+                "entity2": "geographic borders"
+            }
+        ]
+    },
+    {
+        "sentence": "Hooters of America owns , operates or franchises a total of 192 of the hot wing restaurants , vs. the 12 run by Hooters Inc.",
+        "relations": []
+    },
+    {
+        "sentence": "Yesterday, when The News led with \"Friendly Fire\" and \"30 Marines wounded in attack near Nassiriya,\" The Post said, \"Saddam's evil order to kids: Fight or your parents die,\" followed by \"How low can Iraq sink.",
+        "relations": []
+    },
+    {
+        "sentence": "Tropical Storm Edouard will meander about 125 miles off the Georgia coast causing surf to build along parts of the Southeast Coast .",
+        "relations": [
+            {
+                "entity1": "Tropical Storm Edouard",
+                "relation": "will meander",
+                "entity2": "about 125 miles off the Georgia coast causing surf to build along parts of the Southeast Coast"
+            }
+        ]
+    },
+    {
+        "sentence": "Argentina has an important rugby union football team, \"Los Pumas\", with many of its players playing in Europe.",
+        "relations": [
+            {
+                "entity1": "Argentina",
+                "relation": "has",
+                "entity2": "an important rugby union football team Los Pumas with many of its players playing in Europe"
+            },
+            {
+                "entity1": "Argentina",
+                "relation": "has",
+                "entity2": "an important rugby union football team Los Pumas"
+            },
+            {
+                "entity1": "its",
+                "relation": "has",
+                "entity2": "players"
+            }
+        ]
+    },
+    {
+        "sentence": "They have also competed in the UEFA Women's Cup and UEFA Women's Champions League.",
+        "relations": [
+            {
+                "entity1": "They",
+                "relation": "have competed",
+                "entity2": "in the UEFA Women 's Cup and UEFA Women 's Champions League also"
+            },
+            {
+                "entity1": "They",
+                "relation": "have competed",
+                "entity2": "in the UEFA Women 's Cup and UEFA Women 's Champions League"
+            }
+        ]
+    },
+    {
+        "sentence": "The shuttle between Times Square and Grand Central also was stopped, and Flushing line trains bypassed Grand Central.",
+        "relations": [
+            {
+                "entity1": "Flushing line trains",
+                "relation": "bypassed",
+                "entity2": "Grand Central"
+            },
+            {
+                "entity1": "The shuttle between Times Square and Grand Central",
+                "relation": "was stopped",
+                "entity2": "also"
+            }
+        ]
+    },
+    {
+        "sentence": "He has represented parts of the city of Rutland in the Vermont House of Representatives since 2005 and had previously served four terms in the House.",
+        "relations": [
+            {
+                "entity1": "He",
+                "relation": "had served",
+                "entity2": "four terms in the House previously"
+            },
+            {
+                "entity1": "He",
+                "relation": "had served",
+                "entity2": "four terms in the House"
+            },
+            {
+                "entity1": "He",
+                "relation": "has represented",
+                "entity2": "parts of the city of Rutland in the Vermont House of Representatives"
+            },
+            {
+                "entity1": "He",
+                "relation": "has represented",
+                "entity2": "parts of the city of Rutland since 2005"
+            },
+            {
+                "entity1": "He",
+                "relation": "has represented",
+                "entity2": "parts of the city of Rutland"
+            }
+        ]
+    },
+    {
+        "sentence": "The playing wasn't bad, really; it just wasn't good enough to justify the event.",
+        "relations": [
+            {
+                "entity1": "The playing",
+                "relation": "was n't",
+                "entity2": "bad really"
+            },
+            {
+                "entity1": "The playing",
+                "relation": "was n't",
+                "entity2": "bad"
+            },
+            {
+                "entity1": "it",
+                "relation": "was n't",
+                "entity2": "good enough to justify the event"
+            }
+        ]
+    },
+    {
+        "sentence": "Mr. Hashimoto, who denied the bribery charges, took his case to the Supreme Court, but the court had not issued a ruling by the time of his death.",
+        "relations": [
+            {
+                "entity1": "Mr. Hashimoto",
+                "relation": "denied",
+                "entity2": "the bribery charges"
+            },
+            {
+                "entity1": "Mr. Hashimoto",
+                "relation": "took",
+                "entity2": "his case to the Supreme Court"
+            },
+            {
+                "entity1": "the court",
+                "relation": "had not issued",
+                "entity2": "a ruling by the time of his death"
+            }
+        ]
+    },
+    {
+        "sentence": "I showed him 15 photographs which represented what I felt the movie should look and feel like .",
+        "relations": [
+            {
+                "entity1": "15 photographs",
+                "relation": "represented",
+                "entity2": "what I felt the movie should look and feel like"
+            },
+            {
+                "entity1": "I",
+                "relation": "showed",
+                "entity2": "him 15 photographs"
+            }
+        ]
+    },
+    {
+        "sentence": "That pushed the unemployment rate to 12.5 percent, from 12.4 percent in May.",
+        "relations": [
+            {
+                "entity1": "That",
+                "relation": "pushed",
+                "entity2": "the unemployment rate to 12.5 percent"
+            },
+            {
+                "entity1": "That",
+                "relation": "pushed",
+                "entity2": "the unemployment rate"
+            }
+        ]
+    },
+    {
+        "sentence": "Only 19 percent of a national sample of 1,051 adults surveyed late last week said they believed the accord would reduce the number of teen-agers who begin smoking .",
+        "relations": [
+            {
+                "entity1": "1,051 adults",
+                "relation": "be surveyed",
+                "entity2": "late last week"
+            },
+            {
+                "entity1": "teen-agers",
+                "relation": "begin",
+                "entity2": "smoking"
+            }
+        ]
+    },
+    {
+        "sentence": "Costello's main work since joining the Defense Department last October has been to develop a series of policies aimed at strengthening industrial technologies and manufacturing methods in areas that are deemed important to arms production.",
+        "relations": [
+            {
+                "entity1": "Costello 's main work since joining the Defense Department last October",
+                "relation": "has been",
+                "entity2": "to develop a series of policies aimed at strengthening industrial technologies and manufacturing methods"
+            },
+            {
+                "entity1": "areas",
+                "relation": "are deemed",
+                "entity2": "important to arms production"
+            },
+            {
+                "entity1": "policies",
+                "relation": "be aimed",
+                "entity2": "at strengthening industrial technologies and manufacturing methods"
+            }
+        ]
+    },
+    {
+        "sentence": "A class-action lawsuit against the N.C.A.A., contending that major college football teams violate antitrust laws by refusing to give athletic scholarships to all walk-on players, was filed yesterday in a United States District Court in Seattle.",
+        "relations": [
+            {
+                "entity1": "A class-action lawsuit against the N.C.A.A.",
+                "relation": "be contending",
+                "entity2": "that major college football teams violate antitrust laws by refusing to give athletic scholarships to all walk-on players"
+            },
+            {
+                "entity1": "A class-action lawsuit against the N.C.A.A.",
+                "relation": "was filed",
+                "entity2": "yesterday contending that major college football teams violate antitrust laws by refusing to give athletic scholarships to all walk-on players"
+            },
+            {
+                "entity1": "A class-action lawsuit against the N.C.A.A.",
+                "relation": "was filed",
+                "entity2": "yesterday in Seattle"
+            },
+            {
+                "entity1": "A class-action lawsuit against the N.C.A.A.",
+                "relation": "was filed",
+                "entity2": "yesterday in a United States District Court"
+            },
+            {
+                "entity1": "A class-action lawsuit against the N.C.A.A.",
+                "relation": "was filed",
+                "entity2": "yesterday"
+            },
+            {
+                "entity1": "major college football teams",
+                "relation": "violate",
+                "entity2": "antitrust laws by refusing to give athletic scholarships to all walk-on players"
+            },
+            {
+                "entity1": "major college football teams",
+                "relation": "violate",
+                "entity2": "antitrust laws"
+            }
+        ]
+    },
+    {
+        "sentence": "Indeed, history shows that those who ignore energy prices and their impact on overall inflation do so at their own risk.",
+        "relations": [
+            {
+                "entity1": "history",
+                "relation": "shows",
+                "entity2": "that those do so at their own risk Indeed"
+            },
+            {
+                "entity1": "history",
+                "relation": "shows",
+                "entity2": "that those do so at their own risk"
+            },
+            {
+                "entity1": "those",
+                "relation": "ignore",
+                "entity2": "energy prices and their impact on overall inflation"
+            }
+        ]
+    },
+    {
+        "sentence": "Maybe Sikes should apply for workman 's compensation .",
+        "relations": [
+            {
+                "entity1": "Sikes",
+                "relation": "should apply",
+                "entity2": "for workman 's compensation Maybe"
+            },
+            {
+                "entity1": "Sikes",
+                "relation": "should apply",
+                "entity2": "for workman 's compensation"
+            }
+        ]
+    },
+    {
+        "sentence": "At least 8 schoolchildren were killed and at least 15 people were wounded when a deranged man burst into an elementary school near Osaka and began stabbing students and teachers with a kitchen knife.",
+        "relations": [
+            {
+                "entity1": "a deranged man",
+                "relation": "began",
+                "entity2": "stabbing students and teachers with a kitchen knife"
+            },
+            {
+                "entity1": "a deranged man",
+                "relation": "began",
+                "entity2": "stabbing students and teachers"
+            },
+            {
+                "entity1": "a deranged man",
+                "relation": "burst",
+                "entity2": "into an elementary school near Osaka"
+            },
+            {
+                "entity1": "at least 15 people",
+                "relation": "were wounded",
+                "entity2": "when a deranged man burst into an elementary school near Osaka and began stabbing students and teachers with a kitchen knife"
+            }
+        ]
+    },
+    {
+        "sentence": "Russia's eavesdropping station at Lourdes, Cuba, is a cold war jewel: 28 square miles of antennae and computers that message Russian embassies, submarines and spies, and vacuum up U.S. satellite and radio communications.",
+        "relations": [
+            {
+                "entity1": "28 square miles of antennae and computers",
+                "relation": "message",
+                "entity2": "Russian embassies submarines and spies"
+            },
+            {
+                "entity1": "28 square miles of antennae and computers",
+                "relation": "vacuum up",
+                "entity2": "U.S. satellite and radio communications"
+            },
+            {
+                "entity1": "Russia",
+                "relation": "has",
+                "entity2": "eavesdropping station at Lourdes Cuba"
+            }
+        ]
+    },
+    {
+        "sentence": "Union officials say they are pleased with the G.H.I. plan and they assert that the main reason they are being asked to pay premiums is that the Oxford plan is costing Barnard $63,000 more than G.H.I.",
+        "relations": [
+            {
+                "entity1": "the Oxford plan",
+                "relation": "is costing",
+                "entity2": "Barnard $ 63,000 more than G.H.I."
+            },
+            {
+                "entity1": "the main reason",
+                "relation": "is",
+                "entity2": "that the Oxford plan is costing Barnard $ 63,000 more than G.H.I."
+            },
+            {
+                "entity1": "they",
+                "relation": "are pleased",
+                "entity2": "with the G.H.I. plan"
+            },
+            {
+                "entity1": "they",
+                "relation": "assert",
+                "entity2": "that the main reason is that the Oxford plan is costing Barnard $ 63,000 more than G.H.I."
+            }
+        ]
+    },
+    {
+        "sentence": "Japanese automakers have taken some of the biggest strides with their new car models : Honda Motor Co. 's new Accord , likely to be a best-seller , is bigger , better and cheaper .",
+        "relations": [
+            {
+                "entity1": "Honda Motor Co. 's new Accord likely to be a best-seller",
+                "relation": "is",
+                "entity2": "bigger better and cheaper"
+            },
+            {
+                "entity1": "Honda Motor Co.",
+                "relation": "has",
+                "entity2": "new Accord likely to be a best-seller"
+            },
+            {
+                "entity1": "Japanese automakers",
+                "relation": "have taken",
+                "entity2": "some of the biggest strides with their new car models"
+            }
+        ]
+    },
+    {
+        "sentence": "Following are excerpts from an interview with Sen. Richard C. Shelby , the Alabama Republican who is the ranking minority member of the Intelligence Committee : `` Maybe God just had a plan for me and wanted me to be around for a little while longer , '' ",
+        "relations": [
+            {
+                "entity1": "C. Shelby",
+                "relation": "is",
+                "entity2": "the Alabama Republican"
+            },
+            {
+                "entity1": "God",
+                "relation": "had",
+                "entity2": "a plan for me Maybe"
+            },
+            {
+                "entity1": "God",
+                "relation": "had",
+                "entity2": "a plan for me just"
+            },
+            {
+                "entity1": "God",
+                "relation": "had",
+                "entity2": "a plan for me"
+            },
+            {
+                "entity1": "God",
+                "relation": "wanted",
+                "entity2": "me to be around Maybe"
+            },
+            {
+                "entity1": "God",
+                "relation": "wanted",
+                "entity2": "me to be around for a little while Maybe"
+            },
+            {
+                "entity1": "God",
+                "relation": "wanted",
+                "entity2": "me to be around for a little while just"
+            },
+            {
+                "entity1": "God",
+                "relation": "wanted",
+                "entity2": "me to be around for a little while"
+            },
+            {
+                "entity1": "God",
+                "relation": "wanted",
+                "entity2": "me to be around just"
+            },
+            {
+                "entity1": "God",
+                "relation": "wanted",
+                "entity2": "me to be around longer Maybe"
+            },
+            {
+                "entity1": "God",
+                "relation": "wanted",
+                "entity2": "me to be around longer just"
+            },
+            {
+                "entity1": "God",
+                "relation": "wanted",
+                "entity2": "me to be around longer"
+            },
+            {
+                "entity1": "God",
+                "relation": "wanted",
+                "entity2": "me to be around"
+            },
+            {
+                "entity1": "Johnson",
+                "relation": "has",
+                "entity2": "a wife Cookie and three children"
+            },
+            {
+                "entity1": "Johnson",
+                "relation": "said",
+                "entity2": "Maybe God just had a plan for me and wanted me to be around for a little while longer"
+            },
+            {
+                "entity1": "the Alabama Republican",
+                "relation": "is",
+                "entity2": "the ranking minority member of the Intelligence Committee"
+            }
+        ]
+    },
+    {
+        "sentence": "\"Casanova Brown\" is a 1944 film starring Gary Cooper, Teresa Wright, and Frank Morgan.",
+        "relations": [
+            {
+                "entity1": "Casanova Brown",
+                "relation": "is",
+                "entity2": "a 1944 film starring Gary Cooper Teresa Wright and Frank Morgan"
+            },
+            {
+                "entity1": "Casanova Brown",
+                "relation": "is",
+                "entity2": "a 1944 film"
+            }
+        ]
+    },
+    {
+        "sentence": "Ashcroft said afterward, through Mr. Hilton, that the talk had been \"even and businesslike\" and that he had made the point that there would be no peace between him and the Governor until the Governor and his fellow Missouri Democrats demonstrated good fai",
+        "relations": [
+            {
+                "entity1": "Ashcroft",
+                "relation": "said",
+                "entity2": "that the talk had been even and businesslike and that he had made the point that there would be no peace between him and the Governor until the Governor and his fellow Missouri Democrats demonstrated good faith by ending their practice of hate politics"
+            },
+            {
+                "entity1": "Ashcroft",
+                "relation": "said",
+                "entity2": "through Mr. Hilton that the talk had been even and businesslike and that he had made the point that there would be no peace between him and the Governor until the Governor and his fellow Missouri Democrats demonstrated good faith by ending their practice "
+            },
+            {
+                "entity1": "he",
+                "relation": "had made",
+                "entity2": "the point that there would be no peace between him and the Governor until the Governor and his fellow Missouri Democrats demonstrated good faith by ending their practice of hate politics"
+            },
+            {
+                "entity1": "his",
+                "relation": "has",
+                "entity2": "fellow Missouri Democrats"
+            },
+            {
+                "entity1": "the Governor and his fellow Missouri Democrats",
+                "relation": "demonstrated",
+                "entity2": "good faith by ending their practice of hate politics"
+            },
+            {
+                "entity1": "the Governor and his fellow Missouri Democrats",
+                "relation": "demonstrated",
+                "entity2": "good faith"
+            },
+            {
+                "entity1": "the talk",
+                "relation": "had been",
+                "entity2": "even and businesslike"
+            },
+            {
+                "entity1": "their",
+                "relation": "has",
+                "entity2": "practice of hate politics"
+            }
+        ]
+    },
+    {
+        "sentence": "Indeed the rivalry between the Soviet armies to capture the city centre was becoming intense.",
+        "relations": [
+            {
+                "entity1": "the rivalry between the Soviet armies to capture the city center",
+                "relation": "was becoming",
+                "entity2": "intense Indeed"
+            },
+            {
+                "entity1": "the rivalry between the Soviet armies to capture the city center",
+                "relation": "was becoming",
+                "entity2": "intense"
+            }
+        ]
+    },
+    {
+        "sentence": "Beat in the eggs one at a time.",
+        "relations": []
+    },
+    {
+        "sentence": "M2+CDs rose 3.0 percent in the April-June period .",
+        "relations": [
+            {
+                "entity1": "M2 + CDs",
+                "relation": "rose",
+                "entity2": "3.0 percent in the April-June period"
+            }
+        ]
+    },
+    {
+        "sentence": "But the poverty rate for people 18 to 64 rose a half percentage point , to 10.1 percent .",
+        "relations": [
+            {
+                "entity1": "the poverty rate for people 18 to 64",
+                "relation": "rose",
+                "entity2": "a half percentage point to 10.1 percent"
+            },
+            {
+                "entity1": "the poverty rate for people 18 to 64",
+                "relation": "rose",
+                "entity2": "a half percentage point"
+            }
+        ]
+    },
+    {
+        "sentence": "Trucking companies , meanwhile , have finally rebounded after years of laggard performance relative to the rest of the U.S. stock market .",
+        "relations": [
+            {
+                "entity1": "Trucking companies",
+                "relation": "have rebounded",
+                "entity2": "after years of laggard performance relative to the rest of the U.S. stock market finally"
+            },
+            {
+                "entity1": "Trucking companies",
+                "relation": "have rebounded",
+                "entity2": "after years of laggard performance relative to the rest of the U.S. stock market meanwhile"
+            },
+            {
+                "entity1": "Trucking companies",
+                "relation": "have rebounded",
+                "entity2": "after years of laggard performance relative to the rest of the U.S. stock market"
+            }
+        ]
+    },
+    {
+        "sentence": "Georgia regards the Abkhaz armed forces as \"unlawful military formations\" and accuses Russia of supplying and training the Abkhaz troops, partly in exchange for Abkhaz land or hotels.",
+        "relations": [
+            {
+                "entity1": "Georgia",
+                "relation": "accuses",
+                "entity2": "Russia of supplying and training the Abkhaz troops"
+            }
+        ]
+    },
+    {
+        "sentence": "If you have questions , please call Susie McBee or Tim Spence at 202-298-6920 .",
+        "relations": [
+            {
+                "entity1": "you",
+                "relation": "have",
+                "entity2": "questions"
+            }
+        ]
+    },
+    {
+        "sentence": "Just before this season began, the baseball commissioner's office suspended him for violating the terms of his after-care program for substance abuse.",
+        "relations": [
+            {
+                "entity1": "his",
+                "relation": "has",
+                "entity2": "after-care program for substance abuse"
+            },
+            {
+                "entity1": "the baseball commissioner 's office",
+                "relation": "suspended",
+                "entity2": "him Just before this season began"
+            },
+            {
+                "entity1": "the baseball commissioner 's office",
+                "relation": "suspended",
+                "entity2": "him for violating the terms of his after-care program for substance abuse"
+            },
+            {
+                "entity1": "the baseball commissioner 's office",
+                "relation": "suspended",
+                "entity2": "him"
+            },
+            {
+                "entity1": "the baseball commissioner",
+                "relation": "has",
+                "entity2": "office"
+            }
+        ]
+    },
+    {
+        "sentence": "Should caulking be done at the time of the reglazing or after , at a cost of $ 70 ? JUDY FRIEDMAN , West Roxbury ENDIT We must continue to lead by example .",
+        "relations": [
+            {
+                "entity1": "We",
+                "relation": "must continue",
+                "entity2": "to lead by example"
+            }
+        ]
+    },
+    {
+        "sentence": "Solutia is saddled with $ 1 billion in debt and even more than that in retiree medical costs and environmental liabilities .",
+        "relations": [
+            {
+                "entity1": "Solutia",
+                "relation": "is saddled",
+                "entity2": "with $ 1 billion in debt and even more than that in retiree medical costs and environmental liabilities"
+            }
+        ]
+    },
+    {
+        "sentence": "Mexican reporters staked out meetings of the board of Dow Jones & Company, where Mr. Salinas is a member, but caught just a brief glimpse of him on the 43d floor of the World Trade Center.",
+        "relations": [
+            {
+                "entity1": "Mexican reporters",
+                "relation": "caught",
+                "entity2": "just a brief glimpse of him on the 43d floor of the World Trade Center"
+            },
+            {
+                "entity1": "Mexican reporters",
+                "relation": "staked out",
+                "entity2": "meetings of the board of Dow Jones & Company where Mr. Salinas is a member"
+            },
+            {
+                "entity1": "Mexican reporters",
+                "relation": "staked out",
+                "entity2": "meetings of the board of Dow Jones & Company"
+            },
+            {
+                "entity1": "Mr. Salinas",
+                "relation": "is",
+                "entity2": "a member"
+            }
+        ]
+    },
+    {
+        "sentence": "Seattle 's roster is old .",
+        "relations": [
+            {
+                "entity1": "Seattle 's roster",
+                "relation": "is",
+                "entity2": "old"
+            },
+            {
+                "entity1": "Seattle",
+                "relation": "has",
+                "entity2": "roster"
+            }
+        ]
+    },
+    {
+        "sentence": "Those three were apprehended Sunday .",
+        "relations": [
+            {
+                "entity1": "Those three",
+                "relation": "were apprehended",
+                "entity2": "Sunday"
+            }
+        ]
+    },
+    {
+        "sentence": "Journalists are strictly prohibited from covering the rebellion.",
+        "relations": [
+            {
+                "entity1": "Journalists",
+                "relation": "are prohibited",
+                "entity2": "from covering the rebellion strictly"
+            },
+            {
+                "entity1": "Journalists",
+                "relation": "are prohibited",
+                "entity2": "from covering the rebellion"
+            }
+        ]
+    },
+    {
+        "sentence": "There should be about 3 cups vegetables chopped medium fine .",
+        "relations": []
+    },
+    {
+        "sentence": "\"Guilty\" is a 1916 silent drama film featuring Harry Carey.",
+        "relations": [
+            {
+                "entity1": "Guilty",
+                "relation": "is",
+                "entity2": "a 1916 silent drama film featuring Harry Carey"
+            },
+            {
+                "entity1": "Guilty",
+                "relation": "is",
+                "entity2": "a 1916 silent drama film"
+            },
+            {
+                "entity1": "a 1916 silent drama film",
+                "relation": "be featuring",
+                "entity2": "Harry Carey"
+            }
+        ]
+    },
+    {
+        "sentence": "The movie , a $ 120 million change of pace for arty `` Crouching Tiger , Hidden Dragon '' director Ang Lee , is set to debut in June .",
+        "relations": [
+            {
+                "entity1": "The movie",
+                "relation": "is set",
+                "entity2": "to debut in June"
+            }
+        ]
+    },
+    {
+        "sentence": "Annually, some 600 miles of municipal roads are expected to deteriorate.",
+        "relations": [
+            {
+                "entity1": "some 600 miles of municipal roads",
+                "relation": "are expected",
+                "entity2": "to deteriorate Annually"
+            },
+            {
+                "entity1": "some 600 miles of municipal roads",
+                "relation": "are expected",
+                "entity2": "to deteriorate"
+            }
+        ]
+    },
+    {
+        "sentence": "Oh , and keep the cats away .",
+        "relations": []
+    },
+    {
+        "sentence": "The board of directors of UAL , the parent company of United Airlines , is likely to name Glenn F. Tilton , an oil industry executive , as the airline 's new president and chief executive in a meeting Monday morning , according to people with knowledge of",
+        "relations": [
+            {
+                "entity1": "The board of directors of UAL",
+                "relation": "is",
+                "entity2": "likely to name Glenn F. Tilton as the airline 's new president and chief executive in a meeting Monday according to people with knowledge of the situation"
+            },
+            {
+                "entity1": "The board of directors of UAL",
+                "relation": "is",
+                "entity2": "likely to name Glenn F. Tilton as the airline 's new president and chief executive in a meeting Monday morning"
+            },
+            {
+                "entity1": "The board of directors of UAL",
+                "relation": "is",
+                "entity2": "likely to name Glenn F. Tilton as the airline 's new president and chief executive in a meeting Monday"
+            }
+        ]
+    },
+    {
+        "sentence": "I have also learned that lice plan their arrival to maximize household stress.",
+        "relations": [
+            {
+                "entity1": "I",
+                "relation": "have learned",
+                "entity2": "that lice plan their arrival to maximize household stress also"
+            },
+            {
+                "entity1": "I",
+                "relation": "have learned",
+                "entity2": "that lice plan their arrival to maximize household stress"
+            }
+        ]
+    },
+    {
+        "sentence": "Dell stock fell 2 1\/16 to 87 1\/8 Friday .",
+        "relations": [
+            {
+                "entity1": "Dell stock",
+                "relation": "fell",
+                "entity2": "2\u00a01\\\/16 to 87\u00a01\\\/8 Friday"
+            },
+            {
+                "entity1": "Dell stock",
+                "relation": "fell",
+                "entity2": "2\u00a01\\\/16 to 87\u00a01\\\/8"
+            }
+        ]
+    },
+    {
+        "sentence": "It will also increase luxury taxes on other goods `` that are not essential for development , '' in order to lower non-productive imports .",
+        "relations": [
+            {
+                "entity1": "It",
+                "relation": "will increase",
+                "entity2": "luxury taxes also"
+            },
+            {
+                "entity1": "It",
+                "relation": "will increase",
+                "entity2": "luxury taxes on other goods"
+            },
+            {
+                "entity1": "It",
+                "relation": "will increase",
+                "entity2": "luxury taxes"
+            }
+        ]
+    },
+    {
+        "sentence": "Miss Collins is immutably Miss Collins.",
+        "relations": [
+            {
+                "entity1": "Miss Collins",
+                "relation": "is",
+                "entity2": "Miss Collins immutably"
+            },
+            {
+                "entity1": "Miss Collins",
+                "relation": "is",
+                "entity2": "Miss Collins"
+            }
+        ]
+    },
+    {
+        "sentence": "For Use By Clients of the New York Times News Service `` I was pretty obnoxious , '' says Steers , who did a year at Hotchkiss and another at an Indiana military school before running away to New York , where he bunked with members of a dance company he h",
+        "relations": [
+            {
+                "entity1": "I",
+                "relation": "was",
+                "entity2": "obnoxious pretty"
+            },
+            {
+                "entity1": "I",
+                "relation": "was",
+                "entity2": "obnoxious"
+            },
+            {
+                "entity1": "Martha",
+                "relation": "has",
+                "entity2": "Vineyard"
+            },
+            {
+                "entity1": "Steers",
+                "relation": "did",
+                "entity2": "a year at an Indiana military school"
+            }
+        ]
+    },
+    {
+        "sentence": "Politicians , historians , locals and the victims ' families are grappling with how the site should be preserved .",
+        "relations": [
+            {
+                "entity1": "Politicians historians locals and the victims families",
+                "relation": "are grappling",
+                "entity2": "with how the site should be preserved"
+            },
+            {
+                "entity1": "the victims",
+                "relation": "has",
+                "entity2": "families"
+            }
+        ]
+    },
+    {
+        "sentence": "Mr. Lemelson was an independent inventor who was granted more than 500 patents during his lifetime and whose estate continues to receive patents based on applications he submitted before he died five years ago.",
+        "relations": [
+            {
+                "entity1": "estate",
+                "relation": "continues",
+                "entity2": "to receive patents based on applications"
+            },
+            {
+                "entity1": "estate",
+                "relation": "continues",
+                "entity2": "to receive patents"
+            },
+            {
+                "entity1": "he",
+                "relation": "died",
+                "entity2": "five years ago"
+            },
+            {
+                "entity1": "he",
+                "relation": "submitted",
+                "entity2": "applications"
+            },
+            {
+                "entity1": "his",
+                "relation": "has",
+                "entity2": "lifetime"
+            }
+        ]
+    },
+    {
+        "sentence": "Then he elevates himself off the ground to escape the ball that becomes a game-tying wild pitch.",
+        "relations": [
+            {
+                "entity1": "he",
+                "relation": "elevates",
+                "entity2": "himself off the ground to escape the ball"
+            },
+            {
+                "entity1": "he",
+                "relation": "elevates",
+                "entity2": "himself"
+            },
+            {
+                "entity1": "the ball",
+                "relation": "becomes",
+                "entity2": "a game-tying wild pitch"
+            }
+        ]
+    },
+    {
+        "sentence": "Netscape is aiming to distribute 100 million copies of Navigator over the next year through partners , including Internet service providers and U.S. Robotics , a division of 3Com Corp. Wide familiarity with Navigator helps Netscape sell its higher-end Int",
+        "relations": [
+            {
+                "entity1": "Netscape",
+                "relation": "is aiming",
+                "entity2": "to distribute 100 million copies of Navigator over the next year"
+            },
+            {
+                "entity1": "Netscape",
+                "relation": "is aiming",
+                "entity2": "to distribute 100 million copies of Navigator through partners"
+            },
+            {
+                "entity1": "Netscape",
+                "relation": "is aiming",
+                "entity2": "to distribute 100 million copies of Navigator"
+            },
+            {
+                "entity1": "Netscape",
+                "relation": "sell",
+                "entity2": "its higher-end Internet software packages to large companies"
+            },
+            {
+                "entity1": "Netscape",
+                "relation": "sell",
+                "entity2": "its higher-end Internet software packages"
+            }
+        ]
+    },
+    {
+        "sentence": "The Federal Home Loan Bank Board last week provided reassurances to securities dealers holding certain futures and options contracts with the American Savings and Loan Association, the nation's largest savings institution.",
+        "relations": [
+            {
+                "entity1": "the American Savings and Loan Association",
+                "relation": "is",
+                "entity2": "the nation 's largest savings institution"
+            },
+            {
+                "entity1": "the nation",
+                "relation": "has",
+                "entity2": "largest savings institution"
+            }
+        ]
+    },
+    {
+        "sentence": "As at all the parties, the guests in strapless gowns and gleaming tuxedos were lining up at cash bars for drinks and at a photo op where they could be snapped in front of an inaugural seal -- not all that different from a high school prom photograph.",
+        "relations": [
+            {
+                "entity1": "the guests in strapless gowns and gleaming tuxedos",
+                "relation": "were lining up",
+                "entity2": "at cash bars for drinks and at a photo op As at all the parties"
+            },
+            {
+                "entity1": "the guests in strapless gowns and gleaming tuxedos",
+                "relation": "were lining up",
+                "entity2": "at cash bars for drinks and at a photo op where they could be snapped in front of an inaugural seal"
+            },
+            {
+                "entity1": "the guests in strapless gowns and gleaming tuxedos",
+                "relation": "were lining up",
+                "entity2": "at cash bars for drinks and at a photo op"
+            },
+            {
+                "entity1": "they",
+                "relation": "could be snapped",
+                "entity2": "in front of an inaugural seal"
+            }
+        ]
+    },
+    {
+        "sentence": "But he did n't fool me .",
+        "relations": [
+            {
+                "entity1": "he",
+                "relation": "did n't fool",
+                "entity2": "me"
+            }
+        ]
+    },
+    {
+        "sentence": "This makes it more difficult to find delicate and crisp wines in the 10.5 percent to 12 percent range.",
+        "relations": [
+            {
+                "entity1": "This",
+                "relation": "makes",
+                "entity2": "it difficult to find delicate and crisp wines in the 10.5 percent to 12 percent range more"
+            },
+            {
+                "entity1": "This",
+                "relation": "makes",
+                "entity2": "it difficult to find delicate and crisp wines in the 10.5 percent to 12 percent range"
+            }
+        ]
+    },
+    {
+        "sentence": "Confusingly , hurricanelike tropical cyclones born over the southwestern Pacific and the Indian Ocean are usually called just `` cyclones '' in the media .",
+        "relations": [
+            {
+                "entity1": "hurricanelike tropical cyclones born over the southwestern Pacific and the Indian Ocean",
+                "relation": "are called",
+                "entity2": "cyclones Confusingly"
+            },
+            {
+                "entity1": "hurricanelike tropical cyclones born over the southwestern Pacific and the Indian Ocean",
+                "relation": "are called",
+                "entity2": "cyclones in the media"
+            },
+            {
+                "entity1": "hurricanelike tropical cyclones born over the southwestern Pacific and the Indian Ocean",
+                "relation": "are called",
+                "entity2": "cyclones usually"
+            },
+            {
+                "entity1": "hurricanelike tropical cyclones born over the southwestern Pacific and the Indian Ocean",
+                "relation": "are called",
+                "entity2": "cyclones"
+            },
+            {
+                "entity1": "hurricanelike tropical cyclones born over the southwestern Pacific and the Indian Ocean",
+                "relation": "are called",
+                "entity2": "just cyclones"
+            },
+            {
+                "entity1": "hurricanelike tropical cyclones",
+                "relation": "be born",
+                "entity2": "over the southwestern Pacific and the Indian Ocean"
+            }
+        ]
+    },
+    {
+        "sentence": "A 19th-century Chinese portrait and a Kenneth Noland painting of a bull's-eye dominate the living room, drawing the eye in both vertical and horizontal directions.",
+        "relations": [
+            {
+                "entity1": "A 19th-century Chinese portrait and a Kenneth Noland painting of a bull 's eye",
+                "relation": "be drawing",
+                "entity2": "the eye in both vertical and horizontal directions"
+            },
+            {
+                "entity1": "A 19th-century Chinese portrait and a Kenneth Noland painting of a bull 's eye",
+                "relation": "dominate",
+                "entity2": "the living room drawing the eye in both vertical and horizontal directions"
+            },
+            {
+                "entity1": "A 19th-century Chinese portrait and a Kenneth Noland painting of a bull 's eye",
+                "relation": "dominate",
+                "entity2": "the living room"
+            },
+            {
+                "entity1": "a bull",
+                "relation": "has",
+                "entity2": "eye"
+            }
+        ]
+    },
+    {
+        "sentence": "If the administration wished to support something appropriate and useful , President Clinton would embrace , rather than resist , U.S. Sen. Paul Coverdell 's K-12 education savings A+ Accounts .",
+        "relations": [
+            {
+                "entity1": "President Clinton",
+                "relation": "would embrace",
+                "entity2": "U.S. Sen. Paul Coverdell 's K-12 education savings A + Accounts If the administration wished to support something appropriate and useful"
+            },
+            {
+                "entity1": "President Clinton",
+                "relation": "would embrace",
+                "entity2": "U.S. Sen. Paul Coverdell 's K-12 education savings A + Accounts"
+            },
+            {
+                "entity1": "the administration",
+                "relation": "wished",
+                "entity2": "to support something appropriate and useful"
+            }
+        ]
+    },
+    {
+        "sentence": "On 2 January 1940, after the commencement of World War II, he was appointed General Staff Officer Grade III in the Western Command headquarters of the Citizen Forces, working with the Intelligence Section.",
+        "relations": []
+    },
+    {
+        "sentence": "We get long digressions about the rivalry between Los Alamos and a second nuclear weapons lab set up at Livermore , Calif. , and eye-glazing asides about technical problems at both labs .",
+        "relations": []
+    },
+    {
+        "sentence": "What the team did n't count on was that Boselli would have two more surgical procedures on his shoulder after he became a Texan .",
+        "relations": [
+            {
+                "entity1": "Boselli",
+                "relation": "would have",
+                "entity2": "two more surgical procedures on his shoulder after he became a Texan"
+            },
+            {
+                "entity1": "Boselli",
+                "relation": "would have",
+                "entity2": "two more surgical procedures on his shoulder"
+            },
+            {
+                "entity1": "What the team did n't count on",
+                "relation": "was",
+                "entity2": "that Boselli would have two more surgical procedures on his shoulder after he became a Texan"
+            },
+            {
+                "entity1": "he",
+                "relation": "became",
+                "entity2": "a Texan"
+            }
+        ]
+    },
+    {
+        "sentence": "Tierney Finn, an actress, and Mark Fitzmartin, a television commercial producer for Fernbach Productions in New York, both graduates of New York University's Tisch School of the Arts, were married yesterday in Holy Trinity Chapel at N.Y.U.",
+        "relations": [
+            {
+                "entity1": "New York University",
+                "relation": "has",
+                "entity2": "Tisch School of the Arts"
+            },
+            {
+                "entity1": "Tierney Finn an actress and Mark Fitzmartin a television commercial producer for Fernbach Productions in New York both graduates of New York University 's Tisch School of the Arts",
+                "relation": "were married",
+                "entity2": "yesterday in Holy Trinity Chapel at N.Y.U."
+            }
+        ]
+    },
+    {
+        "sentence": "Jesse Jackson and one of his campaign fund-raisers misstated the history of Mr. Jackson's requests for permission to visit South Africa.",
+        "relations": [
+            {
+                "entity1": "Jesse Jackson and one of his campaign fund-raisers",
+                "relation": "misstated",
+                "entity2": "the history of Mr. Jackson 's requests for permission to visit South Africa"
+            },
+            {
+                "entity1": "Jesse Jackson and one of his campaign fund-raisers",
+                "relation": "misstated",
+                "entity2": "the history of Mr. Jackson 's requests to visit South Africa"
+            },
+            {
+                "entity1": "Mr. Jackson",
+                "relation": "has",
+                "entity2": "requests"
+            },
+            {
+                "entity1": "his",
+                "relation": "has",
+                "entity2": "campaign fund-raisers"
+            }
+        ]
+    },
+    {
+        "sentence": "That , he said , is what many of the POWs would like more than anything .",
+        "relations": [
+            {
+                "entity1": "That",
+                "relation": "is",
+                "entity2": "what many of the POWs would like more than anything"
+            },
+            {
+                "entity1": "he",
+                "relation": "said",
+                "entity2": "That is what many of the POWs would like more than anything"
+            }
+        ]
+    },
+    {
+        "sentence": "That 's about 2 percentage points more than investment grade bonds and in contrast to the 6.7 percent average yield on benchmark 30-year Treasuries this year .",
+        "relations": []
+    },
+    {
+        "sentence": "She is a daughter of Mr. and Mrs. Francis T. Doyen of Fishers Island.",
+        "relations": []
+    },
+    {
+        "sentence": "The BSA suit , filed on behalf of Microsoft Corp. , Autodesk Inc. and Adobe Systems Inc. , alleged SM Summit committed software piracy .",
+        "relations": [
+            {
+                "entity1": "SM Summit",
+                "relation": "committed",
+                "entity2": "software piracy"
+            },
+            {
+                "entity1": "The BSA suit filed on behalf of Microsoft Corp. Autodesk Inc. and Adobe Systems Inc.",
+                "relation": "alleged",
+                "entity2": "SM Summit committed software piracy"
+            },
+            {
+                "entity1": "The BSA suit",
+                "relation": "be filed",
+                "entity2": "on behalf of Microsoft Corp. Autodesk Inc. and Adobe Systems Inc."
+            }
+        ]
+    },
+    {
+        "sentence": "Ryerson's Faculty of Community Services offers multi-disciplinary programs in health, early childhood education, social justice and community development.",
+        "relations": [
+            {
+                "entity1": "Ryerson 's Faculty of Community Services",
+                "relation": "offers",
+                "entity2": "multi-disciplinary programs in health early childhood education social justice and community development"
+            },
+            {
+                "entity1": "Ryerson 's Faculty of Community Services",
+                "relation": "offers",
+                "entity2": "multi-disciplinary programs"
+            },
+            {
+                "entity1": "Ryerson",
+                "relation": "has",
+                "entity2": "Faculty of Community Services"
+            }
+        ]
+    },
+    {
+        "sentence": "While the Christmas-New Year's season is always a slack time for most lines of work, it's even more so when the holidays break two consecutive normal weeks into four discombobulating two-day weeks.",
+        "relations": [
+            {
+                "entity1": "it",
+                "relation": "'s",
+                "entity2": "even more so when the holidays break two consecutive normal weeks into four discombobulating two-day weeks While the Christmas-New Year 's season is always a slack time for most lines of work"
+            },
+            {
+                "entity1": "it",
+                "relation": "'s",
+                "entity2": "even more so when the holidays break two consecutive normal weeks into four discombobulating two-day weeks"
+            },
+            {
+                "entity1": "the Christmas-New Year 's season",
+                "relation": "is",
+                "entity2": "a slack time always"
+            },
+            {
+                "entity1": "the Christmas-New Year 's season",
+                "relation": "is",
+                "entity2": "a slack time for most lines of work"
+            },
+            {
+                "entity1": "the Christmas-New Year 's season",
+                "relation": "is",
+                "entity2": "a slack time"
+            },
+            {
+                "entity1": "the holidays",
+                "relation": "break",
+                "entity2": "two consecutive normal weeks into four discombobulating two-day weeks"
+            },
+            {
+                "entity1": "the holidays",
+                "relation": "break",
+                "entity2": "two consecutive normal weeks"
+            }
+        ]
+    },
+    {
+        "sentence": "Divertimento\" from \"Le Baiser de la Fee,\" presented by the New York City Ballet on Wednesday night at the New York State Theater, is one of George Balanchine's odder ballets.",
+        "relations": [
+            {
+                "entity1": "George Balanchine",
+                "relation": "has",
+                "entity2": "odder ballets"
+            },
+            {
+                "entity1": "one of George Balanchine 's odder ballets",
+                "relation": "is",
+                "entity2": "Divertimento from Le Baiser de la Fee presented by the New York City Ballet on Wednesday night at the New York State Theater"
+            }
+        ]
+    },
+    {
+        "sentence": "His usual position was on the wing or in the centres.",
+        "relations": [
+            {
+                "entity1": "His usual position",
+                "relation": "was",
+                "entity2": "on the wing or in the centres"
+            },
+            {
+                "entity1": "His",
+                "relation": "has",
+                "entity2": "usual position"
+            }
+        ]
+    },
+    {
+        "sentence": "Today's bet is that the promise of sending British or German or American troops to defend Warsaw or Prague against an unnamed enemy will not only make that unnecessary but will also help to entrench democracy and a free market system in Eastern Europe.",
+        "relations": [
+            {
+                "entity1": "Today 's bet",
+                "relation": "is",
+                "entity2": "that the promise of sending British or German or American troops to defend Warsaw or Prague against an unnamed enemy will not only make that unnecessary but will also help to entrench democracy and a free market system in Eastern Europe"
+            },
+            {
+                "entity1": "the promise of sending British or German or American troops to defend Warsaw or Prague against an unnamed enemy",
+                "relation": "will help",
+                "entity2": "to entrench democracy and a free market system also"
+            },
+            {
+                "entity1": "the promise of sending British or German or American troops to defend Warsaw or Prague against an unnamed enemy",
+                "relation": "will help",
+                "entity2": "to entrench democracy and a free market system in Eastern Europe also"
+            },
+            {
+                "entity1": "the promise of sending British or German or American troops to defend Warsaw or Prague against an unnamed enemy",
+                "relation": "will help",
+                "entity2": "to entrench democracy and a free market system in Eastern Europe"
+            },
+            {
+                "entity1": "the promise of sending British or German or American troops to defend Warsaw or Prague against an unnamed enemy",
+                "relation": "will help",
+                "entity2": "to entrench democracy and a free market system"
+            },
+            {
+                "entity1": "the promise of sending British or German or American troops to defend Warsaw or Prague against an unnamed enemy",
+                "relation": "will not make",
+                "entity2": "that unnecessary only"
+            }
+        ]
+    },
+    {
+        "sentence": "Clayton State University is an NCAA Division II member, competing in one of the top conferences in the nation at that level - the Peach Belt Conference.",
+        "relations": []
+    },
+    {
+        "sentence": "A similar bill is pending in the Senate , sponsored by Florida Sens. Connie Mack , a Republican , and Bob Graham , a Democrat .",
+        "relations": [
+            {
+                "entity1": "A similar bill",
+                "relation": "is pending",
+                "entity2": "in the Senate"
+            }
+        ]
+    },
+    {
+        "sentence": "The state's two U.S. senators are Jefferson B. Sessions III and Richard C. Shelby, both Republicans.",
+        "relations": []
+    },
+    {
+        "sentence": "Some academic philosophers have criticized Rand for what they consider her lack of rigor and limited understanding of philosophical subject matter.",
+        "relations": [
+            {
+                "entity1": "Some academic philosophers",
+                "relation": "have criticized",
+                "entity2": "Rand for what they consider her lack of rigor and limited understanding of philosophical subject matter"
+            },
+            {
+                "entity1": "her",
+                "relation": "has",
+                "entity2": "lack of rigor and limited understanding of philosophical subject matter"
+            }
+        ]
+    },
+    {
+        "sentence": "Come to think of it , that would be revolutionary .",
+        "relations": [
+            {
+                "entity1": "that",
+                "relation": "would be",
+                "entity2": "revolutionary Come to think of it"
+            },
+            {
+                "entity1": "that",
+                "relation": "would be",
+                "entity2": "revolutionary"
+            }
+        ]
+    },
+    {
+        "sentence": "However, the trio did appear on the 12-date benefit tour for Action for Research into Multiple Sclerosis, as well as on the album \"Guitar Boogie\".",
+        "relations": [
+            {
+                "entity1": "the trio",
+                "relation": "did appear",
+                "entity2": "on the 12-date benefit tour for Action for Research into Multiple Sclerosis as well as on the album Guitar Boogie"
+            }
+        ]
+    },
+    {
+        "sentence": "Her subjects were friends and artists who posed for her in their \"Full Monty\" glory.",
+        "relations": [
+            {
+                "entity1": "Her subjects",
+                "relation": "were",
+                "entity2": "friends and artists"
+            },
+            {
+                "entity1": "Her",
+                "relation": "has",
+                "entity2": "subjects"
+            },
+            {
+                "entity1": "their",
+                "relation": "has",
+                "entity2": "Full Monty glory"
+            }
+        ]
+    },
+    {
+        "sentence": "Justice Charles R. Alberti, a retired associate justice of the Massachusetts Superior Court in Pittsfield, performed the ceremony at the home of the bride's parents.",
+        "relations": [
+            {
+                "entity1": "Justice Charles R. Alberti",
+                "relation": "is",
+                "entity2": "a retired associate justice of the Massachusetts Superior Court in Pittsfield"
+            },
+            {
+                "entity1": "Justice Charles R. Alberti",
+                "relation": "performed",
+                "entity2": "the ceremony at the home of the bride 's parents"
+            },
+            {
+                "entity1": "Justice Charles R. Alberti",
+                "relation": "performed",
+                "entity2": "the ceremony"
+            },
+            {
+                "entity1": "the bride",
+                "relation": "has",
+                "entity2": "parents"
+            }
+        ]
+    },
+    {
+        "sentence": "Towers Financial was formed by one-time New York Post bidder Steven Hoffenberg .",
+        "relations": [
+            {
+                "entity1": "Towers Financial",
+                "relation": "was formed",
+                "entity2": "by one-time New York Post bidder Steven Hoffenberg"
+            }
+        ]
+    },
+    {
+        "sentence": "Ford shares fell 2 cents, to $9.96.",
+        "relations": [
+            {
+                "entity1": "Ford shares",
+                "relation": "fell",
+                "entity2": "2 cents to $ 9.96"
+            },
+            {
+                "entity1": "Ford shares",
+                "relation": "fell",
+                "entity2": "2 cents"
+            }
+        ]
+    },
+    {
+        "sentence": "The court's official seat is in The Hague, Netherlands, but its proceedings may take place anywhere.",
+        "relations": [
+            {
+                "entity1": "The court 's official seat",
+                "relation": "is",
+                "entity2": "in The Hague Netherlands"
+            },
+            {
+                "entity1": "The court",
+                "relation": "has",
+                "entity2": "official seat"
+            },
+            {
+                "entity1": "its proceedings",
+                "relation": "may take",
+                "entity2": "place anywhere"
+            },
+            {
+                "entity1": "its",
+                "relation": "has",
+                "entity2": "proceedings"
+            }
+        ]
+    },
+    {
+        "sentence": "Together , the year 's two moves have raised prices 14 percent at the wholesale level , and 7 percent at retail , according to Black .",
+        "relations": [
+            {
+                "entity1": "the year 's two moves",
+                "relation": "have raised",
+                "entity2": "prices 14 percent at the wholesale level and 7 percent at retail Together"
+            },
+            {
+                "entity1": "the year 's two moves",
+                "relation": "have raised",
+                "entity2": "prices 14 percent at the wholesale level and 7 percent at retail according to Black"
+            },
+            {
+                "entity1": "the year 's two moves",
+                "relation": "have raised",
+                "entity2": "prices 14 percent at the wholesale level and 7 percent at retail"
+            }
+        ]
+    },
+    {
+        "sentence": "The bride is the stepdaughter of Richard L. Harris.",
+        "relations": [
+            {
+                "entity1": "The bride",
+                "relation": "is",
+                "entity2": "the stepdaughter of Richard L. Harris"
+            },
+            {
+                "entity1": "The bride",
+                "relation": "is",
+                "entity2": "the stepdaughter"
+            }
+        ]
+    },
+    {
+        "sentence": "The Venice Film Festival is the oldest film festival in the world.",
+        "relations": [
+            {
+                "entity1": "The Venice Film Festival",
+                "relation": "is",
+                "entity2": "the oldest film festival in the world"
+            },
+            {
+                "entity1": "The Venice Film Festival",
+                "relation": "is",
+                "entity2": "the oldest film festival"
+            }
+        ]
+    },
+    {
+        "sentence": "For P.T. International , the drought represents the second setback in as many years .",
+        "relations": [
+            {
+                "entity1": "the drought",
+                "relation": "represents",
+                "entity2": "the second setback in as many years For P.T. International"
+            },
+            {
+                "entity1": "the drought",
+                "relation": "represents",
+                "entity2": "the second setback in as many years"
+            }
+        ]
+    },
+    {
+        "sentence": "The highest mountain in this range is the Moncayo (2,313 m) and, despite getting less snow than in the Pyrenees, it has several ski resorts.",
+        "relations": [
+            {
+                "entity1": "it",
+                "relation": "has",
+                "entity2": "several ski resorts despite getting less snow than in the Pyrenees"
+            },
+            {
+                "entity1": "it",
+                "relation": "has",
+                "entity2": "several ski resorts"
+            }
+        ]
+    },
+    {
+        "sentence": "Story Filed By Cox Newspapers Champions of the National Endowment for the Arts , which congressional conservatives are trying to shut down , have joined CBS , Bravo and others in producing public service announcements about the importance of the arts .",
+        "relations": []
+    },
+    {
+        "sentence": "Next up on the politics-and-calories calendar is a Buell dinner Monday for Chellie Pingree , the Dems ' Maine senatorial candidate .",
+        "relations": [
+            {
+                "entity1": "Chellie Pingree",
+                "relation": "is",
+                "entity2": "the Dems Maine senatorial candidate"
+            },
+            {
+                "entity1": "the Dems",
+                "relation": "has",
+                "entity2": "Maine senatorial candidate"
+            }
+        ]
+    },
+    {
+        "sentence": "Like most visitors to Xi'an , Rubin tours China 's most astounding archeological treasure : the army of thousands of life-size figures that protect the graves of the Chinese emperors .",
+        "relations": [
+            {
+                "entity1": "China",
+                "relation": "has",
+                "entity2": "most astounding archeological treasure the army of thousands of life-size figures"
+            },
+            {
+                "entity1": "Rubin",
+                "relation": "tours",
+                "entity2": "China 's most astounding archeological treasure the army of thousands of life-size figures Like most visitors to Xi'an"
+            },
+            {
+                "entity1": "Rubin",
+                "relation": "tours",
+                "entity2": "China 's most astounding archeological treasure the army of thousands of life-size figures"
+            },
+            {
+                "entity1": "the army of thousands of life-size figures",
+                "relation": "protect",
+                "entity2": "the graves of the Chinese emperors"
+            }
+        ]
+    },
+    {
+        "sentence": "The yield spread between an index of option-free 10-year `` A2 '' bank bonds and the 10-year Treasury note was 70 basis points yesterday , 2 basis points wider from a week earlier .",
+        "relations": []
+    },
+    {
+        "sentence": "Dot with food coloring and wait .",
+        "relations": []
+    },
+    {
+        "sentence": "The number of passengers on Lufthansa 's domestic routes declined 5.5 percent in the first half , even as overall passenger numbers rose 3 percent .",
+        "relations": [
+            {
+                "entity1": "Lufthansa",
+                "relation": "has",
+                "entity2": "domestic routes"
+            },
+            {
+                "entity1": "The number of passengers on Lufthansa 's domestic routes",
+                "relation": "declined",
+                "entity2": "5.5 percent in the first half"
+            },
+            {
+                "entity1": "The number of passengers on Lufthansa 's domestic routes",
+                "relation": "declined",
+                "entity2": "5.5 percent"
+            },
+            {
+                "entity1": "overall passenger numbers",
+                "relation": "rose",
+                "entity2": "3 percent"
+            }
+        ]
+    },
+    {
+        "sentence": "Even though it was first diagnosed by a British pediatrician in 1902 , no one knows what causes it .",
+        "relations": [
+            {
+                "entity1": "it",
+                "relation": "was diagnosed",
+                "entity2": "by a British pediatrician in 1902 first"
+            },
+            {
+                "entity1": "it",
+                "relation": "was diagnosed",
+                "entity2": "by a British pediatrician in 1902"
+            },
+            {
+                "entity1": "no one",
+                "relation": "knows",
+                "entity2": "what causes it Even though it was first diagnosed by a British pediatrician in 1902"
+            },
+            {
+                "entity1": "no one",
+                "relation": "knows",
+                "entity2": "what causes it"
+            }
+        ]
+    },
+    {
+        "sentence": "His mother said he was in Saudi Arabia on Sept. 11 .",
+        "relations": [
+            {
+                "entity1": "His mother",
+                "relation": "said",
+                "entity2": "he was in Saudi Arabia on Sept. 11"
+            },
+            {
+                "entity1": "His",
+                "relation": "has",
+                "entity2": "mother"
+            },
+            {
+                "entity1": "he",
+                "relation": "was",
+                "entity2": "in Saudi Arabia on Sept. 11"
+            }
+        ]
+    },
+    {
+        "sentence": "The governor 's campaign aides offered a quick retort .",
+        "relations": [
+            {
+                "entity1": "The governor 's campaign aides",
+                "relation": "offered",
+                "entity2": "a quick retort"
+            },
+            {
+                "entity1": "The governor",
+                "relation": "has",
+                "entity2": "campaign aides"
+            }
+        ]
+    },
+    {
+        "sentence": "Her friend was waiting for her at a bar , shaken and alone .",
+        "relations": [
+            {
+                "entity1": "Her friend",
+                "relation": "was waiting",
+                "entity2": "for her at a bar"
+            },
+            {
+                "entity1": "Her friend",
+                "relation": "was waiting",
+                "entity2": "for her"
+            },
+            {
+                "entity1": "Her",
+                "relation": "has",
+                "entity2": "friend"
+            }
+        ]
+    },
+    {
+        "sentence": "By contrast , European countries tested 10 million animals last year .",
+        "relations": [
+            {
+                "entity1": "European countries",
+                "relation": "tested",
+                "entity2": "10 million animals By contrast"
+            },
+            {
+                "entity1": "European countries",
+                "relation": "tested",
+                "entity2": "10 million animals last year"
+            },
+            {
+                "entity1": "European countries",
+                "relation": "tested",
+                "entity2": "10 million animals"
+            }
+        ]
+    },
+    {
+        "sentence": "At least 170,000 civilian prisoners died at Majdanek , the suit claims , including 13,000 Jews who were murdered within a month of Bucmys 's arrival .",
+        "relations": [
+            {
+                "entity1": "13,000 Jews",
+                "relation": "were murdered",
+                "entity2": "within a month of Bucmys 's arrival"
+            },
+            {
+                "entity1": "At least 170,000 civilian prisoners",
+                "relation": "died",
+                "entity2": "at Majdanek"
+            },
+            {
+                "entity1": "At least 170,000 civilian prisoners",
+                "relation": "died",
+                "entity2": "including 13,000 Jews"
+            }
+        ]
+    },
+    {
+        "sentence": "To do so , Selig will have to overcome strong feelings on both sides .",
+        "relations": []
+    },
+    {
+        "sentence": "The ailing incumbent , Lansana Conte , in office since seizing power in a coup in 1984 , was widely expected to win .",
+        "relations": [
+            {
+                "entity1": "The ailing incumbent Lansana Conte in office since seizing power in a coup in 1984",
+                "relation": "was expected",
+                "entity2": "to win widely"
+            },
+            {
+                "entity1": "The ailing incumbent Lansana Conte in office since seizing power in a coup in 1984",
+                "relation": "was expected",
+                "entity2": "to win"
+            }
+        ]
+    },
+    {
+        "sentence": "You can also look up individual carriers for more detailed info on their respective products and special offers .",
+        "relations": [
+            {
+                "entity1": "You",
+                "relation": "can look up",
+                "entity2": "individual carriers for more detailed info on their respective products and special offers also"
+            },
+            {
+                "entity1": "You",
+                "relation": "can look up",
+                "entity2": "individual carriers for more detailed info on their respective products and special offers"
+            },
+            {
+                "entity1": "their",
+                "relation": "has",
+                "entity2": "respective products and special offers"
+            }
+        ]
+    },
+    {
+        "sentence": "The North Korean leader , Kim Jong Il , promptly satisfied Japan 's demands , although not in the way Japan 's overly confident diplomats had imagined .",
+        "relations": [
+            {
+                "entity1": "Japan",
+                "relation": "has",
+                "entity2": "demands"
+            },
+            {
+                "entity1": "Japan",
+                "relation": "has",
+                "entity2": "overly confident diplomats"
+            },
+            {
+                "entity1": "The North Korean leader",
+                "relation": "is",
+                "entity2": "Kim Jong Il"
+            },
+            {
+                "entity1": "The North Korean leader",
+                "relation": "satisfied",
+                "entity2": "Japan 's demands although not in the way Japan 's overly confident diplomats had imagined"
+            },
+            {
+                "entity1": "The North Korean leader",
+                "relation": "satisfied",
+                "entity2": "Japan 's demands promptly"
+            },
+            {
+                "entity1": "The North Korean leader",
+                "relation": "satisfied",
+                "entity2": "Japan 's demands"
+            }
+        ]
+    },
+    {
+        "sentence": "In silence , a dozen women emerged in white chadors , the final one in black , standing silently and gazing mutely at the audience .",
+        "relations": [
+            {
+                "entity1": "a dozen women",
+                "relation": "emerged",
+                "entity2": "in white chadors standing silently and gazing mutely at the audience In silence"
+            },
+            {
+                "entity1": "a dozen women",
+                "relation": "emerged",
+                "entity2": "in white chadors standing silently and gazing mutely at the audience"
+            }
+        ]
+    },
+    {
+        "sentence": "Silver inventories in Comex warehouses rose 454,000 ounces to 141.118 million ounces , the exchanges said in its daily stockpile report after trading yesterday , up from a 10-month low of 140.664 million ounces .",
+        "relations": [
+            {
+                "entity1": "Silver inventories in Comex warehouses",
+                "relation": "rose",
+                "entity2": "454,000 ounces to 141.118 million ounces"
+            },
+            {
+                "entity1": "Silver inventories in Comex warehouses",
+                "relation": "rose",
+                "entity2": "454,000 ounces"
+            },
+            {
+                "entity1": "its",
+                "relation": "has",
+                "entity2": "daily stockpile report"
+            },
+            {
+                "entity1": "the exchanges",
+                "relation": "said",
+                "entity2": "Silver inventories in Comex warehouses rose 454,000 ounces to 141.118 million ounces after trading"
+            },
+            {
+                "entity1": "the exchanges",
+                "relation": "said",
+                "entity2": "Silver inventories in Comex warehouses rose 454,000 ounces to 141.118 million ounces in its daily stockpile report"
+            },
+            {
+                "entity1": "the exchanges",
+                "relation": "said",
+                "entity2": "Silver inventories in Comex warehouses rose 454,000 ounces to 141.118 million ounces up from a 10-month low of 140.664 million ounces"
+            },
+            {
+                "entity1": "the exchanges",
+                "relation": "said",
+                "entity2": "Silver inventories in Comex warehouses rose 454,000 ounces to 141.118 million ounces yesterday"
+            },
+            {
+                "entity1": "the exchanges",
+                "relation": "said",
+                "entity2": "Silver inventories in Comex warehouses rose 454,000 ounces to 141.118 million ounces"
+            }
+        ]
+    },
+    {
+        "sentence": "Just weeks after the victory over United Parcel Service of America Inc. , a federal overseer was entangled in a fund-raising scandal among Carey aides and resigned , leaving in doubt Carey 's eligibility to run in a new election -- as well as its timetabl",
+        "relations": [
+            {
+                "entity1": "its",
+                "relation": "has",
+                "entity2": "timetable"
+            }
+        ]
+    },
+    {
+        "sentence": "They 're in the title credits of the film , '' he says .",
+        "relations": [
+            {
+                "entity1": "They",
+                "relation": "'re",
+                "entity2": "in the title credits of the film"
+            },
+            {
+                "entity1": "he",
+                "relation": "says",
+                "entity2": "They 're in the title credits of the film"
+            }
+        ]
+    },
+    {
+        "sentence": "Bush instructed Secretary of State Colin Powell to begin intensive diplomacy aimed at crafting a U.N. Security Council resolution that would amount to an ultimatum for Iraq : comply or face the prospect of military attack .",
+        "relations": [
+            {
+                "entity1": "Bush",
+                "relation": "instructed",
+                "entity2": "Secretary of State Colin Powell to begin intensive diplomacy aimed at crafting a U.N. Security Council resolution"
+            },
+            {
+                "entity1": "a U.N. Security Council resolution",
+                "relation": "would amount",
+                "entity2": "to an ultimatum for Iraq"
+            },
+            {
+                "entity1": "intensive diplomacy",
+                "relation": "be aimed",
+                "entity2": "at crafting a U.N. Security Council resolution"
+            }
+        ]
+    },
+    {
+        "sentence": "Hoffenberg was sentenced in March to 20 years in jail and ordered to pay $ 462.6 million in restitution and a $ 1 million fine for defrauding Tower Financial debt holders of $ 460 million .",
+        "relations": [
+            {
+                "entity1": "Hoffenberg",
+                "relation": "was ordered",
+                "entity2": "to pay $ 462.6 million for defrauding Tower Financial debt holders of $ 460 million"
+            },
+            {
+                "entity1": "Hoffenberg",
+                "relation": "was ordered",
+                "entity2": "to pay $ 462.6 million in restitution and a $ 1 million fine"
+            },
+            {
+                "entity1": "Hoffenberg",
+                "relation": "was ordered",
+                "entity2": "to pay $ 462.6 million"
+            },
+            {
+                "entity1": "Hoffenberg",
+                "relation": "was sentenced",
+                "entity2": "in March to 20 years in jail"
+            },
+            {
+                "entity1": "Hoffenberg",
+                "relation": "was sentenced",
+                "entity2": "in March"
+            }
+        ]
+    },
+    {
+        "sentence": "Pat Day , the winning jockey , agreed that Royal Indy had been `` a little hot and nervous '' before the race , but added : `` She always seems to be like that , so I was n't that concerned .",
+        "relations": [
+            {
+                "entity1": "Pat Day",
+                "relation": "agreed",
+                "entity2": "that Royal Indy had been a little hot and nervous before the race She always seems to be like that I was n't that concerned"
+            },
+            {
+                "entity1": "Pat Day",
+                "relation": "is",
+                "entity2": "the winning jockey"
+            },
+            {
+                "entity1": "Royal Indy",
+                "relation": "had been",
+                "entity2": "hot and nervous a little"
+            },
+            {
+                "entity1": "Royal Indy",
+                "relation": "had been",
+                "entity2": "hot and nervous before the race"
+            },
+            {
+                "entity1": "Royal Indy",
+                "relation": "had been",
+                "entity2": "hot and nervous"
+            }
+        ]
+    },
+    {
+        "sentence": "Pageant officials do not release the winner 's name of the preliminary interview contest until within hours of Saturday night 's final competition .",
+        "relations": [
+            {
+                "entity1": "Pageant officials",
+                "relation": "do not release",
+                "entity2": "the winner 's name of the preliminary interview contest until within hours of Saturday night 's final competition"
+            },
+            {
+                "entity1": "Pageant officials",
+                "relation": "do not release",
+                "entity2": "the winner 's name of the preliminary interview contest"
+            },
+            {
+                "entity1": "Saturday night",
+                "relation": "has",
+                "entity2": "final competition"
+            }
+        ]
+    },
+    {
+        "sentence": "And the same things could have been said in Tennessee and Pittsburgh .",
+        "relations": [
+            {
+                "entity1": "the same things",
+                "relation": "could have been said",
+                "entity2": "in Tennessee and Pittsburgh"
+            }
+        ]
+    },
+    {
+        "sentence": "That , in itself , is n't awful .",
+        "relations": [
+            {
+                "entity1": "That",
+                "relation": "is n't",
+                "entity2": "awful in itself"
+            },
+            {
+                "entity1": "That",
+                "relation": "is n't",
+                "entity2": "awful"
+            }
+        ]
+    },
+    {
+        "sentence": "Led by Guy Hands , managing director for Nomura International 's Principal Finance Group , the unit has completed more than $ 11 billion in securitizations since 1995 , including the 944 million pound securitization of Angel Trains , which the U.K. govern",
+        "relations": [
+            {
+                "entity1": "Guy Hands",
+                "relation": "is",
+                "entity2": "managing director for Nomura International 's Principal Finance Group"
+            },
+            {
+                "entity1": "its",
+                "relation": "has",
+                "entity2": "rail privatization program"
+            },
+            {
+                "entity1": "the U.K. government",
+                "relation": "which sold",
+                "entity2": "Angel Trains"
+            },
+            {
+                "entity1": "the unit",
+                "relation": "be Led",
+                "entity2": "by Guy Hands"
+            },
+            {
+                "entity1": "the unit",
+                "relation": "has completed",
+                "entity2": "more than $ 11 billion in securitizations since 1995"
+            }
+        ]
+    },
+    {
+        "sentence": "One of the most disturbing factors for Rohrabacher is that there has never been any formal apology from any of the Japanese companies .",
+        "relations": [
+            {
+                "entity1": "One of the most disturbing factors for Rohrabacher",
+                "relation": "is",
+                "entity2": "that there has never been any formal apology from any of the Japanese companies"
+            }
+        ]
+    },
+    {
+        "sentence": "Such remarks prompt speculation the U.S. may change its strong-dollar policy .",
+        "relations": [
+            {
+                "entity1": "Such remarks",
+                "relation": "prompt",
+                "entity2": "speculation"
+            },
+            {
+                "entity1": "the U.S.",
+                "relation": "may change",
+                "entity2": "its strong-dollar policy"
+            }
+        ]
+    },
+    {
+        "sentence": "Police departments launch massive enforcement plans to combat road rage .",
+        "relations": [
+            {
+                "entity1": "Police departments",
+                "relation": "launch",
+                "entity2": "massive enforcement plans to combat road rage"
+            }
+        ]
+    },
+    {
+        "sentence": "The company exported 2.13 million barrels a day of crude oil , and 966,000 barrels a day of refined products .",
+        "relations": [
+            {
+                "entity1": "The company",
+                "relation": "exported",
+                "entity2": "2.13 million barrels a day of crude oil and 966,000 barrels a day of refined products"
+            }
+        ]
+    },
+    {
+        "sentence": "Did not the same radiant hope accompany the transition from the 19th to the 20th century ?",
+        "relations": []
+    },
+    {
+        "sentence": "Born in 1912 in Hazelhurst , Miss .",
+        "relations": []
+    },
+    {
+        "sentence": "An online bidder in Boerne paid $ 525 for a 20-inch Sony television set that retails at less than $ 350 new .",
+        "relations": [
+            {
+                "entity1": "An online bidder in Boerne",
+                "relation": "paid",
+                "entity2": "$ 525 for a 20-inch Sony television set"
+            }
+        ]
+    },
+    {
+        "sentence": "His memory was a good deal better about White House management of the DNC , especially its fund-raising operations .",
+        "relations": []
+    },
+    {
+        "sentence": "The company , Hydra Biosciences , is largely based on the work of Dr. Mark T. Keating , a founder of the company and a biologist at Harvard who studies regeneration in zebrafish .",
+        "relations": [
+            {
+                "entity1": "The company",
+                "relation": "is based",
+                "entity2": "on the work of Dr. Mark T. Keating a founder of the company and a biologist at Harvard largely"
+            },
+            {
+                "entity1": "The company",
+                "relation": "is based",
+                "entity2": "on the work of Dr. Mark T. Keating a founder of the company and a biologist at Harvard"
+            },
+            {
+                "entity1": "The company",
+                "relation": "is",
+                "entity2": "Hydra Biosciences"
+            },
+            {
+                "entity1": "the work of Dr. Mark T. Keating a founder of the company and a biologist at Harvard",
+                "relation": "studies",
+                "entity2": "regeneration in zebrafish"
+            }
+        ]
+    },
+    {
+        "sentence": "The Cardinals considered very seriously drafting Purdue fullback Mike Alstott with their second-round pick a year ago .",
+        "relations": [
+            {
+                "entity1": "The Cardinals",
+                "relation": "considered",
+                "entity2": "drafting Purdue fullback Mike Alstott with their second-round pick a year ago"
+            },
+            {
+                "entity1": "The Cardinals",
+                "relation": "considered",
+                "entity2": "drafting Purdue fullback Mike Alstott"
+            }
+        ]
+    },
+    {
+        "sentence": "The Chinese are still firing eight or nine million workers a year as part of their reforming of state-owned enterprises , and those workers do n't have a safety net '' - much less a wage .",
+        "relations": [
+            {
+                "entity1": "The Chinese",
+                "relation": "are firing",
+                "entity2": "eight or nine million workers a year as part of their reforming of state-owned enterprises"
+            },
+            {
+                "entity1": "The Chinese",
+                "relation": "are firing",
+                "entity2": "eight or nine million workers a year"
+            },
+            {
+                "entity1": "those workers",
+                "relation": "do n't have",
+                "entity2": "a safety net"
+            }
+        ]
+    },
+    {
+        "sentence": "Now you can gag .",
+        "relations": [
+            {
+                "entity1": "you",
+                "relation": "can gag",
+                "entity2": "Now"
+            }
+        ]
+    },
+    {
+        "sentence": "Playing before a crowd of 39,294 , Army jumped to a 7-0 lead on its second possession , covering 66 yards in a 14-play drive that culminated in a 1-yard leap into the end zone by the junior fullback Joe Hewitt .",
+        "relations": [
+            {
+                "entity1": "Army",
+                "relation": "be Playing",
+                "entity2": "before a crowd of 39,294"
+            },
+            {
+                "entity1": "Army",
+                "relation": "jumped",
+                "entity2": "to a 7-0 lead covering 66 yards in a 14-play drive"
+            }
+        ]
+    },
+    {
+        "sentence": "At least that was the case for linebacker Brendon Ayanbadejo at the Rose Bowl on Saturday .",
+        "relations": []
+    },
+    {
+        "sentence": "The latest price rise was the second by the cigarette makers this year .",
+        "relations": [
+            {
+                "entity1": "The latest price rise",
+                "relation": "was",
+                "entity2": "the second by the cigarette makers this year"
+            }
+        ]
+    },
+    {
+        "sentence": "It went from testing 219 in 1997 to 20,526 last year .",
+        "relations": [
+            {
+                "entity1": "It",
+                "relation": "went",
+                "entity2": "from testing 219 in 1997 to 20,526 last year"
+            }
+        ]
+    },
+    {
+        "sentence": "In its report , the IMF also said it cut in half its growth estimate for Japan this year -- to 1.1 percent from May 's estimate of 2.2 percent .",
+        "relations": [
+            {
+                "entity1": "May",
+                "relation": "has",
+                "entity2": "estimate of 2.2 percent"
+            },
+            {
+                "entity1": "it",
+                "relation": "cut",
+                "entity2": "in half its growth estimate for Japan from May 's estimate of 2.2 percent"
+            },
+            {
+                "entity1": "it",
+                "relation": "cut",
+                "entity2": "in half its growth estimate for Japan this year"
+            },
+            {
+                "entity1": "it",
+                "relation": "cut",
+                "entity2": "in half its growth estimate for Japan to 1.1 percent"
+            },
+            {
+                "entity1": "it",
+                "relation": "cut",
+                "entity2": "in half its growth estimate for Japan"
+            },
+            {
+                "entity1": "its",
+                "relation": "has",
+                "entity2": "report"
+            },
+            {
+                "entity1": "the IMF",
+                "relation": "said",
+                "entity2": "it cut in half its growth estimate for Japan this year to 1.1 percent from May 's estimate of 2.2 percent In its report"
+            },
+            {
+                "entity1": "the IMF",
+                "relation": "said",
+                "entity2": "it cut in half its growth estimate for Japan this year to 1.1 percent from May 's estimate of 2.2 percent also"
+            },
+            {
+                "entity1": "the IMF",
+                "relation": "said",
+                "entity2": "it cut in half its growth estimate for Japan this year to 1.1 percent from May 's estimate of 2.2 percent"
+            }
+        ]
+    },
+    {
+        "sentence": "But starters Torry Holt and Isaac Bruce might be the best and most explosive tandem in the league .",
+        "relations": []
+    },
+    {
+        "sentence": "For the major airlines , including Fort Worth-based American , it was as if an artery had been cut .",
+        "relations": [
+            {
+                "entity1": "it",
+                "relation": "was",
+                "entity2": "as if an artery had been cut For the major airlines"
+            },
+            {
+                "entity1": "it",
+                "relation": "was",
+                "entity2": "as if an artery had been cut"
+            }
+        ]
+    },
+    {
+        "sentence": "Some 75 percent said it would not .",
+        "relations": [
+            {
+                "entity1": "Some 75 percent",
+                "relation": "said",
+                "entity2": "it would not"
+            }
+        ]
+    },
+    {
+        "sentence": "Ford plans to announce a similar move soon .",
+        "relations": [
+            {
+                "entity1": "Ford",
+                "relation": "plans",
+                "entity2": "to announce a similar move soon"
+            },
+            {
+                "entity1": "Ford",
+                "relation": "plans",
+                "entity2": "to announce a similar move"
+            }
+        ]
+    },
+    {
+        "sentence": "The show is scheduled to be filmed in Austin till November , when MTV will decide whether to continue `` Austin Stories '' for a full season .",
+        "relations": [
+            {
+                "entity1": "MTV",
+                "relation": "will decide",
+                "entity2": "whether to continue Austin Stories for a full season"
+            },
+            {
+                "entity1": "The show",
+                "relation": "is scheduled",
+                "entity2": "to be filmed in Austin till November when MTV will decide whether to continue Austin Stories for a full season"
+            }
+        ]
+    },
+    {
+        "sentence": "In broad terms , the statement released by Mar 'ie addressed these concerns .",
+        "relations": [
+            {
+                "entity1": "the statement released by Mar ie",
+                "relation": "addressed",
+                "entity2": "these concerns In broad terms"
+            },
+            {
+                "entity1": "the statement released by Mar ie",
+                "relation": "addressed",
+                "entity2": "these concerns"
+            },
+            {
+                "entity1": "the statement",
+                "relation": "be released",
+                "entity2": "by Mar ie"
+            }
+        ]
+    },
+    {
+        "sentence": "The 12-month target price is HK$ 51.00 per share .",
+        "relations": [
+            {
+                "entity1": "The 12-month target price",
+                "relation": "is",
+                "entity2": "HK$ 51.00 per share"
+            },
+            {
+                "entity1": "The 12-month target price",
+                "relation": "is",
+                "entity2": "HK$ 51.00"
+            }
+        ]
+    },
+    {
+        "sentence": "When Steve Forbes was running for president , he did n't talk very much about the rights of the unborn .",
+        "relations": [
+            {
+                "entity1": "Steve Forbes",
+                "relation": "was running",
+                "entity2": "for president"
+            },
+            {
+                "entity1": "he",
+                "relation": "did n't talk",
+                "entity2": "very much about the rights of the unborn"
+            }
+        ]
+    },
+    {
+        "sentence": "You do n't have a computer ?",
+        "relations": [
+            {
+                "entity1": "You",
+                "relation": "do n't have",
+                "entity2": "a computer"
+            }
+        ]
+    },
+    {
+        "sentence": "Fill the spaces in the whites of the eggs with the spiced yolks ; smooth it even with top ; sprinkle with chopped parsley ; garnish with the same and serve cold .",
+        "relations": []
+    },
+    {
+        "sentence": "Koizumi and his foreign ministry have come under harsh criticism for promising North Korea large amounts of aid , as well as normalization talks , in exchange for clear information about the abductees .",
+        "relations": [
+            {
+                "entity1": "Koizumi and his foreign ministry",
+                "relation": "have come",
+                "entity2": "under harsh criticism for promising North Korea large amounts of aid as well as normalization talks in exchange for clear information about the abductees"
+            },
+            {
+                "entity1": "Koizumi and his foreign ministry",
+                "relation": "have come",
+                "entity2": "under harsh criticism"
+            },
+            {
+                "entity1": "his",
+                "relation": "has",
+                "entity2": "foreign ministry"
+            }
+        ]
+    },
+    {
+        "sentence": "They litter the road to redemption with chaos , contraband , broken marriages , jilted women and political aspirations , but there still is a ray of hope and happiness for the residents of a small Cuban town called Guantanamera .",
+        "relations": [
+            {
+                "entity1": "They",
+                "relation": "litter",
+                "entity2": "the road to redemption"
+            },
+            {
+                "entity1": "They",
+                "relation": "litter",
+                "entity2": "the road with chaos contraband broken marriages jilted women and political aspirations"
+            },
+            {
+                "entity1": "They",
+                "relation": "litter",
+                "entity2": "the road"
+            },
+            {
+                "entity1": "a ray of hope and happiness for the residents of a small Cuban town called Guantanamera",
+                "relation": "there is",
+                "entity2": "still"
+            },
+            {
+                "entity1": "a small Cuban town",
+                "relation": "be called",
+                "entity2": "Guantanamera"
+            }
+        ]
+    },
+    {
+        "sentence": "The large multinational companies in the S&AMP;P 500 and the Dow had performed best this year , until those averages peaked on Aug. 6 .",
+        "relations": [
+            {
+                "entity1": "The large multinational companies in the S&P 500 and the Dow",
+                "relation": "had performed best",
+                "entity2": "this year until those averages peaked on Aug. 6"
+            },
+            {
+                "entity1": "The large multinational companies in the S&P 500 and the Dow",
+                "relation": "had performed best",
+                "entity2": "this year"
+            },
+            {
+                "entity1": "those averages",
+                "relation": "peaked on",
+                "entity2": "Aug. 6"
+            }
+        ]
+    },
+    {
+        "sentence": "In many quarters , the dead princess is being hailed as a visionary struck down in a battle to drag the stuffy monarchy and all of Britain into the 21st century .",
+        "relations": [
+            {
+                "entity1": "a visionary",
+                "relation": "struck down",
+                "entity2": "in a battle to drag the stuffy monarchy and all of Britain into the 21st century"
+            },
+            {
+                "entity1": "a visionary",
+                "relation": "struck down",
+                "entity2": "in a battle to drag the stuffy monarchy and all of Britain"
+            },
+            {
+                "entity1": "a visionary",
+                "relation": "struck down",
+                "entity2": "to drag the stuffy monarchy and all of Britain"
+            },
+            {
+                "entity1": "the dead princess",
+                "relation": "is being hailed",
+                "entity2": "as a visionary struck down in a battle to drag the stuffy monarchy and all of Britain into the 21st century In many quarters"
+            },
+            {
+                "entity1": "the dead princess",
+                "relation": "is being hailed",
+                "entity2": "as a visionary struck down in a battle to drag the stuffy monarchy and all of Britain into the 21st century"
+            }
+        ]
+    },
+    {
+        "sentence": "You likely have all but one of the ingredients in }72847:929434:77 ;*4292092607 ;0940:477973 :4219 9:06309227921482 1: :10941066 7:722d table salt , water , ammonia and laundry bluing .",
+        "relations": [
+            {
+                "entity1": "You",
+                "relation": "have",
+                "entity2": "all but one of the ingredients"
+            }
+        ]
+    },
+    {
+        "sentence": "In the U.S. , Volkswagen sales peaked at 293,000 in 1980 , dropped to 49,533 in 1993 , then climbed to 135,907 in 1996 .",
+        "relations": [
+            {
+                "entity1": "Volkswagen sales",
+                "relation": "peaked",
+                "entity2": "at 293,000 In the U.S."
+            },
+            {
+                "entity1": "Volkswagen sales",
+                "relation": "peaked",
+                "entity2": "at 293,000 in 1980"
+            },
+            {
+                "entity1": "Volkswagen sales",
+                "relation": "peaked",
+                "entity2": "at 293,000"
+            }
+        ]
+    },
+    {
+        "sentence": "How many cigars do I need to smoke a day to get cancer ?",
+        "relations": []
+    },
+    {
+        "sentence": "Shares of the New York-based company rose 5 1\/4 , or 8.4 percent , to 67 3\/4 in midday trading of 2.1 million , triple the three-month daily average .",
+        "relations": [
+            {
+                "entity1": "Shares of the New York-based company",
+                "relation": "rose",
+                "entity2": "5\u00a01\\\/4 or 8.4 percent in midday trading of 2.1 million triple the three-month daily average"
+            },
+            {
+                "entity1": "Shares of the New York-based company",
+                "relation": "rose",
+                "entity2": "5\u00a01\\\/4 or 8.4 percent to 67\u00a03\\\/4"
+            },
+            {
+                "entity1": "Shares of the New York-based company",
+                "relation": "rose",
+                "entity2": "5\u00a01\\\/4 or 8.4 percent"
+            }
+        ]
+    },
+    {
+        "sentence": "Remove the yolks carefully , mash them very fanE$ and season sparely with mustard , vinegar , salt , pepper and a tablespoonful of melted butter .",
+        "relations": []
+    },
+    {
+        "sentence": "I do n't know why I said it , but I did , and the secretary turns to me and says , ` You know , you 've got a point there . '",
+        "relations": [
+            {
+                "entity1": "I",
+                "relation": "do n't know",
+                "entity2": "why I said it"
+            },
+            {
+                "entity1": "I",
+                "relation": "said",
+                "entity2": "it"
+            },
+            {
+                "entity1": "the secretary",
+                "relation": "turns",
+                "entity2": "to me"
+            }
+        ]
+    },
+    {
+        "sentence": "The new Cadillac is scheduled to go on sale next summer for model year 2004 .",
+        "relations": [
+            {
+                "entity1": "The new Cadillac",
+                "relation": "is scheduled",
+                "entity2": "to go on sale for model year 2004"
+            },
+            {
+                "entity1": "The new Cadillac",
+                "relation": "is scheduled",
+                "entity2": "to go on sale next summer"
+            },
+            {
+                "entity1": "The new Cadillac",
+                "relation": "is scheduled",
+                "entity2": "to go on sale"
+            }
+        ]
+    },
+    {
+        "sentence": "U.S. officials say Japan has done little since April to change unfair port practices .",
+        "relations": [
+            {
+                "entity1": "Japan",
+                "relation": "has done",
+                "entity2": "little to change unfair port practices"
+            },
+            {
+                "entity1": "U.S. officials",
+                "relation": "say",
+                "entity2": "Japan has done little since April to change unfair port practices"
+            }
+        ]
+    },
+    {
+        "sentence": "Hilton 's shares rose 1 1\/16 to 33 3\/16 .",
+        "relations": [
+            {
+                "entity1": "Hilton 's shares",
+                "relation": "rose",
+                "entity2": "1\u00a01\\\/16 to 33\u00a03\\\/16"
+            },
+            {
+                "entity1": "Hilton",
+                "relation": "has",
+                "entity2": "shares"
+            }
+        ]
+    },
+    {
+        "sentence": "Mar 'ie said the government will also `` encourage '' the merger of insolvent banks with solvent ones .",
+        "relations": [
+            {
+                "entity1": "Mar ie",
+                "relation": "said",
+                "entity2": "the government will also encourage the merger of insolvent banks with solvent ones"
+            },
+            {
+                "entity1": "the government",
+                "relation": "will encourage",
+                "entity2": "the merger of insolvent banks also"
+            },
+            {
+                "entity1": "the government",
+                "relation": "will encourage",
+                "entity2": "the merger of insolvent banks with solvent ones"
+            },
+            {
+                "entity1": "the government",
+                "relation": "will encourage",
+                "entity2": "the merger of insolvent banks"
+            }
+        ]
+    },
+    {
+        "sentence": "He has n't had a save opportunity in nine games , matching a season high .",
+        "relations": [
+            {
+                "entity1": "He",
+                "relation": "has n't had",
+                "entity2": "a save opportunity in nine games matching a season high"
+            }
+        ]
+    },
+    {
+        "sentence": "She has done so with depth and confidence .",
+        "relations": []
+    },
+    {
+        "sentence": "Also , on a recent afternoon , the waves were so small and punchless that they could n't even provide sufficient lift for a 165-pound bodysurfer .",
+        "relations": [
+            {
+                "entity1": "they",
+                "relation": "could n't provide",
+                "entity2": "sufficient lift for a 165-pound bodysurfer"
+            },
+            {
+                "entity1": "they",
+                "relation": "could n't provide",
+                "entity2": "sufficient lift"
+            }
+        ]
+    },
+    {
+        "sentence": "Seagram shares rose C$ 0.25 to C$ 50.30 in midmorning Toronto trading and rose 3\/16 to 36 3\/16 in New York .",
+        "relations": [
+            {
+                "entity1": "Seagram shares",
+                "relation": "rose",
+                "entity2": "3\\\/16 to 36\u00a03\\\/16 in New York"
+            },
+            {
+                "entity1": "Seagram shares",
+                "relation": "rose",
+                "entity2": "3\\\/16 to 36\u00a03\\\/16"
+            },
+            {
+                "entity1": "Seagram shares",
+                "relation": "rose",
+                "entity2": "C$ 0.25 to C$ 50.30 in midmorning Toronto trading"
+            },
+            {
+                "entity1": "Seagram shares",
+                "relation": "rose",
+                "entity2": "C$ 0.25"
+            }
+        ]
+    },
+    {
+        "sentence": "Does it still matter who wins ?",
+        "relations": [
+            {
+                "entity1": "it",
+                "relation": "Does matter",
+                "entity2": "who wins"
+            }
+        ]
+    },
+    {
+        "sentence": "As Dr. Norman J. Silver was winding down his orthopedic surgery practice in New Rochelle , N.Y. , he wanted to make sure there were opportunities for continuing education in the place where he would ultimately retire .",
+        "relations": [
+            {
+                "entity1": "Dr. Norman J. Silver",
+                "relation": "was winding down",
+                "entity2": "his orthopedic surgery practice in New Rochelle"
+            },
+            {
+                "entity1": "Dr. Norman J. Silver",
+                "relation": "was winding down",
+                "entity2": "his orthopedic surgery practice"
+            },
+            {
+                "entity1": "he",
+                "relation": "wanted",
+                "entity2": "to make sure there were opportunities for continuing education in the place As Dr. Norman J. Silver was winding down his orthopedic surgery practice in New Rochelle"
+            },
+            {
+                "entity1": "he",
+                "relation": "wanted",
+                "entity2": "to make sure there were opportunities for continuing education in the place where he would ultimately retire As Dr. Norman J. Silver was winding down his orthopedic surgery practice in New Rochelle"
+            },
+            {
+                "entity1": "he",
+                "relation": "wanted",
+                "entity2": "to make sure there were opportunities for continuing education in the place where he would ultimately retire"
+            },
+            {
+                "entity1": "he",
+                "relation": "wanted",
+                "entity2": "to make sure there were opportunities for continuing education in the place"
+            },
+            {
+                "entity1": "he",
+                "relation": "would retire",
+                "entity2": "ultimately"
+            },
+            {
+                "entity1": "his",
+                "relation": "has",
+                "entity2": "orthopedic surgery practice"
+            }
+        ]
+    },
+    {
+        "sentence": "Some historians and the Turkish government have disputed claims of an organized genocide and the numbers of Armenians killed .",
+        "relations": [
+            {
+                "entity1": "Some historians and the Turkish government",
+                "relation": "have disputed",
+                "entity2": "claims of an organized genocide"
+            }
+        ]
+    },
+    {
+        "sentence": "Those very same men who dismissed her as `` barmy '' are now seen in TV studios up and down the land regaling us with tales of her specialness .",
+        "relations": [
+            {
+                "entity1": "Those very same men",
+                "relation": "are seen",
+                "entity2": "in TV studios up and down the land regaling us with tales of her specialness"
+            },
+            {
+                "entity1": "Those very same men",
+                "relation": "are seen",
+                "entity2": "in TV studios up and down the land regaling us"
+            },
+            {
+                "entity1": "Those very same men",
+                "relation": "are seen",
+                "entity2": "regaling us now"
+            },
+            {
+                "entity1": "Those very same men",
+                "relation": "are seen",
+                "entity2": "regaling us with tales of her specialness now"
+            },
+            {
+                "entity1": "Those very same men",
+                "relation": "are seen",
+                "entity2": "regaling us with tales of her specialness"
+            },
+            {
+                "entity1": "Those very same men",
+                "relation": "are seen",
+                "entity2": "regaling us"
+            },
+            {
+                "entity1": "Those very same men",
+                "relation": "dismissed",
+                "entity2": "her as barmy"
+            },
+            {
+                "entity1": "Those very same men",
+                "relation": "dismissed",
+                "entity2": "her"
+            }
+        ]
+    },
+    {
+        "sentence": "When he failed to have the lawyers dismissed by a judge , he said , he decided to attack them .",
+        "relations": [
+            {
+                "entity1": "he",
+                "relation": "failed",
+                "entity2": "to have the lawyers dismissed by a judge"
+            },
+            {
+                "entity1": "the lawyers",
+                "relation": "be dismissed",
+                "entity2": "by a judge"
+            }
+        ]
+    },
+    {
+        "sentence": "Today 's average yield on the sale of C$ 2.1 billion of six-month bills was 3.615 percent , up from 3.561 percent two weeks ago .",
+        "relations": [
+            {
+                "entity1": "Today 's average yield on the sale of C$ 2.1 billion of six-month bills",
+                "relation": "was",
+                "entity2": "3.615 percent up from 3.561 percent two weeks ago"
+            },
+            {
+                "entity1": "Today 's average yield on the sale of C$ 2.1 billion of six-month bills",
+                "relation": "was",
+                "entity2": "3.615 percent"
+            }
+        ]
+    },
+    {
+        "sentence": "Hot-rolled and cold-rolled sheet , which has a smoother finish and is used on the outside of autos and appliances , account for about half of all U.S. steel shipments .",
+        "relations": [
+            {
+                "entity1": "Hot-rolled and cold-rolled sheet",
+                "relation": "account",
+                "entity2": "for about half of all U.S. steel shipments"
+            },
+            {
+                "entity1": "Hot-rolled and cold-rolled sheet",
+                "relation": "has",
+                "entity2": "a smoother finish"
+            },
+            {
+                "entity1": "Hot-rolled and cold-rolled sheet",
+                "relation": "is used",
+                "entity2": "on the outside of autos and appliances"
+            }
+        ]
+    },
+    {
+        "sentence": "Traina and three other trustees , including Fletcher and Clark treasurer James E. Collins , each make $ 123,000 a year for part-time work .",
+        "relations": [
+            {
+                "entity1": "Traina and three other trustees",
+                "relation": "each make",
+                "entity2": "$ 123,000 a year"
+            },
+            {
+                "entity1": "Traina and three other trustees",
+                "relation": "each make",
+                "entity2": "$ 123,000 for part-time work"
+            },
+            {
+                "entity1": "Traina and three other trustees",
+                "relation": "each make",
+                "entity2": "$ 123,000 including Fletcher and Clark treasurer James E. Collins"
+            }
+        ]
+    },
+    {
+        "sentence": "Brown and her staff persisted .",
+        "relations": [
+            {
+                "entity1": "her",
+                "relation": "has",
+                "entity2": "staff"
+            }
+        ]
+    },
+    {
+        "sentence": "Some of that money is earmarked for the new Traina Center for the Arts .",
+        "relations": [
+            {
+                "entity1": "Some of that money",
+                "relation": "is earmarked",
+                "entity2": "for the new Traina Center for the Arts"
+            }
+        ]
+    },
+    {
+        "sentence": "I did n't stop living because I was diagnosed with HIV.",
+        "relations": [
+            {
+                "entity1": "I",
+                "relation": "did n't stop",
+                "entity2": "living because I was diagnosed with HIV"
+            },
+            {
+                "entity1": "I",
+                "relation": "was diagnosed",
+                "entity2": "with HIV"
+            }
+        ]
+    },
+    {
+        "sentence": "What he did n't understand was the true essence of the Raiders : You might not understand it all , but you 're never going to get cheated .",
+        "relations": [
+            {
+                "entity1": "What he did n't understand",
+                "relation": "was",
+                "entity2": "the true essence of the Raiders"
+            },
+            {
+                "entity1": "What he did n't understand",
+                "relation": "was",
+                "entity2": "the true essence"
+            },
+            {
+                "entity1": "You",
+                "relation": "might not understand",
+                "entity2": "it all"
+            }
+        ]
+    },
+    {
+        "sentence": "When the passengers realized that other commercial jets had been hijacked and crashed , they fulfilled `` the quintessential American desire to act '' and `` decided to take matters into their own hands to avert a catastrophe , '' he said .",
+        "relations": [
+            {
+                "entity1": "he",
+                "relation": "said",
+                "entity2": "When the passengers realized that other commercial jets had been hijacked and crashed they fulfilled the quintessential American desire to act and decided to take matters into their own hands to avert a catastrophe"
+            },
+            {
+                "entity1": "the passengers",
+                "relation": "realized",
+                "entity2": "that other commercial jets had been hijacked"
+            },
+            {
+                "entity1": "their",
+                "relation": "has",
+                "entity2": "own hands"
+            },
+            {
+                "entity1": "they",
+                "relation": "decided",
+                "entity2": "to take matters into their own hands to avert a catastrophe When the passengers realized that other commercial jets had been hijacked and crashed"
+            },
+            {
+                "entity1": "they",
+                "relation": "decided",
+                "entity2": "to take matters into their own hands to avert a catastrophe"
+            },
+            {
+                "entity1": "they",
+                "relation": "fulfilled",
+                "entity2": "the quintessential American desire to act When the passengers realized that other commercial jets had been hijacked and crashed"
+            },
+            {
+                "entity1": "they",
+                "relation": "fulfilled",
+                "entity2": "the quintessential American desire to act"
+            }
+        ]
+    },
+    {
+        "sentence": "You should probably just go online .",
+        "relations": [
+            {
+                "entity1": "You",
+                "relation": "should go",
+                "entity2": "online probably"
+            },
+            {
+                "entity1": "You",
+                "relation": "should go",
+                "entity2": "online"
+            }
+        ]
+    },
+    {
+        "sentence": "One of life 's simple pleasures is guessing who 'll walk away with the VeeHee .",
+        "relations": [
+            {
+                "entity1": "life",
+                "relation": "has",
+                "entity2": "simple pleasures"
+            },
+            {
+                "entity1": "who",
+                "relation": "'ll walk away",
+                "entity2": "with the VeeHee"
+            }
+        ]
+    },
+    {
+        "sentence": "2. Place the garlic and jalapeno in the bowl of a food processor .",
+        "relations": []
+    },
+    {
+        "sentence": "As dramatic as these developments are , the tipping point is a long way off , said Stephen S. Roach , chief economist at Morgan Stanley .",
+        "relations": [
+            {
+                "entity1": "Stephen S. Roach",
+                "relation": "is",
+                "entity2": "chief economist at Morgan Stanley"
+            },
+            {
+                "entity1": "Stephen S. Roach",
+                "relation": "said",
+                "entity2": "As dramatic as these developments are the tipping point is a long way off"
+            },
+            {
+                "entity1": "the tipping point",
+                "relation": "is",
+                "entity2": "a long way off"
+            }
+        ]
+    },
+    {
+        "sentence": "For this year , Thailand is bracing for growth of only 3 percent or even a recession ; the Philippines expects gross domestic product to grow 5.55 percent ; Standard &AMP ; Poor 's expects Malaysia to grow 7 percent ; Indonesia 's economy is expected to e",
+        "relations": [
+            {
+                "entity1": "Indonesia 's economy",
+                "relation": "is expected",
+                "entity2": "to expand 7 percent and Singapore 's between 6 percent and 7 percent"
+            },
+            {
+                "entity1": "Indonesia",
+                "relation": "has",
+                "entity2": "economy"
+            },
+            {
+                "entity1": "Poor 's",
+                "relation": "expects",
+                "entity2": "Malaysia to grow 7 percent"
+            },
+            {
+                "entity1": "Thailand",
+                "relation": "is bracing",
+                "entity2": "for growth of only 3 percent or even a recession For this year"
+            },
+            {
+                "entity1": "Thailand",
+                "relation": "is bracing",
+                "entity2": "for growth of only 3 percent or even a recession"
+            }
+        ]
+    },
+    {
+        "sentence": "Company after company followed suit as heightened security at major airports posed new obstacles .",
+        "relations": [
+            {
+                "entity1": "Company after company",
+                "relation": "followed",
+                "entity2": "suit as heightened security at major airports posed new obstacles"
+            },
+            {
+                "entity1": "Company after company",
+                "relation": "followed",
+                "entity2": "suit"
+            },
+            {
+                "entity1": "heightened security at major airports",
+                "relation": "posed",
+                "entity2": "new obstacles"
+            }
+        ]
+    },
+    {
+        "sentence": "When speed is your life , the race never ends .",
+        "relations": [
+            {
+                "entity1": "speed",
+                "relation": "is",
+                "entity2": "your life"
+            },
+            {
+                "entity1": "the race",
+                "relation": "never ends",
+                "entity2": "When speed is your life"
+            },
+            {
+                "entity1": "your",
+                "relation": "has",
+                "entity2": "life"
+            }
+        ]
+    },
+    {
+        "sentence": "In Norway , striking offshore oil workers forced state-owned oil company Statoil to shut down its 40,000 barrel-a-day Yme oil field in the North Sea .",
+        "relations": [
+            {
+                "entity1": "its",
+                "relation": "has",
+                "entity2": "40,000 barrel-a-day Yme oil field in the North Sea"
+            },
+            {
+                "entity1": "state-owned oil company Statoil",
+                "relation": "to shut down",
+                "entity2": "its 40,000 barrel-a-day Yme oil field in the North Sea"
+            },
+            {
+                "entity1": "striking offshore oil workers",
+                "relation": "forced",
+                "entity2": "state-owned oil company Statoil to shut down its 40,000 barrel-a-day Yme oil field in the North Sea In Norway"
+            },
+            {
+                "entity1": "striking offshore oil workers",
+                "relation": "forced",
+                "entity2": "state-owned oil company Statoil to shut down its 40,000 barrel-a-day Yme oil field in the North Sea"
+            }
+        ]
+    },
+    {
+        "sentence": "The other five are still alive and will be allowed to return home if they want .",
+        "relations": [
+            {
+                "entity1": "The other five",
+                "relation": "are",
+                "entity2": "alive"
+            },
+            {
+                "entity1": "The other five",
+                "relation": "will be allowed",
+                "entity2": "to return home if they want"
+            },
+            {
+                "entity1": "The other five",
+                "relation": "will be allowed",
+                "entity2": "to return home"
+            }
+        ]
+    },
+    {
+        "sentence": "Lucas stopped in Atlanta recently to talk about `` Sweet Home Alabama , '' his new romantic comedy with Reese Witherspoon .",
+        "relations": [
+            {
+                "entity1": "Lucas",
+                "relation": "stopped",
+                "entity2": "in Atlanta to talk about Sweet Home Alabama his new romantic comedy with Reese Witherspoon"
+            },
+            {
+                "entity1": "Lucas",
+                "relation": "stopped",
+                "entity2": "recently to talk about Sweet Home Alabama his new romantic comedy with Reese Witherspoon"
+            },
+            {
+                "entity1": "Lucas",
+                "relation": "stopped",
+                "entity2": "to talk about Sweet Home Alabama his new romantic comedy with Reese Witherspoon"
+            },
+            {
+                "entity1": "his",
+                "relation": "has",
+                "entity2": "new romantic comedy with Reese Witherspoon"
+            }
+        ]
+    },
+    {
+        "sentence": "In return for shelling out the $ 368.5 billion , Philip Morris , RJR Nabisco Holdings Corp. and other tobacco companies would obtain protection from future class-action lawsuits that have threatened the industry 's well-being .",
+        "relations": [
+            {
+                "entity1": "Philip Morris RJR Nabisco Holdings Corp. and other tobacco companies",
+                "relation": "would obtain",
+                "entity2": "protection In return for shelling out the $ 368.5 billion"
+            },
+            {
+                "entity1": "Philip Morris RJR Nabisco Holdings Corp. and other tobacco companies",
+                "relation": "would obtain",
+                "entity2": "protection from future class-action lawsuits"
+            },
+            {
+                "entity1": "Philip Morris RJR Nabisco Holdings Corp. and other tobacco companies",
+                "relation": "would obtain",
+                "entity2": "protection"
+            },
+            {
+                "entity1": "future class-action lawsuits",
+                "relation": "have threatened",
+                "entity2": "the industry 's well-being"
+            },
+            {
+                "entity1": "the industry",
+                "relation": "has",
+                "entity2": "well-being"
+            }
+        ]
+    },
+    {
+        "sentence": "Or balanced on the tip of the tongue .",
+        "relations": []
+    },
+    {
+        "sentence": "But Alea and Tabio use political strife as a broad backdrop on which to place the characters instead of making specific statements about revolution .",
+        "relations": [
+            {
+                "entity1": "Alea and Tabio",
+                "relation": "use",
+                "entity2": "political strife as a broad backdrop on which to place the characters instead of making specific statements about revolution"
+            },
+            {
+                "entity1": "Alea and Tabio",
+                "relation": "use",
+                "entity2": "political strife"
+            }
+        ]
+    },
+    {
+        "sentence": "The dollar often declines when U.S. Treasury officials express concern that Japan may be trying to boost its economy through exports .",
+        "relations": [
+            {
+                "entity1": "Japan",
+                "relation": "may be trying",
+                "entity2": "to boost its economy through exports"
+            },
+            {
+                "entity1": "Japan",
+                "relation": "may be trying",
+                "entity2": "to boost its economy"
+            },
+            {
+                "entity1": "The dollar",
+                "relation": "declines",
+                "entity2": "when U.S. Treasury officials express concern that Japan may be trying to boost its economy through exports"
+            },
+            {
+                "entity1": "U.S. Treasury officials",
+                "relation": "express",
+                "entity2": "concern that Japan may be trying to boost its economy through exports"
+            },
+            {
+                "entity1": "its",
+                "relation": "has",
+                "entity2": "economy"
+            }
+        ]
+    },
+    {
+        "sentence": "Perhaps examining the food on the plate too closely is something we should all avoid .",
+        "relations": []
+    },
+    {
+        "sentence": "Efforts to reach Johnson were unsuccessful .",
+        "relations": [
+            {
+                "entity1": "Efforts to reach Johnson",
+                "relation": "were",
+                "entity2": "unsuccessful"
+            }
+        ]
+    },
+    {
+        "sentence": "When you have to resort to 1,200-degree air to cool something , you 're running a hot system .",
+        "relations": [
+            {
+                "entity1": "you",
+                "relation": "'re running",
+                "entity2": "a hot system When you have to resort to 1,200-degree air to cool something"
+            },
+            {
+                "entity1": "you",
+                "relation": "'re running",
+                "entity2": "a hot system"
+            },
+            {
+                "entity1": "you",
+                "relation": "have",
+                "entity2": "to cool something"
+            }
+        ]
+    },
+    {
+        "sentence": "Lee Janzen IF PUSHED TO THE WALL , ISRAEL MIGHT FIRE NUKES That earned him the respect of analysts and investors , though the public remains skeptical .",
+        "relations": [
+            {
+                "entity1": "That",
+                "relation": "earned",
+                "entity2": "him the respect of analysts and investors though the public remains skeptical"
+            },
+            {
+                "entity1": "That",
+                "relation": "earned",
+                "entity2": "him the respect of analysts and investors"
+            },
+            {
+                "entity1": "the public",
+                "relation": "remains",
+                "entity2": "skeptical"
+            }
+        ]
+    },
+    {
+        "sentence": "Arnoldy logs about 30,000 miles a year aboard Intrepid , parking it on a private siding in Houston when he 's not riding the rails .",
+        "relations": [
+            {
+                "entity1": "Arnoldy",
+                "relation": "logs",
+                "entity2": "about 30,000 miles a year aboard Intrepid parking it on a private siding in Houston"
+            },
+            {
+                "entity1": "Arnoldy",
+                "relation": "logs",
+                "entity2": "about 30,000 miles a year aboard Intrepid parking it when he 's not riding the rails"
+            },
+            {
+                "entity1": "he",
+                "relation": "'s not riding",
+                "entity2": "the rails"
+            }
+        ]
+    },
+    {
+        "sentence": "The Treasury Department is responsible for U.S. foreign exchange policy .",
+        "relations": [
+            {
+                "entity1": "The Treasury Department",
+                "relation": "is",
+                "entity2": "responsible for U.S. foreign exchange policy"
+            },
+            {
+                "entity1": "The Treasury Department",
+                "relation": "is",
+                "entity2": "responsible"
+            }
+        ]
+    },
+    {
+        "sentence": "So is Nissan Motor Co. 's Altima .",
+        "relations": []
+    },
+    {
+        "sentence": "Television pictures showed police officers climbing over the roof and entering the offices of two related companies , Tatari Design and Tatex Trading G.m.b.H. , in Fitzbek , a village 35 miles from Hamburg .",
+        "relations": [
+            {
+                "entity1": "Fitzbek",
+                "relation": "is",
+                "entity2": "a village"
+            },
+            {
+                "entity1": "Television pictures",
+                "relation": "showed",
+                "entity2": "police officers 35 miles from Hamburg"
+            }
+        ]
+    },
+    {
+        "sentence": "Sprint Corp. 's recent disclosure that it expects a net loss in wireless customers this quarter helped send the company 's PCS tracking stock below $ 2 on Wednesday for the first time .",
+        "relations": [
+            {
+                "entity1": "Sprint Corp. 's recent disclosure that it expects a net loss in wireless customers this quarter",
+                "relation": "helped",
+                "entity2": "send the company 's PCS tracking stock below $ 2 on Wednesday"
+            },
+            {
+                "entity1": "Sprint Corp.",
+                "relation": "has",
+                "entity2": "recent disclosure that it expects a net loss in wireless customers this quarter"
+            },
+            {
+                "entity1": "it",
+                "relation": "expects",
+                "entity2": "a net loss in wireless customers this quarter"
+            },
+            {
+                "entity1": "the company",
+                "relation": "has",
+                "entity2": "PCS tracking stock"
+            }
+        ]
+    },
+    {
+        "sentence": "The average yield on the sale of C$ 1.9 billion of one-year bills was 4.167 percent , up from 4.165 percent two weeks ago .",
+        "relations": [
+            {
+                "entity1": "The average yield on the sale of C$ 1.9 billion of one-year bills",
+                "relation": "was",
+                "entity2": "4.167 percent up from 4.165 percent two weeks ago"
+            },
+            {
+                "entity1": "The average yield on the sale of C$ 1.9 billion of one-year bills",
+                "relation": "was",
+                "entity2": "4.167 percent"
+            }
+        ]
+    },
+    {
+        "sentence": "When the university 's president , Richard P. Traina , retired in 2000 , he moved right into a spot on the board of the George I. Alden Trust , a $ 135 million foundation that 's run out of Fletcher , Tilton 's offices and which has been a strong Clark su",
+        "relations": [
+            {
+                "entity1": "Tilton",
+                "relation": "has",
+                "entity2": "offices"
+            },
+            {
+                "entity1": "he",
+                "relation": "moved",
+                "entity2": "right into a spot When the university 's president retired in 2000"
+            },
+            {
+                "entity1": "he",
+                "relation": "moved",
+                "entity2": "right into a spot on the board of the George I. Alden Trust a $ 135 million foundation Tilton 's offices and which has been a strong Clark supporter"
+            },
+            {
+                "entity1": "he",
+                "relation": "moved",
+                "entity2": "right into a spot"
+            },
+            {
+                "entity1": "the university 's president",
+                "relation": "is",
+                "entity2": "Richard P. Traina"
+            },
+            {
+                "entity1": "the university 's president",
+                "relation": "retired",
+                "entity2": "in 2000"
+            },
+            {
+                "entity1": "the university",
+                "relation": "has",
+                "entity2": "president"
+            }
+        ]
+    },
+    {
+        "sentence": "July 's exports surpassed June 's total of $ 24.39 billion , and were well ahead of the previous January benchmark of C$ 24.88 billion .",
+        "relations": [
+            {
+                "entity1": "July 's exports",
+                "relation": "surpassed",
+                "entity2": "June 's total of $ 24.39 billion"
+            },
+            {
+                "entity1": "July 's exports",
+                "relation": "were",
+                "entity2": "well ahead of the previous January benchmark of C$ 24.88 billion"
+            }
+        ]
+    },
+    {
+        "sentence": "Its commercial spine , 18th Avenue , is chock full of pork and pasta stores and the Italian colors of green , white and red everywhere .",
+        "relations": [
+            {
+                "entity1": "Its commercial spine",
+                "relation": "is",
+                "entity2": "18th Avenue"
+            },
+            {
+                "entity1": "Its",
+                "relation": "has",
+                "entity2": "commercial spine"
+            }
+        ]
+    },
+    {
+        "sentence": "Instead of converging on the meeting place , Hall and Sax both approached from the same direction .",
+        "relations": [
+            {
+                "entity1": "Hall and Sax",
+                "relation": "approached",
+                "entity2": "from the same direction Instead of converging on the meeting place"
+            },
+            {
+                "entity1": "Hall and Sax",
+                "relation": "approached",
+                "entity2": "from the same direction"
+            }
+        ]
+    },
+    {
+        "sentence": "The demoted starter had not pitched in a week , but showed no signs of the long layoff .",
+        "relations": [
+            {
+                "entity1": "The demoted starter",
+                "relation": "had not pitched",
+                "entity2": "in a week"
+            },
+            {
+                "entity1": "The demoted starter",
+                "relation": "showed",
+                "entity2": "no signs of the long layoff"
+            }
+        ]
+    },
+    {
+        "sentence": "Beyond these practical considerations , there are other factors that can affect quality of life .",
+        "relations": [
+            {
+                "entity1": "other factors",
+                "relation": "can affect",
+                "entity2": "quality of life"
+            }
+        ]
+    },
+    {
+        "sentence": "That 's enough of a difference to entice pension funds into junk .",
+        "relations": [
+            {
+                "entity1": "That",
+                "relation": "'s",
+                "entity2": "enough of a difference to entice pension funds into junk"
+            },
+            {
+                "entity1": "That",
+                "relation": "'s",
+                "entity2": "enough of a difference to entice pension funds"
+            }
+        ]
+    },
+    {
+        "sentence": "The agency suspended imposition of the $ 100,000-per-voyage fines in April after Japan promised to address U.S. concerns by today .",
+        "relations": [
+            {
+                "entity1": "Japan",
+                "relation": "promised",
+                "entity2": "to address U.S. concerns by today"
+            },
+            {
+                "entity1": "Japan",
+                "relation": "promised",
+                "entity2": "to address U.S. concerns"
+            },
+            {
+                "entity1": "The agency",
+                "relation": "suspended",
+                "entity2": "imposition of the $ 100,000-per-voyage fines in April after Japan promised to address U.S. concerns by today"
+            },
+            {
+                "entity1": "The agency",
+                "relation": "suspended",
+                "entity2": "imposition of the $ 100,000-per-voyage fines in April"
+            }
+        ]
+    }
+]}
