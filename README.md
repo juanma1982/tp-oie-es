@@ -1,7 +1,7 @@
 # TP-OIE-ES
 Método de extracción de relaciones semánticas para la Web (OIE) en español
 
-##Steps to compile TP-OIE-ES application##
+## Steps to compile TP-OIE-ES application
 
     1. user must have Java 1.8 or greater installed and Maven (https://maven.apache.org/install.html). (tested with maven 3.5.2 and 3.3.9)
     
@@ -9,15 +9,15 @@ Método de extracción de relaciones semánticas para la Web (OIE) en español
 
 	This step will download all needed libraries and then will build TP-OIE from source code.
     2. When finish you should see a “BUILD SUCCESS” message similar to the following:
-[INFO] --------------
-[INFO] BUILD SUCCESS
-[INFO] --------------
+	[INFO] --------------
+	[INFO] BUILD SUCCESS
+	[INFO] --------------
 
     3. The application should be created into “target” directory. Please move the jar file to the parent directory and rename as “tp-oie-es.jar”, you can do that executing the following command:
 
 	mv target/TP-OIE-ES-1.0-jar-with-dependencies.jar tp-oie-es.jar
 	
-##Steps to run TP-OIE-ES##
+## Steps to run TP-OIE-ES
 
     1. If you are in a Linux environment, you can execute the file “runTP-OIE-ES.sh”, the available options are:
 
