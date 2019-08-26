@@ -373,14 +373,16 @@ public class RelationExtractor {
 		Set<Relation> set = new HashSet<Relation>();
 		//RelationExtractor extractor = new RelationExtractor();
 		
-		/*************Relation extraction******************/		
+		/*************Relation extraction******************/
+		
 		Map<String, String> currentRelationExtraction = new HashMap<String, String>();
 		for (Pattern pattern : this.treePatternList.getListOfRelations()) { //Get each pattern from the list of patterns for extract relations
+		
 			extractInformation(pattern,doc,currentRelationExtraction,"",""); //Extract the relations, using each pattern
 		} //END We get each pattern from the list of patterns for extract relations
 		
 		/*******Delete duplicated relations*************/
-		deleteDuplicatedRelations(currentRelationExtraction);
+		deleteDuplicatedRelations(currentRelationExtraction, sentenceData.getCleanSentence()); //TODO: pasar a inglés
 		validatePhrasalVerbs(sentenceData, currentRelationExtraction);
 		
 		for(String keyRelation: currentRelationExtraction.keySet()){ //for each relation candidate, obtained
@@ -450,13 +452,17 @@ public class RelationExtractor {
 		return set;		
 	}
 
-	private void deleteDuplicatedRelations(Map<String, String> currentRelationExtraction) {
+	//TODO: pasar a inglés
+	private void deleteDuplicatedRelations(Map<String, String> currentRelationExtraction, String sentence) {
 		
 		Set<String> relationsSet = new HashSet<String>();
 		Set<String> relationsToDelete = new HashSet<String>(); 
 		
 		for (String key : currentRelationExtraction.keySet()) {
-			relationsSet.add(currentRelationExtraction.get(key));
+			String relation = currentRelationExtraction.get(key);
+			if(sentence.contains(relation)) {
+				relationsSet.add(relation);
+			}
 		}
 		
 		List<String> relations = new ArrayList<String>();

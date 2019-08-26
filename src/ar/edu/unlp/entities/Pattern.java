@@ -157,7 +157,7 @@ public class Pattern implements Comparable<Pattern>{
 
 	@Override
 	public int compareTo(Pattern obj) {		
-	    return this.score-obj.score;
+	    return obj.score-this.score;
 	}
 	
 	public Map<String, Pattern> getNextPatterns() {
