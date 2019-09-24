@@ -7,7 +7,7 @@ import ar.edu.unlp.entities.SentenceData;
 public class SentenceManipulation {
 	
 	
-	//TODO:Pasar a inglés
+
 	public String getTheRestOfTheNounPhrase(SentenceData sentenceData, String relationPart) {
 		
 		ExtraSentenceData extraSentenceData = new ExtraSentenceData();

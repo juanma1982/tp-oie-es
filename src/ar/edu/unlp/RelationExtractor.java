@@ -284,7 +284,7 @@ public class RelationExtractor {
 			subjectCanidate =WordAtLeft+" "+subjectCanidate;
 		}
 		///////////Verificamos si es parte de un Chunked Phrase/////////////
-		//TODO:Pasar a ingles
+
 		if(!subjectCanidate.isEmpty()) {
 			String nounPhraseAtRigth = this.sentenceManipulation.getTheRestOfTheNounPhrase(sentenceData, subjectCanidate);
 			if(!nounPhraseAtRigth.isEmpty()) {
@@ -382,7 +382,7 @@ public class RelationExtractor {
 		} //END We get each pattern from the list of patterns for extract relations
 		
 		/*******Delete duplicated relations*************/
-		deleteDuplicatedRelations(currentRelationExtraction, sentenceData.getCleanSentence()); //TODO: pasar a inglés
+		deleteDuplicatedRelations(currentRelationExtraction, sentenceData.getCleanSentence());
 		validatePhrasalVerbs(sentenceData, currentRelationExtraction);
 		
 		for(String keyRelation: currentRelationExtraction.keySet()){ //for each relation candidate, obtained
@@ -435,7 +435,7 @@ public class RelationExtractor {
 								}
 								relation = new Relation(relation);
 							}
-						}//Termino el ciclo de subject. TODO: Pasar a ingles
+						}//Termino el ciclo de subject.
 						if(set.isEmpty() && relation.getRelation()!=null && relation.getEntity2()!=null ) {
 							String subject = this.argumentExtractor.extractNounPhraseAtLeft(sentenceData,  relation.getRelation(),  relation.getEntity2());
 							subject = this.validateSubject(subject, sentenceData);
@@ -452,7 +452,7 @@ public class RelationExtractor {
 		return set;		
 	}
 
-	//TODO: pasar a inglés
+
 	private void deleteDuplicatedRelations(Map<String, String> currentRelationExtraction, String sentence) {
 		
 		Set<String> relationsSet = new HashSet<String>();

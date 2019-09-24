@@ -27,8 +27,7 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 		
 	}
 		
-	
-	//TODO: pasar a inglés
+
 	public String extractNounPhraseAtLeft(SentenceData sentenceData, String relationStr, String argument){
 		String phraseAtLeft = "";
 		String sentence = sentenceData.getCleanSentence();
@@ -142,7 +141,7 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 				endNP = i;
 			}else if(foundNP && ChunkedLeft[i].equals(Words.Chunks.B_NP)) {
 					startNP = i;
-					lengthNP = (endNP - startNP)+1; //TODO: COrrección para el metodo en inglés
+					lengthNP = (endNP - startNP)+1;
 					break;
 			}			
 		}
@@ -174,7 +173,7 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 					np2.setStartIndex(np.getStartIndex());
 					return np2;
 				}
-			}//TODO: Pasar a ingles
+			}
 			if(this.tag[nextIndex].equals(Words.Chunks.B_ADVP)){
 				np2 = extractNextSingleADVPhraseStartingAt(ChunkedRight,localOffset);
 				if(np2.getLength() > 0) {
@@ -197,15 +196,15 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 	 * @return NounPhrase, an object with the extracted NounPhrase, the start position and the end position within the ChunkedRight
 	 */
 	protected NounPhrase extractNextSingleNounPhraseStartingAt(String[] ChunkedRight,int offset) {
-		//TODO: Pasar a ingles
+		
 		return extractNextSinglePhraseStartingAtWithTags(ChunkedRight,offset,Words.Chunks.B_NP,Words.Chunks.I_NP);
 	}
-	//TODO: Pasar a ingles
+	
 	protected NounPhrase extractNextSingleADVPhraseStartingAt(String[] ChunkedRight,int offset) {
 
 		return extractNextSinglePhraseStartingAtWithTags(ChunkedRight,offset,Words.Chunks.B_ADVP,Words.Chunks.I_ADVP);
 	}
-	//TODO: Pasar a ingles
+	
 	protected NounPhrase extractNextSinglePhraseStartingAtWithTags(String[] ChunkedRight,int offset, String initTag, String continueTag) {
 		NounPhrase np = new NounPhrase();
 		boolean foundNP = false;
@@ -253,7 +252,7 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 			int nextIndex = relStartWord+relWordCount+localOffset;
 			int nextIndexPlus = nextIndex+1;
 			if(sentArray.length>nextIndexPlus && this.posArray.length>nextIndexPlus && this.tag.length>nextIndexPlus) {
-				if(this.posArray[nextIndex].equals(Words.ADP) && this.tag[nextIndexPlus].equals(Words.Chunks.B_NP)) { //TODO: pasar a inglés
+				if(this.posArray[nextIndex].equals(Words.ADP) && this.tag[nextIndexPlus].equals(Words.Chunks.B_NP)) { 
 					np = extractNextNounPhrasesStartingAt(ChunkedRight,localOffset);
 					result.add(result.get(result.size()-1)+" "+this.sentArray[nextIndex]+" "+np.getNounPhrase());
 				}else if(this.posArray[nextIndex].equals(Words.DT) && this.tag[nextIndex].equals(Words.Chunks.B_NP)) {
