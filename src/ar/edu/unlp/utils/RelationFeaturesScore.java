@@ -1,57 +1,67 @@
 package ar.edu.unlp.utils;
 
+import ar.edu.unlp.constants.PosTagDic;
 import ar.edu.unlp.constants.Words;
 import ar.edu.unlp.entities.Relation;
 import ar.edu.unlp.entities.SentenceData;
 
+/*Spanish score*/
 public class RelationFeaturesScore {
 	
 	private SentenceData sentenceData = null;
 	private SentenceManipulation utils = new SentenceManipulation();
 		
-	public static final int S_EQ_REL_01 = 116;
-	public static final int REL_LAST_WORD_FOR_02 = 50;
-	public static final int REL_LAST_WORD_ON_03 = 49;
-	public static final int REL_LAST_WORD_OF_04 = 46;
-	public static final int S_LEN_LT11_05 = 43;
-	public static final int LEFT_POS_REL_06 = 43;
-	public static final int REL_COMPLIANT_VWP_07 = 42;
-	public static final int REL_LAST_WORD_TO_08 = 39;
-	public static final int REL_LAST_WORD_IN_09 = 25;
-	public static final int S_LEN_LT21_10 = 23;
-	public static final int S_START_W_E1_11 = 21;
-	public static final int E2_IS_PROPPER_NOUN_12 = 16;
-	public static final int E1_IS_PROPPER_NOUN_13 = 1;
-	public static final int NP_AT_LEFT_OF_E1_14 = -30;
-	public static final int S_LEN_GT21_15 = 0 ;
-	public static final int REL_COMPLIANT_V_16 = -61;
-	public static final int PREP_AT_LEFT_OF_E1_17 = -65;
-	public static final int NP_AT_RIGHT_E2_18 = -81;
-	public static final int LEFT_OF_R_CC_19 = -93;
+	public static final int S_EQ_REL_01 = 116; /*If the statement contains the complate extraction and also they are long equal (except for one or two words) */
+	public static final int REL_LAST_WORD_FOR_02 = 50; /*the last word of the relarion is FOR*/
+	public static final int REL_LAST_WORD_ON_03 = 49; /*the last word of the relarion is ON*/
+	public static final int REL_LAST_WORD_OF_04 = 46; /*the last word of the relarion is OF*/
+	public static final int S_LEN_LT11_05 = 43;  /*amount of words in sentence is lower than 11*/
+	public static final int LEFT_POS_REL_06 = 43; /*the word at the left of the relations, has a POS TAG starting with W*/
+	public static final int REL_COMPLIANT_VWP_07 = 42; /*The relation compliant with the restriction given by VWP*/
+	public static final int REL_LAST_WORD_TO_08 = 39; /*the last word of the relarion is TO*/
+	public static final int REL_LAST_WORD_IN_09 = 25; /*the last word of the relarion is IN*/
+	public static final int S_LEN_LT21_10 = 23; /*amount of words in sentence is lower than 21*/
+	public static final int S_START_W_E1_11 = 21; /*sentence begin with Entity1*/
+	public static final int E2_IS_PROPPER_NOUN_12 = 16; /*Entity2 is a properNoun*/
+	public static final int E1_IS_PROPPER_NOUN_13 = 1; /*EntityE1 is a properNoun*/
+	public static final int NP_AT_LEFT_OF_E1_14 = -30; /*At the left of entity01 is Noun Phrase*/
+	public static final int S_LEN_GT21_15 = 0 ; /*amount of words in sentence is greater than 21*/
+
+	public static final int REL_COMPLIANT_V_16 = -61; /*Relation compliant with V*/
+	public static final int PREP_AT_LEFT_OF_E1_17 = -65; /*Preposition at the left of E1*/
+	public static final int NP_AT_RIGHT_E2_18 = -81; /*There is a nounPhrase at the rigth of Entity2*/
+	public static final int LEFT_OF_R_CC_19 = -93;  /*The word at the keft of the relation is a conjuntion, and, or, etc*/
 	
-	public static final int E2_IS_DT_20 = -1000;
+	public static final int E2_EQ_E1_20 = -100; /*if entity 2 and entity1 are the same*/
+	public static final int E2_EQ_IT_21 = -100; /*if entity 2 is the word "IT"*/
+	public static final int REL_IN_E1_22 = -100; /*the hole relation is inside entity01*/
+	public static final int E1_ENDS_LIKE_REL_STARTS_23 = -50; /*if the Entity01 ends with the same word that relation starts*/
 	
-	public RelationFeaturesScore() {		
+	
+	public static final int E2_IS_DT_20 = -1000; /*Entity2 is a determinant*/
+
+	public RelationFeaturesScore() {
 	}
-		
-	public boolean isWH(String posToken) {
+	
+	public boolean isWH(String posToken) {		
 		return posToken.startsWith("W");
 	}
-		
+	
 	public boolean isW(String posToken) {
 		
-		if(posToken.startsWith("N") ||
-		   posToken.startsWith("JJ") ||
-		   posToken.startsWith("RB") ||
-		   posToken.startsWith("PR") ||
-		   posToken.startsWith("DT")) return true;
-		
+		if(PosTagDic.UPT2PENN.get(posToken).startsWith("N") ||
+			PosTagDic.UPT2PENN.get(posToken).startsWith("JJ") ||
+			PosTagDic.UPT2PENN.get(posToken).startsWith("RB") ||
+			PosTagDic.UPT2PENN.get(posToken).startsWith("PR") ||
+			PosTagDic.UPT2PENN.get(posToken).startsWith("DT")) return true;
+
 		return false;
 	}
+	
 	public boolean isP(String posToken) {
 		
-		if(posToken.equals("IN") ||
-				   posToken.equals("RP") ) return true;
+		if(PosTagDic.UPT2PENN.get(posToken).equals("IN") ||
+				PosTagDic.UPT2PENN.get(posToken).equals("RP") ) return true;
 		return false;
 	}
 	
@@ -69,11 +79,11 @@ public class RelationFeaturesScore {
 			
 			if(i==1) {
 				wSetted=isW(currentpos);
-				if(!currentpos.equals("RP") && !currentpos.startsWith("RB") && !wSetted) return false; 
+				if(!PosTagDic.UPT2PENN.get(currentpos).equals("RP") && !PosTagDic.UPT2PENN.get(currentpos).startsWith("RB") && !wSetted) return false; 
 			}
 			if(i==2) {
 				wSetted=isW(currentpos);
-				if(!currentpos.startsWith("RB") && !wSetted) return false;
+				if(!PosTagDic.UPT2PENN.get(currentpos).startsWith("RB") && !wSetted) return false;
 			}
 			if(i==3) {
 				wSetted=isW(currentpos);
@@ -86,14 +96,11 @@ public class RelationFeaturesScore {
 	
 	public boolean compliantV(String[] relationWords) {
 		
-		if(relationWords.length>3 || relationWords.length==0) return false;
-		if(!relationWords[0].startsWith("V")) return false;
-		if(relationWords.length==2) {
-			if(!relationWords[1].startsWith("RB") && !relationWords[1].equals("RP")) return false;
-		}
-		if(relationWords.length==3) {
-			if(!relationWords[1].equals("RP")) return false;
-			if(!relationWords[2].startsWith("RB")) return false;
+		if(relationWords.length<2 || relationWords.length>3) return false;
+		if(!PosTagDic.UPT2PENN.get(relationWords[0]).startsWith("V")) return false;
+		if(!relationWords[1].equals("ADP")) return false;
+		if(relationWords.length==3) {			
+			if(!PosTagDic.UPT2PENN.get(relationWords[2]).startsWith("RB")) return false;
 		}		
 		return true;
 	}
@@ -108,36 +115,45 @@ public class RelationFeaturesScore {
 	
 	public int calculate(SentenceData sentenceData,Relation relation){
 		int score = 0;
+		
 		try {
 			this.sentenceData = sentenceData;
+			String[] relationWords = relation.getRelation().split(" ");
+			String[] entity01Words = relation.getEntity1().split(" ");			
+			String[] sentenceWords = sentenceData.getCleanSentence().split(" ");
+
+			StringBuilder posTagTokensSB = new StringBuilder();
 			
-					
+			for (int i = 0; i < relationWords.length; i++) {
+				posTagTokensSB.append(sentenceData.getWordPOSTAG().get(relationWords[i]));
+				posTagTokensSB.append(" ");
+			}
+			String[] relationPosTagTokens = posTagTokensSB.toString().trim().split(" ");
+			
+			
 			/* If the statement contains the complate extraction and also they are long equal plus a couple of punctuation marks, the characteristic 1 is fulfilled. 
 			 * */
 			if(sentenceData.getSentence().contains(relation.inRow()) && (relation.inRow().length())+2 >= sentenceData.getSentence().length()) {
 				score += S_EQ_REL_01;
 			}
-			String[] relationWords = relation.getRelation().split(" ");
 			int index = lastIndexofPOS(relationWords,Words.ADP);
 			String lastPrepositionWord=null;
 			if(index!=-1) {
 				lastPrepositionWord=relationWords[index].toLowerCase();
-				if("for".equals(lastPrepositionWord)) {
+				if("por".equals(lastPrepositionWord) || "para".equals(lastPrepositionWord)) {
 					score += REL_LAST_WORD_FOR_02;
-				}else if("on".equals(lastPrepositionWord)) {
+				}else if("en".equals(lastPrepositionWord)) {
 					score += REL_LAST_WORD_ON_03;
-				}else if("of".equals(lastPrepositionWord)) {
+				}else if("de".equals(lastPrepositionWord)) {
 					score += REL_LAST_WORD_OF_04;
-				}else if("to".equals(lastPrepositionWord)) {
+				}else if("a".equals(lastPrepositionWord) || "hacia".equals(lastPrepositionWord)) {
 					score += REL_LAST_WORD_TO_08;
-				}else if("in".equals(lastPrepositionWord)) {
+				}/*else if("in".equals(lastPrepositionWord)) {
 					score += REL_LAST_WORD_IN_09;
-				}
+				}*/
 			}
 			
 			
-			
-			String[] sentenceWords = sentenceData.getCleanSentence().split(" ");
 			int sentenceLen = sentenceWords.length;
 			if(sentenceLen<=10) {
 				score +=S_LEN_LT11_05;
@@ -147,14 +163,15 @@ public class RelationFeaturesScore {
 				score +=S_LEN_GT21_15;
 			}
 			
-			/*04 feature*/
+			
 			String posLeftOfR = utils.getPOSTagAtLeftOf(sentenceData,relation.getRelation());
-			if(posLeftOfR.startsWith("W")) {
+			/*04 feature DISABLED for spanish*/
+			/*if(posLeftOfR.startsWith("W")) {
 				score +=LEFT_POS_REL_06;
-			}
+			}*/
 					
 			/*05 RELATION STRUCTURE*/
-			if(compliantVWP(relationWords)) {
+			if(compliantVWP(relationPosTagTokens)) {
 				score +=REL_COMPLIANT_VWP_07;
 			}
 			
@@ -208,7 +225,7 @@ public class RelationFeaturesScore {
 			}
 			
 			/*05 RELATION STRUCTURE*/
-			if(compliantV(relationWords)) {
+			if(compliantV(relationPosTagTokens)) {
 				score +=REL_COMPLIANT_V_16;
 			}
 			String posLeftOfE1 = utils.getPOSTagAtLeftOf(sentenceData,relation.getEntity1());
@@ -224,6 +241,23 @@ public class RelationFeaturesScore {
 			if(posLeftOfR.equals(Words.CCONJ)) {
 				score+=LEFT_OF_R_CC_19;
 			}
+			/*********/
+			if(relation.getEntity1().toLowerCase().equals(relation.getEntity2().toLowerCase())) {
+				score+=E2_EQ_E1_20;
+			}
+			/*if(relation.getEntity2().toLowerCase().equals("it")) {
+				score+=E2_EQ_IT_21;
+			}*/
+			if(relation.getEntity1().contains(relation.getRelation())) {
+				score+=REL_IN_E1_22;
+			}
+			if(entity01Words!=null && entity01Words.length>0 && relationWords!=null && relationWords.length>0) {
+				if(entity01Words[entity01Words.length-1].equals(relationWords[0])) {
+					score+=E1_ENDS_LIKE_REL_STARTS_23;
+				}
+			}
+			
+			
 		}catch (Exception e) {
 			System.err.println("error calculating score, relation: "+relation+". Message: "+e.getMessage());			
 		}
