@@ -49,7 +49,7 @@ public class ParagraphStanford {
 		    String subSentence = ad.removeAbbrevSpecialChar(lparagraph.substring(start, end).trim());		    
 		    String subSentenceQuoted = extractQuoted(subSentence);
 		    if(subSentenceQuoted!=null){
-		    	String key = Words.WILDCARD_QUOTED+String.format(Words.WILDCARD_LEADING_ZEROES_FORMAT, replaceCount);;
+		    	String key = Words.WILDCARD_QUOTED+String.format(Words.WILDCARD_LEADING_ZEROES_FORMAT, replaceCount);
 		    	sentenceList.add(subSentence.replace(subSentenceQuoted, key).replaceAll("\"", ""));
 		    	if(wildcardReplacement!=null){
 		    		wildcardReplacement.put(key, subSentenceQuoted);

@@ -70,9 +70,17 @@ public class StanfordCoreParser {
 		  String prevNer = Words.NER_OTHER;
 		  StringBuilder sbNERFull = new StringBuilder("");
 		  StringBuilder cleanSentence = new StringBuilder("");
+		  boolean wildcardsplitted = false;
 	      for (CoreLabel token: cm_sentence.get(TokensAnnotation.class)) {
-
 	        String word = token.get(TextAnnotation.class);
+	        if(word.equals(Words.WILDCARD_QUOTED)){
+	        	wildcardsplitted = true;
+	        	continue;
+	        }else if(wildcardsplitted) {
+	        	wildcardsplitted = false;
+	        	word = Words.WILDCARD_QUOTED+word;
+	        }
+	        
 	        String tokenPOS = null;
 	        if(Words.SIGNTRANSLATE.get(word) != null) {
 	        	word = Words.SIGNTRANSLATE.get(word);

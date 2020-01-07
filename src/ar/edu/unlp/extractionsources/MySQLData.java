@@ -99,14 +99,17 @@ public class MySQLData {
 		return null;
 	}
 	
+	//(`id_metodo`,`id_articulo`, `score`, `entidad01`,`relacion`,`entidad02`) VALUES (2,?,?,?,?,?)
 	public void insertRelationExtracted(RelationForSQL relation) throws SQLException{
 		
 		  PreparedStatement preparedStmt = conn.prepareStatement(this.sqlInsertSingleExtraction);
-	      preparedStmt.setString(1, relation.getEntity1());
-	      preparedStmt.setString(2, relation.getRelation());
-	      preparedStmt.setString(3, relation.getEntity2());
-	      preparedStmt.setInt(4, relation.getIdText());
-	      preparedStmt.setInt(5, relation.getIdDatabase());
+		  preparedStmt.setInt(1, relation.getIdText());
+		  preparedStmt.setInt(2, relation.getScore());
+	      preparedStmt.setString(3, relation.getEntity1());
+	      preparedStmt.setString(4, relation.getRelation());
+	      preparedStmt.setString(5, relation.getEntity2());
+	      
+	      
 
 	      // execute the preparedstatement
 	      preparedStmt.execute();
@@ -140,7 +143,7 @@ public class MySQLData {
 			System.out.println(text);
 			List<Relation> relations = extractor.extractInformationFromParagraph(text);
 			for (Relation relation : relations) {
-				if(relation.getScore()<-50) continue;
+				if(relation.getScore()<= 0) continue;
 				RelationForSQL local = new RelationForSQL(relation);
 				local.setIdDatabase(mysql.currentIdDatabase);
 				local.setIdText(mysql.currentIdText);

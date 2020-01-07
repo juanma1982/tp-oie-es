@@ -95,11 +95,12 @@ public class RelationExtractor {
 		    	 continue;
 		    }
 			int index = relation.getEntity2().indexOf(Words.WILDCARD_QUOTED);
-			if(index > -1){
-				String keyWord = relation.getEntity2().substring(index,index+Words.WILDCARD_QUOTED.length()+Words.WILDCARD_LEADING_ZEROES_COUNT+1);
-				String[] newKeyArray =keyWord.split(" ");
+			if(index > -1){				
+				String keyWord = relation.getEntity2().substring(index,index+Words.WILDCARD_QUOTED.length()+Words.WILDCARD_LEADING_ZEROES_COUNT);
+				/*String[] newKeyArray =keyWord.split(" ");
 				String newKeyWord =newKeyArray[0]+newKeyArray[1];
-				relation.setEntity2(relation.getEntity2().replace(keyWord, "\""+mapOfReplacement.get(newKeyWord)+"\""));
+				relation.setEntity2(relation.getEntity2().replace(keyWord, "\""+mapOfReplacement.get(newKeyWord)+"\""));*/
+				relation.setEntity2(relation.getEntity2().replace(keyWord, "\""+mapOfReplacement.get(keyWord)+"\""));
 		    }
 		}
 	}

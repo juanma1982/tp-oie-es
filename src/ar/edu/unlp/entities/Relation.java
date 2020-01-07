@@ -22,6 +22,7 @@ public class Relation {
 		this.entity1 = toCopy.entity1;
 		this.entity2 = toCopy.entity2;
 		this.relation = toCopy.relation;
+		this.score = toCopy.score;
 		this.fullExtractionAsPosTags = toCopy.fullExtractionAsPosTags;
 	}
 		
