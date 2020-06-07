@@ -13,7 +13,7 @@ import ar.edu.unlp.entities.Relation;
 public class TestExtractionUsingJSONPatterns4 {
 		
 	
-	public static final String[] LINES ={""};
+	public static final String[] LINES ={"Saltó sobre la cerca.", "Fue galardonado con el Premio Nobel en Suiza en 1921."};
 	
 	@Before
 	public void setUp() throws Exception {
@@ -23,11 +23,9 @@ public class TestExtractionUsingJSONPatterns4 {
 	@Test
 	public void test() {
 		try{
-		 System.out.println("Extract a wildcard quoted word");
+		 System.out.println("Extract a tacit subject sentence");
 		 RelationExtractor extractor = new RelationExtractor();
-		 extractor.setUseReverb(false);
-		 
-
+		 		 
 		 for (String line : LINES) {
 			 List<Relation> relations = extractor.extractInformationFromParagraph(line);
 			 if(relations!=null && !relations.isEmpty()){

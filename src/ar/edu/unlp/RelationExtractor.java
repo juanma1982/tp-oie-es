@@ -42,6 +42,7 @@ public class RelationExtractor {
 	protected SentenceManipulation sentenceManipulation = null;
 	protected ReVerbExtractorUtility reverbExtractor = null;
 	protected boolean useReverb = false;
+	protected boolean lookForTacitSubject = true;
 	protected int scoreLimit = Constants.SCORE_LIMIT;
 	protected boolean scoreFilter = true;
 		
@@ -73,7 +74,11 @@ public class RelationExtractor {
 		
 		for (int i=0;i<sentences.length;i++) {
 			String line = sentences[i];
-			relations.addAll(extractInformationFromLine(line));
+			 List<Relation> relationsInLine = extractInformationFromLine(line);
+			 if(relationsInLine.isEmpty() && lookForTacitSubject) {
+				 relationsInLine = extractInformationFromLineUsingTacitSubject(line);
+			 }
+			relations.addAll(relationsInLine);
 		}
 		this.replacedQuotedInRelations(relations,mapOfReplacement);	
 		if(CHECK_NON_FACTUAL) {
@@ -105,9 +110,32 @@ public class RelationExtractor {
 		}
 	}
 
-	public List<Relation> extractInformationFromLine(String line) throws Exception{
+	public List<Relation> extractInformationFromLineUsingTacitSubject(String line) throws Exception{
+		if(line==null) return Collections.emptyList();
 		List<Relation> relations = new ArrayList<Relation>();
-		if(line==null) return relations;
+		StringBuilder sb = new StringBuilder(Words.TACIT_SUBJECT_WILDCARD);
+		sb.append(" ");
+		sb.append(line.substring(0, 1).toLowerCase());
+		sb.append(line.substring(1));
+		
+		List<SentenceData> listOfParsedData = parser.doParser(sb.toString());
+		for (SentenceData sentenceData : listOfParsedData) {
+			Set<Relation> relationsAux = extractInformationFromXMLTree(sentenceData);
+			if(relationsAux.size() > 0) {
+				relations.addAll(relationsAux) ;
+			}
+		}
+		removeDuplicatedExtractions(relations);
+		for (Relation relation : relations) {
+			relation.setEntity1(relation.getEntity1().replace(Words.TACIT_SUBJECT_WILDCARD, ""));
+			relation.setEntity2(relation.getEntity2().replace(Words.TACIT_SUBJECT_WILDCARD, ""));
+		}
+		return relations;
+	}
+	
+	public List<Relation> extractInformationFromLine(String line) throws Exception{
+		if(line==null) return Collections.emptyList();
+		List<Relation> relations = new ArrayList<Relation>();
 		List<SentenceData> listOfParsedData = parser.doParser(line);		
 		for (SentenceData sentenceData : listOfParsedData) {
 			Set<Relation> relationsAux = extractInformationFromXMLTree(sentenceData);
@@ -133,8 +161,7 @@ public class RelationExtractor {
 		}
 		
 		
-		removeDuplicatedExtractions(relations);
-		
+		removeDuplicatedExtractions(relations);	
 		return relations;
 	}
 	
@@ -492,12 +519,12 @@ public class RelationExtractor {
 		return useReverb;
 	}
 
-	public void setUseReverb(boolean useReverb) {
+	/*public void setUseReverb(boolean useReverb) {
 		this.useReverb = useReverb;
 		if(this.useReverb && reverbExtractor==null) {
 			reverbExtractor = new ReVerbExtractorUtility();
 		}
-	}
+	}*/
 
 	public void setScoreLimit(int score) {
 		this.scoreLimit = score;

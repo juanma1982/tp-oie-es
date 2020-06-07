@@ -51,7 +51,9 @@ public class Words {
 	public static final String PROPER_NOUN_POS_START_WITH= "PROPN";
 	
 	public static final String WILDCARD_QUOTED = "#QUOTED";
-	public static final String WILDCARD_QUOTED_REVERB_SET = "# QUOTED"; 
+	public static final String WILDCARD_QUOTED_REVERB_SET = "# QUOTED";
+	public static final String TACIT_SUBJECT_WILDCARD = "Él";
+	public static final String TACIT_SUBJECT_WILDCARD_POS = "PRON";
 	//public static final String WILDCARD_QUOTED_POS = "NN";
 	public static final String WILDCARD_QUOTED_POS = "NOUN";
 	//public static final String WILDCARD_ERROR_REPLACE = "something";

@@ -25,8 +25,7 @@ public class TestExtractionUsingJSONPatterns3 {
 		try{
 		 System.out.println("Extract a wildcard quoted word");
 		 RelationExtractor extractor = new RelationExtractor();
-		 extractor.setUseReverb(false);
-		 
+		 		 
 
 		 for (String line : LINES) {
 			 List<Relation> relations = extractor.extractInformationFromParagraph(line);
