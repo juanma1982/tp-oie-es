@@ -1,57 +1,56 @@
 {lang: "en",
 examples:[
-	{sentence: "Albert Einstein was awarded the Nobel Prize in Sweden in 1921.",
+	{sentence: "Albert Einstein recibió el Premio Nobel en Suecia en 1921.",
 	 relations: [
-	 		{entity1:"Albert Einstein", relation:"was awarded", entity2:"the Nobel Prize"},
-			{entity1:"Albert Einstein", relation:"was awarded", entity2:"in Sweden"},
-			{entity1:"Albert Einstein", relation:"was awarded", entity2:"in 1921"} ]
+	 		{entity1:"Albert Einstein", relation:"recibió el", entity2:"Premio Nobel"},
+			{entity1:"Albert Einstein", relation:"recibió en", entity2:"Suecia"},
+			{entity1:"Albert Einstein", relation:"recibió en", entity2:"1921"} ]
 	},
-	{sentence: "Peter plays with the ball.",
+	{sentence: "Pedro juega con la pelota.",
 	 relations: [
-	 		{entity1:"Peter", relation:"plays", entity2:"with the ball"} ]
+	 		{entity1:"Pedro", relation:"juega con", entity2:"la pelota"} ]
 	},
-	{sentence: "Rubik's Cube is a 3-D combination puzzle invented in 1974 by Hungarian sculptor and professor of architecture Erno Rubik.",
+	{sentence: "El Cubo Rubik es un rompecabezas de combinación en 3D inventado en 1974 por el escultor y profesor de arquitectura húngaro Erno Rubik.",
 	 relations: [
-	 		{entity1:"Rubik's Cube", relation:"is", entity2:"a 3-D combination puzzle"},
-			{entity1:"Rubik's Cube", relation:"invented", entity2:"by Hungarian sculptor and professor of architecture Erno Rubik"},
-			{entity1:"Rubik's Cube", relation:"invented", entity2:"in 1974"}
+	 		{entity1:"El Cubo Rubik", relation:"es un", entity2:"rompecabezas de combinación en 3D"},
+			{entity1:"El Cubo Rubik", relation:"inventado en", entity2:"1974"},
+			{entity1:"El Cubo Rubik", relation:"inventado por", entity2:"el escultor y profesor de arquitectura húngaro Erno Rubik"}
 			 ]
 	},
-	{ sentence: "Gandhi was vegetarian",
-	  relations: [ {entity1:"Gandhi", relation:"was", entity2:"vegetarian"} ]
+	{ sentence: "Gandhi era vegetariano",
+	  relations: [ {entity1:"Gandhi", relation:"era", entity2:"vegetariano"} ]
 	},
-	{ sentence: "Albert Einstein died in Princeton.",
-	  relations: [ {entity1:"Albert Einstein", relation:"died", entity2:"in Princeton"} ]
+	{ sentence: "Albert Einstein murió en Princeton.",
+	  relations: [ {entity1:"Albert Einstein", relation:"murió en", entity2:"Princeton"} ]
 	},
-	{ sentence: "Albert Einstein remained in Princeton.",
-	  relations: [ {entity1:"Albert Einstein", relation:"remained", entity2:"in Princeton"} ]
+	{ sentence: "Albert Einstein permaneció en Princeton.",
+	  relations: [ {entity1:"Albert Einstein", relation:"permaneció en", entity2:"Princeton"} ]
 	},
-	{ sentence: "Albert Einstein has won the Nobel Prize.",
-	  relations: [ {entity1:"Albert Einstein", relation:"has won", entity2:"the Nobel Prize"} ]
+	{ sentence: "Albert Einstein ha ganado el Premio Nobel.",
+	  relations: [ {entity1:"Albert Einstein", relation:"ha ganado el", entity2:"Premio Nobel"} ]
 	},
-	{ sentence: "RSAS gave Albert Einstein the Nobel Prize.",
-	  relations: [ {entity1:"RSAS", relation:"gave", entity2:"Albert Einstein the Nobel Prize"} ]
+	{ sentence: "RSAS le otorgó a Albert Einstein el Premio Nobel.",
+	  relations: [ {entity1:"RSAS", relation:"otorgó a", entity2:"Albert Einstein el Premio Nobel"} ]
 	},
-	{ sentence: "The doorman showed Albert Einstein to his office.",
-	  relations: [ {entity1:"The doorman", relation:"showed", entity2:"Albert Einstein to his office"} ]
+	{ sentence: "El portero mostró a Albert Einstein su oficina.",
+	  relations: [ {entity1:"El portero", relation:"mostró a", entity2:"Albert Einstein su oficina"} ]
 	},
-	{ sentence: "Albert Einstein declared the meeting open.",
-	  relations: [ {entity1:"Albert Einstein", relation:"declared", entity2:"the meeting open"} ]
+	{ sentence: "Albert Einstein declaró abierta la reunión.",
+	  relations: [ {entity1:"Albert Einstein", relation:"declaró abierta", entity2:"la reunión"} ]
 	},
 	{
-		sentence: "In 1872, the conflict climaxed with a final split between the two groups at the Hague Congress, where Bakunin and James Guillaume were expelled from the International and its headquarters were transferred to New York.",
+		sentence: "En 1872, el conflicto culminó con una división final entre los dos grupos en el Congreso de La Haya, donde Bakunin y James Guillaume fueron expulsados de la Internacional y su sede se trasladó a Nueva York.",
 		relations: [
- 			{entity1:"the conflict", relation:"climaxed", entity2:"with a final split between the two groups"},
- 			{entity1:"the conflict", relation:"climaxed", entity2:"the Hague Congress"}, 			
- 			{entity1:"the conflict", relation:"climaxed", entity2:"In 1872"},
- 			{entity1:"Bakunin", relation:"were expelled", entity2:"from the International"},
- 			{entity1:"James Guillaume", relation:"were expelled", entity2:"from the International"},
- 			{entity1:"its headquarters", relation:"were transferred", entity2:"to New York"}
+ 			{entity1:"el conflicto", relation:"culminó con", entity2:"una división final entre los dos grupos"},
+ 			{entity1:"el conflicto", relation:"culminó en", entity2:"el Congreso de La Haya"}, 			
+ 			{entity1:"el conflicto", relation:"culminó En", entity2:"1872"},
+ 			{entity1:"Bakunin y James Guillaume", relation:"fueron expulsados de", entity2:"la Internacional"}, 			
+ 			{entity1:"su sede", relation:"se trasladó a", entity2:"Nueva York"}
 		]		
 	},
 	{
-		sentence: "He said something.",
-		relations: [{entity1:"He", relation:"said", entity2:"something"}]		
+		sentence: "Él dijo algo.",
+		relations: [{entity1:"Él", relation:"dijo", entity2:"algo"}]		
 	}]
 }
 
