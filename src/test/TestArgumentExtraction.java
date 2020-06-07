@@ -1,5 +1,6 @@
-package estest;
+package test;
 
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.fail;
 
 import java.io.FileNotFoundException;
@@ -10,7 +11,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import ar.edu.unlp.ArgumentExtractorRegex;
+//import ar.edu.unlp.ArgumentExtractorRegex;
 import ar.edu.unlp.ArgumentExtractorReverbStyle;
 import ar.edu.unlp.PatternLoader;
 import ar.edu.unlp.StanfordCoreParser;
@@ -42,6 +43,7 @@ public class TestArgumentExtraction {
 			e1.printStackTrace();
 			fail();
 		}
+		assertNotNull("patternContainer is null", patternContainer);
 		argumentExtractor = new ArgumentExtractorReverbStyle();
 		
 		try {

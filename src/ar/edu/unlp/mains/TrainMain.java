@@ -1,7 +1,6 @@
 package ar.edu.unlp.mains;
 
 import ar.edu.unlp.Train;
-import ar.edu.unlp.constants.Filenames;
 
 public class TrainMain {
 

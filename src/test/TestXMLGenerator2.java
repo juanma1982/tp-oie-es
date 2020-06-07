@@ -2,17 +2,13 @@ package test;
 
 import static org.junit.Assert.fail;
 
-import java.io.FileNotFoundException;
 import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import ar.edu.unlp.ExampleLoader;
 import ar.edu.unlp.StanfordCoreParser;
-import ar.edu.unlp.constants.Filenames;
 import ar.edu.unlp.entities.Example;
-import ar.edu.unlp.entities.ExampleList;
 import ar.edu.unlp.entities.SentenceData;
 
 public class TestXMLGenerator2 {

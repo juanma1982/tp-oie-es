@@ -78,7 +78,7 @@ public class TestExampleToPatternAndSentence {
 		
 		PatternContainer patternContainer; 
 		PatternList treePatternList;
-		PatternArgumentList argumentPatternList;
+		
 		ArgumentExtractorRegex argumentExtractor = null;
 		
 		patternContainer = new PatternContainer();
@@ -88,8 +88,7 @@ public class TestExampleToPatternAndSentence {
 		OIEPatternExtraction oiePatternExtraction = new OIEPatternExtraction();
 		oiePatternExtraction.setArgumentExtractor(argumentExtractor);
 		oiePatternExtraction.generateExtractionPatterns(example, treePatternList);
-		argumentPatternList = oiePatternExtraction.getArgumentExtractor().getPatterns();
-		
+			
 		treePatternList.initArguments(); //clean arguments, because is not longer used
 		patternContainer.setTreePatterns(treePatternList);		
 		patternContainer.setPatternsForArguments(new PatternArgumentList());

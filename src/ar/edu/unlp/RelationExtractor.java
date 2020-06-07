@@ -228,6 +228,8 @@ public class RelationExtractor {
 		}
 	}*/
 
+	
+	@SuppressWarnings("unused")
 	private String extractFirst(Pattern pattern, Document doc, String words){
 		if(words == null){
 			words = "";

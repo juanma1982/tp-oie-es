@@ -61,7 +61,12 @@ public class Words {
 	public static final String WILDCARD_LEADING_ZEROES_FORMAT = "%03d";
 	public static final int WILDCARD_LEADING_ZEROES_COUNT = 3;
 	
-	public static final Map<String , String> WORDTRANSLATE = new HashMap<String , String>() {{
+	public static final Map<String , String> WORDTRANSLATE = new HashMap<String , String>() {/**
+		 * 
+		 */
+		private static final long serialVersionUID = -1123849607457813641L;
+
+	{
 		put("of","de");
 		put("in","en");
 		put("for","para|por");
@@ -75,7 +80,12 @@ public class Words {
 		
 	}};
 	
-	public static final Map<String , String> SIGNTRANSLATE = new HashMap<String , String>() {{
+	public static final Map<String , String> SIGNTRANSLATE = new HashMap<String , String>() {/**
+		 * 
+		 */
+		private static final long serialVersionUID = -5968017843289154169L;
+
+	{
 		put("=LRB=","(");
 		put("=RRB=",")");
 	}};	
