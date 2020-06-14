@@ -122,7 +122,7 @@ public class SentenceManipulation {
 				}
 			}
 		}catch(ArrayIndexOutOfBoundsException e){
-			System.err.println("erro at startWord: "+e.getMessage()+".. continues");
+			System.err.println("error at startWord: "+e.getMessage()+".. continues");
 			System.err.println("text: "+text);
 			System.err.println("subtext: "+subtext);
 		}

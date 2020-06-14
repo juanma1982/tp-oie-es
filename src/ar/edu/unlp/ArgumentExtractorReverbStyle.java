@@ -17,16 +17,20 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 	protected String[] sentArray = null;
 	protected String[] posArray = null;
 	protected String tag[] = null;
-	protected String relationStr;
+	protected String currentRelationStr;
 	protected int relStartWord;
 	protected int relWordCount;
-	protected int rightTextWordCount;		
+	protected int rightTextWordCount;
 	protected int leftTextWordCount;
+	//protected String newRelation = "";
 	
 	public ArgumentExtractorReverbStyle(){
 		
 	}
-		
+	
+	public String getCurrentRelationStr() {
+		return this.currentRelationStr;
+	}
 
 	public String extractNounPhraseAtLeft(SentenceData sentenceData, String relationStr, String argument){
 		String phraseAtLeft = "";
@@ -47,10 +51,10 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 	}
 	
 	public List<String> argumentExtractorAll(SentenceData sentenceData, String relationStr, String entity01){
-			
+						
 			List<String> listStr = new ArrayList<String>();
 			if(sentenceData.getSentence().isEmpty()) return listStr;
-			this.relationStr = relationStr;
+			this.currentRelationStr = relationStr;
 			String str = sentenceData.getCleanSentence();
 			int totalWords = sentenceUtils.countWords(str);
 			if(totalWords == 0) return listStr;
@@ -61,7 +65,20 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 			if(rightChunkedSentence==null) {
 				leftChunkedSentence = sentenceUtils.getChunkedSentenceAtLeftOf(sentenceData, relationStr,extraSentenceData);
 			}
-			if(rightChunkedSentence==null && leftChunkedSentence==null) return listStr;
+			
+			this.sentArray = sentenceData.getCleanSentenceArray();
+			this.posArray  = sentenceData.getSentenceAsPOSTagsArray();
+			this.tag = sentenceData.getChunkerTags();	
+			
+			if(rightChunkedSentence==null && leftChunkedSentence==null) {
+				String newRelationStr = extractTextInTheMiddle(sentenceData.getCleanSentence(),relationStr);
+				if(newRelationStr != null) {
+					return argumentExtractorAll(sentenceData,newRelationStr, null);
+				}
+				String lastWord = getLastWord(relationStr);
+				if(!lastWord.equals(relationStr)) return argumentExtractorAll(sentenceData, lastWord, null);
+				return listStr;
+			}
 			
 			this.relStartWord = extraSentenceData.relStartWord;
 			this.relWordCount = extraSentenceData.relWordCount;
@@ -78,17 +95,16 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 				} 
 				return listStr;
 			}
-			
-			this.sentArray = sentenceData.getCleanSentenceArray();			
-			//this.posArray  = sentenceData.getSentenceAsPOSTagsExtendedArray();
-			this.posArray  = sentenceData.getSentenceAsPOSTagsArray();
-			this.tag = sentenceData.getChunkerTags();						
-			
-			/****extract at  Right ***/
-			if(rightChunkedSentence!=null) {
-				listStr.addAll(extractAtRight(rightChunkedSentence));
-			}
-			if(!listStr.isEmpty()) return listStr;
+			if(rightText != null && !rightText.isEmpty()) {
+				listStr.add(rightText);
+				return listStr;
+			}		
+//			
+//			/****extract at  Right ***/
+//			if(rightChunkedSentence!=null) {
+//				listStr.addAll(extractAtRight(rightChunkedSentence));
+//			}
+//			if(!listStr.isEmpty()) return listStr;
 			/********************extract at left******************************/
 			if(leftChunkedSentence!=null) {
 				String extractionCandidate = extractAtLeft(leftChunkedSentence);
@@ -241,7 +257,7 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 		int prevIndex = relStartWord+relWordCount+np.getStartIndex()-1;		
 		if(prevIndex >=0) {
 			String wordBefore = sentenceUtils.extractSubString(sentArray,prevIndex,1);
-			if(isAGoodWordToStartArgumnet(wordBefore) && !relationStr.endsWith(wordBefore)) {
+			if(isAGoodWordToStartArgumnet(wordBefore) && !currentRelationStr.endsWith(wordBefore)) {
 				np.setNounPhrase(wordBefore+" "+np.getNounPhrase());
 			}
 		}
@@ -279,6 +295,38 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 			}
 		}
 		return false;
+	}
+	
+	public String getLastWord(String line) {
+		String[] words = line.split(" ");
+		if(words!=null) return words[words.length-1];
+		return line;
+	}
+	
+	/**
+	 * This method will extract all text between the start and the end of a given relation.
+	 * For example: 
+	 *       sentence: "Albert Einstein was awarded the Nobel Prize in Sweden in 1921."<br/>
+	 *       line: "was awarded in"<br/>
+	 *       The return will be: was awarded the Nobel Prize in
+	 * @param sentence any String      
+	 * @param line String
+	 * @return null or the full text between the words of the relation
+	 */
+	public String extractTextInTheMiddle(String sentence, String line) {
+		String[] words = line.split(" ");
+		if(words!=null && words.length >1) {
+			StringBuilder sb = new StringBuilder();
+			for(int i=0;i<(words.length-1);i++) {
+				sb.append(words[i]);
+				sb.append(" ");
+			}
+			int start = sentence.indexOf(sb.toString().trim());
+			int end = sentence.indexOf(words[words.length-1]);
+			if(start <= -1 || end <= 0 || (end <= start)) return null;
+			return sentence.substring(start, end+(words[words.length-1].length()));
+		}
+		return null;
 	}
 	
 }

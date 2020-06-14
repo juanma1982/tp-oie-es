@@ -264,7 +264,7 @@ public class RelationExtractor {
 			patterStr = "";
 		}
 		Pattern currentPattern = pattern;
-		Element element = doc.select(currentPattern.getPatternStrES()).first();
+		Element element = doc.select(currentPattern.getPatternStr()).first();
 		if(element != null){
 			if(!words.isEmpty()){
 				words = words+ " ";
@@ -435,7 +435,9 @@ public class RelationExtractor {
 	
 					for (String argument : arguments) {
 						for(String keySubject: subjectCurrentExtractionAll.keySet()){
-							relation.setEntity2(argument);
+							relation.setEntity2(argument);							
+							relation.setRelation(this.argumentExtractor.getCurrentRelationStr());
+							
 							String subject = this.validateSubject(subjectCurrentExtractionAll.get(keySubject), sentenceData);
 							if(subject == null) continue;
 							relation.setEntity1(subject);

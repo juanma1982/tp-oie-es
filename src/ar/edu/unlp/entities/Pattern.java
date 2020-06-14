@@ -48,7 +48,7 @@ public class Pattern implements Comparable<Pattern>{
 		return patternStr;
 	}
 	
-	public String getPatternStrES() {		
+	public String getPatternStrES() {
 		java.util.regex.Pattern pattern = java.util.regex.Pattern.compile(Pattern.EXTRACT_BRACKET_CONTENT_REGEX);
 		Matcher matcher = pattern.matcher(this.patternStr);
 		String bracketContent = null;
