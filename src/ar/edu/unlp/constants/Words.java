@@ -43,6 +43,7 @@ public class Words {
 	public static final String[] PHRASAL_VERBS_COMMON_FIRST_WORDS = {"se", "nos"};
 	public static final String[] ENDING_POSTAGS_TO_REMOVE= {".", ","};
 	public static final String[] NP_CONNECTORS= {"a", "de", "en", "los"};
+	public static final String[] SUBJECTS_CONNECTORS= {"de", "en"};
 	
 	public static final String NER_OTHER = "O";
 	public static final String WORD_WILDCARD_NER_FULL = "_";

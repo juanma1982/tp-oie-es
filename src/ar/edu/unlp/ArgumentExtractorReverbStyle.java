@@ -96,7 +96,7 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 				return listStr;
 			}
 			if(rightText != null && !rightText.isEmpty()) {
-				listStr.add(rightText);
+				listStr = saidExtraction(listStr,rightText);
 				return listStr;
 			}		
 //			
@@ -115,6 +115,14 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 			return listStr;
 	}
 
+	/**
+	 * Given a text and a list of strings, this function will add in the list a new argument taken from the rigth text 
+	 * until the first puntuation mark
+	 * 
+	 * @param arguments
+	 * @param rightText
+	 * @return
+	 */
 	private List<String> saidExtraction(List<String> arguments, String rightText) {
 		
 		if(rightText!=null && !rightText.isEmpty()) {
@@ -150,16 +158,16 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 		int lengthNP = 0;
 		String[] ChunkedLeft = leftChunkedSentence.split(" ");		
 		int endNP = 0;
-		lengthNP = 0;
+		lengthNP = 1;
 		for (int i = ChunkedLeft.length-1; i >= 0; i--) {
 			if(!foundNP && ChunkedLeft[i].equals(Words.Chunks.I_NP)) {
 				foundNP=true;
 				endNP = i;
-			}else if(foundNP && ChunkedLeft[i].equals(Words.Chunks.B_NP)) {
-					startNP = i;
-					lengthNP = (endNP - startNP)+1;
-					break;
-			}			
+			}else if(ChunkedLeft[i].equals(Words.Chunks.B_NP)) {
+				startNP = i;
+				if(endNP > 0) lengthNP = (endNP - startNP)+1;				
+				break;
+			}
 		}
 		return sentenceUtils.extractSubString(sentArray,startNP,lengthNP);
 	}

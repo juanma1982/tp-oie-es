@@ -12,7 +12,7 @@ import ar.edu.unlp.entities.Relation;
 public class TestExtractionUsingJSONPatterns4 {
 		
 	
-	public static final String[] LINES ={"Saltó sobre la cerca.", "Fue galardonado con el Premio Nobel en Suiza en 1921."};
+	public static final String[] LINES ={"Fue galardonado con el Premio Nobel en Suiza en 1921.","Saltó sobre la cerca."};
 	
 	@Before
 	public void setUp() throws Exception {

@@ -26,6 +26,7 @@ import ar.edu.unlp.utils.ParagraphStanford;
 import ar.edu.unlp.utils.RelationFeaturesScore;
 import ar.edu.unlp.utils.SentenceManipulation;
 import ar.edu.unlp.utils.StringLengthComparator;
+import ar.edu.unlp.utils.WordsUtils;
 
 public class RelationExtractor {
 	
@@ -288,7 +289,12 @@ public class RelationExtractor {
 	}
 	
 	/**
-	 * Make some validations in the extracted subject (entity 1), in order to improve it
+	 * Make some validations in the extracted subject (entity 1), in order to improve it:
+	 * 
+	 * 1. If the subject has only one word of, and the word is part of an entity (NER) => return the full entity
+	 * 2. Add missing words in the middle, for example: "a spokeman" => "a defense spokeman"
+	 * 3. Add the article at left, for example the word "The" in english or "El" in spanish
+	 * 4. Connect with the following noun phrase if the word at rigth is "de" or "en" (spanish) 
 	 * @param subjectCanidate
 	 * @param sentenceData
 	 * @return
@@ -299,12 +305,11 @@ public class RelationExtractor {
 			String newSubject = sentenceData.getWordNER().get(subjectCanidate+Words.WORD_WILDCARD_NER_FULL);
 			if(newSubject!=null) return newSubject;
 		}
-		if(!sentenceData.getCleanSentence().contains(subjectCanidate)){ 
-			//TODO FIX: if the word order is different from the reading order (left to right), it can extract anything wrong, verify with: "U.S. farmers who in the past have grown oats for their own use but failed to certify to the government that they had done so probably will be allowed to continue planting that crop and be eligible for corn program benefits, an aide to Agriculture Secretary Richard Lyng said."
+		if(!sentenceData.getCleanSentence().contains(subjectCanidate)){
 			subjectCanidate = completeSubject(subjectCanidate,sentenceData.getCleanSentence());
 		}
 		if(subjectCanidate == null) return null;
-		//Add the "The" at Left if its exists
+		//Add the article at left, for example the word "The" in english or "El" in spanish
 		String WordAtLeft = this.sentenceManipulation.getWordAtLeftOf(sentenceData, subjectCanidate);
 		String POSTtAtLeft =null;
 		if(WordAtLeft!=null && !WordAtLeft.isEmpty()) {
@@ -313,7 +318,7 @@ public class RelationExtractor {
 		if(POSTtAtLeft!=null && POSTtAtLeft.equals(Words.DT)) {
 			subjectCanidate =WordAtLeft+" "+subjectCanidate;
 		}
-		///////////Verificamos si es parte de un Chunked Phrase/////////////
+		///////////verify if it belongs to chunked noun phrase////////////
 
 		if(!subjectCanidate.isEmpty()) {
 			String nounPhraseAtRigth = this.sentenceManipulation.getTheRestOfTheNounPhrase(sentenceData, subjectCanidate);
@@ -322,13 +327,23 @@ public class RelationExtractor {
 			}
 		}else {
 			return null;
+		}		
+		
+		String wordAtRight = this.sentenceManipulation.getWordAtRightOf(sentenceData, subjectCanidate);
+		if(wordAtRight!=null && WordsUtils.contains(Words.SUBJECTS_CONNECTORS,wordAtRight)) {
+			String wordAtRightAtRight = this.sentenceManipulation.getWordAtRightOf(sentenceData, subjectCanidate+" "+wordAtRight);
+			subjectCanidate = subjectCanidate+" "+wordAtRight+" "+wordAtRightAtRight;
+			String nounPhraseAtRigth = this.sentenceManipulation.getTheRestOfTheNounPhrase(sentenceData, subjectCanidate);
+			if(!nounPhraseAtRigth.isEmpty()) {
+				subjectCanidate = subjectCanidate+" "+nounPhraseAtRigth;
+			}
 		}
 		
 		return subjectCanidate;
 	}
 	
 	/**
-	 * When a subject is extracted, but it's a string which not appears in the text, ie: "A spokeman", an the full text:<br/>
+	 * When a subject is extracted, but it is a string which not appears in the text, ie: "A spokeman", and the full text is:<br/>
 	 * "A defense spokesman added that British officials ..."<br/>
 	 * This method creates a pattern in the form: "A(.+)spokeman" to get the full the subject: "A defense spokesman"
 	 *   
@@ -434,10 +449,9 @@ public class RelationExtractor {
 					List<String> arguments = this.argumentExtractor.argumentExtractorAll(sentenceData, relation.getRelation(), null); //extract all arguments candidates, (entity02)
 	
 					for (String argument : arguments) {
+						relation.setEntity2(argument);							
+						relation.setRelation(this.argumentExtractor.getCurrentRelationStr());
 						for(String keySubject: subjectCurrentExtractionAll.keySet()){
-							relation.setEntity2(argument);							
-							relation.setRelation(this.argumentExtractor.getCurrentRelationStr());
-							
 							String subject = this.validateSubject(subjectCurrentExtractionAll.get(keySubject), sentenceData);
 							if(subject == null) continue;
 							relation.setEntity1(subject);

@@ -198,7 +198,7 @@ public class SentenceManipulation {
 	
 	public String getWordAtRightOf(SentenceData sentenceData, String relationPart) {
 		int relationStart = sentenceData.getCleanSentence().indexOf(relationPart);
-		if(relationStart > 0 ) {
+		if(relationStart > -1) {
 			relationStart+= relationPart.length();
 			int addOneForSpace = 1;
 			if(relationPart.endsWith(" ")) {
