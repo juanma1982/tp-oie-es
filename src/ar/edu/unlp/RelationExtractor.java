@@ -85,7 +85,7 @@ public class RelationExtractor {
 		this.replacedQuotedInRelations(relations,mapOfReplacement);	
 		if(CHECK_NON_FACTUAL) {
 			checkNonFactualExtractions(relations);
-		}
+		}		
 		return relations;
 	}
 	
@@ -138,7 +138,7 @@ public class RelationExtractor {
 	public List<Relation> extractInformationFromLine(String line) throws Exception{
 		if(line==null) return Collections.emptyList();
 		List<Relation> relations = new ArrayList<Relation>();
-		List<SentenceData> listOfParsedData = parser.doParser(line);		
+		List<SentenceData> listOfParsedData = parser.doParser(line);
 		for (SentenceData sentenceData : listOfParsedData) {
 			Set<Relation> relationsAux = extractInformationFromXMLTree(sentenceData);
 			if(relationsAux.size() > 0) {
@@ -188,6 +188,16 @@ public class RelationExtractor {
 		int id=-1;
 		String argument = "";
 		for (Relation relation : relations) {
+			
+			String relationAsString = relation.toString();			
+			for (String imark : Words.INTERROGATION_MARKS) {
+				if(relationAsString.contains(imark)) {
+					relation.setInterogation(true);
+					break;
+				}
+			}
+			
+			
 			if(this.argumentExtractor.relationIsSaid(relation.getRelation())) {
 				id= relation.getId();
 				argument = relation.getEntity2();
@@ -204,6 +214,7 @@ public class RelationExtractor {
 				}
 			}
 		}
+		
 		
 	}
 

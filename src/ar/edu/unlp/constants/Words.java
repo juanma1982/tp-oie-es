@@ -29,7 +29,16 @@ public class Words {
 	
 
 	//public static final String[] SAID_AND_SYNONYMS= {"said",  "told", "added", "announced", "asserted","believe","believed"};
-	public static final String[] SAID_AND_SYNONYMS= {"dijo", "pensó", "contó", "añadió", "anunció", "aseveró","cree", "creen","creyó", "pensaban", "creían", "sostenían"};
+	public static final String[] SAID_AND_SYNONYMS= {
+			"dijo", "pensó", "contó", "añadió", "anunció", "aseveró","creyó", "sostuvo", "recalcó", "expresó","afirmó", "destacó", "aseguró",
+			"dice", "piensa", "añade", "anuncia", "asevera","cree", "sostiene", "recalca", "expresa","afirma", "destaca", "asegura",
+			"decía", "pensaba", "añadía", "anunciaba", "aseveraba","creía", "sostenía", "recalcaba", "expresaba","afirmaba", "destacaba", "aseguraba",
+			"dijeron", "pensaron", "contaron", "añadieron", "anunciaron", "aseveraron","creyeron", "sostuvieron", "recalcaron", "expresaron","afirmaron",
+			"destacaron", "aseguraron",
+			"decían", "pensaban", "añadían", "anunciaban", "aseveraban","creían", "sostenían", "recalcaban", "expresaban","afirmaban", "destacaban", "aseguraban",
+			"dicen", "piensan", "cuentan", "añaden", "anuncian", "aseveran","creyeren", "sostienen", "recalcan", "expresan","afirman"		
+	}; //según"
+	public static final String[] AFTER_SAID_AND_SYNONYMS= { ":","que"};
 	public static final String[] SAID_END_POINTS= {", ",  ";", "\""}; //added the space to the como to avoid numbers
 	
 	
@@ -45,6 +54,7 @@ public class Words {
 	public static final String[] ENDING_POSTAGS_TO_REMOVE= {".", ","};
 	public static final String[] NP_CONNECTORS= {"a", "de", "en", "los"};
 	public static final String[] SUBJECTS_CONNECTORS= {"de", "en"};
+	public static final String[] INTERROGATION_MARKS= {"?", "¿"};
 	
 	public static final String NER_OTHER = "O";
 	public static final String WORD_WILDCARD_NER_FULL = "_";

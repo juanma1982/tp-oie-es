@@ -11,5 +11,15 @@ public class WordsUtils {
 		}
 		return false;
 	}
+	
+	public static final String containsWord(String[] array,String text) {		
+		if(array == null || array.length==0) return null;
+		if(text == null || text.isEmpty()) return null;
+		String textAux = text+ " ";
+		for (String string : array) {
+			if(textAux.contains(string+" ")) return string;
+		}
+		return null;
+	}
 
 }

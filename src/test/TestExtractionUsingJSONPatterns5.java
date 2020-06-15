@@ -1,5 +1,4 @@
 package test;
-
 import static org.junit.Assert.fail;
 
 import java.util.List;
@@ -10,10 +9,10 @@ import org.junit.Test;
 import ar.edu.unlp.RelationExtractor;
 import ar.edu.unlp.entities.Relation;
 
-public class TestExtractionUsingJSONPatterns3 {
+public class TestExtractionUsingJSONPatterns5 {
 		
 	
-	public static final String[] LINES ={"Los primeros astrónomos creían que la tierra era el centro del universo", "Pedro pensó \"Leandro juega a la pelota\""};
+	public static final String[] LINES ={"¿El tener cáncer podría generar co fusión en el resultado del la prueba para #COVID19?"};
 	
 	@Before
 	public void setUp() throws Exception {
@@ -23,10 +22,9 @@ public class TestExtractionUsingJSONPatterns3 {
 	@Test
 	public void test() {
 		try{
-		 System.out.println("Extract a wildcard quoted word");
+		 System.out.println("Extract a tacit subject sentence");
 		 RelationExtractor extractor = new RelationExtractor();
 		 		 
-
 		 for (String line : LINES) {
 			 List<Relation> relations = extractor.extractInformationFromParagraph(line);
 			 if(relations!=null && !relations.isEmpty()){

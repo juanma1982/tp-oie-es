@@ -10,6 +10,7 @@ public class Relation {
 	protected int score;
 	protected int id;
 	protected int dependsOf=-1;
+	protected boolean interogation=false;
 	
 	public Relation(){
 		this.id=nextID;
@@ -68,6 +69,14 @@ public class Relation {
 		this.dependsOf = dependsOf;
 	}
 
+	public boolean isInterogation() {
+		return interogation;
+	}
+
+	public void setInterogation(boolean interogation) {
+		this.interogation = interogation;
+	}
+
 	public String toString(){
 		StringBuilder sb = new StringBuilder();
 		sb.append("(");
@@ -107,8 +116,11 @@ public class Relation {
 		sb.append(" => (");
 		sb.append(this.score+") ");
 		if(this.dependsOf >-1) {
-			sb.append(" DEPENDS OF ");
+			sb.append(" SUBJETIVA, DEPENDE DE ");
 			sb.append(this.dependsOf);
+		}
+		if(this.interogation) {
+			sb.append(" INTERROGACIÓN ");			
 		}
 		return sb.toString();
 	}
