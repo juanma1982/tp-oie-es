@@ -25,6 +25,7 @@ public class Words {
 	public static final String CCONJ = "CCONJ"; //ejemplos: "y" "o", "pero"
 	public static final String PRP$ = "PRON"; //Possessive pronoun original
 	public static final String PUNCT= "PUNCT";
+	public static final String VERB= "VERB"; //Verbs
 	
 
 	//public static final String[] SAID_AND_SYNONYMS= {"said",  "told", "added", "announced", "asserted","believe","believed"};
@@ -38,7 +39,7 @@ public class Words {
 //	public static final String[] ENDING_POSTAGS_TO_REMOVE= {".", ","};
 //	public static final String[] NP_CONNECTORS= {"to", "of", "at"};
 	public static final String[] BAD_ENDINGS_WORDS_FOR_ARGUMENT= {"como", "que", "en", "con", "a", "para", "y", "un", "por", "de", "desde", "dentro"};
-	public static final String[] GOOD_START_WORDS_FOR_ARGUMENT = {"como", "que", "en", "con", "a", "para", "y", "un", "por", "de", "desde", "dentro"};
+	public static final String[] GOOD_START_WORDS_FOR_ARGUMENT = {"como", "que", "en", "con", "a", "para", "y", "un", "por", "de", "desde", "dentro"};	
 	public static final String[] PHRASAL_VERBS_COMMON_SECOND_WORDS = {"se", "nos"};
 	public static final String[] PHRASAL_VERBS_COMMON_FIRST_WORDS = {"se", "nos"};
 	public static final String[] ENDING_POSTAGS_TO_REMOVE= {".", ","};

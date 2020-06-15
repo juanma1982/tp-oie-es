@@ -1,6 +1,7 @@
 package ar.edu.unlp;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -146,14 +147,7 @@ public class RelationExtractor {
 				List<Relation> relationsAuxReverb = reverbExtractor.extractRelationsFromLine(line);
 				if(CALCULATE_SCORE) {
 					for (Relation relation : relationsAuxReverb) {
-							relation.setScore(scoreCalculator.calculate(sentenceData, relation));
-							if(this.scoreFilter) {
-								if(relation.getScore()>=this.scoreLimit) {
-									relations.add(relation) ;
-								}
-							}else {
-								relations.add(relation) ;
-							}
+						addExtractedRelationToSet(relation,relations,sentenceData);
 					}
 				}else {
 					relations.addAll(relationsAuxReverb) ;
@@ -465,20 +459,8 @@ public class RelationExtractor {
 										sb.append(" ");
 									}
 									relation.setFullExtractionAsPosTags(sb.toString().trim());
-								}
-								if(CALCULATE_SCORE) {
-									relation.setScore(scoreCalculator.calculate(sentenceData, relation));
-									if(this.scoreFilter) {
-										if(relation.getScore()>=this.scoreLimit) {
-											set.add(relation) ;
-										}
-									}else {
-										set.add(relation) ;
-									}
-									
-								}else {
-									set.add(relation);
-								}
+								}								
+								addExtractedRelationToSet(relation,set,sentenceData);
 								relation = new Relation(relation);
 							}
 						}//Termino el ciclo de subject.
@@ -487,7 +469,7 @@ public class RelationExtractor {
 							subject = this.validateSubject(subject, sentenceData);
 							if(subject != null) {
 								relation.setEntity1(subject);
-								set.add(relation);
+								addExtractedRelationToSet(relation,set,sentenceData);
 							}
 						}
 					}
@@ -498,6 +480,22 @@ public class RelationExtractor {
 		return set;		
 	}
 
+	
+	protected void addExtractedRelationToSet(Relation relation,Collection<Relation> set,SentenceData sentenceData) {
+		if(CALCULATE_SCORE) {
+			relation.setScore(scoreCalculator.calculate(sentenceData, relation));
+			if(this.scoreFilter) {
+				if(relation.getScore()>=this.scoreLimit) {
+					set.add(relation) ;
+				}
+			}else {
+				set.add(relation) ;
+			}
+			
+		}else {
+			set.add(relation);
+		}
+	}
 
 	private void deleteDuplicatedRelations(Map<String, String> currentRelationExtraction, String sentence) {
 		

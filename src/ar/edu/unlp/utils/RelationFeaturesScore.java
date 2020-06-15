@@ -34,11 +34,14 @@ public class RelationFeaturesScore {
 	
 	public static final int E2_EQ_E1_20 = -100; /*if entity 2 and entity1 are the same*/
 	public static final int E2_EQ_IT_21 = -100; /*if entity 2 is the word "IT"*/
-	public static final int REL_IN_E1_22 = -100; /*the hole relation is inside entity01*/
+	public static final int REL_IN_E1_22 = -100; /*the entire relation is inside entity01*/
 	public static final int E1_ENDS_LIKE_REL_STARTS_23 = -50; /*if the Entity01 ends with the same word that relation starts*/
 	
 	
 	public static final int E2_IS_DT_20 = -1000; /*Entity2 is a determinant*/
+	public static final int REL_IS_DET_21 = -200; /*relation is a single word ans is a determinant*/
+	public static final int REL_IS_VERB_22 = 10; /*relation is a single word and is a verb */
+	
 
 	public RelationFeaturesScore() {
 	}
@@ -60,8 +63,10 @@ public class RelationFeaturesScore {
 	
 	public boolean isP(String posToken) {
 		
-		if(PosTagDic.UPT2PENN.get(posToken).equals("IN") ||
-				PosTagDic.UPT2PENN.get(posToken).equals("RP") ) return true;
+//		if(PosTagDic.UPT2PENN.get(posToken).equals("IN") ||
+//				PosTagDic.UPT2PENN.get(posToken).equals("RP") ) return true;
+//		return false;		
+		if(posToken.equals(Words.ADP)) return true;
 		return false;
 	}
 	
@@ -69,8 +74,10 @@ public class RelationFeaturesScore {
 		
 		if(relationWords.length<3 || relationWords.length==0) return false;
 		
-		String firstPos = sentenceData.getWordPOSTAG().get(relationWords[0]);
-		String lastPos = sentenceData.getWordPOSTAG().get(relationWords[relationWords.length-1]);
+//		String firstPos = sentenceData.getWordPOSTAG().get(relationWords[0]);
+//		String lastPos = sentenceData.getWordPOSTAG().get(relationWords[relationWords.length-1]);
+		String firstPos = relationWords[0];
+		String lastPos = relationWords[relationWords.length-1];
 		if(!firstPos.startsWith("V")) return false;
 		if(!isP(lastPos)) return false;
 		boolean wSetted = false;
@@ -255,6 +262,12 @@ public class RelationFeaturesScore {
 				if(entity01Words[entity01Words.length-1].equals(relationWords[0])) {
 					score+=E1_ENDS_LIKE_REL_STARTS_23;
 				}
+			}
+			if(relationWords.length == 1 && relationPosTagTokens[0].equals(Words.DT)) {
+				score+=REL_IS_DET_21;
+			}
+			if(relationWords.length == 1 && relationPosTagTokens[0].equals(Words.VERB)) {
+				score+=REL_IS_VERB_22;
 			}
 			
 			
