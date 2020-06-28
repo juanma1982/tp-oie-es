@@ -3,6 +3,7 @@ package ar.edu.unlp;
 import java.util.ArrayList;
 import java.util.List;
 
+import ar.edu.unlp.constants.Words;
 import ar.edu.unlp.entities.Example;
 import ar.edu.unlp.entities.ExampleList;
 import ar.edu.unlp.entities.PatternArgumentList;
@@ -94,9 +95,9 @@ public class Train {
 			Example fakeExample = new Example();
 			StringBuilder sb = new StringBuilder();
 			sb.append(relation.getEntity1());
-			sb.append(" ");
+			sb.append(Words.SPACE);
 			sb.append(relation.getRelation());
-			sb.append(" ");
+			sb.append(Words.SPACE);
 			sb.append(relation.getEntity2());
 			
 			fakeExample.setSentence(sb.toString());

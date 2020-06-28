@@ -12,6 +12,8 @@ import java.util.Set;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import ar.edu.unlp.constants.Words;
+
 public class PatternList {
 	protected Map<String, Pattern> subjects;
 	protected Map<String, Pattern> relations;
@@ -92,7 +94,7 @@ public class PatternList {
 		StringBuilder sb = new StringBuilder("");
 		for (String string : list) {
 			sb.append(string);
-			sb.append(" ");
+			sb.append(Words.SPACE);
 		}
 		return sb.toString().trim();
 		

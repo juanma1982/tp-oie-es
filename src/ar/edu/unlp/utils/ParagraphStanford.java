@@ -82,9 +82,9 @@ public class ParagraphStanford {
 		try {
 			String saidWord = WordsUtils.containsWord(Words.SAID_AND_SYNONYMS, line);
 			if(saidWord!=null) {
-				String[] wordsSecondPart = line.split(saidWord+" ")[1].split(" ");
+				String[] wordsSecondPart = line.split(saidWord+Words.SPACE)[1].split(Words.SPACE);
 				if(WordsUtils.contains(Words.AFTER_SAID_AND_SYNONYMS, wordsSecondPart[0])) {
-					return (line.split(saidWord+" "+wordsSecondPart[0])[1]).trim();
+					return (line.split(saidWord+Words.SPACE+wordsSecondPart[0])[1]).trim();
 				}
 			}
 		}catch(Exception e) {

@@ -5,13 +5,9 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Matcher;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
-import ar.edu.unlp.constants.PosTagDic;
-import ar.edu.unlp.constants.Words;
 
 public class Pattern implements Comparable<Pattern>{
 
@@ -47,46 +43,7 @@ public class Pattern implements Comparable<Pattern>{
 	public String getPatternStr() {
 		return patternStr;
 	}
-	
-	public String getPatternStrES() {
-		java.util.regex.Pattern pattern = java.util.regex.Pattern.compile(Pattern.EXTRACT_BRACKET_CONTENT_REGEX);
-		Matcher matcher = pattern.matcher(this.patternStr);
-		String bracketContent = null;
-		if (matcher.find()) {
-			bracketContent = matcher.group(1);
-		 if(bracketContent == null) return this.patternStr;
-		}else {
-			return this.patternStr;
-		}
-		String[] brackCont = bracketContent.split("=");
-		String newValue = null;
-		switch (brackCont[0]) {
-			case "word":
-				newValue = Words.WORDTRANSLATE.get(brackCont[1]);				
-				break;
-			case "tag":
-				newValue = PosTagDic.PENN2UPT.get(brackCont[1] );
-				if(newValue == null) {
-					if(Words.WORDTRANSLATE.get(brackCont[1].toLowerCase()) == null) {
-						System.err.println("Word: '"+brackCont[1]+"' has no translation");
-						return patternStr;
-					}
-					newValue = Words.WORDTRANSLATE.get(brackCont[1].toLowerCase()).toUpperCase();
-				}
-				break;
-			default:
-				return patternStr;
-		}
-		if(newValue == null) {
-			return patternStr;
-		}
-		if(newValue.contains("|")) {
-			return patternStr.replaceAll(bracketContent, brackCont[0]+"~="+newValue);
-		}
 		
-		return patternStr.replaceAll(bracketContent, brackCont[0]+"="+newValue);
-	}
-	
 	public void setPatternStr(String patternStr) {
 		this.patternStr = patternStr;
 	}

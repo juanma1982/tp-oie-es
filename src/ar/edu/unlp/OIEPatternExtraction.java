@@ -10,6 +10,7 @@ import java.util.Set;
 import java.util.Stack;
 
 import ar.edu.unlp.constants.Constants;
+import ar.edu.unlp.constants.Words;
 import ar.edu.unlp.entities.Example;
 import ar.edu.unlp.entities.PatternList;
 import ar.edu.unlp.entities.Relation;
@@ -54,7 +55,7 @@ public class OIEPatternExtraction {
 		nodePathStack.push(nodeName);
 		StringBuilder sb = new StringBuilder();
 		for (String node : nodePathStack) {
-			sb.append(node).append(" ");
+			sb.append(node).append(Words.SPACE);
 		}
 		wordToXMLPath.put(word, sb.toString().trim());
 	}
@@ -91,9 +92,9 @@ public class OIEPatternExtraction {
 
 	protected void extractPatternForRelation(SentenceData sentenceData, Relation relation, PatternList patterns) {
 		
-		String entityStr   = relation.getEntity1().replaceAll("'", " '").replaceAll("  ", " ");
-		String argumentStr = relation.getEntity2().replaceAll("'", " '").replaceAll("  ", " ");
-		String relationStr = relation.getRelation().replaceAll("'", " '").replaceAll("  ", " ");
+		String entityStr   = relation.getEntity1().replaceAll("'", " '").replaceAll("  ", Words.SPACE);
+		String argumentStr = relation.getEntity2().replaceAll("'", " '").replaceAll("  ", Words.SPACE);
+		String relationStr = relation.getRelation().replaceAll("'", " '").replaceAll("  ", Words.SPACE);
 		
 		String[] wordsInEntity1  = entityStr.split("\\s+");
 		String[] wordsInEntity2  = argumentStr.split("\\s+");
@@ -152,7 +153,7 @@ public class OIEPatternExtraction {
 		if(wordNer != null && !wordNer.equals("O")){
 			typeSelector="ner="+wordNer;
 		}else if(path.endsWith("case") && (wordPos.equals("IN") || wordPos.equals("TO"))){
-			typeSelector="word="+word.replaceAll("'", "&apos;").replaceAll(" ", "_");
+			typeSelector="word="+word.replaceAll("'", "&apos;").replaceAll(Words.SPACE, "_");
 		}else{
 			typeSelector="tag="+wordPOSTAG.get(word);
 		}

@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class Words {
 
+	public static final String SPACE = " ";
 	public class Chunks{
 		
 		public static final String B_NP = "B-NP";
@@ -21,11 +22,15 @@ public class Words {
 //	public static final String PRP$ = "PRP$";
 	
 	public static final String ADP = "ADP"; //ejemplos: con, en, durante
-	public static final String DT = "DET";
+	public static final String DET = "DET";
 	public static final String CCONJ = "CCONJ"; //ejemplos: "y" "o", "pero"
-	public static final String PRP$ = "PRON"; //Possessive pronoun original
+	public static final String PRON = "PRON"; //Possessive pronoun original
 	public static final String PUNCT= "PUNCT";
 	public static final String VERB= "VERB"; //Verbs
+	public static final String PROPN = "PROPN";
+	public static final String NOUN = "NOUN";
+	public static final String ADJ = "ADJ";
+	public static final String ADV = "ADV";
 	
 
 	//public static final String[] SAID_AND_SYNONYMS= {"said",  "told", "added", "announced", "asserted","believe","believed"};
@@ -100,5 +105,15 @@ public class Words {
 	{
 		put("=LRB=","(");
 		put("=RRB=",")");
-	}};	
+	}};
+	
+	public class SpecialScoreWords{
+		
+		public static final String POR = "por";
+		public static final String PARA = "para";
+		public static final String EN = "en";
+		public static final String HACIA = "hacia";
+		public static final String DE = "de";
+		public static final String A = "a";
+	}
 }

@@ -1,5 +1,7 @@
 package ar.edu.unlp.entities;
 
+import ar.edu.unlp.constants.Words;
+
 public class Relation {
 
 	protected static int nextID = 0;
@@ -129,9 +131,9 @@ public class Relation {
 	public String inRow(){
 		StringBuilder sb = new StringBuilder();		
 		sb.append(entity1);
-		sb.append(" ");
+		sb.append(Words.SPACE);
 		sb.append(relation);
-		sb.append(" ");
+		sb.append(Words.SPACE);
 		sb.append(entity2);		
 		return sb.toString();
 	}

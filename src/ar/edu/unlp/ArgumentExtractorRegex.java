@@ -48,8 +48,8 @@ public class ArgumentExtractorRegex extends ArgumentExtractor{
 			patternArgument.setLeftPattern(true);
 		}
 		
-		String[] argumentWords  = argumentStr.split(" ");
-		String[] subTextWords = subText.split(" ");
+		String[] argumentWords  = argumentStr.split(Words.SPACE);
+		String[] subTextWords = subText.split(Words.SPACE);
 		
 		if(indexOfSubtext == 0){
 			patternRegex.append("^");
@@ -251,7 +251,7 @@ public class ArgumentExtractorRegex extends ArgumentExtractor{
 				if(currentArgument.contains(argumentList.get(j))){
 					String secondArgument = argumentList.get(j).trim(); //.toLowerCase();
 					
-					String[] words = secondArgument.split(" ");
+					String[] words = secondArgument.split(Words.SPACE);
 					String lastWordPOSTag = sentenceData.getWordPOSTAG().get(words[words.length-1]);
 					
 					if(lastWordPOSTag!= null && lastWordPOSTag.startsWith(Words.VERB_POS_FIRST_LETTER)){						

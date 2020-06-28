@@ -104,7 +104,7 @@ public class RelationExtractor {
 			int index = relation.getEntity2().indexOf(Words.WILDCARD_QUOTED);
 			if(index > -1){				
 				String keyWord = relation.getEntity2().substring(index,index+Words.WILDCARD_QUOTED.length()+Words.WILDCARD_LEADING_ZEROES_COUNT);
-				/*String[] newKeyArray =keyWord.split(" ");
+				/*String[] newKeyArray =keyWord.split(Words.SPACE);
 				String newKeyWord =newKeyArray[0]+newKeyArray[1];
 				relation.setEntity2(relation.getEntity2().replace(keyWord, "\""+mapOfReplacement.get(newKeyWord)+"\""));*/
 				relation.setEntity2(relation.getEntity2().replace(keyWord, "\""+mapOfReplacement.get(keyWord)+"\""));
@@ -116,7 +116,7 @@ public class RelationExtractor {
 		if(line==null) return Collections.emptyList();
 		List<Relation> relations = new ArrayList<Relation>();
 		StringBuilder sb = new StringBuilder(Words.TACIT_SUBJECT_WILDCARD);
-		sb.append(" ");
+		sb.append(Words.SPACE);
 		sb.append(line.substring(0, 1).toLowerCase());
 		sb.append(line.substring(1));
 		
@@ -218,49 +218,6 @@ public class RelationExtractor {
 		
 	}
 
-	/**
-	 * This method will execute some improvements:<br/>
-	 * -Try to detect if the relation is a phrasal verb, splited into relation and argument. And if it's so<br/>
-	 *  will join the phrasal verb together into the relation
-	 * @param relations
-	 */
-	/*private void improveRelations(List<Relation> relations) {
-		for (Relation relation : relations) {
-			for(String startingWords: Words.PHRASAL_VERBS_COMMON_SECOND_WORDS) {
-				if(relation.getEntity2().startsWith(startingWords+" ")) {
-					and 
-				}
-			}	
-		}
-	}*/
-
-	
-	@SuppressWarnings("unused")
-	private String extractFirst(Pattern pattern, Document doc, String words){
-		if(words == null){
-			words = "";
-		}		
-		Pattern currentPattern = pattern;
-		Element element = doc.select(currentPattern.getPatternStrES()).first();				
-		if(element == null){ return null;}
-		
-		if(!words.isEmpty()){
-			words = words+ " ";
-		}
-		words = words+ element.attr("word");
-		if(pattern.isLeaf()){
-		 return words;
-		}
-			
-		List<Pattern> nextPatterns =  pattern.getListOfNext();
-		if(nextPatterns != null){
-			for (Pattern nextPattern : nextPatterns) {
-				String aux = this.extractFirst(nextPattern, doc, words);
-				if(aux != null) return aux;
-			}
-		}
-		return null;
-	}
 	
 	private void extractInformation(Pattern pattern, Document doc, Map<String, String> listOfExtractions, String words, String patterStr){
 		if(words == null){
@@ -273,10 +230,10 @@ public class RelationExtractor {
 		Element element = doc.select(currentPattern.getPatternStr()).first();
 		if(element != null){
 			if(!words.isEmpty()){
-				words = words+ " ";
+				words = words+ Words.SPACE;
 			}
 			if(!patterStr.isEmpty()){
-				patterStr = patterStr+ " ";
+				patterStr = patterStr+ Words.SPACE;
 			}
 			words = words+ element.attr("word").replaceAll("&apos;", "'");
 			patterStr = patterStr+ currentPattern.getPatternStr();			
@@ -304,9 +261,9 @@ public class RelationExtractor {
 	 * @param sentenceData
 	 * @return
 	 */
-	public String validateSubject(String subjectCanidate,SentenceData sentenceData){
+	public String validateSubject(String subjectCanidate,SentenceData sentenceData, Relation relation){
 		if(subjectCanidate == null) return null;
-		if(!subjectCanidate.contains(" ")){ //It means: contain only one word 
+		if(!subjectCanidate.contains(Words.SPACE)){ //It means: contain only one word 
 			String newSubject = sentenceData.getWordNER().get(subjectCanidate+Words.WORD_WILDCARD_NER_FULL);
 			if(newSubject!=null) return newSubject;
 		}
@@ -320,27 +277,30 @@ public class RelationExtractor {
 		if(WordAtLeft!=null && !WordAtLeft.isEmpty()) {
 			POSTtAtLeft = sentenceData.getWordPOSTAG().get(WordAtLeft);
 		}
-		if(POSTtAtLeft!=null && POSTtAtLeft.equals(Words.DT)) {
-			subjectCanidate =WordAtLeft+" "+subjectCanidate;
+		if(POSTtAtLeft!=null && POSTtAtLeft.equals(Words.DET)) {
+			subjectCanidate =WordAtLeft+Words.SPACE+subjectCanidate;
 		}
 		///////////verify if it belongs to chunked noun phrase////////////
 
 		if(!subjectCanidate.isEmpty()) {
 			String nounPhraseAtRigth = this.sentenceManipulation.getTheRestOfTheNounPhrase(sentenceData, subjectCanidate);
 			if(!nounPhraseAtRigth.isEmpty()) {
-				subjectCanidate = subjectCanidate+" "+nounPhraseAtRigth;
+				subjectCanidate = subjectCanidate+Words.SPACE+nounPhraseAtRigth;
 			}
 		}else {
 			return null;
 		}		
 		
 		String wordAtRight = this.sentenceManipulation.getWordAtRightOf(sentenceData, subjectCanidate);
-		if(wordAtRight!=null && WordsUtils.contains(Words.SUBJECTS_CONNECTORS,wordAtRight)) {
-			String wordAtRightAtRight = this.sentenceManipulation.getWordAtRightOf(sentenceData, subjectCanidate+" "+wordAtRight);
-			subjectCanidate = subjectCanidate+" "+wordAtRight+" "+wordAtRightAtRight;
+		String relationfirstWord = this.sentenceManipulation.getFirstWord(relation.getRelation());
+		String argumentfirstWord = this.sentenceManipulation.getFirstWord(relation.getEntity2());
+		if(wordAtRight!=null && !wordAtRight.equals(relationfirstWord) && !wordAtRight.equals(argumentfirstWord)
+				&& WordsUtils.contains(Words.SUBJECTS_CONNECTORS,wordAtRight)) {
+			String wordAtRightAtRight = this.sentenceManipulation.getWordAtRightOf(sentenceData, subjectCanidate+Words.SPACE+wordAtRight);
+			subjectCanidate = subjectCanidate+Words.SPACE+wordAtRight+Words.SPACE+wordAtRightAtRight;
 			String nounPhraseAtRigth = this.sentenceManipulation.getTheRestOfTheNounPhrase(sentenceData, subjectCanidate);
 			if(!nounPhraseAtRigth.isEmpty()) {
-				subjectCanidate = subjectCanidate+" "+nounPhraseAtRigth;
+				subjectCanidate = subjectCanidate+Words.SPACE+nounPhraseAtRigth;
 			}
 		}
 		
@@ -359,8 +319,8 @@ public class RelationExtractor {
 	public String completeSubject(String subjectCanidate,String fullText){
 		
 		
-		//String[] fulltextWords = fullText.split(" ");
-		String[] subjectWords = subjectCanidate.split(" ");
+		//String[] fulltextWords = fullText.split(Words.SPACE);
+		String[] subjectWords = subjectCanidate.split(Words.SPACE);
 		StringBuilder sb = new StringBuilder();
 		int count = 0;
 		for (int j = 0; j < subjectWords.length; j++) {
@@ -376,7 +336,7 @@ public class RelationExtractor {
 			for (int i = 1; i <= count; i++) {
 				String argMatched = m.group(i);
 				if (argMatched == null || argMatched.isEmpty()) return null;
-				if(argMatched.trim().split(" ").length > Constants.MIN_WORD_DISTANCE+1) return null;
+				if(argMatched.trim().split(Words.SPACE).length > Constants.MIN_WORD_DISTANCE+1) return null;
 			}
 			return m.group(0);
 		}
@@ -388,14 +348,14 @@ public class RelationExtractor {
 		
 		for (String key : currentRelationExtraction.keySet()) {
 			String relation = currentRelationExtraction.get(key);
-			String[] relationWords = relation.split(" ");
+			String[] relationWords = relation.split(Words.SPACE);
 			String lasPOS = sentenceData.getWordPOSTAG().get(relationWords[relationWords.length-1]);
 			if(lasPOS!=null && !lasPOS.isEmpty() && lasPOS.startsWith(Words.VERB_POS_FIRST_LETTER)) {
-				String wAtRigth = sentenceManipulation.getWordAtRightOf(sentenceData, relation+" ");
+				String wAtRigth = sentenceManipulation.getWordAtRightOf(sentenceData, relation+Words.SPACE);
 				if(wAtRigth!=null && !wAtRigth.isEmpty()) {
 					for (int i = 0; i < Words.PHRASAL_VERBS_COMMON_SECOND_WORDS.length; i++) {
 						if(wAtRigth.equals(Words.PHRASAL_VERBS_COMMON_SECOND_WORDS[i])) {
-							currentRelationExtraction.put(key, relation+" "+wAtRigth);
+							currentRelationExtraction.put(key, relation+Words.SPACE+wAtRigth);
 							break;
 						}
 					}
@@ -405,7 +365,7 @@ public class RelationExtractor {
 				if(wAtLeft!=null && !wAtLeft.isEmpty()) {
 					for (int i = 0; i < Words.PHRASAL_VERBS_COMMON_FIRST_WORDS.length; i++) {
 						if(wAtLeft.equals(Words.PHRASAL_VERBS_COMMON_FIRST_WORDS[i])) {
-							currentRelationExtraction.put(key, wAtLeft+" "+relation);
+							currentRelationExtraction.put(key, wAtLeft+Words.SPACE+relation);
 							break;
 						}
 					}
@@ -457,17 +417,17 @@ public class RelationExtractor {
 						relation.setEntity2(argument);							
 						relation.setRelation(this.argumentExtractor.getCurrentRelationStr());
 						for(String keySubject: subjectCurrentExtractionAll.keySet()){
-							String subject = this.validateSubject(subjectCurrentExtractionAll.get(keySubject), sentenceData);
+							String subject = this.validateSubject(subjectCurrentExtractionAll.get(keySubject), sentenceData, relation);
 							if(subject == null) continue;
 							relation.setEntity1(subject);
 														
 							if(relation.isComplete() && SemanticRelationValidator.isValid(relation)){
 								if(GET_RELATION_POSTAGS) {
-									String words[] = relation.inRow().split(" ");
+									String words[] = relation.inRow().split(Words.SPACE);
 									StringBuilder sb = new StringBuilder();
 									for (int i = 0; i < words.length; i++) {										
 										sb.append(sentenceData.getWordPOSTAG_extended().get(words[i]));
-										sb.append(" ");
+										sb.append(Words.SPACE);
 									}
 									relation.setFullExtractionAsPosTags(sb.toString().trim());
 								}								
@@ -477,7 +437,7 @@ public class RelationExtractor {
 						}//Termino el ciclo de subject.
 						if(set.isEmpty() && relation.getRelation()!=null && relation.getEntity2()!=null ) {
 							String subject = this.argumentExtractor.extractNounPhraseAtLeft(sentenceData,  relation.getRelation(),  relation.getEntity2());
-							subject = this.validateSubject(subject, sentenceData);
+							subject = this.validateSubject(subject, sentenceData, relation);
 							if(subject != null) {
 								relation.setEntity1(subject);
 								addExtractedRelationToSet(relation,set,sentenceData);

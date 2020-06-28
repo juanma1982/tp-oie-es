@@ -1,5 +1,7 @@
 package ar.edu.unlp.utils;
 
+import ar.edu.unlp.constants.Words;
+
 public class WordsUtils {
 	
 	
@@ -15,9 +17,9 @@ public class WordsUtils {
 	public static final String containsWord(String[] array,String text) {		
 		if(array == null || array.length==0) return null;
 		if(text == null || text.isEmpty()) return null;
-		String textAux = text+ " ";
+		String textAux = text+ Words.SPACE;
 		for (String string : array) {
-			if(textAux.contains(string+" ")) return string;
+			if(textAux.contains(string+Words.SPACE)) return string;
 		}
 		return null;
 	}

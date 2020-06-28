@@ -156,7 +156,7 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 		boolean foundNP = false;
 		int startNP = 0;
 		int lengthNP = 0;
-		String[] ChunkedLeft = leftChunkedSentence.split(" ");		
+		String[] ChunkedLeft = leftChunkedSentence.split(Words.SPACE);		
 		int endNP = 0;
 		lengthNP = 1;
 		for (int i = ChunkedLeft.length-1; i >= 0; i--) {
@@ -192,7 +192,7 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 				String connector = Words.NP_CONNECTORS[i];
 				if(this.sentArray[nextIndex].equals(connector) && this.tag[nextIndexPlus].equals(Words.Chunks.B_NP)) {
 					np2 = extractNextSingleNounPhraseStartingAt(ChunkedRight,localOffset);
-					np2.setNounPhrase(np.getNounPhrase()+" "+this.sentArray[nextIndex]+" "+np2.getNounPhrase());
+					np2.setNounPhrase(np.getNounPhrase()+Words.SPACE+this.sentArray[nextIndex]+Words.SPACE+np2.getNounPhrase());
 					np2.setLength(np.getLength()+np2.getLength()+1);
 					np2.setStartIndex(np.getStartIndex());
 					return np2;
@@ -201,7 +201,7 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 			if(this.tag[nextIndex].equals(Words.Chunks.B_ADVP)){
 				np2 = extractNextSingleADVPhraseStartingAt(ChunkedRight,localOffset);
 				if(np2.getLength() > 0) {
-					np2.setNounPhrase(np.getNounPhrase()+" "+np2.getNounPhrase());
+					np2.setNounPhrase(np.getNounPhrase()+Words.SPACE+np2.getNounPhrase());
 					np2.setLength(np.getLength()+np2.getLength());
 					np2.setStartIndex(np.getStartIndex());
 					return np2;
@@ -256,7 +256,7 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 	
 	protected List<String> extractAtRight(String rightChunkedSentence) {
 		List<String> result = new ArrayList<String>();
-		String[] ChunkedRight = rightChunkedSentence.split(" ");
+		String[] ChunkedRight = rightChunkedSentence.split(Words.SPACE);
 		
 		NounPhrase np = extractNextNounPhrasesStartingAt(ChunkedRight,0);
 		
@@ -266,7 +266,7 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 		if(prevIndex >=0) {
 			String wordBefore = sentenceUtils.extractSubString(sentArray,prevIndex,1);
 			if(isAGoodWordToStartArgumnet(wordBefore) && !currentRelationStr.endsWith(wordBefore)) {
-				np.setNounPhrase(wordBefore+" "+np.getNounPhrase());
+				np.setNounPhrase(wordBefore+Words.SPACE+np.getNounPhrase());
 			}
 		}
 		result.add(np.getNounPhrase());
@@ -278,13 +278,13 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 			if(sentArray.length>nextIndexPlus && this.posArray.length>nextIndexPlus && this.tag.length>nextIndexPlus) {
 				if(this.posArray[nextIndex].equals(Words.ADP) && this.tag[nextIndexPlus].equals(Words.Chunks.B_NP)) { 
 					np = extractNextNounPhrasesStartingAt(ChunkedRight,localOffset);
-					result.add(result.get(result.size()-1)+" "+this.sentArray[nextIndex]+" "+np.getNounPhrase());
-				}else if(this.posArray[nextIndex].equals(Words.DT) && this.tag[nextIndex].equals(Words.Chunks.B_NP)) {
+					result.add(result.get(result.size()-1)+Words.SPACE+this.sentArray[nextIndex]+Words.SPACE+np.getNounPhrase());
+				}else if(this.posArray[nextIndex].equals(Words.DET) && this.tag[nextIndex].equals(Words.Chunks.B_NP)) {
 					np = extractNextNounPhrasesStartingAt(ChunkedRight,localOffset);
-					result.add(result.get(result.size()-1)+" "+this.sentArray[nextIndex]+" "+np.getNounPhrase());
+					result.add(result.get(result.size()-1)+Words.SPACE+this.sentArray[nextIndex]+Words.SPACE+np.getNounPhrase());
 				}else if(this.posArray[nextIndex].equals(Words.CCONJ) && this.tag[nextIndexPlus].equals(Words.Chunks.B_NP)) {
 					np = extractNextNounPhrasesStartingAt(ChunkedRight,localOffset);
-					result.add(this.sentArray[nextIndex]+" "+np.getNounPhrase());
+					result.add(this.sentArray[nextIndex]+Words.SPACE+np.getNounPhrase());
 				}else{
 					quit=true;
 				}
@@ -306,7 +306,7 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 	}
 	
 	public String getLastWord(String line) {
-		String[] words = line.split(" ");
+		String[] words = line.split(Words.SPACE);
 		if(words!=null) return words[words.length-1];
 		return line;
 	}
@@ -322,12 +322,12 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 	 * @return null or the full text between the words of the relation
 	 */
 	public String extractTextInTheMiddle(String sentence, String line) {
-		String[] words = line.split(" ");
+		String[] words = line.split(Words.SPACE);
 		if(words!=null && words.length >1) {
 			StringBuilder sb = new StringBuilder();
 			for(int i=0;i<(words.length-1);i++) {
 				sb.append(words[i]);
-				sb.append(" ");
+				sb.append(Words.SPACE);
 			}
 			int start = sentence.indexOf(sb.toString().trim());
 			int end = sentence.indexOf(words[words.length-1]);

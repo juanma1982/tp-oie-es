@@ -30,7 +30,7 @@ public class SentenceManipulation {
 		for(int i=indexWord;i<indexWord+wordCount;i++){
 			if(chunkTags[i].startsWith(Words.Chunks.CONTINUE_LETTER)) {
 				sb.append(words[i]);
-				sb.append(" ");
+				sb.append(Words.SPACE);
 			}else {
 				break;
 			}
@@ -67,7 +67,7 @@ public class SentenceManipulation {
 	
 	
 	public String getRightText(String text, String relationText){
-		int index = text.indexOf(relationText+" ");
+		int index = text.indexOf(relationText+Words.SPACE);
 		if(index == -1) {
 			index = text.indexOf(relationText);
 			if(index == -1) return null;
@@ -85,7 +85,7 @@ public class SentenceManipulation {
 	}
 	
 	public String getLeftText(String text, String relationText){
-		int index = text.indexOf(relationText+" ");
+		int index = text.indexOf(relationText+Words.SPACE);
 		if(index == -1) {
 			index = text.indexOf(relationText);
 			if(index == -1) return null;
@@ -163,7 +163,7 @@ public class SentenceManipulation {
 		StringBuilder sb = new StringBuilder("");		
 		for(int i=indexWord;i<indexWord+wordCount;i++){
 			sb.append(wordsInText[i]);
-			sb.append(" ");
+			sb.append(Words.SPACE);
 		}
 		return sb.toString().trim();
 	}
@@ -201,7 +201,7 @@ public class SentenceManipulation {
 		if(relationStart > -1) {
 			relationStart+= relationPart.length();
 			int addOneForSpace = 1;
-			if(relationPart.endsWith(" ")) {
+			if(relationPart.endsWith(Words.SPACE)) {
 				addOneForSpace = 0; //the relation includes the space
 			}
 			int endsAt = sentenceData.getCleanSentence().indexOf(' ', relationStart+addOneForSpace);
@@ -212,6 +212,12 @@ public class SentenceManipulation {
 			return sentenceData.getCleanSentence().substring(relationStart+addOneForSpace,endsAt);
 			
 		}
+		return "";
+	}
+	
+	public String getFirstWord(String text) {
+		String[] words = text.split(Words.SPACE);
+		if(words!=null && words.length >0) return words[0];		
 		return "";
 	}
 	
@@ -240,7 +246,7 @@ public class SentenceManipulation {
 			if(relationStart == endsAt) return arrayOfNPosttags;
 			String nextRelWord = sentenceData.getCleanSentence().substring(relationStart+1,endsAt);
 			if(nextRelWord!=null && !nextRelWord.isEmpty()) {
-				String[] words = nextRelWord.split(" ");
+				String[] words = nextRelWord.split(Words.SPACE);
 				int end = n;
 				if(words.length<n) {
 					end=words.length;
