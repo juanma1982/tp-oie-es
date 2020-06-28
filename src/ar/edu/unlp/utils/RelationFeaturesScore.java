@@ -267,7 +267,7 @@ public class RelationFeaturesScore {
 					score+=E1_ENDS_LIKE_REL_STARTS_23;
 				}
 			}
-			if(relationWords.length == 1 && relationPosTagTokens[0].equals(Words.DET)) {
+			if(relationWords.length == 1 && relationPosTagTokens[0].equals(Words.DET) || relationPosTagTokens[0].equals(Words.DE) ) {
 				score+=REL_IS_DET_21;
 			}
 			if(relationWords.length == 1 && relationPosTagTokens[0].equals(Words.VERB)) {

@@ -10,3 +10,4 @@ dist/
 .~lock.readme.odt#
 readme.odt
 tp-oie-es.jar
+TestExtractionUsingJSONPatternsIgnore.java

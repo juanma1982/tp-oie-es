@@ -324,15 +324,16 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 	public String extractTextInTheMiddle(String sentence, String line) {
 		String[] words = line.split(Words.SPACE);
 		if(words!=null && words.length >1) {
-			StringBuilder sb = new StringBuilder();
+			StringBuilder sb = new StringBuilder(" ");
 			for(int i=0;i<(words.length-1);i++) {
 				sb.append(words[i]);
 				sb.append(Words.SPACE);
 			}
-			int start = sentence.indexOf(sb.toString().trim());
-			int end = sentence.indexOf(words[words.length-1]);
+			String auxSentence = Words.SPACE+sentence+Words.SPACE;
+			int start = auxSentence.indexOf(sb.toString());
+			int end = auxSentence.indexOf(Words.SPACE+words[words.length-1]+Words.SPACE)+1;
 			if(start <= -1 || end <= 0 || (end <= start)) return null;
-			return sentence.substring(start, end+(words[words.length-1].length()));
+			return auxSentence.substring(start, end+(words[words.length-1].length())).trim();
 		}
 		return null;
 	}

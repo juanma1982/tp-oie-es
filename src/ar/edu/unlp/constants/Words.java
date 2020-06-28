@@ -31,6 +31,7 @@ public class Words {
 	public static final String NOUN = "NOUN";
 	public static final String ADJ = "ADJ";
 	public static final String ADV = "ADV";
+	public static final String DE = "DE";
 	
 
 	//public static final String[] SAID_AND_SYNONYMS= {"said",  "told", "added", "announced", "asserted","believe","believed"};

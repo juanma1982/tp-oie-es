@@ -407,14 +407,14 @@ public class RelationExtractor {
 				
 					
 					Relation relation = new Relation();
-					relation.setRelation(currentRelationExtraction.get(keyRelation));						
+					relation.setRelation(currentRelationExtraction.get(keyRelation));
 					if(Constants.BE_SPECIFIC_WITH_POSTAG_ADP){
-						sentenceData.setUseExtended(true);	
+						sentenceData.setUseExtended(true);
 					}
 					List<String> arguments = this.argumentExtractor.argumentExtractorAll(sentenceData, relation.getRelation(), null); //extract all arguments candidates, (entity02)
 	
 					for (String argument : arguments) {
-						relation.setEntity2(argument);							
+						relation.setEntity2(argument);
 						relation.setRelation(this.argumentExtractor.getCurrentRelationStr());
 						for(String keySubject: subjectCurrentExtractionAll.keySet()){
 							String subject = this.validateSubject(subjectCurrentExtractionAll.get(keySubject), sentenceData, relation);
@@ -448,7 +448,7 @@ public class RelationExtractor {
 
 			} // END for each relation candidate, obtained
 	
-		return set;		
+		return set;
 	}
 
 	
