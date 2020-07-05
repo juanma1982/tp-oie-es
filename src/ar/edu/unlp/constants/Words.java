@@ -10,6 +10,8 @@ public class Words {
 		
 		public static final String B_NP = "B-NP";
 		public static final String I_NP = "I-NP";
+		public static final String B_VP = "B-VP";
+		public static final String I_VP = "I-VP";
 		public static final String B_ADVP = "B-ADVP";
 		public static final String I_ADVP = "I-ADVP";
 		public static final String BEGIN_LETTER = "B";
@@ -32,6 +34,7 @@ public class Words {
 	public static final String ADJ = "ADJ";
 	public static final String ADV = "ADV";
 	public static final String DE = "DE";
+	public static final String AUX = "AUX";
 	
 
 	//public static final String[] SAID_AND_SYNONYMS= {"said",  "told", "added", "announced", "asserted","believe","believed"};
@@ -64,7 +67,6 @@ public class Words {
 	
 	public static final String NER_OTHER = "O";
 	public static final String WORD_WILDCARD_NER_FULL = "_";
-	public static final String VERB_POS_FIRST_LETTER = "V";	
 	//public static final String PROPER_NOUN_POS_START_WITH= "NNP";
 	public static final String PROPER_NOUN_POS_START_WITH= "PROPN";
 	
@@ -78,6 +80,8 @@ public class Words {
 	public static final String WILDCARD_ERROR_REPLACE = "algo";
 	public static final String WILDCARD_LEADING_ZEROES_FORMAT = "%03d";
 	public static final int WILDCARD_LEADING_ZEROES_COUNT = 3;
+	
+	public static final String NEGATION = "no";
 	
 	public static final Map<String , String> WORDTRANSLATE = new HashMap<String , String>() {/**
 		 * 

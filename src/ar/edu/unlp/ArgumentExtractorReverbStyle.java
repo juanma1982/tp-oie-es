@@ -38,7 +38,7 @@ public class ArgumentExtractorReverbStyle extends ArgumentExtractor{
 		if( sentence.indexOf(relationStr) <sentence.indexOf(argument)) {
 			ExtraSentenceData extraSentenceData = new ExtraSentenceData();
 			String leftChunkedSentence = sentenceUtils.getChunkedSentenceAtLeftOf(sentenceData, relationStr,extraSentenceData);
-			if(leftChunkedSentence==null) return phraseAtLeft;
+			if(leftChunkedSentence==null || leftChunkedSentence.isEmpty()) return null;
 			String extractionCandidate = extractAtLeft(leftChunkedSentence);
 			if(extractionCandidate.contains(relationStr) || extractionCandidate.contains(argument)) {
 				return phraseAtLeft;

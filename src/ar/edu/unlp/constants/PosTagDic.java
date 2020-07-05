@@ -25,6 +25,7 @@ public class PosTagDic {
 		put("SYM", "SYM");
 		put("INTJ", "UH");
 		put("VERB", "VB");
+		put("AUX", "VB");
 		put("PUNCT", ".");
 	}};
 	

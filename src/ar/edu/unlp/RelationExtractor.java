@@ -160,6 +160,12 @@ public class RelationExtractor {
 		return relations;
 	}
 	
+	/**
+	 * This method removes the extractions that are identical, but also those that are similar, that is, extractions that are different but if they are read continuously: entity 1, relation, entity 2 are identical.
+		for example:
+		(AE; won; the Nobel Prize) and (AE; won the; Nobel Prize)
+		in this second case, she will try to keep the one with the best score or a longer relationship.
+	 */
 	private void removeDuplicatedExtractions(List<Relation> relations) {
 		
 		Set<Integer> positionsToDelete = new HashSet<Integer>();
@@ -172,6 +178,24 @@ public class RelationExtractor {
 				if(positionsToDelete.contains(j)) continue;
 				if(first.contains(second)) {
 					positionsToDelete.add(j);
+				}else {
+					//delete similar extractions					
+					if(first.inRow().equals(second.inRow())) {
+						if(first.getScore() > second.getScore()) positionsToDelete.add(j);
+						else if(first.getScore() < second.getScore()) positionsToDelete.add(i);
+						else {
+							if(first.getRelation().length()<second.getRelation().length()) positionsToDelete.add(i);
+							else positionsToDelete.add(j);
+						}
+					}else {
+						if((first.getEntity1().contains(second.getEntity1()) || second.getEntity1().contains(first.getEntity1())) &&
+						   (first.getEntity2().contains(second.getEntity2()) || second.getEntity2().contains(first.getEntity2())) &&
+						   (first.getRelation().contains(second.getRelation()) || second.getRelation().contains(first.getRelation()))) {
+							if(first.getRelation().length()<second.getRelation().length()) positionsToDelete.add(i);
+							else if(first.getScore() < second.getScore()) positionsToDelete.add(i);
+							else positionsToDelete.add(j);
+						}
+					}
 				}
 			}
 		}
@@ -256,7 +280,8 @@ public class RelationExtractor {
 	 * 1. If the subject has only one word of, and the word is part of an entity (NER) => return the full entity
 	 * 2. Add missing words in the middle, for example: "a spokeman" => "a defense spokeman"
 	 * 3. Add the article at left, for example the word "The" in english or "El" in spanish
-	 * 4. Connect with the following noun phrase if the word at rigth is "de" or "en" (spanish) 
+	 * 4. Connect with the following noun phrase if the word at rigth is "de" or "en" (spanish)
+	 * 5. If the word at rigth or at left is an entity (NER), then it will be added to the subject 
 	 * @param subjectCanidate
 	 * @param sentenceData
 	 * @return
@@ -284,7 +309,7 @@ public class RelationExtractor {
 
 		if(!subjectCanidate.isEmpty()) {
 			String nounPhraseAtRigth = this.sentenceManipulation.getTheRestOfTheNounPhrase(sentenceData, subjectCanidate);
-			if(!nounPhraseAtRigth.isEmpty()) {
+			if(nounPhraseAtRigth != null && !nounPhraseAtRigth.isEmpty()) {
 				subjectCanidate = subjectCanidate+Words.SPACE+nounPhraseAtRigth;
 			}
 		}else {
@@ -302,6 +327,10 @@ public class RelationExtractor {
 			if(!nounPhraseAtRigth.isEmpty()) {
 				subjectCanidate = subjectCanidate+Words.SPACE+nounPhraseAtRigth;
 			}
+		}else if(!Words.NER_OTHER.equals(sentenceData.getWordNER().get(wordAtRight))) {
+			subjectCanidate = subjectCanidate+Words.SPACE+wordAtRight;
+		}else if(!Words.NER_OTHER.equals(sentenceData.getWordNER().get(WordAtLeft))) {
+			subjectCanidate = WordAtLeft+Words.SPACE+subjectCanidate;
 		}
 		
 		return subjectCanidate;
@@ -344,25 +373,45 @@ public class RelationExtractor {
 		
 	}
 	
-	public void validatePhrasalVerbs(SentenceData sentenceData, Map<String, String> currentRelationExtraction) {
+	/***
+	 * This method improves the extracted relation in several ways:
+	 * 
+	 * 1. if the next word after the extacted relation is "se" or "nos", then tis word will be concatenated at the end of the relation
+	 * 2. Do the same if the word "se" or "nos" is at the left of the relation, then this word is added at the begining of the relation itself
+	 * 3. if the last word in the relation is a verb and the next word in the sentence after that is also a verb => join the verb at the end of the relation
+	 * 4. if the fist word in the relation is a verb and the next word at left (in the sentence is also a verb) => join the verb at the begining of the relation
+	 * 5. If the relation conatins an NounPhrase at the begining, and then a verbalPhrase and there is no other word at left in sentence, the relation will be reduced only to the verbalPhrase 
+	 * 
+	 * @param sentenceData
+	 * @param currentRelationExtraction
+	 */
+	public void improveExtractedRelations(SentenceData sentenceData, Map<String, String> currentRelationExtraction) {
 		
 		for (String key : currentRelationExtraction.keySet()) {
 			String relation = currentRelationExtraction.get(key);
 			String[] relationWords = relation.split(Words.SPACE);
-			String lasPOS = sentenceData.getWordPOSTAG().get(relationWords[relationWords.length-1]);
-			if(lasPOS!=null && !lasPOS.isEmpty() && lasPOS.startsWith(Words.VERB_POS_FIRST_LETTER)) {
-				String wAtRigth = sentenceManipulation.getWordAtRightOf(sentenceData, relation+Words.SPACE);
+			String lastPOS = sentenceData.getWordPOSTAG().get(relationWords[relationWords.length-1]);
+			String wAtLeft = sentenceManipulation.getWordAtLeftOf(sentenceData, relation);
+			String wAtRigth = sentenceManipulation.getWordAtRightOf(sentenceData, relation+Words.SPACE);
+			
+			//if last POS tag in the relation is a Verb
+			if(lastPOS!=null && !lastPOS.isEmpty() && lastPOS.equals(Words.VERB)) {
 				if(wAtRigth!=null && !wAtRigth.isEmpty()) {
-					for (int i = 0; i < Words.PHRASAL_VERBS_COMMON_SECOND_WORDS.length; i++) {
-						if(wAtRigth.equals(Words.PHRASAL_VERBS_COMMON_SECOND_WORDS[i])) {
-							currentRelationExtraction.put(key, relation+Words.SPACE+wAtRigth);
-							break;
+					if(Words.VERB.equals(sentenceData.getWordPOSTAG().get(wAtRigth)) || 
+							Words.AUX.equals(sentenceData.getWordPOSTAG().get(wAtRigth))) {
+						currentRelationExtraction.put(key, relation+Words.SPACE+wAtRigth);
+					}else {
+						for (int i = 0; i < Words.PHRASAL_VERBS_COMMON_SECOND_WORDS.length; i++) {
+							if(wAtRigth.equals(Words.PHRASAL_VERBS_COMMON_SECOND_WORDS[i])) {
+								currentRelationExtraction.put(key, relation+Words.SPACE+wAtRigth);
+								break;
+							}
 						}
 					}
 				}
 				/***********/
-				String wAtLeft = sentenceManipulation.getWordAtLeftOf(sentenceData, relation);
-				if(wAtLeft!=null && !wAtLeft.isEmpty()) {
+
+				if(wAtLeft!=null && !wAtLeft.isEmpty()) {					
 					for (int i = 0; i < Words.PHRASAL_VERBS_COMMON_FIRST_WORDS.length; i++) {
 						if(wAtLeft.equals(Words.PHRASAL_VERBS_COMMON_FIRST_WORDS[i])) {
 							currentRelationExtraction.put(key, wAtLeft+Words.SPACE+relation);
@@ -370,10 +419,34 @@ public class RelationExtractor {
 						}
 					}
 				}
-				/*************/
-				
+								
+			}else if(lastPOS!=null && !lastPOS.isEmpty() && lastPOS.equals(Words.AUX)) { //if last POS tag in the relation is an AUX (example: "has", "have")
+				if(wAtRigth!=null && !wAtRigth.isEmpty() && Words.VERB.equals(sentenceData.getWordPOSTAG().get(wAtRigth))) {
+					currentRelationExtraction.put(key, relation+Words.SPACE+wAtRigth);
+				}
 			}
-		}
+			/****************************/
+			String firstPOS = sentenceData.getWordPOSTAG().get(relationWords[0]);
+			if(Words.VERB.equals(firstPOS) && (Words.VERB.equals(sentenceData.getWordPOSTAG().get(wAtLeft)) ||
+					Words.AUX.equals(sentenceData.getWordPOSTAG().get(wAtLeft)) ||
+					Words.NEGATION.equals(wAtLeft.toLowerCase())) ) { //if first POS in the relation is AUX or VERB
+				currentRelationExtraction.put(key, wAtLeft+Words.SPACE+relation);
+			}
+			///Check if the relation contains part of the subject
+			if(sentenceData.getCleanSentence().startsWith(relation)) {
+				int wordsinRelation = relationWords.length;
+				StringBuilder newRelationCandidate = new StringBuilder("");				
+				for(int i=0;i< wordsinRelation;i++) {
+					if(Words.Chunks.B_VP.equals(sentenceData.getChunkerTags()[i]) || Words.Chunks.I_VP.equals(sentenceData.getChunkerTags()[i])) {
+						newRelationCandidate.append(relationWords[i]);
+						newRelationCandidate.append(Words.SPACE);
+					}
+				}
+				if(newRelationCandidate.length() > 0) {
+					currentRelationExtraction.put(key,newRelationCandidate.toString().trim());
+				}
+			}
+		}//end for
 	}
 	
 	private Set<Relation> extractInformationFromXMLTree(SentenceData sentenceData) throws Exception {
@@ -393,7 +466,7 @@ public class RelationExtractor {
 		
 		/*******Delete duplicated relations*************/
 		deleteDuplicatedRelations(currentRelationExtraction, sentenceData.getCleanSentence());
-		validatePhrasalVerbs(sentenceData, currentRelationExtraction);
+		improveExtractedRelations(sentenceData, currentRelationExtraction);
 		
 		for(String keyRelation: currentRelationExtraction.keySet()){ //for each relation candidate, obtained
 				List<Pattern> subjectPatterns = this.treePatternList.getSubjectsByRelationPatternList(keyRelation); //We get the patterns to extract subjects (entity01), according with the extracted relation
@@ -505,13 +578,6 @@ public class RelationExtractor {
 	public boolean isUseReverb() {
 		return useReverb;
 	}
-
-	/*public void setUseReverb(boolean useReverb) {
-		this.useReverb = useReverb;
-		if(this.useReverb && reverbExtractor==null) {
-			reverbExtractor = new ReVerbExtractorUtility();
-		}
-	}*/
 
 	public void setScoreLimit(int score) {
 		this.scoreLimit = score;

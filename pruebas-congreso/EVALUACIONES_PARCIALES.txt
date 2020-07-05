@@ -1,0 +1,10 @@
+version 2:
+
+
+correctas: 51
+invalidas 11
+
+Precision = 0.82
+Recall = 51/137 = 0.37
+
+F1 = 2*P*R / (P+R) = 0,6068 / 1.19 = 0.50

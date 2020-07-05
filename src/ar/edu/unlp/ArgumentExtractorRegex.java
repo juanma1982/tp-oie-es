@@ -254,7 +254,7 @@ public class ArgumentExtractorRegex extends ArgumentExtractor{
 					String[] words = secondArgument.split(Words.SPACE);
 					String lastWordPOSTag = sentenceData.getWordPOSTAG().get(words[words.length-1]);
 					
-					if(lastWordPOSTag!= null && lastWordPOSTag.startsWith(Words.VERB_POS_FIRST_LETTER)){						
+					if(lastWordPOSTag!= null && lastWordPOSTag.equals(Words.VERB)){						
 						currentArgument = secondArgument;
 					}else{
 						for(int k=0;k<Words.BAD_ENDINGS_WORDS_FOR_ARGUMENT.length;k++){

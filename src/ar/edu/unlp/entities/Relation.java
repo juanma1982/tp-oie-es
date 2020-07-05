@@ -83,9 +83,9 @@ public class Relation {
 		StringBuilder sb = new StringBuilder();
 		sb.append("(");
 		sb.append(entity1);
-		sb.append(", ");
+		sb.append("; ");
 		sb.append(relation);
-		sb.append(", ");
+		sb.append("; ");
 		sb.append(entity2);
 		sb.append(")");
 		return sb.toString();
@@ -95,9 +95,9 @@ public class Relation {
 		StringBuilder sb = new StringBuilder();
 		sb.append("(");
 		sb.append(entity1);
-		sb.append(", ");
+		sb.append("; ");
 		sb.append(relation);
-		sb.append(", ");
+		sb.append("; ");
 		sb.append(entity2);
 		sb.append(")");
 		sb.append(" => (");
@@ -110,9 +110,9 @@ public class Relation {
 		sb.append(this.id);
 		sb.append(" (");
 		sb.append(entity1);
-		sb.append(", ");
+		sb.append("; ");
 		sb.append(relation);
-		sb.append(", ");
+		sb.append("; ");
 		sb.append(entity2);
 		sb.append(")");
 		sb.append(" => (");
