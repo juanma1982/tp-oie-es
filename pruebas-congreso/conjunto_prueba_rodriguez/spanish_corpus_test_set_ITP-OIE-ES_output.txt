@@ -1,0 +1,188 @@
+En el año 1519 los portugueses celebraron un tratado con el rey de Pegú, estableciendo factorías en Martaban y Siriam.
+13 (Pegú; factorías; en Martaban y Siriam ) => (1) --
+
+El gobierno de Birmania ignora completamente los reclamos de los países vecinos, que piden abrir un proceso de democratización.
+16 (El gobierno de Birmania; ignora; completamente los reclamos de los países vecinos ) => (31) ++
+
+En general, los laicistas afirman que la laicidad es un principio indisociable de la democracia, porque las creencias religiosas no son un dogma que deban imponerse a nadie ni convertirse en leyes.
+29 (los laicistas; afirman; que "la laicidad es un principio indisociable de la democracia, porque las creencias religiosas no son un dogma que deban imponerse a nadie ni convertirse en leyes.") => (53) ++
+40 ( la laicidad; es; un principio indisociable de la democracia ) => (10) ++
+
+La percepción de la película por parte de la crítica ha cambiado a lo largo de los años.
+61 (la crítica; cambiado a lo largo de los; años ) => (23) --
+62 (La percepción de la película; ha cambiado a; lo largo de los años ) => (44) +i
+
+La historia de la provincia de San Martín se remonta a la época cuando los aguerridos chancas, perseguidos por los Incas hacen de Lamas su nuevo hábitat y forman una extensa familia cultural conocida como: "Motilones Lamistas" 
+82 (La historia de la provincia de San Martín; se remonta; a la época cuando los aguerridos chancas ) => (21) +i
+
+En una sociedad anarcocapitalista, la policía, los tribunales y todos los otros servicios de seguridad se prestarían por parte de competidores de financiación privada en lugar de a través de impuestos, y el dinero sería proporcionado privadamente y competitivamente en un mercado abierto.
+97 (la policía; prestarían; por parte de competidores de financiación privada en lugar de a través de impuestos ) => (10) *
+
+El manuscrito Voynich es un misterioso libro ilustrado, de contenidos desconocidos, escrito hace unos 500 años por un autor anónimo en un alfabeto no identificado y un idioma incomprensible, el denominado voynichés.
+113 (contenidos desconocidos; hace; unos 500 años por un autor anónimo en un alfabeto no identificado y un idioma incomprensible ) => (10) --
+
+Todos los ciudadanos del mundo están expuestos a unos u otros medios, que resultan indispensables como herramienta de comunicación y presencia pública para todo tipo de agentes económicos, sociales y políticos.
+118 (Todos los ciudadanos de el mundo; están; expuestos a unos u otros medid os ) => (31) ++
+
+La teoría de la relatividad de Albert Einstein fue ratificada en 2003 por los científicos que estudiaron fotografías y otra información proporcionada por la sonda Cassini.
+138 (La teoría de la relatividad; ratificada en 2003 por; los científicos que estudiaron fotografías y otra información proporcionada por la sonda Cassini ) => (21) ++
+149 (La teoría de la relatividad de Albert Einstein; fue ratificada; en 2003 por los científicos que estudiaron fotografías y otra información proporcionada por la sonda Cassini ) => (21) ++
+
+En los años 1970, era muy corriente conectar múltiples terminales, e incluso terminales gráficos, a un solo computador central (mainframe), para así aprovechar las ventajas del tiempo compartido.
+152 (los años 1970; era; muy corriente conectar múltiples termina les ) => (10) ++
+
+El trotskismo es una tendencia marxista y leninista que se opone al marxismo-leninismo y estalinismo, a través de las teorías de la revolución permanente y el internacionalismo, que se opone al socialismo en un solo país de Stalin.
+238 ( El trotskismo; es; una tendencia marxista y leninista que se opone a el marxismo - leninismo y estalinismo ) => (10) ++
+
+Los adorables animalitos fueron filmados mirando a los peces en los tanques.
+241 ( Los adorables animalitos; mirando a los peces en; los tanques ) => (23) +i
+
+las proyecciones para 2021 vuelven a ser positivas.
+252 ( las proyecciones; ser; positivas ) => (43) +i
+
+Ohio es el # 17 d los 50 estados con más positivos por #Coronavirus y hoy teportó 511 nuevos positivos y 37 muertes más... Están locos!
+257 (Ohio; es el # 17 d los 50 estados con; más positivos por #Coronavirus y hoy teportó 511 nuevos positivos y 37 muertes más ) => (22) ++
+263 ( ; están; locos !) => (53) ++
+
+ella debería ir a la cárcel y luego deportarla no necesitamos personas tan poco enpaticas
+268 (a la cárcel; luego; deportar la no necesitamos personas tan poco enpaticas) => (23) --
+264 ( ella; debería ir a; la cárcel y luego deportar la no necesitamos personas tan poco enpaticas) => (23) ++
+
+el 64.3% no han requerido hospitalización y el 4.3% han sido intubados. Existen además 92 defunciones sospechosas por #COVID19mx
+270 (el 64.3 %; han; requerido hospitalización y el 4.3 % han sido intubados ) => (44) --
+276 ( Existen; además; 92 defunciones sospechosas por #COVID 19mx) => (43) *
+
+Ahora si! Las empresas no esenciales que se niegan a cerrar podrían ser clausuradas y sujetas a proceso legal por daño a la salud de sus trabajadores #Covid_19 #MexicoEnCuarentena #HugoLopezGatell,Twitter,#Ecuador #Covid_19 #Mundo #Quito cada día es peor este Gobierno y Ministros no entienden que vivimos una PANDEMIA @bbcmundo @dw_espanol @CNNEE @EFEnoticias @elmundoes @el_pais @washingtonpost @clarincom @lajornadaonline @ALAIinfo @opsoms @MJERESXELCAMBIO @OACNUDH @IntlCrimCourt ,Twitter,es
+278 ( ; ahora; si !) => (43) *
+280 ( Las empresas; niegan; a cerrar podrían ser clausuradas y sujetas a proceso legal por daño a la salud de sus trabajadores #Covid _19 #MexicoEnCuarentena #HugoLopezGatell ) => (10) *
+
+La Aviadores del chaco pide a gritos que le pongan un pavimento nuevo
+308 (el chaco; pide a gritos que le pongan un; pavimento nuevo) => (23) +i
+
+La capilla es una propiedad privada, porque gastan el dinero público en su mantenimiento? Que lo costee la diócesis correspondiente.
+316 (una propiedad privada; gastan el dinero público en; su mantenimiento ?) => (23)  INTERROGACIÓN *
+321 ( Que; lo costee; la diócesis correspondiente ) => (43) *
+
+Se pasan de caraduras! Hasta la grúa estaba rondando para ver su salía bien la transacción.En vez de agilizar el tránsito que es su función
+322 ( Se; pasan; de caraduras !) => (53) ++
+323 (la grúa; estaba rondando; para ver su salía bien la transacción ) => (23) ++
+329 ( Hasta la grúa; bien; la transacción ) => (23) --
+332 (vez de; agilizar el; tránsito que es su función) => (43) *
+
+Hay demasiados cruces peligrosos en Asu. Aumentaron con asfaltados masivos. Municipio sigue durmiendo.
+335 ( ; aumentaron con; asfaltados masivos ) => (43) *
+339 ( ; municipio; sigue durmiendo ) => (43) ++
+
+Se usará dinero de los contribuyentes para tapar pelotudeces...y tapar los baches para cuandoCuanto falta para las elecciones municipales?
+348 ( Se; usará; dinero de los contribuyentes para tapar pelotudeces ... y tapar los baches para cuandoCuanto falta para las elecciones municipales ?) => (10)  INTERROGACIÓN  ++
+
+Amor y deseo son dos cosas diferentes; que no todo lo que se ama se desea, ni todo lo que se desea se ama.
+351 ( Amor y deseo; son; dos cosas diferentes ) => (43) ++
+
+¡Qué maravilloso es que nadie necesite esperar ni un solo momento antes de comenzar a mejorar el mundo!.
+359 (Qué; necesite esperar; ni un solo momento antes de comenzar a mejorar el mundo !) => (23) --
+
+Seas quien seas, hagas lo que hagas, cuando deseas con firmeza alguna cosa es porque este deseo nació en el alma del universo. Es tu misión en la tierra.
+371 (quien; nació; en el alma de el universo ) => (10) --
+370 (este deseo; nació; en el alma de el universo ) => (10) ++ 
+386 ( ; es tu misión en; la tierra ) => (43) *
+
+El mundo era tan reciente que muchas cosas carecían de nombre, y para nombrarlas había que señalarlas con el dedo.
+390 (tan reciente que muchas cosas; carecían; de nombre ) => (10)++ 
+392 ( El mundo; carecían; de nombre ) => (10) --
+
+De pronto se deslizó por el pasillo, al pasar por mi lado sus sorprendentes pupilas de oro se detuvieron un instante en las mías. Debí morir un poco. No podía respirar y se me detuvo el pulso.
+413 ( de pronto; se deslizó por; el pasillo ) => (21) +i
+421 ( Debí; morir un; poco ) => (43) +i
+424 ( No; podía; respirar y se me detuvo el pulso ) => (43) +i
+
+Quienes tienen mi misma edad recuerdan dónde estaban y qué hacían la primera vez que oyeron hablar del concurso.
+436 (mi misma edad; estaban; y qué hacían la primera vez que oyeron hablar de el concurso ) => (10) *
+
+Todavía recuerdo aquel amanecer en que mi padre me llevó por primera vez a visitar el Cementerio de los Libros Olvidados.
+449 ( Todavía; recuerdo; aquel amanecer en que mi padre me llevó por primera vez a visitar el Cementerio de los Libros Olvidados ) => (10) +i
+
+La idea de que el mundo que nos rodea está en continua evolución es un tópico; rara vez comprendemos sus plenas consecuencias.
+453 (continua evolución; es un; tópico ) => (23) *
+456 (La idea de que; nos rodea está en continua evolución es; un tópico ) => (44) *
+459 ( rara vez; comprendemos; sus plenas consecuencias ) => (53) ++
+
+Calígula pasaba la mayor parte de su tiempo en Capri, pero de vez en cuando iba a Roma, en nombre de Tiberio, para vigilar a Macro.
+461 (Calígula; pasaba la mayor parte de; su tiempo en Capri ) => (22) ++
+
+Morgan fue el primero que con conocimiento de causa trató de introducir un orden preciso en la prehistoria de la humanidad, y su clasificación permanecerá sin duda en vigor hasta que una riqueza de datos mucho más considerable no obligue a modificarla.
+475 (Morgan; fue el primero que con; conocimiento de causa trató de introducir un orden preciso en la prehistoria de la humanidad ) => (22) ++
+480 (su clasificación; modificar; la ) => (10) --
+
+EL 16 DE agosto de 2012 la policía sudafricana intervino en el conflicto que opuso a los obreros de la mina de platino de Marikana, cercana a Johannesburgo, con los dueños de la explotación, los accionistas de la compañía Lonmin, con base en Londres.
+488 (2012 la policía sudafricana; intervino; en el conflicto que opuso a los obreros de la mina de platino de Marikana ) => (10) ++
+
+Cuéntase —pero Alah es más sabio, más prudente más poderoso y más benéfico— que en lo que transcurrió en la antigüedad del tiempo y en lo pasado de la edad, hubo un rey entre los reyes de Sassan, en las islas de la India y de la China.
+506 (Alah; Cuenta se -- pero Alah es más sabio , más prudente más poderoso y más benéfico -- que en lo que transcurrió en la antigüedad de el tiempo y en lo pasado de la edad , hubo un rey entre; los reyes de Sassan ) => (1) --
+500 (Alah; en; lo que transcurrió en la antigüedad de el tiempo y en lo pasado de la edad ) => (1) --
+501 (que en lo; Cuenta; se -- pero Alah es más sabio ) => (10) --
+
+Mujica reveló a la prensa que el paquete de marras contenía "una amatista del norte del país" de regalo para el primer ministro.
+518 (el paquete de marras; reveló a la prensa que el paquete de; marras contenía "una amatista del norte del país" de regalo para el primer ministro ) => (23) --
+516 (Mujica; reveló; a la prensa que el paquete de marras contenía "una amatista del norte del país" de regalo para el primer ministro ) => (55) ++
+
+La iniciativa prevé modificar el artículo de Trámites y Documentación de la Ordenanza Nº 7218/01 sobre Espectáculos Públicos para que no se otorguen permisos antes de conocer la voluntad de los vecinos expresadas en los resultados del registro de oposición. "En la actualidad se están desarrollando las ejecuciones de las obras con permisos municipales en simultaneo a la apertura del registro", destacó el edil radical.
+532 ( La iniciativa; conocer; la voluntad de los vecinos expresadas en los resultados de el registro de oposición ) => (10) --
+545 ( La iniciativa; prevé; modificar el artículo de Trámites y Documentación de la Ordenanza Nº 7218/01 sobre Espectáculos Públicos para que no se otorguen permisos antes de conocer la voluntad de los vecinos expresadas en los resultados de el registro de oposición ) => (10) ++
+
+El jugador de Terrassa opinó también que es un "halago" que se les compare con equipos que han marcado un antes y un después en el mundo del fútbol, como el Milan de Arrigo Sacchi, insistiendo en que están haciendo una gran temporada, pese a que no dependen de ellos mismos para ganar la liga.
+567 (El jugador de Terrassa; opinó; también que es un "halago" que se les compare con equipos que han marcado un antes y un después en el mundo de el fútbol ) => (31) ++
+583 (El jugador de Terrassa; han; marcado un antes y un después en el mundo de el fútbol ) => (21) --
+573 (El jugador de Terrassa; haciendo; una gran temporada ) => (31) --
+
+Entre sus obras destacan: "Vals", Premio Mayor del Festival Iberoamericano de Teatro en Mar del Plata, Argentina, y "La Malamadre" (escrita y dirigida junto a su compañía Teatro SUPLE), Premio Eugenio Guzmán a la Mejor Dirección en el Festival de Directores de la Universidad de Chile 2011.
+616 (sus obras; destacan; : "Vals" ) => (10) ++
+
+Actualmente UPM es propietaria de la planta de celulosa de Fray Bentos y - desde 2009 - de Forestal Oriental luego de comprar las acciones de Botnia. Hoy el nombre formal de esa firma es UPM Forestal Oriental y provee de madera y logística a la planta de Río Negro.
+621 (UPM; es de; Botnia ) => (1) --
+
+Los hombres que al parecer estaban escondidos en un matorral cerca de su casa, le hicieron dos disparos en el cuerpo y cuando el albañil cayó al suelo, le dieron un tercer balazo en la cabeza.
+662 ( Los hombres que; escondidos; en un matorral cerca de su casa ) => (10) +i
+
+La fuente precisó que poco antes del mediodía un terrorista suicida hizo estallar el vehículo al paso del convoy del ministro, lo que también causó heridas a diez de sus acompañantes, tres de ellos graves.
+672 ( La fuente; precisó; que poco antes de el mediodía un terrorista suicida hizo estallar el vehículo a el paso de el convoy de el ministro ) => (10) ++
+
+Miles de estudiantes británicos tomaron este miércoles el centro de Londres para protestar por el aumento de las tasas universitarias, entre fuertes medidas de seguridad ante el temor a que se reproduzcan los incidentes violentos del año pasado.
+686 (los incidentes; tomaron; este miércoles el centro de Londres para protestar por el aumento de las tasas universitarias ) => (10) *
+
+Para finalizar aclaró: "Sin dudas que nos hubiera gustado discutirlo mucho más"
+701 ( Para; finalizar aclaró; : "Sin dudas que nos hubiera gustado discutirlo mucho más") => (43) +i
+702 (lo; mucho; más) => (43) --
+
+El secretario general de la Unasur, Néstor Kirchner, se reunió anoche, a su llegada a Bogotá, con el presidente electo de Colombia, Juan Manuel Santos, informaron fuentes de la delegación argentina.
+717 (El secretario general; reunió anoche , a su llegada a Bogotá , con el; presidente electo de Colombia ) => (21) ++
+722 (El secretario general; se reunió; anoche ) => (21) *
+
+Hasta ahí no más le llegó la fiesta a este chiquillo y en dos tiempos iba derechito a la capacha por cohecho.
+730 (le; llegó; la fiesta a este chiquillo y en dos tiempos iba derechito a la capacha por cohecho ) => (10) +i
+
+El tema de la participación ciudadana se encuentra en auge dentro y fuera de las instituciones.
+745 (El tema de la participación; se encuentra; en auge dentro y fuera de las instituciones ) => (44) +i
+
+Eso no significa, agregó Antón, incumplir con el pago de la matricula, pues resaltó que quienes no hayan cancelado recibirán una multa a pagar de 25 dólares.
+787 (Antón; con; el pago de la matricula ) => (1) --
+
+La Iglesia indicó que los primeros cinco viajarían a España, pero no quedó claro si los siguientes 47, que se comprometió a liberar el gobierno en un lapso de tres o cuatro meses, saldrían del país obligatoriamente.
+797 ( La Iglesia; indicó; que los primeros cinco viajarían a España ) => (10) ++
+
+==========================================
+Resultados
+
+Total de extracciones: 76
+Total de extracciones correctas: 29
+Total de extracciones correctas pero incompletas: 13
+Total de extracciones ignoradas: 14
+Total de extracciones erroneas: 20
+
+Total de relaciones semanticas (extracciones manuales): 122
+
+Precisión: 29 +13 / 29+13+20  = 0,677419355
+Recall: 29+13 / 122  = 0,344262295
+
+F1 = 2 * precision* recall / ( precision + recall)
+F1 = 0,456521739
