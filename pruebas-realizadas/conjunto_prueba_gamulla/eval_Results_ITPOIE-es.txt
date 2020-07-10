@@ -181,3 +181,21 @@ El Bulbo raquídeo es el encargado de transmitir mensajes entre el cerebro y el 
 De la médula espinal nacen los nervios periféricos, que permiten movimientos voluntarios e involuntarios, sensaciones y reflejos .
 621 (la médula; nacen los; nervios periféricos ) => (23) ++
 
+==========================================
+Resultados
+
+Total de extracciones: 67
+Total de extracciones correctas: 57
+Total de extracciones ignoradas: 5
+Total de extracciones erroneas: 5
+
+Total de relaciones semanticas: 137 (tomado de Gamallo2012:
+									 https://www.gelbukh.com/resources/spanish-open-fact-extraction/ver1/Parallel_FactSpaCIC.xlsx
+
+Precision = 57/57+5 = 0,919354839
+Recall = 49/137 = 0,416058394
+
+F1 = 2 * precision* recall / ( precision + recall)
+F1 = 0,572864322
+
+NOTA: se marcaron con +i, aquellas extracciones correctas pero que pueden ser mejoradas añadiendo mayor información

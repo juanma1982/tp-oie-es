@@ -1,0 +1,11 @@
+se marcaron con:
+++ las extracciones que son correctas
+
++i las extracciones que son correctas, pero que no están completas. Falta información, aunque no es completamente relevante para entender el sentido del relación semantica.
+   (se las computó como correctas para el calculo de las medidas)
+
+-- indica una extracción erronea
+
+*  extracciones ignoradas; pueden ser duplicadas o bien extracciones incompletas, en las que falta algún dato importante. Se las marca como ignoradas para no
+   penalizar al algoritmo doblemente por hacer una extracción "casi" correcta. Ya que de lo contrario sería mejor que el método no hubiese 
+   extraido nada a que haya extraido algo que está practicamente bien.
