@@ -1,0 +1,65 @@
+	1	(Los egipcios; se caracterizaron por; sus creencias relacionadas con la muerte)++
+	3	(El ritmo; es; la alternancia de sílabas átonas con sílabas tónicas)++
+	6	(Esta sección; debe ser; breve e interesante)--
+	7	(Las conclusiones; sintetizan; los argumentos presentados en el desarrollo del trabajo)++
+	8	(La bibliografía; es; el listado alfabético de todas@las fuentes consultadas para la elaboración del trabajo)++
+	12	(El epíteto heroico; es; la expresión que menciona una característica o cualidad del personaje u objeto nombrado)++
+	14	(El vocativo épico; atrae; la atención del lector o del oyente)++
+	15	(Los documentos; escritos; antiguos)--
+	16	(Los métodos modernos de investigación; han permitido estudiar al; hombre prehistórico)++
+	17	(La Química; usa; técnicas)++i
+	19	(Los documentos; escritos; más antiguos)--
+	20	(La Botánica; estudia; el polen fósil)++
+	21	(el hombre; ha dejado; señales)++i
+	21	(La arqueología; usa; nuevas técnicas)++i
+	22	(La Prehistoria; abarca desde; la aparición de la humanidad)++
+	23	(El agua; es@indispensable para; la vida)++
+	24	(La numeración arábiga; procede de; India)++
+	25	(Benito&Juárez; nació en; San&Pablo&Guelatao , Oaxaca )++
+	27	(La civilización China; nos heredó; el papel , la pólvora )++
+	28	(El surgimiento de la agricultura; fue@posible que crearon un ambiente propicio para la reproducción por; los cambios climáticos)--
+	29	(El mar Mediterráneo; es; un mar poco profundo)++
+	29	(lo cual; facilita; la navegación)++
+	31	(La agrupación de seres humanos en un mismo espacio; favoreció; el intercambio de conocimientos y el desarrollo de las ciencias y el arte)++
+	32	(El mamut; era un animal de gran tamaño al; que se cazaba mediante diversas técnicas)++
+	34	(Las civilizaciones agrícolas; también desarrollaron; la ciencia)++
+	35	(Los cretenses; eran; un pueblo pacífico de navegantes que estuvo en contacto con Egipto y Medio Oriente)++
+	36	(Los primeros griegos; se organizaron que tenían lazos familiares en; grupos)*
+	38	(los gobernantes; eran elegidos por; el voto de los ciudadanos)*
+	39	(El término democracia; significa; gobierno del pueblo)++
+	40	(La democracia ateniense; se basaba en; la participación de todos@los ciudadanos)++
+	41	(Roma; consumó; I a.C. )--
+	41	(La cultura griega; alcanzó su esplendor en; el siglo)*
+	43	(Roma; fue gobernada por; siete reyes , etruscos y latinos)++
+	45	(El primer emperador de Roma; fue; el político y militar Octavio&Augusto)++
+	46	(Roma; no imponía ideas políticas o credos en; sus territorios)++
+	47	(Los habitantes de la antigua Roma; se ocupaban en; diversos trabajos)++
+	50	(La palabra Mesoamérica; fue creada por; un antropólogo)++
+	51	(el sistema nervioso; se divide en; sistema nervioso central y sistema nervioso periférico)++
+	52	(El sistema nervioso periférico; lo conforman; los nervios que nacen)++
+	53	(El encéfalo; se encuentra dentro  del; cráneo)++
+	54	(El Cerebro; es; el órgano más grande del encéfalo)++
+	55	(El cerebro; almacena; enormes cantidades de información)++
+	56	(El cerebro; es; un órgano tan complejo que no se conoce al detalle)++
+	57	(El Tálamo; se halla en; el centro del encéfalo)++
+	58	(El Cerebelo; es; el segundo órgano más grande del encéfalo)++
+	59	(El Hipotálamo; se encarga de; algunas funciones corporales)++
+	60	(El Hipotálamo; es; el responsable de las manifestaciones emocionales)++
+	62	(La Médula espinal; es; la prolongación del encéfalo)++
+
+==========================================
+Resultados
+
+Total de extracciones: 48
+Total de extracciones correctas: 40
+Total de extracciones ignoradas: 3
+Total de extracciones erroneas: 5
+
+Total de relaciones semanticas: 137 (tomado de Gamallo2012:
+									 https://www.gelbukh.com/resources/spanish-open-fact-extraction/ver1/Parallel_FactSpaCIC.xlsx
+
+Precision = 40/45 = 0.89
+Recall = 40/137 = 0.2919
+
+F1 = 2 * precision* recall / ( precision + recall)
+F1 = 0,439615873

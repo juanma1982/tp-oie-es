@@ -1,5 +1,4 @@
 package test;
-
 import static org.junit.Assert.fail;
 
 import java.util.List;
@@ -13,8 +12,7 @@ import ar.edu.unlp.entities.Relation;
 public class TestExtractionUsingJSONPatterns5 {
 		
 	
-	public static final String Paragraph = "Baker also said he still sees \"ominous\" signs of pressure for protectionist trade legislation \"and this pressure for protectionism is coming from new areas of society.\"";
-										  
+	public static final String[] LINES ={"¿El tener cáncer podría generar co fusión en el resultado del la prueba para #COVID19?"};
 	
 	@Before
 	public void setUp() throws Exception {
@@ -24,22 +22,22 @@ public class TestExtractionUsingJSONPatterns5 {
 	@Test
 	public void test() {
 		try{
-		 System.out.println("Check Subject extraction");
+		 System.out.println("Extract a tacit subject sentence");
 		 RelationExtractor extractor = new RelationExtractor();
-
-
-			 List<Relation> relations = extractor.extractInformationFromParagraph(Paragraph);
+		 		 
+		 for (String line : LINES) {
+			 List<Relation> relations = extractor.extractInformationFromParagraph(line);
 			 if(relations!=null && !relations.isEmpty()){
-					System.out.println(Paragraph);					
+					System.out.println(line);					
 					for (Relation relation : relations) {
-						System.out.println(relation.toStringScore());						
+						System.out.println(relation.toStringFull());
 					}
 					System.out.println();
 			 }else{
 				 System.err.println("No relation extracted!");
 				 fail("No relation extracted!");
 			 }	
-
+		}
 			 		
 			
 		}catch(Exception e){

@@ -1,0 +1,201 @@
+Los egipcios se caracterizaron por sus creencias relacionadas con la muerte .
+0 ( Los egipcios; caracterizaron por sus; creencias relacionadas con la muerte ) => (23) ++
+
+El libro de los muertos es otro de los escritos que se han encontrado en diversas tumbas egipcias .
+7 (El libro de los muertos; es otro de los escritos que se han; encontrado en diversas tumbas egipcias ) => (160) ++
+
+El ritmo es la alternancia de sílabas átonas con sílabas tónicas .
+15 ( El ritmo; es la alternancia de; sílabas átonas con sílabas tónicas ) => (23) ++
+
+Los datos de las fuentes consultadas deben registrarse en fichas bibliográficas .
+26 (Los datos de las fuentes consultadas; deben registrar se; en fichas bibliográficas ) => (44) ++
+
+Redactar un borrador en el cual se deben considerar las partes que conforman un trabajo de investigación .
+32 (un borrador; en; el cual se deben considerar las partes que conforman un trabajo de investigación ) => (23) +i
+
+Esta sección debe ser breve e interesante .
+45 ( Esta sección; debe ser breve; e interesante ) => (43) ++
+
+Las conclusiones sintetizan los argumentos presentados en el desarrollo del trabajo .
+51 (los argumentos; presentados en; el desarrollo de el trabajo ) => (23) *
+
+La bibliografía es el listado alfabético de todas las fuentes consultadas para la elaboración del trabajo .
+54 ( La bibliografía; es; el listado alfabético de todas las fuentes consultadas para la elaboración de el trabajo ) => (23) ++
+
+La bibliografía se estructura con los datos de las fichas bibliográficas de esos textos .
+57 ( La bibliografía; se estructura con; los datos de las fichas bibliográficas de esos textos ) => (23) ++
+
+Las repeticiones sirven para acentuar las emociones y sentimientos del hablante lírico .
+62 ( Las repeticiones; sirven; para acentuar las emociones y sentimientos de el hablante lírico ) => (33) ++
+
+Es muy común el empleo de llaves para estructurar un cuadro sinóptico .
+74 ( Es; muy; común el empleo de llaves para estructurar un cuadro sinóptico ) => (23) ++
+
+El vocativo épico es un enunciado exclamativo intercalado en una oración .
+80 ( El vocativo épico; es un enunciado exclamativo intercalado en; una oración ) => (23) ++
+
+El vocativo épico atrae la atención del lector o del oyente y lo ubica en la trama deI relato .
+92 ( El vocativo épico; atrae; la atención de el lector o de el oyente y lo ubica en la trama deI relato ) => (10) ++
+
+Los documentos escritos antiguos pertenecen a la época de la dinastía Shang .
+97 ( Los documentos escritos antiguos; pertenecen a; la época de la dinastía Shang ) => (23) ++
+
+Los métodos modernos de investigación han permitido estudiar al hombre prehistórico .
+112 ( Los métodos; han permitido estudiar; a el hombre prehistórico ) => (23) *
+110 ( Los métodos modernos de investigación; permitido estudiar a el; hombre prehistórico ) => (23) ++
+
+La Química usa técnicas para analizar sustancias .
+116 ( ; usa; técnicas para analizar sustancias ) => (53) *
+
+Se usa el guión menor para formar adjetivos compuestos .
+120 ( Se; usa; el guión menor para formar adjetivos compuestos ) => (53) +i
+
+Los documentos escritos más antiguos fueron encontrados en Mesopotamia y Egipto .
+123 ( Los documentos; escritos; más antiguos fueron encontrados en Mesopotamia y Egipto ) => (33) *
+122 ( Los documentos; fueron encontrados en; Mesopotamia y Egipto ) => (23) ++
+
+La Botánica estudia el polen fósil y ha logrado analizar las características de la vegetación e inferir los climas .
+145 ( La Botánica; estudia; el polen fósil y ha logrado analizar las características de la vegetación e inferir los climas ) => (33) ++
+
+La arqueología usa nuevas técnicas para excavar y localizar y estudiar los restos materiales y huellas y señales que el hombre ha dejado en el pasado para reconstruir y comprender su vida en todos los aspectos posibles .
+151 ( La arqueología; usa; nuevas técnicas para excavar y localizar y estudiar los restos materiales y huellas y señales que el hombre ha dejado en el pasado para reconstruir y comprender su vida en todos los aspectos posibles ) => (10) ++
+
+La Prehistoria abarca desde la aparición de la humanidad hasta la invención de la escritura .
+162 (Prehistoria; abarca desde la aparición de la humanidad hasta; la invención de la escritura ) => (24) ++
+
+El agua es indispensable para la vida .
+166 ( El agua; es; indispensable para la vida ) => (43) ++
+
+La numeración arábiga procede de India .
+171 (numeración arábiga; procede de; India ) => (43) ++
+
+Benito Juárez nació en San Pablo Guelatao, Oaxaca, en 1806 .
+173 (Benito Juárez; nació en; San Pablo Guelatao ) => (44) ++
+
+Los primeros homínidos eran recolectores y sólo comían carne cuando encontraban los restos abandonados por otros animales .
+177 ( Los primeros homínidos eran recolectores; anima; les ) => (33) --
+176 ( Los primeros homínidos; recolectores; y sólo comían carne cuando encontraban los restos abandonados por otros anima les ) => (23) *
+179 ( Los primeros homínidos eran recolectores; por; otros anima les ) => (23) --
+
+La civilización China nos heredó el papel, la pólvora, una forma de imprenta rudimentaria, y la brújula .
+197 (La civilización China; nos heredó el papel , la pólvora , una forma de; imprenta rudimentaria ) => (21) ++
+207 (La civilización China; nos heredó; el papel ) => (21) ++
+
+El surgimiento de la agricultura fue posible por los cambios climáticos que crearon un ambiente propicio para la reproducción, el cuidado y la selección de plantas .
+211 (El surgimiento de la agricultura; fue posible por; los cambios climáticos que crearon un ambiente propicio para la reproducción ) => (21) ++
+
+El mar Mediterráneo es un mar poco profundo, con escasas corrientes marinas, lo cual facilita la navegación .
+233 ( El mar Mediterráneo; es; un mar poco profundo ) => (33) ++
+228 ( El mar Mediterráneo; es un mar poco profundo , con; escasas corrientes marinas ) => (23) ++
+
+Los primeros pobladores de América llegaron hace 30 mil años, aproximadamente, siguiendo a las manadas de animales que acostumbraban cazar .
+244 (Los primeros pobladores de América; llegaron; hace 30 mil años ) => (31) ++
+238 (Los primeros pobladores de América; llegaron hace 30 mil años , aproximadamente , siguiendo a; las manadas de anima les que acostumbraban cazar ) => (21) ++
+
+En América la agricultura inició entre el 8000 y el 5000 a.C. .
+259 (América la agricultura; inició; entre el 8000 y el 5000 a.C. ) => (33) ++
+
+El mamut era un animal de gran tamaño al que se cazaba mediante diversas técnicas .
+275 (mamut; era un animal de; gran tamaño a el que se cazaba mediante diversas técnicas ) => (24) ++
+
+Las civilizaciones agrícolas también desarrollaron la ciencia .
+290 ( Las civilizaciones agrícolas; desarrollaron la; ciencia ) => (43) ++
+
+Los cretenses eran un pueblo pacífico de navegantes que estuvo en contacto con Egipto y Medio Oriente .
+294 ( Los cretenses; eran un pueblo pacífico de; navegantes que estuvo en contacto con Egipto y Medio Oriente ) => (23) ++
+
+Los primeros griegos se organizaron en grupos que tenían lazos familiares .
+299 ( Los primeros griegos; se organizaron en; grupos que tenían lazos familiares ) => (23) ++
+
+Esparta era gobernada por reyes .
+302 ( Esparta; era gobernada por; reyes ) => (43) ++
+
+En Atenas los gobernantes eran elegidos por el voto de los ciudadanos .
+306 (Atenas los gobernantes; eran elegidos por el; voto de los ciudadanos ) => (23) ++
+
+El término democracia significa gobierno del pueblo .
+315 ( El término democracia; significa; gobierno de el pueblo ) => (53) ++
+
+La democracia ateniense se basaba en la participación de todos los ciudadanos en la vida política .
+322 ( La democracia; se basaba en la participación de; todos los ciudadanos en la vida política ) => (23) ++
+
+La cultura griega alcanzó su esplendor en el siglo v a.C. .
+332 ( La cultura griega; alcanzó su esplendor en; el siglo v a.C. ) => (23) ++
+
+La historia de la civilización romana se divide en tres periodos .
+353 (La historia de la civilización; se divide; en tres periodos ) => (44) ++
+
+Roma fue gobernada por siete reyes, etruscos y latinos, en diferentes periodos .
+356 (Roma; fue gobernada; por siete reyes ) => (45) ++
+
+El último periodo de la civilización romana fue el imperio, que abarcó desde el año 27 a.C. hasta el año 476 d.C. .
+361 (El último periodo de la civilización; fue; el imperio ) => (21) ++
+
+El primer emperador de Roma fue el político y militar Octavio Augusto .
+368 (El primer emperador de Roma; fue; el político y militar Octavio Augusto ) => (170) ++
+
+Roma no imponía ideas políticas o credos en sus territorios .
+374 (Roma; no imponía; ideas políticas o credos en sus territorios ) => (161) ++
+
+Los habitantes de la antigua Roma se ocupaban en diversos trabajos .
+380 (Los habitantes de la antigua Roma; se ocupaban; en diversos trabajos ) => (160) ++
+
+Los mesopotámicos nos legaron la rueda y la escritura .
+382 ( Los mesopotámicos nos; legaron la; rueda y la escritura ) => (43) ++
+
+El pueblo griego nos dejó como herencia la democracia .
+385 (griego nos; dejó como herencia la; democracia ) => (13) ++
+
+El preclásico duró aproximadamente 2700 años, ya que inició en el 2500 a.C. y concluyó hacia el 200 d.C. .
+416 ( El preclásico; concluyó; hacia el 200 d.C. ) => (10) ++
+413 ( El preclásico; duró; aproximadamente 2700 años ) => (10) ++
+
+El periodo clásico abarcó del 200 al 900 d.C. .
+420 ( El periodo; abarcó de el; 200 a el 900 d.C. ) => (23) +i
+
+Para su estudio, el sistema nervioso se divide en sistema nervioso central y sistema nervioso periférico .
+422 (el sistema; Para; su estudio ) => (23) --
+425 ( Para su estudio; se divide en; sistema nervioso central y sistema nervioso periférico ) => (23) +i
+
+El encéfalo se encuentra dentro del cráneo y consta de varios órganos, cada uno de éstos realiza distintas funciones .
+457 (éstos; realiza; distintas funciones ) => (10) --
+
+El Cerebro es el órgano más grande del encéfalo, está dividido en dos mitades o hemisferios y presenta hendiduras y pliegues que le dan el aspecto de una nuez pelada .
+470 (en dos mitades o hemisferios; presenta; hendiduras y pliegues que le dan el aspecto de una nuez pelada ) => (10) --
+
+El cerebro almacena enormes cantidades de información, realiza millones de actividades todos los días y es capaz de llevar a cabo varias acciones al mismo tiempo, como interpretar lo que los ojos ven, pensar y controlar muchos de los movimientos del cuerpo .
+490 ( El cerebro; almacena; enormes cantidades de información ) => (10) ++
+
+El cerebro es un órgano tan complejo que no se conoce al detalle su funcionamiento completo .
+507 ( El cerebro; es; un órgano tan complejo que no se conoce a el detalle su funcionamiento completo ) => (23) ++
+
+El Tálamo se halla en el centro del encéfalo, recibe las señales enviadas por los sentidos y las reenvía a distintas áreas del cerebro para su procesamiento .
+525 (Tálamo; recibe las señales enviadas por; los sentidos y las reenvía a distintas áreas de el cerebro para su procesamiento ) => (1) ++
+
+El Cerebelo es el segundo órgano más grande del encéfalo, sirve para mantener el equilibrio y controlar los movimientos finos .
+535 (Cerebelo; es el segundo órgano más grande de; el encéfalo ) => (1) ++
+
+El Bulbo raquídeo es el encargado de transmitir mensajes entre el cerebro y el cuerpo, y controla funciones básicas como el latido del corazón, la digestión y la respiración .
+579 ( El Bulbo raquídeo; es; el encargado de transmitir mensajes entre el cerebro y el cuerpo ) => (10) ++
+
+De la médula espinal nacen los nervios periféricos, que permiten movimientos voluntarios e involuntarios, sensaciones y reflejos .
+621 (la médula; nacen los; nervios periféricos ) => (23) ++
+
+==========================================
+Resultados
+
+Total de extracciones: 67
+Total de extracciones correctas: 57
+Total de extracciones ignoradas: 5
+Total de extracciones erroneas: 5
+
+Total de relaciones semanticas: 137 (tomado de Gamallo2012:
+									 https://www.gelbukh.com/resources/spanish-open-fact-extraction/ver1/Parallel_FactSpaCIC.xlsx
+
+Precision = 57/57+5 = 0,919354839
+Recall = 49/137 = 0,416058394
+
+F1 = 2 * precision* recall / ( precision + recall)
+F1 = 0,572864322
+
+NOTA: se marcaron con +i, aquellas extracciones correctas pero que pueden ser mejoradas añadiendo mayor información

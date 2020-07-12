@@ -10,9 +10,8 @@ public class TrainMain {
 		Train train = null;
 		try {
 			train = new Train();
-			//train.doTraining();
-			train.doTraining(true,"train/one-example.json",null);			
-			/*train.doTraining(false,Filenames.JSON_EXTRA_EXAMPLES2,new Integer(10));*/
+			train.doTraining();						
+			train.doTraining(false,Filenames.JSON_SPANISH_EXAMPLES,new Integer(10));
 			System.out.println("end training");
 			
 			/*Wikifiles.extractInformationFromWikifiles();*/

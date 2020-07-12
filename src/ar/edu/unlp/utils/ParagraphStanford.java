@@ -46,7 +46,8 @@ public class ParagraphStanford {
 		int replaceCount=0;
 		for (List<CoreLabel> sentence: sentences) {
 		    end = sentence.get(sentence.size()-1).endPosition();
-		    String subSentence = ad.removeAbbrevSpecialChar(lparagraph.substring(start, end).trim());		    
+		    String subSentence = ad.removeAbbrevSpecialChar(lparagraph.substring(start, end).trim());
+		    subSentence = unifyQuotes(subSentence);
 		    String subSentenceQuoted = extractQuoted(subSentence);
 		    if(subSentenceQuoted!=null){
 		    	String key = Words.WILDCARD_QUOTED+String.format(Words.WILDCARD_LEADING_ZEROES_FORMAT, replaceCount);
@@ -64,6 +65,10 @@ public class ParagraphStanford {
 		return sentenceList.toArray(new String[sentenceList.size()]);
 	}
 	
+	private String unifyQuotes(String subSentence) {
+		return subSentence.replaceAll("'", "\"").replaceAll("»", "\"").replaceAll("«", "\"");
+	}
+
 	public String extractQuoted(String line){
 		Pattern r = Pattern.compile(PATTERN_01);
 		
@@ -74,6 +79,18 @@ public class ParagraphStanford {
 				return argMatched;
 			}
 		}
+		try {
+			String saidWord = WordsUtils.containsWord(Words.SAID_AND_SYNONYMS, line);
+			if(saidWord!=null) {
+				String[] wordsSecondPart = line.split(saidWord+Words.SPACE)[1].split(Words.SPACE);
+				if(WordsUtils.contains(Words.AFTER_SAID_AND_SYNONYMS, wordsSecondPart[0])) {
+					return (line.split(saidWord+Words.SPACE+wordsSecondPart[0])[1]).trim();
+				}
+			}
+		}catch(Exception e) {
+			return null;
+		}
+		
 		return null;
 	}
 

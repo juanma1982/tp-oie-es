@@ -15,8 +15,6 @@ import ar.edu.unlp.RelationExtractor;
 import ar.edu.unlp.constants.Filenames;
 import ar.edu.unlp.entities.Relation;
 import ar.edu.unlp.entities.RelationForSQL;
-//import ar.edu.unlp.utils.ExtractionClassificatorBatch;
-import ar.edu.unlp.utils.NGraphUt;
 
 public class MySQLData {
 
@@ -34,8 +32,7 @@ public class MySQLData {
 	protected int currentIdText;
 	protected int currentIdDatabase;
 
-	//private ExtractionClassificatorBatch ec;
-	private NGraphUt graphut = null;
+	//private ExtractionClassificatorBatch ec;	
 	protected int countExtractions = 0;
 	protected int countValidExtractions = 0;
 
@@ -43,8 +40,7 @@ public class MySQLData {
 		readProperties();
 		connect();
 		startQuerySelect();
-		//this.ec = new ExtractionClassificatorBatch();
-		this.graphut = new NGraphUt();
+	
 	}
 	
 	protected void connect() throws SQLException{

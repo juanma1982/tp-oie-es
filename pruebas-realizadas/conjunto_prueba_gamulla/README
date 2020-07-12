@@ -1,0 +1,6 @@
+se marcaron con:
+++ las extracciones que son correctas
+--  indica una extracción erronea
+*  extracciones ignoradas; pueden ser duplicadas o bien extracciones incompletas, en las que falta algún dato importante. Se las marca como ignoradas para no
+   penalizar al algoritmo doblemente en la medida F1 por hacer una extracción "casi" correcta. Ya que de lo contrario sería mejor que el método no hubiese 
+   extarido nada a que extraiga algo que está practicamente bien.en duplicada

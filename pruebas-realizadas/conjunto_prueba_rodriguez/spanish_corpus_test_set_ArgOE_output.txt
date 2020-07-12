@@ -1,0 +1,184 @@
+1 En el año 1519 los portugueses celebraron un tratado con el rey de Pegú, estableciendo factorías en Martaban y Siriam. 
+
+2 El gobierno de Birmania ignora completamente los reclamos de los países vecinos, que piden abrir un proceso de democratización. 
+t-extraction	1	(El gobierno de Birmania ;ignora ;los reclamos de los países vecinos) ++
+
+3 En general, los laicistas afirman que la laicidad es un principio indisociable de la democracia, porque las creencias religiosas no son un dogma que deban imponerse a nadie ni convertirse en leyes. 
+t-extraction	1	(las creencias religiosas ;no son ;que deban) -- 
+t-extraction	1	(los laicistas ;afirman ;que la laicidad es un principio indisociable de la democracia) ++
+
+4 La percepción de la película por parte de la crítica ha cambiado a lo largo de los años. 
+
+5 La historia de la provincia de San Martín se remonta a la época cuando los aguerridos chancas, perseguidos por los Incas hacen de Lamas su nuevo hábitat y forman una extensa familia cultural conocida como: "Motilones Lamistas"  
+
+6 En una sociedad anarcocapitalista, la policía, los tribunales y todos los otros servicios de seguridad se prestarían por parte de competidores de financiación privada en lugar de a través de impuestos, y el dinero sería proporcionado privadamente y competitivamente en un mercado abierto. 
+t-extraction	1	(todos los otros servicios de seguridad ;se prestarían por ;parte de competidores de financiación privada)++
+t-extraction	1	(todos los otros servicios de seguridad ;se prestarían en ;lugar)*
+t-extraction	1	(el dinero ;sería proporcionado en ;un mercado abierto)++
+
+7 El manuscrito Voynich es un misterioso libro ilustrado, de contenidos desconocidos, escrito hace unos 500 años por un autor anónimo en un alfabeto no identificado y un idioma incomprensible, el denominado voynichés. 
+
+8 Todos los ciudadanos del mundo están expuestos a unos u otros medios, que resultan indispensables como herramienta de comunicación y presencia pública para todo tipo de agentes económicos, sociales y políticos. 
+
+9 El ateísmo es, en su sentido más amplio, la ausencia de la creencia en la existencia de las deidades. 
+t-extraction	1	(El ateísmo ;es en ;su sentido más amplio)*
+
+10 La teoría de la relatividad de Albert Einstein fue ratificada en 2003 por los científicos que estudiaron fotografías y otra información proporcionada por la sonda Cassini. 
+t-extraction	1	(otra información ;proporcionada por ;la sonda Cassini)*
+t-extraction	1	(La teoría de la relatividad de Albert&Einstein ;fue ratificada en ;@card@)++
+
+11 En los años 1970, era muy corriente conectar múltiples terminales, e incluso terminales gráficos, a un solo computador central (mainframe), para así aprovechar las ventajas del tiempo compartido. 
+
+12 El teorema del coseno, denominado también como ley de cosenos, es una generalización del teorema de Pitágoras en los triángulos rectángulos en trigonometría. 
+
+13 En el genoma humano se detectan más de 280000 elementos reguladores, aproximadamente un total de 7Mb de secuencia, que se originaron por medio de inserciones de elementos móviles. 
+
+14 Es imposible que un cuerpo no se mueva, pues el propio espacio gira en torno a la singularidad por lo que la materia que se encuentre en esa región rotará junto a ella. 
+
+15 El origen del nombre «Óscar» es aún muy debatido. 
+
+16 El trotskismo es una tendencia marxista y leninista que se opone al marxismo-leninismo y estalinismo, a través de las teorías de la revolución permanente y el internacionalismo, que se opone al socialismo en un solo país de Stalin. 
+t-extraction	1	(El trotskismo ;es ;que se opone al marxismo-leninismo) +i
+
+17 Los adorables animalitos fueron filmados mirando a los peces en los tanques. 
+t-extraction	1	(Los adorables animalitos ;fueron filmados ;mirando a los peces en los tanques) ++
+
+18 las proyecciones para 2021 vuelven a ser positivas. 
+t-extraction	1	(las proyecciones ;vuelven para ;@card@)*
+t-extraction	1	(las proyecciones ;vuelven a ;ser positivas)++
+
+19 Ohio es el # 17 d los 50 estados con más positivos por #Coronavirus y hoy teportó 511 nuevos positivos y 37 muertes más... Están locos! 
+
+20 ella debería ir a la cárcel y luego deportarla no necesitamos personas tan poco enpaticas 
+
+21 el 64.3% no han requerido hospitalización y el 4.3% han sido intubados. Existen además 92 defunciones sospechosas por #COVID19mx 
+
+22 Ahora si! Las empresas no esenciales que se niegan a cerrar podrían ser clausuradas y sujetas a proceso legal por daño a la salud de sus trabajadores #Covid_19 #MexicoEnCuarentena #HugoLopezGatell,Twitter,#Ecuador #Covid_19 #Mundo #Quito cada día es peor este Gobierno y Ministros no entienden que vivimos una PANDEMIA @bbcmundo @dw_espanol @CNNEE @EFEnoticias @elmundoes @el_pais @washingtonpost @clarincom @lajornadaonline @ALAIinfo @opsoms @MJERESXELCAMBIO @OACNUDH @IntlCrimCourt ,Twitter,es 
+
+23 La Aviadores del chaco pide a gritos que le pongan un pavimento nuevo 
+
+24 La capilla es una propiedad privada, porque gastan el dinero público en su mantenimiento? Que lo costee la diócesis correspondiente. 
+
+25 Se pasan de caraduras! Hasta la grúa estaba rondando para ver su salía bien la transacción.En vez de agilizar el tránsito que es su función 
+
+26 Hay demasiados cruces peligrosos en Asu. Aumentaron con asfaltados masivos. Municipio sigue durmiendo. 
+
+27 Se usará dinero de los contribuyentes para tapar pelotudeces...y tapar los baches para cuandoCuanto falta para las elecciones municipales? 
+
+28 Amor y deseo son dos cosas diferentes; que no todo lo que se ama se desea, ni todo lo que se desea se ama. 
+
+29 ¡Qué maravilloso es que nadie necesite esperar ni un solo momento antes de comenzar a mejorar el mundo!. 
+t-extraction	1	(¡Qué maravilloso ;es ;que nadie necesite esperar)++
+t-extraction	1	(nadie ;necesite ;esperar)*
+
+30 Seas quien seas, hagas lo que hagas, cuando deseas con firmeza alguna cosa es porque este deseo nació en el alma del universo. Es tu misión en la tierra. 
+t-extraction	1	(este deseo ;nació en ;el alma del universo) ++
+
+31 El mundo era tan reciente que muchas cosas carecían de nombre, y para nombrarlas había que señalarlas con el dedo. 
+t-extraction	1	(El mundo ;ser@tan@reciente@que ;muchas cosas) +i
+
+32 De pronto se deslizó por el pasillo, al pasar por mi lado sus sorprendentes pupilas de oro se detuvieron un instante en las mías. Debí morir un poco. No podía respirar y se me detuvo el pulso. 
+t-extraction	1	(sus sorprendentes pupilas de oro ;se detuvieron ;un instante) ++
+
+33 Quienes tienen mi misma edad recuerdan dónde estaban y qué hacían la primera vez que oyeron hablar del concurso. 
+
+34 Todavía recuerdo aquel amanecer en que mi padre me llevó por primera vez a visitar el Cementerio de los Libros Olvidados. 
+t-extraction	1	(mi padre ;me llevó por ;primera vez)*
+t-extraction	1	(mi padre ;me llevó a ;visitar el Cementerio de los Libros Olvidados)++
+
+35 La idea de que el mundo que nos rodea está en continua evolución es un tópico; rara vez comprendemos sus plenas consecuencias. 
+t-extraction	1	(rara vez ;comprendemos ;sus plenas consecuencias)++
+
+36 Calígula pasaba la mayor parte de su tiempo en Capri, pero de vez en cuando iba a Roma, en nombre de Tiberio, para vigilar a Macro. 
+t-extraction	1	(Calígula ;pasaba en ;Capri)*
+t-extraction	1	(Calígula ;pasaba ;la mayor parte de su tiempo)*
+t-extraction	1	(Calígula; pasaba la mayor parte de su tiempo en; Capri)++
+
+37 Morgan fue el primero que con conocimiento de causa trató de introducir un orden preciso en la prehistoria de la humanidad, y su clasificación permanecerá sin duda en vigor hasta que una riqueza de datos mucho más considerable no obligue a modificarla. 
+t-extraction	1	(Morgan ;fue ;que con conocimiento de causa trató)--
+t-extraction	1	(su clasificación ;permanecerá sin ;duda)*
+t-extraction	1	(su clasificación ;permanecerá en ;vigor)*
+t-extraction	1	(su clasificación ;permanecerá hasta ;que una riqueza de datos mucho más considerable no obligue a modificarla)++
+t-extraction	1	(una riqueza de datos considerable ;no obligue a ;modificarla)*
+
+38 EL 16 DE agosto de 2012 la policía sudafricana intervino en el conflicto que opuso a los obreros de la mina de platino de Marikana, cercana a Johannesburgo, con los dueños de la explotación, los accionistas de la compañía Lonmin, con base en Londres. 
+t-extraction	1	(la policía sudafricana ;intervino en ;el conflicto)++
+t-extraction	1	(la policía sudafricana ;intervino con ;base en Londres)--
+t-extraction	1	(la policía sudafricana ;intervino ;que opuso a los obreros de la mina de platino de Marikana cercana a Johannesburgo con los dueños de la explotación los accionistas de la compañía Lonmin)--
+t-extraction	1	(la policía sudafricana; intervino que opuso a los obreros de la mina de platino de Marikana cercana a Johannesburgo con los dueños de la explotación los accionistas de la compañía Lonmin en; el conflicto)--
+t-extraction	1	(la policía sudafricana; intervino que opuso a los obreros de la mina de platino de Marikana cercana a Johannesburgo con los dueños de la explotación los accionistas de la compañía Lonmin con; base en Londres)--
+
+39 Cuéntase —pero Alah es más sabio, más prudente más poderoso y más benéfico— que en lo que transcurrió en la antigüedad del tiempo y en lo pasado de la edad, hubo un rey entre los reyes de Sassan, en las islas de la India y de la China. 
+
+40 Mujica reveló a la prensa que el paquete de marras contenía "una amatista del norte del país" de regalo para el primer ministro. 
+t-extraction	1	(el paquete de marras ;contenía para ;el primer ministro)*
+t-extraction	1	(el paquete de marras ;contenía ;una amatista del norte del país de regalo)*
+t-extraction	1	(el paquete de marras; contenía una amatista del norte del país de regalo para; el primer ministro)++
+t-extraction	1	(Mujica ;reveló ;que el paquete de marras contenía una amatista del norte del país de regalo para el primer ministro)++
+
+41 La iniciativa prevé modificar el artículo de Trámites y Documentación de la Ordenanza Nº 7218/01 sobre Espectáculos Públicos para que no se otorguen permisos antes de conocer la voluntad de los vecinos expresadas en los resultados del registro de oposición. "En la actualidad se están desarrollando las ejecuciones de las obras con permisos municipales en simultaneo a la apertura del registro", destacó el edil radical. 
+t-extraction	1	(La iniciativa ;prevé ;modificar el artículo de Trámites)++
+
+42 El jugador de Terrassa opinó también que es un "halago" que se les compare con equipos que han marcado un antes y un después en el mundo del fútbol, como el Milan de Arrigo Sacchi, insistiendo en que están haciendo una gran temporada, pese a que no dependen de ellos mismos para ganar la liga. 
+t-extraction	1	(el Milan de Arrigo Sacchi ;insistiendo en ;que están haciendo una gran temporada)--
+t-extraction	1	(el Milan de Arrigo Sacchi ;pese a ;que no dependen de ellos)--
+t-extraction	1	(El jugador de Terrassa ;opinó ;que es un halago)++
+
+43 Entre sus obras destacan: "Vals", Premio Mayor del Festival Iberoamericano de Teatro en Mar del Plata, Argentina, y "La Malamadre" (escrita y dirigida junto a su compañía Teatro SUPLE), Premio Eugenio Guzmán a la Mejor Dirección en el Festival de Directores de la Universidad de Chile 2011. 
+
+44 Actualmente UPM es propietaria de la planta de celulosa de Fray Bentos y - desde 2009 - de Forestal Oriental luego de comprar las acciones de Botnia. Hoy el nombre formal de esa firma es UPM Forestal Oriental y provee de madera y logística a la planta de Río Negro. 
+t-extraction	1	(UPM ;ser@propietario de ;la planta de celulosa de Fray&Bentos)++
+t-extraction	2	(el nombre formal de esa firma ;provee de ;madera)--
+
+45 La advertencia color amarillo continúa para el Norte del país por tormentas intensas, según el último pronóstico emitido por la Dirección Nacional de Meteorología. 
+t-extraction	1	(el último pronóstico ;emitido por ;la Dirección Nacional de Meteorología)*
+t-extraction	1	(La advertencia color amarillo ;continúa para ;el Norte del país)++
+t-extraction	1	(La advertencia color amarillo ;continúa por ;tormentas intensas)*
+
+46 Los hombres que al parecer estaban escondidos en un matorral cerca de su casa, le hicieron dos disparos en el cuerpo y cuando el albañil cayó al suelo, le dieron un tercer balazo en la cabeza. 
+t-extraction	1	(el albañil ;cayó al ;suelo)++
+
+47 La fuente precisó que poco antes del mediodía un terrorista suicida hizo estallar el vehículo al paso del convoy del ministro, lo que también causó heridas a diez de sus acompañantes, tres de ellos graves. 
+t-extraction	1	(el vehículo ;estallar al ;paso del convoy del ministro)*
+t-extraction	1	(La fuente ;precisó ;que poco antes del mediodía un terrorista) +i
+
+48 Miles de estudiantes británicos tomaron este miércoles el centro de Londres para protestar por el aumento de las tasas universitarias, entre fuertes medidas de seguridad ante el temor a que se reproduzcan los incidentes violentos del año pasado. 
+t-extraction	1	(Miles de estudiantes británicos ;tomaron ante ;el temor)--
+t-extraction	1	(Miles de estudiantes británicos ;tomaron a ;que se reproduzcan)--
+t-extraction	1	(Miles de estudiantes británicos ;tomaron ;el centro de Londres)++
+t-extraction	1	(Miles de estudiantes británicos; tomaron el centro de Londres ante; el temor)--
+t-extraction	1	(Miles de estudiantes británicos; tomaron el centro de Londres a; que se reproduzcan)--
+
+49 Para finalizar aclaró: "Sin dudas que nos hubiera gustado discutirlo mucho más" 
+
+50 El secretario general de la Unasur, Néstor Kirchner, se reunió anoche, a su llegada a Bogotá, con el presidente electo de Colombia, Juan Manuel Santos, informaron fuentes de la delegación argentina. 
+t-extraction	1	(El secretario general de la Unasur Néstor Kirchner ;se reunió a ;su llegada)*
+t-extraction	1	(El secretario general de la Unasur Néstor Kirchner ;se reunió a ;Bogotá)*
+t-extraction	1	(El secretario general de la Unasur Néstor Kirchner ;se reunió con ;el presidente electo de Colombia Juan&Manuel&Santos)++
+
+51 Hasta ahí no más le llegó la fiesta a este chiquillo y en dos tiempos iba derechito a la capacha por cohecho. 
+
+52 El tema de la participación ciudadana se encuentra en auge dentro y fuera de las instituciones. 
+
+53 En la publicidad compartida, la campaña que registró mayor inversión en este período es Proecuador que totalizó USD 340.835 con la publicidad sobre el desarrollo de las exportaciones nacionales. 
+
+54 Eso no significa, agregó Antón, incumplir con el pago de la matricula, pues resaltó que quienes no hayan cancelado recibirán una multa a pagar de 25 dólares. 
+
+55 La Iglesia indicó que los primeros cinco viajarían a España, pero no quedó claro si los siguientes 47, que se comprometió a liberar el gobierno en un lapso de tres o cuatro meses, saldrían del país obligatoriamente. 
+
+==========================================
+Resultados
+
+Total de extracciones: 58
+Total de extracciones correctas: 24
+Total de extracciones correctas pero incompletas: 3
+Total de extracciones ignoradas: 18
+Total de extracciones erroneas: 13
+
+Total de relaciones semanticas (extracciones manuales): 122
+
+Precisión: 24 +3 / 24+3+13  = 0,675
+Recall: 24+3 / 122  = 0,221311475
+
+F1 = 2 * precision* recall / ( precision + recall)
+F1 = 0,333333333

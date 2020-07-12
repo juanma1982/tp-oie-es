@@ -11,7 +11,6 @@ import java.util.List;
 
 import ar.edu.unlp.constants.Words;
 import ar.edu.unlp.entities.Relation;
-import ar.edu.unlp.entities.SentenceData;
 import edu.washington.cs.knowitall.extractor.ReVerbExtractor;
 import edu.washington.cs.knowitall.extractor.conf.ConfidenceFunction;
 import edu.washington.cs.knowitall.extractor.conf.ConfidenceFunctionException;

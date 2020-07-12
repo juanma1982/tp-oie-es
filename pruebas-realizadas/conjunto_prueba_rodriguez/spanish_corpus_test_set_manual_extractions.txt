@@ -1,0 +1,232 @@
+2	En el año 1519 los portugueses celebraron un tratado con el rey de Pegú, estableciendo factorías en Martaban y Siriam.
+	(los portugueses; celebraron un tratado En; el año 1519)
+	(los portugueses; celebraron un tratado con; el rey de Pegú)
+	(los portugueses; celebraron un tratado estableciendo; factorías en Martaban y Siriam)
+
+4	El gobierno de Birmania ignora completamente los reclamos de los países vecinos, que piden abrir un proceso de democratización.
+	(El gobierno de Birmania; ignora completamente; los reclamos de los países vecinos)
+	(países vecinos; piden abrir un; proceso de democratización)
+
+6	En general, los laicistas afirman que la laicidad es un principio indisociable de la democracia, porque las creencias religiosas no son un dogma que deban imponerse a nadie ni convertirse en leyes.
+	(los laicistas; afirman que; la laicidad es un principio indisociable de la democracia)
+	(la laicidad; es un; principio indisociable de la democracia)
+	(las creencias religiosas; no son; un dogma)
+	(las creencias religiosas; no deban imponerse a; nadie ni convertirse en leyes)
+
+8	La percepción de la película por parte de la crítica ha cambiado a lo largo de los años.
+	(La percepción de la película por parte de la crítica; ha cambiado; a lo largo de los años)
+
+10	La historia de la provincia de San Martín se remonta a la época cuando los aguerridos chancas, perseguidos por los Incas hacen de Lamas su nuevo hábitat y forman una extensa familia cultural conocida como: &quot;Motilones Lamistas&quot; 
+	(La historia de la provincia de San Martín; se remonta a; la época cuando los aguerridos chancas hacen de Lamas su nuevo hábitat y forman una extensa familia cultural conocida como: "Motilones Lamistas")
+	(los aguerridos chancas; perseguidos por; los Incas)
+
+12	En una sociedad anarcocapitalista, la policía, los tribunales y todos los otros servicios de seguridad se prestarían por parte de competidores de financiación privada en lugar de a través de impuestos, y el dinero sería proporcionado privadamente y competitivamente en un mercado abierto.
+	(En una sociedad anarcocapitalista, la policía, los tribunales y todos los otros servicios de seguridad; se prestarían; por parte de competidores de financiación privada en lugar de a través de impuestos)
+	(el dinero; sería proporcionado; privadamente y competitivamente en un mercado abierto)
+
+14	El manuscrito Voynich es un misterioso libro ilustrado, de contenidos desconocidos, escrito hace unos 500 años por un autor anónimo en un alfabeto no identificado y un idioma incomprensible, el denominado voynichés.
+	(El manuscrito Voynich; es un; misterioso libro ilustrado, de contenidos desconocidos)
+	(El manuscrito Voynich; escrito hace; unos 500 años)
+	(El manuscrito Voynich; escrito por; un autor anónimo)
+	(El manuscrito Voynich; escrito en; un alfabeto no identificado y un idioma incomprensible)
+
+16	Todos los ciudadanos del mundo están expuestos a unos u otros medios, que resultan indispensables como herramienta de comunicación y presencia pública para todo tipo de agentes económicos, sociales y políticos.
+	(Todos los ciudadanos del mundo; están expuestos a; unos u otros medios)
+	(unos u otros medios; resultan; indispensables como herramienta de comunicación y presencia pública para todo tipo de agentes económicos, sociales y políticos)
+
+18	El ateísmo es, en su sentido más amplio, la ausencia de la creencia en la existencia de las deidades.
+	(El ateísmo; es; la ausencia de la creencia en la existencia de las deidades)
+
+20	La teoría de la relatividad de Albert Einstein fue ratificada en 2003 por los científicos que estudiaron fotografías y otra información proporcionada por la sonda Cassini.
+	(La teoría de la relatividad de Albert Einstein; fue ratificada en; 2003)
+	(La teoría de la relatividad de Albert Einstein; fue ratificada por; los científicos que estudiaron fotografías y otra información proporcionada por la sonda Cassini)
+
+22	En los años 1970, era muy corriente conectar múltiples terminales, e incluso terminales gráficos, a un solo computador central (mainframe), para así aprovechar las ventajas del tiempo compartido.
+	(En los años 1970; era muy corriente; conectar múltiples terminales a un solo computador central, para así aprovechar las ventajas del tiempo compartido)
+
+24	El teorema del coseno, denominado también como ley de cosenos, es una generalización del teorema de Pitágoras en los triángulos rectángulos en trigonometría.
+	(El teorema del coseno; denominado también como; ley de cosenos)
+	(El teorema del coseno; es una; generalización del teorema de Pitágoras en los triángulos rectángulos en trigonometría)
+
+26	En el genoma humano se detectan más de 280000 elementos reguladores, aproximadamente un total de 7Mb de secuencia, que se originaron por medio de inserciones de elementos móviles.
+	(En el genoma humano; se detectan; más de 280000 elementos reguladores)
+	(En el genoma humano; se detectan; aproximadamente un total de 7Mb de secuencia)
+	(7Mb de secuencia; se originaron por medio de; inserciones de elementos móviles)
+
+28	Es imposible que un cuerpo no se mueva, pues el propio espacio gira en torno a la singularidad por lo que la materia que se encuentre en esa región rotará junto a ella.
+	(que un cuerpo no se mueva; es; imposible)
+	(el propio espacio; gira en torno a; la singularidad)
+	(la materia que se encuentre en esa región; rotará; junto a ella)
+
+30	El origen del nombre «Óscar» es aún muy debatido.
+	(El origen del nombre «Óscar»; es aún; muy debatido)
+
+32	El trotskismo es una tendencia marxista y leninista que se opone al marxismo-leninismo y estalinismo, a través de las teorías de la revolución permanente y el internacionalismo, que se opone al socialismo en un solo país de Stalin.
+	(El trotskismo; es una; tendencia marxista y leninista)
+	(El trotskismo; se opone al; marxismo-leninismo y estalinismo)
+	(El trotskismo; se opone a través de; las teorías de la revolución permanente y el internacionalismo)
+	(el internacionalismo; se opone al; socialismo en un solo país de Stalin)
+
+53	Los adorables animalitos fueron filmados mirando a los peces en los tanques.
+	(Los adorables animalitos; fueron filmados mirando a; los peces en los tanques)
+
+55	las proyecciones para 2021 vuelven a ser positivas.
+	(las proyecciones para 2021; vuelven a ser; positivas)
+
+57	Ohio es el # 17 d los 50 estados con más positivos por #Coronavirus y hoy teportó 511 nuevos positivos y 37 muertes más... Están locos!
+	(Ohio; es el; #17 d los 50 estados con más positivos por #Coronavirus)
+	(Ohio hoy; teportó; 511 nuevos positivos y 37 muertes más)
+	([ellos]; Están; locos)
+
+59	ella debería ir a la cárcel y luego deportarla no necesitamos personas tan poco enpaticas
+	(ella; debería ir a; la cárcel y luego deportarla no necesitamos personas tan poco enpaticas)
+
+62	el 64.3% no han requerido hospitalización y el 4.3% han sido intubados. Existen además 92 defunciones sospechosas por #COVID19mx
+	(el 64.3%; no han requerido; hospitalización)
+	(el 4.3%; han sido; intubados)
+
+64	Ahora si! Las empresas no esenciales que se niegan a cerrar podrían ser clausuradas y sujetas a proceso legal por daño a la salud de sus trabajadores #Covid_19 #MexicoEnCuarentena #HugoLopezGatell,Twitter,#Ecuador #Covid_19 #Mundo #Quito cada día es peor este Gobierno y Ministros no entienden que vivimos una PANDEMIA @bbcmundo @dw_espanol @CNNEE @EFEnoticias @elmundoes @el_pais @washingtonpost @clarincom @lajornadaonline @ALAIinfo @opsoms @MJERESXELCAMBIO @OACNUDH @IntlCrimCourt ,Twitter,es
+	(Las empresas no esenciales que se niegan a cerrar; podrían ser; clausuradas y sujetas a proceso legal por daño a la salud de sus trabajadores)
+	(#Quito; cada día es; peor este Gobierno)
+	(Ministros; no entienden que; vivimos una PANDEMIA)
+
+77	La Aviadores del chaco pide a gritos que le pongan un pavimento nuevo
+	(La Aviadores del chaco; pide a gritos que; le pongan un pavimento nuevo)
+
+83	La capilla es una propiedad privada, porque gastan el dinero público en su mantenimiento? Que lo costee la diócesis correspondiente.
+	(La capilla; es una; propiedad privada)
+
+86	Se pasan de caraduras! Hasta la grúa estaba rondando para ver su salía bien la transacción.En vez de agilizar el tránsito que es su función
+	([ellos]; Se pasan de; caraduras!)
+	(la grúa; estaba rondando para ver; su salía bien la transacción)
+	(agilizar el tránsito; es; su función)
+
+88	Hay demasiados cruces peligrosos en Asu. Aumentaron con asfaltados masivos. Municipio sigue durmiendo.
+	(en Asu; Hay demasiados; cruces peligrosos)
+	(cruces peligrosos; Aumentaron con; asfaltados masivos)
+	(Municipio; sigue; durmiendo)
+
+90	Se usará dinero de los contribuyentes para tapar pelotudeces...y tapar los baches para cuandoCuanto falta para las elecciones municipales?
+	(Se usará dinero de los contribuyentes; para; tapar pelotudeces)
+
+102	Amor y deseo son dos cosas diferentes; que no todo lo que se ama se desea, ni todo lo que se desea se ama.
+	(Amor y deseo; son; dos cosas diferentes)
+
+105	¡Qué maravilloso es que nadie necesite esperar ni un solo momento antes de comenzar a mejorar el mundo!.
+	(que nadie; necesite; esperar ni un solo momento antes de comenzar a mejorar el mundo)
+
+108	Seas quien seas, hagas lo que hagas, cuando deseas con firmeza alguna cosa es porque este deseo nació en el alma del universo. Es tu misión en la tierra.
+	(este deseo; nació en; el alma del universo, cuando deseas con firmeza alguna cosa)
+
+110	El mundo era tan reciente que muchas cosas carecían de nombre, y para nombrarlas había que señalarlas con el dedo.
+	(El mundo; era; tan reciente que muchas cosas carecían de nombre)
+	(muchas cosas; carecían; de nombre)
+	(muchas cosas; había que señalarlas; con el dedo para nombrarlas)
+
+113	De pronto se deslizó por el pasillo, al pasar por mi lado sus sorprendentes pupilas de oro se detuvieron un instante en las mías. Debí morir un poco. No podía respirar y se me detuvo el pulso.
+	([él]; se deslizó por; el pasillo)
+	(sus sorprendentes pupilas de oro; se detuvieron; un instante en las mías)
+	([yo]; Debí; morir un poco)
+	([yo]; No podía; respirar)
+	(el pulso; se me; detuvo)
+
+115	Quienes tienen mi misma edad recuerdan dónde estaban y qué hacían la primera vez que oyeron hablar del concurso.
+	(Quienes tienen mi misma edad; recuerdan; dónde estaban y qué hacían la primera vez que oyeron hablar del concurso)
+
+118	Todavía recuerdo aquel amanecer en que mi padre me llevó por primera vez a visitar el Cementerio de los Libros Olvidados.
+	([yo]; Todavía recuerdo; aquel amanecer)
+	(mi padre; me llevó; por primera vez a visitar el Cementerio de los Libros Olvidados)
+
+120	La idea de que el mundo que nos rodea está en continua evolución es un tópico; rara vez comprendemos sus plenas consecuencias.
+	(La idea de que el mundo que nos rodea está en continua evolución; es un; tópico)
+	(rara vez; comprendemos; sus plenas consecuencias)
+
+122	Calígula pasaba la mayor parte de su tiempo en Capri, pero de vez en cuando iba a Roma, en nombre de Tiberio, para vigilar a Macro.
+	(Calígula; pasaba la mayor parte de su tiempo en; Capri)
+	(Calígula; iba a; Roma, en nombre de Tiberio)
+	(Calígula; iba para; vigilar a Macro)
+
+124	Morgan fue el primero que con conocimiento de causa trató de introducir un orden preciso en la prehistoria de la humanidad, y su clasificación permanecerá sin duda en vigor hasta que una riqueza de datos mucho más considerable no obligue a modificarla.
+	(Morgan; fue el primero que trató de introducir un orden preciso en; la prehistoria de la humanidad)
+	(su clasificación; permanecerá en vigor hasta; que una riqueza de datos mucho más considerable no obligue a modificarla)
+
+127	EL 16 DE agosto de 2012 la policía sudafricana intervino en el conflicto que opuso a los obreros de la mina de platino de Marikana, cercana a Johannesburgo, con los dueños de la explotación, los accionistas de la compañía Lonmin, con base en Londres.
+	(la policía sudafricana; intervino en; el conflicto)
+	(la policía sudafricana; intervino EL; 16 DE agosto de 2012)
+	(el conflicto; opuso a; los obreros de la mina de platino de Marikana con los dueños de explotación)
+	(mina de platino de Marikana; cercana a; Johannesburgo)
+	(la compañía Lonmin; base en; Londres)
+
+129	Cuéntase —pero Alah es más sabio, más prudente más poderoso y más benéfico— que en lo que transcurrió en la antigüedad del tiempo y en lo pasado de la edad, hubo un rey entre los reyes de Sassan, en las islas de la India y de la China.
+	(Alah; es; más sabio, más prudente más poderoso y más benéfico)
+	(en lo que transcurrió en la antigüedad del tiempo y en lo pasado de la edad; hubo un; rey entre los reyes de Sassan)
+	(un rey entre los reyes de Sassan; hubo en; las islas de la India y de la China)
+
+145	Mujica reveló a la prensa que el paquete de marras contenía "una amatista del norte del país" de regalo para el primer ministro.
+	(Mujica; reveló; a la prensa que el paquete de marras contenía "una amatista del norte del país" de regalo para el primer ministro)
+	(el paquete de marras; contenía; "una amatista del norte del país" de regalo para el primer ministro)
+
+148	La iniciativa prevé modificar el artículo de Trámites y Documentación de la Ordenanza Nº 7218/01 sobre Espectáculos Públicos para que no se otorguen permisos antes de conocer la voluntad de los vecinos expresadas en los resultados del registro de oposición. “En la actualidad se están desarrollando las ejecuciones de las obras con permisos municipales en simultaneo a la apertura del registro”, destacó el edil radical.
+	(La iniciativa; prevé modificar el; artículo de Trámites y Documentación de la Ordenanza Nº 7218/01 sobre Espectáculos Públicos)
+	(La iniciativa; prevé modificar para que no se otorguen; permisos antes de conocer la voluntad de los vecinos expresadas en los resultados del registro de oposición)
+	(En la actualidad; se están desarrollando las ejecuciones de; las obras con permisos municipales en simultaneo a la apertura del registro)
+	("En la actualidad se están desarrollando las ejecuciones de las obras con permisos municipales en simultaneo a la apertura del registro"; destacó; el edil radical)
+
+150	El jugador de Terrassa opinó también que es un "halago" que se les compare con equipos que han marcado un antes y un después en el mundo del fútbol, como el Milan de Arrigo Sacchi, insistiendo en que están haciendo una gran temporada, pese a que no dependen de ellos mismos para ganar la liga.
+	(El jugador de Terrassa; opinó también que; es un "halago" que se les compare con equipos que han marcado un antes y un después en el mundo del fútbol, como el Milan de Arrigo Sacchi)
+	(El jugador de Terrassa; opinó insistiendo en que; están haciendo una gran temporada, pese a que no dependen de ellos mismos para ganar la liga)
+
+152	Entre sus obras destacan: “Vals”, Premio Mayor del Festival Iberoamericano de Teatro en Mar del Plata, Argentina, y “La Malamadre” (escrita y dirigida junto a su compañía Teatro SUPLE), Premio Eugenio Guzmán a la Mejor Dirección en el Festival de Directores de la Universidad de Chile 2011.
+	(Entre sus obras; destacan; “Vals”, Premio Mayor del Festival Iberoamericano de Teatro en Mar del Plata, Argentina, y “La Malamadre” )
+
+154	Actualmente UPM es propietaria de la planta de celulosa de Fray Bentos y - desde 2009 - de Forestal Oriental luego de comprar las acciones de Botnia. Hoy el nombre formal de esa firma es UPM Forestal Oriental y provee de madera y logística a la planta de Río Negro.
+	(UPM; es propietaria de; la planta de celulosa de Fray Bentos Actualmente)
+	(UPM; es propietaria de; Forestal Oriental luego de comprar las acciones de Botnia)
+	(el nombre formal de esa firma; es; UPM Forestal Oriental)
+	(UPM Forestal Oriental; provee; de madera y logística a la planta de Río Negro)
+
+156	La advertencia color amarillo continúa para el Norte del país por tormentas intensas, según el último pronóstico emitido por la Dirección Nacional de Meteorología.
+	(La advertencia color amarillo; continúa para; el Norte del país por tormentas intensas)
+
+158	Los hombres que al parecer estaban escondidos en un matorral cerca de su casa, le hicieron dos disparos en el cuerpo y cuando el albañil cayó al suelo, le dieron un tercer balazo en la cabeza.
+	(Los hombres; estaban escondidos; en un matorral cerca de su casa)
+	(Los hombres; le hicieron dos disparos en; el cuerpo)
+	(el albañil; cayó; al suelo)
+	(Los hombres; le dieron; un tercer balazo en la cabeza)
+
+160	La fuente precisó que poco antes del mediodía un terrorista suicida hizo estallar el vehículo al paso del convoy del ministro, lo que también causó heridas a diez de sus acompañantes, tres de ellos graves.
+	(La fuente; precisó que; poco antes del mediodía un terrorista suicida hizo estallar el vehículo al paso del convoy del ministro, lo que también causó heridas a diez de sus acompañantes, tres de ellos graves)
+	(un terrorista suicida; hizo estallar; el vehículo al paso del convoy del ministro, lo que también causó heridas a diez de sus acompañantes, tres de ellos graves)
+
+162	Miles de estudiantes británicos tomaron este miércoles el centro de Londres para protestar por el aumento de las tasas universitarias, entre fuertes medidas de seguridad ante el temor a que se reproduzcan los incidentes violentos del año pasado.
+	(Miles de estudiantes británicos; tomaron; este miércoles el centro de Londres para protestar por el aumento de las tasas universitarias)
+
+164	Para finalizar aclaró: “Sin dudas que nos hubiera gustado discutirlo mucho más"
+	([ella]; aclaró; “Sin dudas que nos hubiera gustado discutirlo mucho más")
+	(nos hubiera gustado; discutirlo; mucho más)
+
+166	El secretario general de la Unasur, Néstor Kirchner, se reunió anoche, a su llegada a Bogotá, con el presidente electo de Colombia, Juan Manuel Santos, informaron fuentes de la delegación argentina.
+	(fuentes de la delegación argentina; informaron; El secretario general de la Unasur, Néstor Kirchner, se reunió anoche, a su llegada a Bogotá, con el presidente electo de Colombia, Juan Manuel Santos)
+	(Néstor Kirchner; secretario general; Unasur)
+	(Néstor Kirchner; se reunió; anoche con el presidente electo de Colombia, Juan Manuel Santos)
+	(Juan Manuel Santos; presidente electo de; Colombia)
+
+169	Hasta ahí no más le llegó la fiesta a este chiquillo y en dos tiempos iba derechito a la capacha por cohecho.
+	(Hasta ahí no más; le llegó la fiesta a; este chiquillo)
+	(en dos tiempos; iba derechito a; la capacha por cohecho)
+
+171	El tema de la participación ciudadana se encuentra en auge dentro y fuera de las instituciones.
+	(El tema de la participación ciudadana; se encuentra en; auge dentro y fuera de las instituciones)
+
+173	En la publicidad compartida, la campaña que registró mayor inversión en este período es Proecuador que totalizó USD 340.835 con la publicidad sobre el desarrollo de las exportaciones nacionales.
+	(la campaña que registró mayor inversión en este período; es; Proecuador que totalizó USD 340.835 con la publicidad sobre el desarrollo de las exportaciones nacionales)
+
+175	Eso no significa, agregó Antón, incumplir con el pago de la matricula, pues resaltó que quienes no hayan cancelado recibirán una multa a pagar de 25 dólares.
+	(Antón; agregó; Eso no significa incumplir con el pago de la matricula)
+	(Antón; resaltó que; quienes no hayan cancelado recibirán una multa a pagar de 25 dólares)
+	(quienes no hayan cancelado; recibirán; una multa a pagar de 25 dólares)
+
+177	La Iglesia indicó que los primeros cinco viajarían a España, pero no quedó claro si los siguientes 47, que se comprometió a liberar el gobierno en un lapso de tres o cuatro meses, saldrían del país obligatoriamente. 
+	(La Iglesia; indicó que; los primeros cinco viajarían a España)
+	(el gobierno; se comprometió a liberar; los siguientes 47 en un lapso de tres o cuatro meses)
+

@@ -1,5 +1,0 @@
-se marcaron con + las que están bien
-+i indica que está bien pero no es completa
-- indica una extracción erronea
-* se marcan con * extraccion practicamente bien o duplicadas, para no contabilizarlas doblemente ya questo penalizaría la medida F1 por 2, 
-y sería mejor que el método no hubiese extarido a nada a una extracción "casí bien" (sin información relevante) o bien duplicada

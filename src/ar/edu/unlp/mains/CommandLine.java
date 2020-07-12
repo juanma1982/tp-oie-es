@@ -177,7 +177,7 @@ public class CommandLine {
 		RelationExtractor extractor;
 		try {
 			extractor = new RelationExtractor();
-			extractor.setUseReverb(flagUseReverb);
+			//extractor.setUseReverb(flagUseReverb);
 			extractor.setScoreFilter(!flagScoreLimitOff);
 				
 		} catch (Exception e1) {

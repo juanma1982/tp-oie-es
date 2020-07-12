@@ -2,6 +2,7 @@ package ar.edu.unlp.entities;
 
 import java.util.Map;
 
+import ar.edu.unlp.constants.Words;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 
 public class SentenceData {
@@ -36,7 +37,7 @@ public class SentenceData {
 	}
 	
 	public String getCleanSentence(){
-		return String.join(" ", this.cleanSentenceArray);
+		return String.join(Words.SPACE, this.cleanSentenceArray);
 	}
 	public void setCleanSentence(String[] cleanSentence){
 		this.cleanSentenceArray = cleanSentence;
@@ -75,13 +76,13 @@ public class SentenceData {
 	}
 	public String getSentenceAsPOSTags() {
 		if(useExtended) return getSentenceAsPOSTagsExtended();
-		return String.join(" ", this.sentenceAsPOSTagsArray);
+		return String.join(Words.SPACE, this.sentenceAsPOSTagsArray);
 	}
 	public void setSentenceAsPOSTags(String[] sentenceAsPOSTags) {
 		this.sentenceAsPOSTagsArray = sentenceAsPOSTags;
 	}
 	public String getSentenceAsPOSTagsExtended() {
-		return String.join(" ", this.sentenceAsPOSTagsExtendedArray);
+		return String.join(Words.SPACE, this.sentenceAsPOSTagsExtendedArray);
 	}
 	
 	public Map<String, String> getWordPOSTAG_extended() {

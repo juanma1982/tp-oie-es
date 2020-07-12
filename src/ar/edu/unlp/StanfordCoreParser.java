@@ -88,7 +88,7 @@ public class StanfordCoreParser {
 	        }
 	        
 	        cleanSentence.append(word);
-	        cleanSentence.append(" ");
+	        cleanSentence.append(Words.SPACE);
 	        
 	        if(tokenPOS == null) {
 	        	if(word.startsWith(Words.WILDCARD_QUOTED)){
@@ -103,7 +103,7 @@ public class StanfordCoreParser {
 	        		sbNERFull.setLength(0);
 	        	}
 	        	sbNERFull.append(word);
-	        	sbNERFull.append(" ");
+	        	sbNERFull.append(Words.SPACE);
 	        }else if(sbNERFull.length()!=0){
 	        	setOfNerFullString.add(sbNERFull.toString().trim());
 	        	sbNERFull.setLength(0);
@@ -121,10 +121,10 @@ public class StanfordCoreParser {
 	        		wordPos_extended.put(word, tokenPOS);
 	        		POSSentence_extended.append(tokenPOS);
 	        	}
-	        	POSSentence_extended.append(" ");
+	        	POSSentence_extended.append(Words.SPACE);
 			}
 	        POSSentence.append(tokenPOS);
-	        POSSentence.append(" ");
+	        POSSentence.append(Words.SPACE);
 	      }
 	      // this is the parse tree of the current sentence
 	     // Tree tree = cm_sentence.get(TreeAnnotation.class);
@@ -137,13 +137,13 @@ public class StanfordCoreParser {
 	      
 	      data.setWordPOSTAG(wordPos);
 	      data.setDependenciesGraph(dependencies);
-	      data.setSentenceAsPOSTags(POSSentence.toString().trim().split(" "));
+	      data.setSentenceAsPOSTags(POSSentence.toString().trim().split(Words.SPACE));
 	      data.setSentence(text);
-	      data.setCleanSentence(cleanSentence.toString().trim().split(" "));
+	      data.setCleanSentence(cleanSentence.toString().trim().split(Words.SPACE));
 	      
 	      //Add the full NER String,
 	      for (String nerStringWord : setOfNerFullString) {
-	    	  String[] nerWords = nerStringWord.split(" ");
+	    	  String[] nerWords = nerStringWord.split(Words.SPACE);
 	    	  for (int i = 0; i < nerWords.length; i++) {
 	    		  wordNer.put(nerWords[i]+Words.WORD_WILDCARD_NER_FULL,nerStringWord);
 			}
@@ -151,7 +151,7 @@ public class StanfordCoreParser {
 	      data.setWordNER(wordNer);
 	      
 	      if(Constants.BE_SPECIFIC_WITH_POSTAG_ADP){
-	    	  data.setSentenceAsPOSTags_extended(POSSentence_extended.toString().trim().split(" "));
+	    	  data.setSentenceAsPOSTags_extended(POSSentence_extended.toString().trim().split(Words.SPACE));
 	    	  data.setWordPOSTAG_extended(wordPos_extended);
 	      }
 	      

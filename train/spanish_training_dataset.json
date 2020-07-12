@@ -1,0 +1,1605 @@
+{
+    "lang": "es",
+    "examples": [
+        {
+            "sentence": "Argelia cuenta con una l\u00ednea de metro en su capital.\n",
+            "relations": [
+                {
+                    "entity1": "Argelia",
+                    "relation": "cuenta con una",
+                    "entity2": "l\u00ednea de metro en su capital"
+                }
+            ]
+        },
+        {
+            "sentence": "En la actualidad, ocurren numerosos enfrentamientos entre las minor\u00edas \u00e9tnicas dentro del propio pa\u00eds y los habitantes a\u00fan viven en pobreza y la represi\u00f3n.\n",
+            "relations": [
+                {
+                    "entity1": "En la actualidad",
+                    "relation": "ocurren numerosos enfrentamientos entre",
+                    "entity2": "las minor\u00edas \u00e9tnicas"
+                },
+                {
+                    "entity1": "En la actualidad",
+                    "relation": "ocurren numerosos enfrentamientos dentro",
+                    "entity2": "del propio pa\u00eds"
+                },
+                {
+                    "entity1": "los habitantes",
+                    "relation": "a\u00fan viven en",
+                    "entity2": "pobreza y la represi\u00f3n"
+                }
+            ]
+        },
+        {
+            "sentence": "Autob\u00fas es un af\u00e9resis de la palabra griega \"fautos\" y de la latina \"\u00f3mnib\u00fas\".",
+            "relations": [
+                {
+                    "entity1": "Autob\u00fas",
+                    "relation": "es un af\u00e9resis de",
+                    "entity2": "la palabra griega \"fautos\" y de la latina \"\u00f3mnib\u00fas\""
+                }
+            ]
+        },
+        {
+            "sentence": "Un Estado laico de esta forma pretende alcanzar una mejor convivencia al ordenar las actividades de los distintos credos, asegurando la igualdad de todos ante la ley, y en muchos casos sirviendo como herramienta para someter el sentimiento religioso, pretendiendo as\u00ed anteponer los intereses generales de la sociedad civil sobre los intereses particulares.\n",
+            "relations": [
+                {
+                    "entity1": "Un Estado laico",
+                    "relation": "pretende alcanzar una",
+                    "entity2": "mejor convivencia"
+                },
+                {
+                    "entity1": "Un Estado laico",
+                    "relation": "pretende ordenar",
+                    "entity2": "las actividades de los distintos credos"
+                },
+                {
+                    "entity1": "Un Estado laico",
+                    "relation": "pretende ordenar asegurando",
+                    "entity2": "la igualdad de todos ante la ley"
+                },
+                {
+                    "entity1": "Un Estado laico",
+                    "relation": "pretende someter",
+                    "entity2": "el sentimiento religioso"
+                },
+                {
+                    "entity1": "Un Estado laico",
+                    "relation": "pretende anteponer",
+                    "entity2": "los intereses generales de la sociedad civil sobre los intereses particulares"
+                }
+            ]
+        },
+        {
+            "sentence": "Sus puntos de vista religiosos fueron complejos y se ven a\u00fan m\u00e1s confusos por falta de evidencias.\n",
+            "relations": [
+                {
+                    "entity1": "Sus puntos de vista religiosos",
+                    "relation": "fueron",
+                    "entity2": "complejos"
+                },
+                {
+                    "entity1": "Sus puntos de vista religiosos",
+                    "relation": "se ven",
+                    "entity2": "a\u00fan m\u00e1s confusos por falta de evidencias"
+                }
+            ]
+        },
+        {
+            "sentence": "Los anillos de J\u00fapiter son un sistema de anillos planetarios que rodean a dicho planeta.\n",
+            "relations": [
+                {
+                    "entity1": "Los anillos de J\u00fapiter",
+                    "relation": "son",
+                    "entity2": "un sistema de anillos planetarios que rodean a dicho planeta"
+                }
+            ]
+        },
+        {
+            "sentence": "Las tortilleras es una litograf\u00eda coloreada a mano, realizada por Joseph Lemercier, a partir de un dibujo del arquitecto y dibujante costumbrista alem\u00e1n Carl Nebel.\n",
+            "relations": [
+                {
+                    "entity1": "Las tortilleras",
+                    "relation": "es",
+                    "entity2": "una litograf\u00eda coloreada a mano"
+                },
+                {
+                    "entity1": "Las tortilleras",
+                    "relation": "realizada por",
+                    "entity2": "Joseph Lemercier"
+                },
+                {
+                    "entity1": "Las tortilleras",
+                    "relation": "realizada",
+                    "entity2": "a partir de un dibujo del arquitecto y dibujante costumbrista alem\u00e1n Carl Nebel"
+                }
+            ]
+        },
+        {
+            "sentence": "Los medios de comunicaci\u00f3n de masas (en ingl\u00e9s, mass media) son los medios de comunicaci\u00f3n recibidos simult\u00e1neamente por una gran audiencia.\n",
+            "relations": [
+                {
+                    "entity1": "Los medios de comunicaci\u00f3n de masas",
+                    "relation": "son",
+                    "entity2": "los medios de comunicaci\u00f3n recibidos simult\u00e1neamente por una gran audiencia"
+                }
+            ]
+        },
+        {
+            "sentence": "El polo sur geogr\u00e1fico de un planeta se localiza en su extremo austral, equivalente a la latitud 90\u00b0S, donde convergen todos los meridianos.\n",
+            "relations": [
+                {
+                    "entity1": "El polo sur geogr\u00e1fico de un planeta",
+                    "relation": "se localiza en",
+                    "entity2": "su extremo austral"
+                },
+                {
+                    "entity1": "El polo sur geogr\u00e1fico de un planeta",
+                    "relation": "equivalente a",
+                    "entity2": "la latitud 90\u00b0S"
+                },
+                {
+                    "entity1": "la latitud 90\u00b0S",
+                    "relation": "convergen",
+                    "entity2": "todos los meridianos"
+                }
+            ]
+        },
+        {
+            "sentence": "Se trataba de una misi\u00f3n espacial no tripulada cuyo objetivo era estudiar el planeta Saturno y sus sat\u00e9lites naturales, coloquialmente llamados lunas.\n",
+            "relations": [
+                {
+                    "entity1": "misi\u00f3n espacial no tripulada objetivo",
+                    "relation": "era estudiar",
+                    "entity2": "el planeta Saturno y sus sat\u00e9lites naturales"
+                }
+            ]
+        },
+        {
+            "sentence": "La inform\u00e1tica, tambi\u00e9n llamada computaci\u00f3n, es una ciencia que administra m\u00e9todos, t\u00e9cnicas y procesos con el fin de almacenar, procesar y transmitir informaci\u00f3n y datos en formato digital.\n",
+            "relations": [
+                {
+                    "entity1": "La inform\u00e1tica",
+                    "relation": "tambi\u00e9n llamada",
+                    "entity2": "computaci\u00f3n"
+                },
+                {
+                    "entity1": "La inform\u00e1tica",
+                    "relation": "es una",
+                    "entity2": "ciencia que administra m\u00e9todos, t\u00e9cnicas y procesos con el fin de almacenar, procesar y transmitir informaci\u00f3n y datos en formato digital"
+                }
+            ]
+        },
+        {
+            "sentence": "En los sistemas operativos tipo Unix, como GNU\/Linux, la interacci\u00f3n con el usuario se efect\u00faa por el X Window System.\n",
+            "relations": [
+                {
+                    "entity1": "En los sistemas operativos tipo Unix la interacci\u00f3n con el usuario",
+                    "relation": "se efect\u00faa por",
+                    "entity2": "el X Window System"
+                }
+            ]
+        },
+        {
+            "sentence": "El tama\u00f1o de un gen individual o del genoma entero de un organismo se mide a menudo en pares de bases porque el ADN es generalmente de doble hebra.\n",
+            "relations": [
+                {
+                    "entity1": "El tama\u00f1o de un gen individual o del genoma entero de un organismo",
+                    "relation": "se mide en",
+                    "entity2": "pares de bases"
+                },
+                {
+                    "entity1": "el ADN",
+                    "relation": "es generalmente",
+                    "entity2": "de doble hebra"
+                }
+            ]
+        },
+        {
+            "sentence": "Este modelo es una soluci\u00f3n a las ecuaciones de la relatividad general para un agujero negro en rotaci\u00f3n.\n",
+            "relations": [
+                {
+                    "entity1": "Este modelo",
+                    "relation": "es una",
+                    "entity2": "soluci\u00f3n a las ecuaciones de la relatividad general para un agujero negro en rotaci\u00f3n"
+                }
+            ]
+        },
+        {
+            "sentence": "Los ganadores eran anunciados con tres meses de anterioridad a la ceremonia, sin embargo, esto cambi\u00f3 a partir de la segunda premiaci\u00f3n, en 1930.\n",
+            "relations": [
+                {
+                    "entity1": "Los ganadores",
+                    "relation": "eran anunciados",
+                    "entity2": "con tres meses de anterioridad a la ceremonia"
+                },
+                {
+                    "entity1": "esto",
+                    "relation": "cambi\u00f3",
+                    "entity2": "a partir de la segunda premiaci\u00f3n, en 1930"
+                }
+            ]
+        },
+        {
+            "sentence": "La Academia no hace p\u00fablicos los nombres de sus nuevos miembros, a pesar de que en 2007 fueron revelados a trav\u00e9s de un comunicado de prensa.\n",
+            "relations": [
+                {
+                    "entity1": "La Academia",
+                    "relation": "no hace p\u00fablicos",
+                    "entity2": "los nombres de sus nuevos miembro"
+                },
+                {
+                    "entity1": "en 2007",
+                    "relation": "fueron revelados",
+                    "entity2": "a trav\u00e9s de un comunicado de prensa"
+                }
+            ]
+        },
+        {
+            "sentence": "Trotski y sus seguidores compitieron contra Stalin por el poder en la Uni\u00f3n Sovi\u00e9tica.\n",
+            "relations": [
+                {
+                    "entity1": "Trotski y sus seguidores",
+                    "relation": "compitieron contra",
+                    "entity2": "Stalin"
+                },
+                {
+                    "entity1": "Trotski y sus seguidores",
+                    "relation": "compitieron por",
+                    "entity2": "el poder en la Uni\u00f3n Sovi\u00e9tica"
+                }
+            ]
+        },
+        {
+            "sentence": "Despu\u00e9s de la Segunda Guerra Mundial, dos partidos comunistas europeos, el franc\u00e9s y el italiano, crecieron hasta el punto de convertirse en fuerzas pol\u00edticas clave en sus respectivos pa\u00edses.\n",
+            "relations": [
+                {
+                    "entity1": "dos partidos comunistas europeos, el franc\u00e9s y el italiano",
+                    "relation": "crecieron hasta",
+                    "entity2": "el punto de convertirse en fuerzas pol\u00edticas clave en sus respectivos pa\u00edses Despu\u00e9s de la Segunda Guerra Mundial"
+                }
+            ]
+        },
+        {
+            "sentence": "En la escuela secundaria nunca destac\u00f3 y era un alumno con muy mal comportamiento: sol\u00eda escaparse de la escuela ya que a \u00e9l no le parec\u00eda que fuera una manera correcta de educar.\n",
+            "relations": [
+                {
+                    "entity1": "En la escuela secundaria",
+                    "relation": "nunca",
+                    "entity2": "destac\u00f3"
+                },
+                {
+                    "entity1": "alumno",
+                    "relation": "con",
+                    "entity2": "muy mal comportamiento"
+                },
+                {
+                    "entity1": "alumno",
+                    "relation": "sol\u00eda",
+                    "entity2": "escaparse de la escuela"
+                },
+                {
+                    "entity1": "\u00e9l",
+                    "relation": "no le parec\u00eda que",
+                    "entity2": "fuera una manera correcta de educar"
+                }
+            ]
+        },
+        {
+            "sentence": "1945 fue uno de los a\u00f1os m\u00e1s importantes de la Historia argentina.\n",
+            "relations": [
+                {
+                    "entity1": "1945",
+                    "relation": "fue",
+                    "entity2": "uno de los a\u00f1os m\u00e1s importantes de la Historia argentina"
+                }
+            ]
+        },
+        {
+            "sentence": "La funci\u00f3n de estos primeros dientes es preparar el alimento para su digesti\u00f3n y asimilaci\u00f3n en etapas en las que el ni\u00f1o est\u00e1 en m\u00e1ximo crecimiento; sirven de gu\u00eda de erupci\u00f3n: mantienen el espacio para la dentici\u00f3n permanente; estimulan el crecimiento de los maxilares con la masticaci\u00f3n; fonaci\u00f3n: los dientes anteriores intervienen en la creaci\u00f3n de ciertos sonidos.\n",
+            "relations": [
+                {
+                    "entity1": "primeros dientes",
+                    "relation": "La funci\u00f3n es",
+                    "entity2": "preparar el alimento para su digesti\u00f3n y asimilaci\u00f3n en etapas en las que el ni\u00f1o est\u00e1 en m\u00e1ximo crecimiento"
+                },
+                {
+                    "entity1": "primeros dientes",
+                    "relation": "sirven de",
+                    "entity2": "gu\u00eda de erupci\u00f3n"
+                },
+                {
+                    "entity1": "primeros dientes",
+                    "relation": "mantienen el",
+                    "entity2": "espacio para la dentici\u00f3n permanente"
+                },
+                {
+                    "entity1": "primeros dientes",
+                    "relation": "estimulan el",
+                    "entity2": "crecimiento de los maxilares con la masticaci\u00f3n"
+                },
+                {
+                    "entity1": "los dientes anteriores",
+                    "relation": "intervienen en",
+                    "entity2": "la creaci\u00f3n de ciertos sonidos"
+                }
+            ]
+        },
+        {
+            "sentence": "Los dientes tambi\u00e9n pueden \"picarse\" por el consumo de bebidas carbonatadas (refrescos o sodas), debido a los \u00e1cidos y az\u00facares que contienen (sacarosa).\n",
+            "relations": [
+                {
+                    "entity1": "Los dientes",
+                    "relation": "pueden",
+                    "entity2": "\"picarse\" por el consumo de bebidas carbonatadas, debido a los \u00e1cidos y az\u00facares que contienen"
+                }
+            ]
+        },
+        {
+            "sentence": "La descarga de arco es un tipo de descarga el\u00e9ctrica continua que genera luz y calor muy intensos.\n",
+            "relations": [
+                {
+                    "entity1": "La descarga de arco",
+                    "relation": "es un",
+                    "entity2": "tipo de descarga el\u00e9ctrica continua que genera luz y calor muy intensos"
+                }
+            ]
+        },
+        {
+            "sentence": "De los m\u00e9todos desarrollados para la s\u00edntesis de nanotubos, la t\u00e9cnica CVD se muestra la m\u00e1s prometedora para la escala industrial en t\u00e9rminos de relaci\u00f3n precio\/unidad.\n",
+            "relations": [
+                {
+                    "entity1": "la t\u00e9cnica CVD",
+                    "relation": "se muestra",
+                    "entity2": "la m\u00e1s prometedora para la escala industrial en t\u00e9rminos de relaci\u00f3n precio\/unidad"
+                }
+            ]
+        },
+        {
+            "sentence": "La mayor\u00eda de estos movimientos no buscan, o no consiguen articular, una propuesta de independencia estatal sino que reclaman un marco diferente al que tienen dentro de la totalidad de Espa\u00f1a, en algunos casos planteando requisitos espec\u00edficos. La excepci\u00f3n m\u00e1s notable podr\u00eda encontrarse en el movimiento independentista catal\u00e1n.\n",
+            "relations": [
+                {
+                    "entity1": "La mayor\u00eda de estos movimientos",
+                    "relation": "no buscan o no consiguen articular",
+                    "entity2": "una propuesta de independencia estatal"
+                },
+                {
+                    "entity1": "La mayor\u00eda de estos movimientos",
+                    "relation": "reclaman",
+                    "entity2": "un marco diferente al que tienen dentro de la totalidad de Espa\u00f1a, en algunos casos planteando requisitos espec\u00edficos"
+                },
+                {
+                    "entity1": "La excepci\u00f3n m\u00e1s notable",
+                    "relation": "podr\u00eda encontrarse en",
+                    "entity2": "el movimiento independentista catal\u00e1n"
+                }
+            ]
+        },
+        {
+            "sentence": "En un ciclo Di\u00e9sel (gas oil), de inyecci\u00f3n directa, la c\u00e1mara de combusti\u00f3n principal se encuentra mecanizada en la cabeza del pist\u00f3n.\n",
+            "relations": [
+                {
+                    "entity1": "En un ciclo Di\u00e9sel (gas oil), de inyecci\u00f3n directa, la c\u00e1mara de combusti\u00f3n principal",
+                    "relation": "se encuentra",
+                    "entity2": "mecanizada en la cabeza del pist\u00f3n"
+                }
+            ]
+        },
+        {
+            "sentence": "Posteriormente se denomin\u00f3 \"factor\u00eda\", de forma gen\u00e9rica, a cualquier tipo de f\u00e1brica o industria, es decir, a cualquier tipo de instalaci\u00f3n en la cual se produce la transformaci\u00f3n de materias primas o productos semi terminados en otros productos, bien para otras industrias, bien para su uso o consumo final.\n",
+            "relations": [
+                {
+                    "entity1": "\"factor\u00eda\"",
+                    "relation": "se denomin\u00f3 a",
+                    "entity2": "cualquier tipo de f\u00e1brica o industria, a cualquier tipo de instalaci\u00f3n en la cual se produce la transformaci\u00f3n de materias primas o productos semi terminados en otros productos"
+                }
+            ]
+        },
+        {
+            "sentence": "La altura de la ciudad sobre el nivel del mar es de 708 metros medidos en la plaza mayor.\n",
+            "relations": [
+                {
+                    "entity1": "La altura de la ciudad sobre el nivel del mar",
+                    "relation": "es de",
+                    "entity2": "708 metros medidos en la plaza mayor"
+                }
+            ]
+        },
+        {
+            "sentence": "El cuchillo tiene una funci\u00f3n espec\u00edfica y resulta desaconsejable emplearlo para otros usos para los cuales no est\u00e1 preparado; por ejemplo, es peligroso y se deteriora la hoja de un cuchillo de cocina si se emplea como abrelatas.\n",
+            "relations": [
+                {
+                    "entity1": "El cuchillo",
+                    "relation": "tiene una",
+                    "entity2": "funci\u00f3n espec\u00edfica"
+                },
+                {
+                    "entity1": "El cuchillo",
+                    "relation": "resulta desaconsejable",
+                    "entity2": "emplearlo para otros usos para los cuales no est\u00e1 preparado"
+                },
+                {
+                    "entity1": "El cuchillo",
+                    "relation": "es",
+                    "entity2": "peligroso"
+                },
+                {
+                    "entity1": "la hoja de un cuchillo de cocina",
+                    "relation": "se deteriora",
+                    "entity2": "si se emplea como abrelatas"
+                }
+            ]
+        },
+        {
+            "sentence": "La iron\u00eda es la primera de las f\u00f3rmulas utilizadas por S\u00f3crates en su m\u00e9todo dial\u00e9ctico.\n",
+            "relations": [
+                {
+                    "entity1": "La iron\u00eda",
+                    "relation": "es",
+                    "entity2": "la primera de las f\u00f3rmulas utilizadas por S\u00f3crates en su m\u00e9todo dial\u00e9ctico"
+                }
+            ]
+        },
+        {
+            "sentence": "En los tiempos de la antigua Roma, la iron\u00eda era usada en los discursos y conversaciones ret\u00f3ricas p\u00fablicas, en las cuales las palabras usadas eran opuestas a su significado o intenci\u00f3n.\n",
+            "relations": [
+                {
+                    "entity1": "la iron\u00eda",
+                    "relation": "era usada en",
+                    "entity2": "los discursos y conversaciones ret\u00f3ricas p\u00fablicas, En los tiempos de la antigua Roma"
+                }
+            ]
+        },
+        {
+            "sentence": "En 2004, Rusl\u00e1n se llev\u00f3 el oro en la Olimpiada de Ajedrez en Calvia con el equipo de Ucrania.\n",
+            "relations": [
+                {
+                    "entity1": "Rusl\u00e1n",
+                    "relation": "se llev\u00f3 el oro",
+                    "entity2": "en la Olimpiada de Ajedrez en Calvia con el equipo de Ucrania En 2004"
+                }
+            ]
+        },
+        {
+            "sentence": "Desarrollado por IBM en 1964, su lanzamiento estaba dispuesto para 1965 para las versiones m\u00e1s simples y para 1966 para las versiones m\u00e1s complejas, pero no fue hasta 1967 cuando vio la luz oficialmente.",
+            "relations": [
+                {
+                    "entity1": "su lanzamiento",
+                    "relation": "estaba dispuesto para",
+                    "entity2": "1965 para las versiones m\u00e1s simples y para 1966 para las versiones m\u00e1s complejas"
+                },
+                {
+                    "entity1": "su lanzamiento",
+                    "relation": "vio la luz oficialmente",
+                    "entity2": "1967"
+                }
+            ]
+        },
+        {
+            "sentence": "Algunos adorables gatitos y perritos de un refugio fueron llevados a visitar el Acuario de Georgia durante el cierre debido a la COVID-19. \n",
+            "relations": [
+                {
+                    "entity1": "Algunos adorables gatitos y perritos de un refugio",
+                    "relation": "fueron llevados a visitar el",
+                    "entity2": "Acuario de Georgia durante el cierre debido a la COVID-19"
+                }
+            ]
+        },
+        {
+            "sentence": "El estado Miranda sigue siendo el estado con m\u00e1s casos\n",
+            "relations": [
+                {
+                    "entity1": "El estado Miranda",
+                    "relation": "sigue siendo",
+                    "entity2": "el estado con m\u00e1s casos"
+                }
+            ]
+        },
+        {
+            "sentence": "El a\u00f1o escolar no se ha perdido: \"Si tenemos que culminar el a\u00f1o con dos trimestres lo podemos hacer o tambi\u00e9n extender el calendario y hacer pausas m\u00ednimas y continuar con el a\u00f1o 2021\"\n",
+            "relations": [
+                {
+                    "entity1": "El a\u00f1o escolar",
+                    "relation": "no se ha",
+                    "entity2": "perdido"
+                }
+            ]
+        },
+        {
+            "sentence": "El internet lleg\u00f3 a donde no ten\u00eda que llegar #Covid19\n",
+            "relations": [
+                {
+                    "entity1": "El internet",
+                    "relation": "lleg\u00f3 a",
+                    "entity2": "donde no ten\u00eda que llegar #Covid19"
+                }
+            ]
+        },
+        {
+            "sentence": "Gobernadora confirma un nuevo caso #Covid_19 en el Estado para un total de 4 personas infectadas #QuedateEnCasa\n",
+            "relations": [
+                {
+                    "entity1": "Gobernadora",
+                    "relation": "confirma un",
+                    "entity2": "nuevo caso #Covid_19 en el Estado para un total de 4 personas infectadas"
+                }
+            ]
+        },
+        {
+            "sentence": "Parece que la pandemia en M\u00e9xico entra en fase de aceleraci\u00f3n.\n",
+            "relations": [
+                {
+                    "entity1": "la pandemia en M\u00e9xico",
+                    "relation": "entra en",
+                    "entity2": "fase de aceleraci\u00f3n"
+                }
+            ]
+        },
+        {
+            "sentence": "La Secretaria de @salud_yucatan indic\u00f3 que se han detectado mil 203 casos sospechosos\n",
+            "relations": [
+                {
+                    "entity1": "La Secretaria de @salud_yucatan",
+                    "relation": "indic\u00f3 que se han detectado",
+                    "entity2": "mil 203 casos sospechosos"
+                }
+            ]
+        },
+        {
+            "sentence": "En el departamento de La Paz hay 101 infectados con #coronavirus y 11 personas fallecidas con la pandemia. \n",
+            "relations": [
+                {
+                    "entity1": "En el departamento de La Paz",
+                    "relation": "hay",
+                    "entity2": "101 infectados con #coronavirus"
+                },
+                {
+                    "entity1": "En el departamento de La Paz",
+                    "relation": "hay",
+                    "entity2": "11 personas fallecidas con la pandemia"
+                }
+            ]
+        },
+        {
+            "sentence": "Al d\u00eda 49 as\u00ed va Mexico. 5.8 K casos confirmados de COVID. \n",
+            "relations": [
+                {
+                    "entity1": "Mexico Al d\u00eda 49",
+                    "relation": "va",
+                    "entity2": "5.8 K casos confirmados de COVID"
+                }
+            ]
+        },
+        {
+            "sentence": "Alemania nos alcanza y Corea se estabiliza en 7.5 K casos. \n",
+            "relations": [
+                {
+                    "entity1": "Corea",
+                    "relation": "se estabiliza en",
+                    "entity2": "7.5 K casos"
+                }
+            ]
+        },
+        {
+            "sentence": "Inglaterra llega casi a 2.8 K casos. \n",
+            "relations": [
+                {
+                    "entity1": "Inglaterra",
+                    "relation": "llega casi a",
+                    "entity2": "2.8 K casos"
+                }
+            ]
+        },
+        {
+            "sentence": "Estados Unidos apenas llegaba a 1 K casos.\n",
+            "relations": [
+                {
+                    "entity1": "Estados Unidos",
+                    "relation": "apenas llegaba a",
+                    "entity2": "1 K casos"
+                }
+            ]
+        },
+        {
+            "sentence": "\u00bfEl tener c\u00e1ncer podr\u00eda generar co fusi\u00f3n en el resultado del la prueba para #COVID19?\n",
+            "relations": [
+                {
+                    "entity1": "El tener c\u00e1ncer",
+                    "relation": "podr\u00eda generar",
+                    "entity2": "co fusi\u00f3n en el resultado del la prueba para #COVID19"
+                }
+            ]
+        },
+        {
+            "sentence": "La recolecci\u00f3n se realiza a diario en el turno noche Rafa\n",
+            "relations": [
+                {
+                    "entity1": "La recolecci\u00f3n",
+                    "relation": "se realiza",
+                    "entity2": "a diario en el turno noche"
+                }
+            ]
+        },
+        {
+            "sentence": "Es reinante la ignorancia vial, la vida en la calle es la sobrevivencia del m\u00e1s prepotente! Me parece una excelente campa\u00f1a, muy necesaria!\n",
+            "relations": [
+                {
+                    "entity1": "[ac\u00e1]",
+                    "relation": "Es reinante",
+                    "entity2": "la ignorancia vial"
+                },
+                {
+                    "entity1": "la vida en la calle",
+                    "relation": "es",
+                    "entity2": "la sobrevivencia del m\u00e1s prepotente"
+                }
+            ]
+        },
+        {
+            "sentence": "Espero q esta empresa PAGUE POR LOS DA\u00d1OS AL T\u00daNEL. . ese t\u00fanel es de todos y exigimos q ELLOS LO ARREGLEN!! Q NO SALGA DE NOSOTROS DE NUEVO\n",
+            "relations": [
+                {
+                    "entity1": "esta empresa",
+                    "relation": "PAGUE POR",
+                    "entity2": "LOS DA\u00d1OS AL T\u00daNEL"
+                },
+                {
+                    "entity1": "ese t\u00fanel",
+                    "relation": "es de",
+                    "entity2": "todos"
+                },
+                {
+                    "entity1": "todos",
+                    "relation": "exigimos",
+                    "entity2": "q ELLOS LO ARREGLEN!! Q NO SALGA DE NOSOTROS DE NUEVO"
+                }
+            ]
+        },
+        {
+            "sentence": "Que vuelva a suceder esto ser\u00eda una verdadera tragedia. La municipalidad debe multar a los que no cumplen las medidas de seguridad.\n",
+            "relations": [
+                {
+                    "entity1": "La municipalidad",
+                    "relation": "debe multar a",
+                    "entity2": "los que no cumplen las medidas de seguridad"
+                }
+            ]
+        },
+        {
+            "sentence": "Excelente esta informaci\u00f3n para muchos que no sab\u00edamos d\u00f3nde eliminar las pilas y bater\u00edas..\n",
+            "relations": [
+                {
+                    "entity1": "muchos",
+                    "relation": "no sab\u00edamos d\u00f3nde eliminar",
+                    "entity2": "las pilas y bater\u00edas"
+                }
+            ]
+        },
+        {
+            "sentence": "En otros pa\u00edses estas cosas no se ven. Los due\u00f1os deber\u00edan encargarse de su remoci\u00f3n.\n",
+            "relations": [
+                {
+                    "entity1": "En otros pa\u00edses",
+                    "relation": "no se ven",
+                    "entity2": "estas cosas"
+                },
+                {
+                    "entity1": "Los due\u00f1os",
+                    "relation": "deber\u00edan encargarse de",
+                    "entity2": "su remoci\u00f3n"
+                }
+            ]
+        },
+        {
+            "sentence": "Este mono andaba suelto en el jard\u00edn bot\u00e1nico \n",
+            "relations": [
+                {
+                    "entity1": "Este mono",
+                    "relation": "andaba suelto en",
+                    "entity2": "el jard\u00edn bot\u00e1nico"
+                }
+            ]
+        },
+        {
+            "sentence": "Gracias   por apoyar a las ni\u00f1as y darles participaci\u00f3n en espacios de poder dentro de su Instituci\u00f3n    \n",
+            "relations": [
+                {
+                    "entity1": "a las ni\u00f1as",
+                    "relation": "darles participaci\u00f3n en",
+                    "entity2": "espacios de poder dentro de su Instituci\u00f3n"
+                }
+            ]
+        },
+        {
+            "sentence": "Algunos liberales no conocen su historia, fueron muy perseguidos alguna vez. Pero ellos son los que amenazan y chicanean.\n",
+            "relations": [
+                {
+                    "entity1": "Algunos liberales",
+                    "relation": "no conocen",
+                    "entity2": "su historia"
+                },
+                {
+                    "entity1": "Algunos liberales",
+                    "relation": "fueron muy perseguidos",
+                    "entity2": "alguna vez"
+                },
+                {
+                    "entity1": "ellos",
+                    "relation": "son",
+                    "entity2": "los que amenazan y chicanean"
+                }
+            ]
+        },
+        {
+            "sentence": "Las palabras de los libros son como gotas de lluvia, elegidas para que nuestra mente se llene de pensamientos, escogidas para que nuestro coraz\u00f3n recoja un arco iris de emociones\u2026 Y cuando te hayas consolado, te alegrar\u00e1s de haberme conocido.\n",
+            "relations": [
+                {
+                    "entity1": "Las palabras de los libros",
+                    "relation": "son como",
+                    "entity2": "gotas de lluvia"
+                },
+                {
+                    "entity1": "Las palabras de los libros",
+                    "relation": "son elegidas para que",
+                    "entity2": "nuestra mente se llene de pensamientos"
+                },
+                {
+                    "entity1": "Las palabras de los libros",
+                    "relation": "son escogidas para que",
+                    "entity2": "nuestro coraz\u00f3n recoja un arco iris de emociones"
+                }
+            ]
+        },
+        {
+            "sentence": "Crear\u00eda un perfume que no s\u00f3lo fuera humano, sino sobrehumano. Un aroma de \u00e1ngel, tan indescriptiblemente bueno y plet\u00f3rico de vigor que quien lo oliera quedar\u00eda hechizado y no tendr\u00eda m\u00e1s remedio que amar a la persona que lo llevara, o sea, amarle a \u00e9l, Grenouille, con todo su coraz\u00f3n.\n",
+            "relations": [
+                {
+                    "entity1": "[\u00e9l]",
+                    "relation": "Crear\u00eda un",
+                    "entity2": "perfume que no s\u00f3lo fuera humano, sino sobrehumano"
+                },
+                {
+                    "entity1": "quien lo oliera",
+                    "relation": "quedar\u00eda",
+                    "entity2": "hechizado"
+                },
+                {
+                    "entity1": "quien lo oliera",
+                    "relation": "no tendr\u00eda m\u00e1s remedio que",
+                    "entity2": "amar a la persona que lo llevara"
+                },
+                {
+                    "entity1": "quien lo oliera",
+                    "relation": "amarle a",
+                    "entity2": "\u00e9l, Grenouille, con todo su coraz\u00f3n"
+                }
+            ]
+        },
+        {
+            "sentence": "Nada hay en el mundo, ni hombre ni diablo ni cosa alguna, que sea para m\u00ed tan sospechoso como el amor, pues este penetra en el alma m\u00e1s que cualquier otra cosa. Nada hay que ocupe y ate m\u00e1s al coraz\u00f3n que el amor. Por eso, cuando no dispone de armas para gobernarse, el alma se hunde, por el amor, en la m\u00e1s honda de las ruinas.\n",
+            "relations": [
+                {
+                    "entity1": "Nada hay en el mundo",
+                    "relation": "que sea para m\u00ed tan sospechoso como",
+                    "entity2": "el amor"
+                },
+                {
+                    "entity1": "este",
+                    "relation": "penetra en",
+                    "entity2": "el alma m\u00e1s que cualquier otra cosa"
+                },
+                {
+                    "entity1": "Nada hay",
+                    "relation": "que ocupe y ate m\u00e1s",
+                    "entity2": "al coraz\u00f3n que el amor"
+                },
+                {
+                    "entity1": "el alma",
+                    "relation": "se hunde por",
+                    "entity2": "el amor, en la m\u00e1s honda de las ruinas"
+                }
+            ]
+        },
+        {
+            "sentence": "Resulta extra\u00f1o pensar que, cuando uno teme algo que va a ocurrir y quisiera que el tiempo empezara a pasar m\u00e1s despacio, el tiempo suele pasar m\u00e1s deprisa.\n",
+            "relations": [
+                {
+                    "entity1": "uno",
+                    "relation": "quisiera que",
+                    "entity2": "el tiempo empezara a pasar m\u00e1s despacio"
+                },
+                {
+                    "entity1": "el tiempo",
+                    "relation": "suele pasar",
+                    "entity2": "m\u00e1s deprisa"
+                }
+            ]
+        },
+        {
+            "sentence": "La alegr\u00eda causa a veces un efecto extra\u00f1o; oprime al coraz\u00f3n casi tanto como el dolor.\n",
+            "relations": [
+                {
+                    "entity1": "La alegr\u00eda",
+                    "relation": "causa a veces un",
+                    "entity2": "efecto extra\u00f1o"
+                },
+                {
+                    "entity1": "La alegr\u00eda",
+                    "relation": "oprime al",
+                    "entity2": "coraz\u00f3n casi tanto como el dolor"
+                }
+            ]
+        },
+        {
+            "sentence": "El hombre llega mucho m\u00e1s lejos para evitar lo que teme que para alcanzar lo que desea.\n",
+            "relations": [
+                {
+                    "entity1": "El hombre",
+                    "relation": "llega",
+                    "entity2": "mucho m\u00e1s lejos para evitar lo que teme que para alcanzar lo que desea"
+                }
+            ]
+        },
+        {
+            "sentence": "El hombre alto, con el pelo recogido en una coleta, estaba de pie, en la entrada, rozando apenas el marco de la puerta y mirando a Ushikawa como quien contempla una simple mancha en la pared.",
+            "relations": [
+                {
+                    "entity1": "El hombre alto, con el pelo recogido en una coleta",
+                    "relation": "estaba",
+                    "entity2": "de pie en la entrada"
+                },
+                {
+                    "entity1": "El hombre alto, con el pelo recogido en una coleta",
+                    "relation": "estaba rozando apenas",
+                    "entity2": "el marco de la puerta"
+                },
+                {
+                    "entity1": "El hombre alto, con el pelo recogido en una coleta",
+                    "relation": "estaba mirando a",
+                    "entity2": "Ushikawa como quien contempla una simple mancha en la pared"
+                }
+            ]
+        },
+        {
+            "sentence": "En los remotos e inexplorados confines del arcaico extremo occidental de la espiral de la galaxia, brilla un peque\u00f1o y despreciable sol amarillento.",
+            "relations": [
+                {
+                    "entity1": "En los remotos e inexplorados confines del arcaico extremo occidental de la espiral de la galaxia",
+                    "relation": "brilla un",
+                    "entity2": "peque\u00f1o y despreciable sol amarillento"
+                }
+            ]
+        },
+        {
+            "sentence": "Comenzar\u00e9 con mi ni\u00f1ez m\u00e1s temprana y seguir\u00e9 a\u00f1o tras a\u00f1o, hasta llegar al fat\u00eddico momento del cambio en que, hace unos ocho a\u00f1os, a la edad de cincuenta y uno, me encontr\u00e9 de pronto en lo que podr\u00eda denominar \"la jaula dorada\" de la cual jam\u00e1s he podido escapar desde entonces.",
+            "relations": [
+                {
+                    "entity1": "[yo]",
+                    "relation": "Comenzar\u00e9 con",
+                    "entity2": "mi ni\u00f1ez m\u00e1s temprana"
+                },
+                {
+                    "entity1": "[yo]",
+                    "relation": "seguir\u00e9",
+                    "entity2": "a\u00f1o tras a\u00f1o, hasta llegar al fat\u00eddico momento del cambio en que, hace unos ocho a\u00f1os, a la edad de cincuenta y uno, me encontr\u00e9 de (pronto en lo que podr\u00eda denominar \"la jaula dorada\""
+                },
+                {
+                    "entity1": "a la edad de cincuenta y uno",
+                    "relation": "me encontr\u00e9 de pronto en",
+                    "entity2": "lo que podr\u00eda denominar \"la jaula dorada\""
+                },
+                {
+                    "entity1": "[yo]",
+                    "relation": "jam\u00e1s he podido escapar",
+                    "entity2": "desde entonces"
+                }
+            ]
+        },
+        {
+            "sentence": "Una alegre y suave oleada el\u00e9ctrica silbada por el despertador autom\u00e1tico del \u00f3rgano de \u00e1nimos que ten\u00eda junto a la cama despert\u00f3 a Rick Deckard.",
+            "relations": [
+                {
+                    "entity1": "Una alegre y suave oleada el\u00e9ctrica",
+                    "relation": "silbada por",
+                    "entity2": "el despertador autom\u00e1tico del \u00f3rgano de \u00e1nimos"
+                },
+                {
+                    "entity1": "Una alegre y suave oleada el\u00e9ctrica",
+                    "relation": "despert\u00f3 a",
+                    "entity2": "Rick Deckard"
+                },
+                {
+                    "entity1": "Rick Deckard",
+                    "relation": "ten\u00eda junto a la cama",
+                    "entity2": "despertador autom\u00e1tico"
+                }
+            ]
+        },
+        {
+            "sentence": "He ido esta ma\u00f1ana a ver a mi m\u00e9dico Herm\u00f3genes, que acaba de regresar a la Villa despu\u00e9s de un largo viaje por Asia.",
+            "relations": [
+                {
+                    "entity1": "[yo]",
+                    "relation": "He ido a ver a",
+                    "entity2": "mi m\u00e9dico Herm\u00f3genes"
+                },
+                {
+                    "entity1": "mi m\u00e9dico Herm\u00f3genes",
+                    "relation": "acaba de regresar a",
+                    "entity2": "la Villa despu\u00e9s de un largo viaje por Asia"
+                }
+            ]
+        },
+        {
+            "sentence": "Las fuerzas del orden dispararon contra los huelguistas.",
+            "relations": [
+                {
+                    "entity1": "Las fuerzas del orden",
+                    "relation": "dispararon contra",
+                    "entity2": "los huelguistas"
+                }
+            ]
+        },
+        {
+            "sentence": "En este momento de su narraci\u00f3n, Schehrazada vi\u00f3 aparecer la ma\u00f1ana, y se call\u00f3 discreta.",
+            "relations": [
+                {
+                    "entity1": "Schehrazada",
+                    "relation": "vi\u00f3 aparecer",
+                    "entity2": "la ma\u00f1ana"
+                },
+                {
+                    "entity1": "Schehrazada",
+                    "relation": "se call\u00f3",
+                    "entity2": "discreta"
+                }
+            ]
+        },
+        {
+            "sentence": "Pues, se\u00f1or, porque tiene la piel tan curtida que el agua no la atraviesa en mucho tiempo, y el agua descompone bien a todo puto cad\u00e1ver.",
+            "relations": [
+                {
+                    "entity1": "[\u00e9l]",
+                    "relation": "tiene",
+                    "entity2": "la piel tan curtida que el agua no la atraviesa en mucho tiempo"
+                },
+                {
+                    "entity1": "el agua",
+                    "relation": "descompone bien",
+                    "entity2": "a todo puto cad\u00e1ver"
+                }
+            ]
+        },
+        {
+            "sentence": "La esfera, m\u00f3vil en el extremo de un largo hilo sujeto de la b\u00f3veda del coro, describ\u00eda sus amplias oscilaciones con is\u00f3crona majestad.",
+            "relations": [
+                {
+                    "entity1": "La esfera",
+                    "relation": "m\u00f3vil en",
+                    "entity2": "el extremo de un largo hilo"
+                },
+                {
+                    "entity1": "un largo hilo",
+                    "relation": "sujeto de",
+                    "entity2": "la b\u00f3veda del coro"
+                },
+                {
+                    "entity1": "La esfera",
+                    "relation": "describ\u00eda sus",
+                    "entity2": "amplias oscilaciones con is\u00f3crona majestad"
+                }
+            ]
+        },
+        {
+            "sentence": "Que yo recuerde, mis trabajos empezaron en un jard\u00edn de Tebas Hekat\u00f3mpylos, cuando Diocleciano era emperador.",
+            "relations": [
+                {
+                    "entity1": "mis trabajos",
+                    "relation": "empezaron en",
+                    "entity2": "un jard\u00edn de Tebas Hekat\u00f3mpylos"
+                },
+                {
+                    "entity1": "mis trabajos",
+                    "relation": "empezaron cuando",
+                    "entity2": "Diocleciano era emperado"
+                }
+            ]
+        },
+        {
+            "sentence": "Es verdad que no salgo de mi casa, pero tambi\u00e9n es verdad que sus puertas (cuyo n\u00famero es infinito) est\u00e1n abiertas d\u00eda y noche a los hombres y tambi\u00e9n a los animales.",
+            "relations": [
+                {
+                    "entity1": "[yo]",
+                    "relation": "no salgo de",
+                    "entity2": "mi casa"
+                },
+                {
+                    "entity1": "puertas",
+                    "relation": "est\u00e1n",
+                    "entity2": "abiertas d\u00eda y noche a los hombres y tambi\u00e9n a los animales"
+                }
+            ]
+        },
+        {
+            "sentence": "Su luna de miel fu\u00e9 un largo escalofr\u00edo.",
+            "relations": [
+                {
+                    "entity1": "Su luna de miel",
+                    "relation": "fu\u00e9 un",
+                    "entity2": "largo escalofr\u00edo"
+                }
+            ]
+        },
+        {
+            "sentence": "El se\u00f1or Sherlock Holmes, que de ordinario se levantaba muy tarde, excepto en las ocasiones nada infrecuentes en que no se acostaba en toda la noche, estaba desayunando.",
+            "relations": [
+                {
+                    "entity1": "El se\u00f1or Sherlock Holmes",
+                    "relation": "se levantaba",
+                    "entity2": "muy tarde"
+                },
+                {
+                    "entity1": "El se\u00f1or Sherlock Holmes",
+                    "relation": "no se acostaba en",
+                    "entity2": "toda la noche en las ocasiones nada infrecuentes"
+                },
+                {
+                    "entity1": "El se\u00f1or Sherlock Holmes",
+                    "relation": "estaba",
+                    "entity2": "desayunando"
+                }
+            ]
+        },
+        {
+            "sentence": "Creo que ya s\u00e9 c\u00f3mo se desarrollaron las cosas, y me doy cuenta de que este telegrama debi\u00f3 impulsarlos a entrar en acci\u00f3n, como usted dice.",
+            "relations": [
+                {
+                    "entity1": "[yo]",
+                    "relation": "Creo que",
+                    "entity2": "ya s\u00e9 c\u00f3mo se desarrollaron las cosas"
+                },
+                {
+                    "entity1": "[yo]",
+                    "relation": "me doy cuenta de que",
+                    "entity2": "este telegrama debi\u00f3 impulsarlos a entrar en acci\u00f3n"
+                },
+                {
+                    "entity1": "este telegrama",
+                    "relation": "debi\u00f3 impulsarlos a",
+                    "entity2": "entrar en acci\u00f3n"
+                }
+            ]
+        },
+        {
+            "sentence": "Ello es que todos los dem\u00e1s, cuantos hab\u00edan escapado a la amarga muerte, estaban en casa, dejando atr\u00e1s la guerra y el mar.",
+            "relations": [
+                {
+                    "entity1": "todos los dem\u00e1s",
+                    "relation": "hab\u00edan escapado a",
+                    "entity2": "la amarga muerte"
+                },
+                {
+                    "entity1": "todos los dem\u00e1s",
+                    "relation": "estaban en",
+                    "entity2": "casa, dejando atr\u00e1s la guerra y el mar"
+                }
+            ]
+        },
+        {
+            "sentence": "Conceptos como la realidad hab\u00edan dejado de importarle.",
+            "relations": [
+                {
+                    "entity1": "Conceptos como la realidad",
+                    "relation": "hab\u00edan dejado de",
+                    "entity2": "importarle"
+                }
+            ]
+        },
+        {
+            "sentence": "Antiguamente se empleaba el acero al carbono (carente de cromo), forjado o laminado en caliente, de f\u00e1cil oxidaci\u00f3n, y en la actualidad se utilizan mucho los llamados aceros inoxidables, que no lo son en realidad, sino que poseen distintos grados de resistencia a la corrosi\u00f3n seg\u00fan el contenido de carbono y cromo de su aleaci\u00f3n.\n",
+            "relations": [
+                {
+                    "entity1": "Antiguamente",
+                    "relation": "se empleaba",
+                    "entity2": "el acero al carbono, forjado o laminado en caliente, de f\u00e1cil oxidaci\u00f3n"
+                },
+                {
+                    "entity1": "en la actualidad",
+                    "relation": "se utilizan mucho los",
+                    "entity2": "llamados aceros inoxidables, que no lo son en realidad"
+                },
+                {
+                    "entity1": "los llamados aceros inoxidables",
+                    "relation": "poseen",
+                    "entity2": "distintos grados de resistencia a la corrosi\u00f3n seg\u00fan el contenido de carbono y cromo de su aleaci\u00f3n"
+                }
+            ]
+        },
+        {
+            "sentence": "Seg\u00fan The Times, los oficiales de la agencia antidrogas mantuvieron el silencio a acerca de sus operaciones por temor a comprometer sus actividades.\n",
+            "relations": [
+                {
+                    "entity1": "los oficiales de la agencia antidrogas",
+                    "relation": "mantuvieron",
+                    "entity2": "el silencio a acerca de sus operaciones por temor a comprometer sus actividades"
+                }
+            ]
+        },
+        {
+            "sentence": "L\u00edder indiscutible del Frente Sandinista de Liberaci\u00f3n Nacional (FSLN) y pr\u00f3ximo a cumplir 66 a\u00f1os, Ortega es tenido por las encuestas como casi seguro ganador, frente a una oposici\u00f3n atomizada en cuatro candidaturas, en su mayor\u00eda compitiendo m\u00e1s por ser la segunda fuerza pol\u00edtica del pa\u00eds que por la victoria.\n",
+            "relations": [
+                {
+                    "entity1": "Ortega",
+                    "relation": "es tenido por",
+                    "entity2": "las encuestas como casi seguro ganador, frente a una oposici\u00f3n atomizada en cuatro candidaturas"
+                },
+                {
+                    "entity1": "una oposici\u00f3n atomizada en cuatro candidaturas",
+                    "relation": "compitiendo m\u00e1s por ser",
+                    "entity2": "la segunda fuerza pol\u00edtica del pa\u00eds que por la victoria"
+                }
+            ]
+        },
+        {
+            "sentence": "El mensaje se propag\u00f3 velozmente por la red y se potenci\u00f3 con los otros a\u00f1adidos como la propuesta del oficialismo en la Ley de Comunicaci\u00f3n de normar los contenidos de los medios de comunicaci\u00f3n y opiniones publicadas en Internet, la sentencia de 40 millones en contra del diario El Universo y la prisi\u00f3n de tres a\u00f1os para tres de sus directivos...\n",
+            "relations": [
+                {
+                    "entity1": "El mensaje",
+                    "relation": "se propag\u00f3",
+                    "entity2": "velozmente por la red"
+                },
+                {
+                    "entity1": "El mensaje",
+                    "relation": "se potenci\u00f3 con",
+                    "entity2": "los otros a\u00f1adidos como la propuesta del oficialismo en la Ley de Comunicaci\u00f3n de normar los contenidos de los medios de comunicaci\u00f3n y opiniones publicadas en Internet"
+                }
+            ]
+        },
+        {
+            "sentence": "Tambi\u00e9n habr\u00e1 una cita a 127 horas, la pel\u00edcula con James Franco, cuando Homero termine con un brazo atrapado mientras escala un ca\u00f1\u00f3n. A su rescate ir\u00e1 Aron Rolston, el protagonista de la historia en la que se bas\u00f3 la pel\u00edcula, en persona.\n",
+            "relations": [
+                {
+                    "entity1": "[all\u00e1]",
+                    "relation": "habr\u00e1 una cita a",
+                    "entity2": "127 horas, la pel\u00edcula con James Franco"
+                },
+                {
+                    "entity1": "Homero",
+                    "relation": "termine con",
+                    "entity2": "un brazo atrapado mientras escala un ca\u00f1\u00f3n"
+                },
+                {
+                    "entity1": "A su rescate",
+                    "relation": "ir\u00e1",
+                    "entity2": "Aron Rolston, el protagonista de la historia en la que se bas\u00f3 la pel\u00edcula"
+                }
+            ]
+        },
+        {
+            "sentence": "La exsenadora siempre se ha manifestado a favor de esta posibilidad como llave para avanzar en un di\u00e1logo de paz que ponga fin a m\u00e1s de medio siglo de conflicto armado en Colombia.\n",
+            "relations": [
+                {
+                    "entity1": "La exsenadora",
+                    "relation": "siempre se ha manifestado a favor de",
+                    "entity2": "esta posibilidad como llave para avanzar en un di\u00e1logo de paz que ponga fin a m\u00e1s de medio siglo de conflicto armado en Colombia"
+                }
+            ]
+        },
+        {
+            "sentence": "Adelant\u00f3 que la prohibici\u00f3n alcanzar\u00e1 a kioscos y otros comercios que venden bebidas alcoh\u00f3licas.\n",
+            "relations": [
+                {
+                    "entity1": "la prohibici\u00f3n",
+                    "relation": "alcanzar\u00e1 a",
+                    "entity2": "kioscos y otros comercios que venden bebidas alcoh\u00f3licas"
+                }
+            ]
+        },
+        {
+            "sentence": "\u201cSi bien este es un problema que est\u00e1 afectando a los servidores de RIM, queremos reafirmar que como compa\u00f1\u00eda no cobraremos a nuestros clientes por un servicio no prestado\u201d, se\u00f1al\u00f3 Andr\u00e9s Wallis, director de asuntos corporativos de Movistar.\n",
+            "relations": [
+                {
+                    "entity1": "este es un problema",
+                    "relation": "que est\u00e1 afectando a",
+                    "entity2": "los servidores de RIM"
+                },
+                {
+                    "entity1": "[nosotros]",
+                    "relation": "queremos reafirmar que",
+                    "entity2": "como compa\u00f1\u00eda no cobraremos a nuestros clientes por un servicio no prestado"
+                },
+                {
+                    "entity1": "Andr\u00e9s Wallis",
+                    "relation": "se\u00f1al\u00f3",
+                    "entity2": "\u201cSi bien este es un problema que est\u00e1 afectando a los servidores de RIM, queremos reafirmar que como compa\u00f1\u00eda no cobraremos a nuestros clientes por un servicio no prestado\u201d"
+                },
+                {
+                    "entity1": "Andr\u00e9s Wallis",
+                    "relation": "director de",
+                    "entity2": "asuntos corporativos de Movistar"
+                }
+            ]
+        },
+        {
+            "sentence": "Respecto a la situaci\u00f3n de Caprecom, su director Mario Andr\u00e9s Dur\u00e1n anunci\u00f3 que en m\u00e1ximo 30 d\u00edas la entidad realizar\u00e1 pagos por 120 mil millones de pesos a cl\u00ednicas y hospitales p\u00fablicos y privados.\n",
+            "relations": [
+                {
+                    "entity1": "Mario Andr\u00e9s Dur\u00e1n",
+                    "relation": "director",
+                    "entity2": "Caprecom"
+                },
+                {
+                    "entity1": "Mario Andr\u00e9s Dur\u00e1n",
+                    "relation": "anunci\u00f3 que",
+                    "entity2": "en m\u00e1ximo 30 d\u00edas la entidad realizar\u00e1 pagos por 120 mil millones de pesos a cl\u00ednicas y hospitales p\u00fablicos y privados"
+                },
+                {
+                    "entity1": "la entidad",
+                    "relation": "realizar\u00e1 pagos por",
+                    "entity2": "120 mil millones de pesos a cl\u00ednicas y hospitales p\u00fablicos y privados em m\u00e1ximo 30 d\u00edas"
+                }
+            ]
+        },
+        {
+            "sentence": "Mar\u00eda habla con propiedad, ya que en su negocio se producen al d\u00eda entre 1.500 y 2.000 camisetas de diferentes motivos, tama\u00f1os y colores durante esta temporada, las mismas que ya podemos encontrar en cualquier almac\u00e9n o chaza del Centro.\n",
+            "relations": [
+                {
+                    "entity1": "Mar\u00eda",
+                    "relation": "habla",
+                    "entity2": "con propiedad"
+                },
+                {
+                    "entity1": "en su negocio",
+                    "relation": "se producen al d\u00eda",
+                    "entity2": "entre 1.500 y 2.000 camisetas de diferentes motivos, tama\u00f1os y colores durante esta temporada"
+                },
+                {
+                    "entity1": "las mismas",
+                    "relation": "podemos encontrar en",
+                    "entity2": "cualquier almac\u00e9n o chaza del Centro"
+                }
+            ]
+        },
+        {
+            "sentence": "La conserje del CVU, Rosario Lourdes P\u00e9rez, relat\u00f3 ayer a El Pa\u00eds desde Caracas que la muerte de Tassino provoc\u00f3 una fuerte conmoci\u00f3n en la comunidad uruguaya.\n",
+            "relations": [
+                {
+                    "entity1": "Rosario Lourdes P\u00e9rez",
+                    "relation": "conserje",
+                    "entity2": "CVU"
+                },
+                {
+                    "entity1": "Rosario Lourdes P\u00e9rez",
+                    "relation": "relat\u00f3",
+                    "entity2": "ayer a El Pa\u00eds desde Caracas"
+                },
+                {
+                    "entity1": "la muerte de Tassino",
+                    "relation": "provoc\u00f3",
+                    "entity2": "una fuerte conmoci\u00f3n en la comunidad uruguaya"
+                }
+            ]
+        },
+        {
+            "sentence": "Kirchner contin\u00faa las gestiones. \n",
+            "relations": [
+                {
+                    "entity1": "Kirchner",
+                    "relation": "contin\u00faa",
+                    "entity2": "las gestiones"
+                }
+            ]
+        },
+        {
+            "sentence": "El defensor, el centrocampista y el ariete comparten esta vez con ocho jugadores que llegan por primera vez a la convocatoria.\n",
+            "relations": [
+                {
+                    "entity1": "El defensor, el centrocampista y el ariete",
+                    "relation": "comparten esta vez con",
+                    "entity2": "ocho jugadores que llegan por primera vez a la convocatoria"
+                }
+            ]
+        },
+        {
+            "sentence": "Sin embargo, el subsecretario general asegur\u00f3 que \"hasta la fecha, el poder de ataque de la oposici\u00f3n es m\u00ednimo comparado con el armamento pesado que usa el Ej\u00e9rcito sirio\".\n",
+            "relations": [
+                {
+                    "entity1": "el subsecretario general",
+                    "relation": "asegur\u00f3 que",
+                    "entity2": "\"hasta la fecha, el poder de ataque de la oposici\u00f3n es m\u00ednimo comparado con el armamento pesado que usa el Ej\u00e9rcito sirio\""
+                },
+                {
+                    "entity1": "el poder de ataque de la oposici\u00f3n",
+                    "relation": "es",
+                    "entity2": "m\u00ednimo comparado con el armamento pesado que usa el Ej\u00e9rcito sirio"
+                }
+            ]
+        },
+        {
+            "sentence": "La Constituci\u00f3n Pol\u00edtica del 2008 establece las garant\u00edas para que todos los ecuatorianos accedan a este derecho.\n",
+            "relations": [
+                {
+                    "entity1": "La Constituci\u00f3n Pol\u00edtica del 2008",
+                    "relation": "establece",
+                    "entity2": "las garant\u00edas para que todos los ecuatorianos accedan a este derecho"
+                }
+            ]
+        },
+        {
+            "sentence": "Otras grandes obras son el \"corredor ferroviario bioce\u00e1nico Paranagu\u00e1-Antofagasta, entre Argentina, Brasil, Chile y Paraguay, por 944 millones de d\u00f3lares, y el mejoramiento de la navegabilidad de los r\u00edos de la Cuenca de la Plata (entre Argentina, Bolivia, Brasil, Paraguay y Uruguay) por 854 millones de d\u00f3lares\".\n",
+            "relations": [
+                {
+                    "entity1": "Otras grandes obras",
+                    "relation": "son",
+                    "entity2": "el \"corredor ferroviario bioce\u00e1nico Paranagu\u00e1-Antofagasta, entre Argentina, Brasil, Chile y Paraguay, por 944 millones de d\u00f3lares, y el mejoramiento de la navegabilidad de los r\u00edos de la Cuenca de la Plata por 854 millones de d\u00f3lares\""
+                }
+            ]
+        },
+        {
+            "sentence": "El grupo vivi\u00f3 69 d\u00edas a 700 metros de profundidad, en el fondo de una mina de cobre distante 850 kil\u00f3metros al noreste de Santiago, en un ambiente con un 90% de humedad y 35 a 40 grados de calor.\n",
+            "relations": [
+                {
+                    "entity1": "El grupo",
+                    "relation": "vivi\u00f3",
+                    "entity2": "69 d\u00edas a 700 metros de profundidad"
+                },
+                {
+                    "entity1": "El grupo",
+                    "relation": "vivi\u00f3",
+                    "entity2": "en el fondo de una mina de cobre distante 850 kil\u00f3metros al noreste de Santiago"
+                },
+                {
+                    "entity1": "El grupo",
+                    "relation": "vivi\u00f3",
+                    "entity2": "en un ambiente con un 90% de humedad y 35 a 40 grados de calor"
+                }
+            ]
+        },
+        {
+            "sentence": "Seg\u00fan el cardenal Ortega dijo que los presos tendr\u00edan esa opci\u00f3n.\n",
+            "relations": [
+                {
+                    "entity1": "el cardenal Ortega",
+                    "relation": "dijo que",
+                    "entity2": "los presos tendr\u00edan esa opci\u00f3n"
+                }
+            ]
+        },
+        {
+            "sentence": "La Procuradur\u00eda General de la Naci\u00f3n, la Defensor\u00eda del Pueblo y las organizaciones de mujeres adviertieron con preocupaci\u00f3n que la Ley con la que se reformaron diferentes c\u00f3digos, establece nuevamente la querella como requisito para dar inicio a la acci\u00f3n penal, en relaci\u00f3n con los delitos de violencia intrafamiliar e inasistencia alimentaria.\n",
+            "relations": [
+                {
+                    "entity1": "La Procuradur\u00eda General de la Naci\u00f3n, la Defensor\u00eda del Pueblo y las organizaciones de mujeres",
+                    "relation": "adviertieron con preocupaci\u00f3n que",
+                    "entity2": "la Ley con la que se reformaron diferentes c\u00f3digos, establece nuevamente la querella como requisito para dar inicio a la acci\u00f3n penal, en relaci\u00f3n con los delitos de violencia intrafamiliar e inasistencia alimentaria"
+                },
+                {
+                    "entity1": "la Ley con la que se reformaron diferentes c\u00f3digos",
+                    "relation": "establece nuevamente",
+                    "entity2": "la querella como requisito para dar inicio a la acci\u00f3n penal, en relaci\u00f3n con los delitos de violencia intrafamiliar e inasistencia alimentaria"
+                }
+            ]
+        },
+        {
+            "sentence": "Adem\u00e1s critic\u00f3 las declaraciones del ministro de Seguridad, Homero Arellano, donde hablaba de que la Polic\u00eda Judicial es una verg\u00fcenza para la Polic\u00eda.\n",
+            "relations": [
+                {
+                    "entity1": "[\u00e9l]",
+                    "relation": "critic\u00f3",
+                    "entity2": "las declaraciones del ministro de Seguridad, Homero Arellano, donde hablaba de que la Polic\u00eda Judicial es una verg\u00fcenza para la Polic\u00eda"
+                },
+                {
+                    "entity1": "Homero Arellano",
+                    "relation": "ministro de",
+                    "entity2": "Seguridad"
+                },
+                {
+                    "entity1": "la Polic\u00eda Judicial",
+                    "relation": "es",
+                    "entity2": "una verg\u00fcenza para la Polic\u00eda"
+                }
+            ]
+        },
+        {
+            "sentence": "Durante el acto de posesi\u00f3n, el presidente Santos asegur\u00f3 que C\u00e1rdenas tiene habilidades y conocimientos en este sector y manifest\u00f3 que \u201casume esa cartera en un momento importante porque es tal vez el sector que m\u00e1s atenci\u00f3n ha suscitado a nivel mundial, donde m\u00e1s inversi\u00f3n est\u00e1 llegando\u201d.\n",
+            "relations": [
+                {
+                    "entity1": "el presidente Santos",
+                    "relation": "asegur\u00f3 que",
+                    "entity2": "C\u00e1rdenas tiene habilidades y conocimientos en este sector"
+                },
+                {
+                    "entity1": "el presidente Santos",
+                    "relation": "manifest\u00f3 que",
+                    "entity2": "\u201casume esa cartera en un momento importante porque es tal vez el sector que m\u00e1s atenci\u00f3n ha suscitado a nivel mundial, donde m\u00e1s inversi\u00f3n est\u00e1 llegando\u201d"
+                },
+                {
+                    "entity1": "C\u00e1rdenas",
+                    "relation": "tiene habilidades y conocimientos en",
+                    "entity2": "este sector"
+                }
+            ]
+        },
+        {
+            "sentence": "En realidad, llegaron a N\u00edgeria algunas personalidades de mayor o menor importancia, pero nada m\u00e1s.\n",
+            "relations": [
+                {
+                    "entity1": "algunas personalidades de mayor o menor importancia",
+                    "relation": "llegaron a",
+                    "entity2": "N\u00edgeria"
+                }
+            ]
+        },
+        {
+            "sentence": "\"No hay dirigentes de primer plano y mucho menos Muamar Gadafi y un hijo suyo\", recalc\u00f3 el canciller nigerino.\n",
+            "relations": [
+                {
+                    "entity1": "el canciller nigerino",
+                    "relation": "recalc\u00f3",
+                    "entity2": "\"No hay dirigentes de primer plano y mucho menos Muamar Gadafi y un hijo suyo\""
+                }
+            ]
+        },
+        {
+            "sentence": "\u00bfAcaso no han escuchado que la \u201ctierra no es mercanc\u00eda\u201d, que la ganancia es el \u201cvicio\u201d del capitalista, que las empresas capitalistas \u201cdestruyen a la madre tierra\u201d, que al obrero lo convierten en \u201cdeshecho\u201d para luego botarlo en las calles? \n",
+            "relations": [
+                {
+                    "entity1": "la tierra",
+                    "relation": "no es",
+                    "entity2": "mercanc\u00eda"
+                },
+                {
+                    "entity1": "la ganancia",
+                    "relation": "es el",
+                    "entity2": "\u201cvicio\u201d del capitalista"
+                },
+                {
+                    "entity1": "las empresas capitalistas",
+                    "relation": "destruyen a",
+                    "entity2": "la madre tierra"
+                },
+                {
+                    "entity1": "al obrero",
+                    "relation": "lo convierten en",
+                    "entity2": "\u201cdeshecho\u201d para luego botarlo en las calles"
+                }
+            ]
+        },
+        {
+            "sentence": "Es inadmisible que esas empresas funcionen todav\u00eda con la l\u00f3gica capitalista.\n",
+            "relations": [
+                {
+                    "entity1": "que esas empresas funcionen todav\u00eda con la l\u00f3gica capitalista",
+                    "relation": "Es",
+                    "entity2": "inadmisible"
+                }
+            ]
+        },
+        {
+            "sentence": "Para mantener vivo el esp\u00edritu y que la barra huela la chilenidad, el chofer cambia las ramas de eucalipto y las guirnaldas cada dos jornadas, para mantener el rico buqu\u00e9 a fonda.\n",
+            "relations": [
+                {
+                    "entity1": "el chofer",
+                    "relation": "cambia",
+                    "entity2": "las ramas de eucalipto y las guirnaldas cada dos jornadas, para mantener el rico buqu\u00e9 a fonda"
+                }
+            ]
+        },
+        {
+            "sentence": "Adem\u00e1s del pago de la multa un propietario de veh\u00edculo debe cancelar, la tasa solidaria del Consejo Provincial de Azuay que es de 12 d\u00f3lares, el pago del SOAT y el pago de multas por mal estacionamiento.\n",
+            "relations": [
+                {
+                    "entity1": "un propietario de veh\u00edculo",
+                    "relation": "debe cancelar",
+                    "entity2": "la tasa solidaria del Consejo Provincial de Azuay que es de 12 d\u00f3lares, el pago del SOAT y el pago de multas por mal estacionamiento Adem\u00e1s del pago de la multa "
+                }
+            ]
+        },
+        {
+            "sentence": "Mar\u00eda Elvira Restrepo, vicepresidente de Mercadeo de Directv, aclar\u00f3 que \"los horarios no los ponemos nosotros, los establece la Dimayor de acuerdo con el rating y la importancia en la tabla\".\n",
+            "relations": [
+                {
+                    "entity1": "Mar\u00eda Elvira Restrepo",
+                    "relation": "vicepresidente de",
+                    "entity2": "Mercadeo de Directv"
+                },
+                {
+                    "entity1": "Mar\u00eda Elvira Restrepo",
+                    "relation": "aclar\u00f3 que",
+                    "entity2": "\"los horarios no los ponemos nosotros, los establece la Dimayor de acuerdo con el rating y la importancia en la tabla\""
+                },
+                {
+                    "entity1": "los horarios",
+                    "relation": "no los ponemos",
+                    "entity2": "nosotros"
+                },
+                {
+                    "entity1": "los horarios",
+                    "relation": "los establece",
+                    "entity2": "la Dimayor de acuerdo con el rating y la importancia en la tabla"
+                }
+            ]
+        },
+        {
+            "sentence": "En total fueron 160 sillas unipersonales lo que don\u00f3 la se\u00f1ora Astrid Rodr\u00edguez Pautt, directora del Gimnasio Nueva Granada de esta ciudad.\n",
+            "relations": [
+                {
+                    "entity1": "Astrid Rodr\u00edguez Pautt",
+                    "relation": "directora del",
+                    "entity2": "Gimnasio Nueva Granada de esta ciudad"
+                },
+                {
+                    "entity1": "Astrid Rodr\u00edguez Pautt",
+                    "relation": "don\u00f3",
+                    "entity2": "160 sillas unipersonales"
+                }
+            ]
+        },
+        {
+            "sentence": "La decisi\u00f3n, adoptada en solidaridad con el reclamo argentino de soberan\u00eda sobre ese archipi\u00e9lago bajo dominaci\u00f3n brit\u00e1nica, se adopt\u00f3 este s\u00e1bado, en el marco de la Cumbre de la Alianza Bolivariana para los Pueblos de Nuestra Am\u00e9rica (ALBA) celebrada en Caracas, inform\u00f3 hoy la Canciller\u00eda argentina en un comunicado.\n",
+            "relations": [
+                {
+                    "entity1": "la Canciller\u00eda argentina",
+                    "relation": "inform\u00f3",
+                    "entity2": "La decisi\u00f3n, adoptada en solidaridad con el reclamo argentino de soberan\u00eda sobre ese archipi\u00e9lago bajo dominaci\u00f3n brit\u00e1nica, se adopt\u00f3 este s\u00e1bado, en el marco de la Cumbre de la Alianza Bolivariana para los Pueblos de Nuestra Am\u00e9rica ALBA celebrada en Caracas"
+                },
+                {
+                    "entity1": "la Canciller\u00eda argentina",
+                    "relation": "inform\u00f3",
+                    "entity2": "en un comunicado"
+                },
+                {
+                    "entity1": "La decisi\u00f3n, adoptada en solidaridad con el reclamo argentino de soberan\u00eda sobre ese archipi\u00e9lago bajo dominaci\u00f3n brit\u00e1nica",
+                    "relation": "se adopt\u00f3",
+                    "entity2": "este s\u00e1bado, en el marco de la Cumbre de la Alianza Bolivariana para los Pueblos de Nuestra Am\u00e9rica"
+                },
+                {
+                    "entity1": "la Cumbre de la Alianza Bolivariana para los Pueblos de Nuestra Am\u00e9rica",
+                    "relation": "celebrada en",
+                    "entity2": "Caracas"
+                }
+            ]
+        },
+        {
+            "sentence": "As\u00ed lo dijo el mismo mandatario en el acto de inauguraci\u00f3n del proyecto de vivienda \u2018Mirador de Usme\u2019, iniciativa del Grupo Aval.\n",
+            "relations": [
+                {
+                    "entity1": "As\u00ed",
+                    "relation": "lo dijo",
+                    "entity2": "el mismo mandatario en el acto de inauguraci\u00f3n del proyecto de vivienda \u2018Mirador de Usme\u2019, iniciativa del Grupo Aval"
+                },
+                {
+                    "entity1": "proyecto de vivienda \u2018Mirador de Usme\u2019",
+                    "relation": "iniciativa del",
+                    "entity2": "Grupo Aval"
+                }
+            ]
+        },
+        {
+            "sentence": "Muchos jovencitos te vemos como un sue\u00f1o.\n",
+            "relations": [
+                {
+                    "entity1": "Muchos jovencitos",
+                    "relation": "te vemos como",
+                    "entity2": "un sue\u00f1o"
+                }
+            ]
+        },
+        {
+            "sentence": "En La Florida a\u00fan no hay alcalde y ya va la novena patita en que los concejales de la oposici\u00f3n no se presentaron a la sesi\u00f3n extraordinaria.",
+            "relations": [
+                {
+                    "entity1": "En La Florida",
+                    "relation": "a\u00fan no hay",
+                    "entity2": "alcalde"
+                },
+                {
+                    "entity1": "los concejales de la oposici\u00f3n",
+                    "relation": "no se presentaron a",
+                    "entity2": "la sesi\u00f3n extraordinaria"
+                }
+            ]
+        }
+    ]
+}

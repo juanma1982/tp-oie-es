@@ -13,9 +13,7 @@ import ar.edu.unlp.entities.Relation;
 public class TestExtractionUsingJSONPatterns3 {
 		
 	
-	public static final String[] LINES ={ "He said \"Gandhi was vegetarian\"", 
-										  "He said \"Gandhi was vegetarian\". She said \"Peter plays with the ball\"",
-										  "She later revealed to Christina the late Sommers was a friend of her family and her father had appealed to Fey for help in getting Amanda a job at \"MODE\" after her career as an actress didn't pan out."};
+	public static final String[] LINES ={"Los primeros astrónomos creían que la tierra era el centro del universo", "Pedro pensó \"Leandro juega a la pelota\""};
 	
 	@Before
 	public void setUp() throws Exception {
@@ -27,13 +25,14 @@ public class TestExtractionUsingJSONPatterns3 {
 		try{
 		 System.out.println("Extract a wildcard quoted word");
 		 RelationExtractor extractor = new RelationExtractor();
+		 		 
 
 		 for (String line : LINES) {
 			 List<Relation> relations = extractor.extractInformationFromParagraph(line);
 			 if(relations!=null && !relations.isEmpty()){
 					System.out.println(line);					
 					for (Relation relation : relations) {
-						System.out.println(relation.toStringScore());
+						System.out.println(relation.toStringFull());
 					}
 					System.out.println();
 			 }else{

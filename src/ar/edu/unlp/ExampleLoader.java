@@ -12,7 +12,7 @@ import ar.edu.unlp.entities.ExampleList;
 public class ExampleLoader {
 
 	public static ExampleList loadExamplesFromJson() throws FileNotFoundException{
-		return loadExamplesFromJson(Filenames.JSON_EXAMPLES);
+		return loadExamplesFromJson(Filenames.JSON_CORE_EXAMPLES);
 	}
 	
 	public static ExampleList loadExtraExamplesFromJson(String filename) throws FileNotFoundException{

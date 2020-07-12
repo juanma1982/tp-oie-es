@@ -5,7 +5,12 @@ import java.util.Map;
 
 public class PosTagDic {
 
-	public static final Map<String , String> UPT2PENN = new HashMap<String , String>() {{
+	public static final Map<String , String> UPT2PENN = new HashMap<String , String>() {/**
+		 * 
+		 */
+		private static final long serialVersionUID = 836008216758066348L;
+
+	{
 		put("CCONJ", "CC");
 		put("NUM", "CD");
 		put("DET", "DT");
@@ -20,10 +25,16 @@ public class PosTagDic {
 		put("SYM", "SYM");
 		put("INTJ", "UH");
 		put("VERB", "VB");
+		put("AUX", "VB");
 		put("PUNCT", ".");
 	}};
 	
-	public static final Map<String , String> PENN2UPT = new HashMap<String , String>() {{
+	public static final Map<String , String> PENN2UPT = new HashMap<String , String>() {/**
+		 * 
+		 */
+		private static final long serialVersionUID = -1108324410854126515L;
+
+	{
 		put("#", "SYM");
 		put("$", "SYM");
 		put("''", "PUNCT");
